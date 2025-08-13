@@ -8,53 +8,26 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Core colors - Scrum.org inspired professional palette */
-    --background: 249 250 251;
-    --foreground: 15 23 42;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    /* Primary - Professional blue inspired by Scrum.org */
-    --primary: 217 91% 60%;
-    --primary-foreground: 255 255 255;
-    --primary-hover: 217 91% 55%;
-    --primary-light: 217 91% 85%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    /* Secondary - Warm gray for balance */
-    --secondary: 210 20% 98%;
-    --secondary-foreground: 71 84% 47%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 20% 98%;
-    --muted-foreground: 100 7% 64%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 217 91% 95%;
-    --accent-foreground: 217 91% 60%;
-
-    /* Success and warning colors */
-    --success: 142 76% 36%;
-    --success-foreground: 255 255 255;
-    --warning: 48 96% 53%;
-    --warning-foreground: 15 23 42;
-    --error: 0 84% 60%;
-    
-    /* Gradients for beautiful effects */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(234 89% 74%));
-    --gradient-subtle: linear-gradient(180deg, hsl(249 250 251), hsl(241 245 249));
-    --gradient-card: linear-gradient(145deg, hsl(255 255 255), hsl(248 250 252));
-    
-    /* Shadows */
-    --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow-medium: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
-    --shadow-large: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
-    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
-    
-    /* Animations */
-    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -83,38 +56,26 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode - maintaining professional feel */
-    --background: 15 23 42;
-    --foreground: 248 250 252;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 30 41 59;
-    --card-foreground: 248 250 252;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 30 41 59;
-    --popover-foreground: 248 250 252;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 255 255 255;
-    --primary-hover: 217 91% 65%;
-    --primary-light: 217 91% 25%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 30 41 59;
-    --secondary-foreground: 142 76% 36%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 30 41 59;
-    --muted-foreground: 148 163 184;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 30 41 59;
-    --accent-foreground: 217 91% 60%;
-    
-    --success: 142 76% 36%;
-    --warning: 48 96% 53%;
-    
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(234 89% 74%));
-    --gradient-subtle: linear-gradient(180deg, hsl(15 23 42), hsl(30 41 59));
-    --gradient-card: linear-gradient(145deg, hsl(30 41 59), hsl(51 65 85));
-    
-    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.4);
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
