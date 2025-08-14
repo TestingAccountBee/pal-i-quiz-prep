@@ -25,22 +25,35 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
 
-      # (Opcional, mas útil para confirmar que estás a compilar o commit certo)
+      # Debug: mostrar o vite.config.ts que está a ser compilado
       - name: Show vite.config.ts
         run: sed -n '1,200p' vite.config.ts
 
       - name: Install deps
         run: npm ci
 
+      # Forçar outDir=dist e ver o resultado
       - name: Build
-        run: npm run build
+        run: npx vite build --outDir dist
+
+      - name: List root and dist
+        run: |
+          echo "::group::ROOT"
+          ls -la
+          echo "::endgroup::"
+          echo "::group::DIST"
+          ls -la dist || true
+          echo "::endgroup::"
+
+      # Falhar explicitamente se não existir dist/index.html
+      - name: Ensure dist/index.html exists
+        run: test -f dist/index.html
 
       - name: Copy 404 for SPA
         run: cp dist/index.html dist/404.html
 
-      # 🔑 Passo necessário para Pages via Actions
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
