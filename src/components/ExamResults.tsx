@@ -17,6 +17,17 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
   const passed = scorePercentage >= exam.passingScore;
   const timeUsed = Math.floor(timeSpent / 60);
 
+  // Helper function to determine if a question is multiple choice
+  const isMultipleChoice = (question: any) => {
+    return question.multipleChoice || Array.isArray(question.correctAnswer);
+  };
+
+  // Helper function to check if arrays are equal (for multiple choice comparison)
+  const arraysEqual = (a: number[], b: number[]) => {
+    if (a.length !== b.length) return false;
+    return a.sort().every((val, index) => val === b.sort()[index]);
+  };
+
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
       {/* Results Header */}
@@ -107,30 +118,54 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
                     Question {index + 1}: {qr.question.question}
                   </h4>
                   
+                  {isMultipleChoice(qr.question) && (
+                    <div className="mb-2">
+                      <Badge variant="outline" className="text-xs">
+                        Múltipla Escolha
+                      </Badge>
+                    </div>
+                  )}
+                  
                   <div className="space-y-2 mb-3">
-                    {qr.question.options.map((option, optIndex) => (
-                      <div
-                        key={optIndex}
-                        className={`p-2 rounded border ${
-                          optIndex === qr.question.correctAnswer
-                            ? 'border-success bg-success/10 text-success'
-                            : optIndex === qr.userAnswer && optIndex !== qr.question.correctAnswer
-                            ? 'border-warning bg-warning/10 text-warning'
-                            : 'border-border bg-card'
-                        }`}
-                      >
-                        <span className="font-medium mr-2">
-                          {String.fromCharCode(65 + optIndex)}.
-                        </span>
-                        {option}
-                        {optIndex === qr.question.correctAnswer && (
-                          <span className="ml-2 text-xs font-medium">(Correct)</span>
-                        )}
-                        {optIndex === qr.userAnswer && optIndex !== qr.question.correctAnswer && (
-                          <span className="ml-2 text-xs font-medium">(Your Answer)</span>
-                        )}
-                      </div>
-                    ))}
+                    {qr.question.options.map((option, optIndex) => {
+                      const correctAnswers = Array.isArray(qr.question.correctAnswer) 
+                        ? qr.question.correctAnswer 
+                        : [qr.question.correctAnswer];
+                      const userAnswers = Array.isArray(qr.userAnswer) 
+                        ? qr.userAnswer 
+                        : qr.userAnswer !== null ? [qr.userAnswer] : [];
+                      
+                      const isCorrectOption = correctAnswers.includes(optIndex);
+                      const isUserSelection = userAnswers.includes(optIndex);
+                      const isWrongSelection = isUserSelection && !isCorrectOption;
+                      
+                      return (
+                        <div
+                          key={optIndex}
+                          className={`p-2 rounded border ${
+                            isCorrectOption
+                              ? 'border-success bg-success/10 text-success'
+                              : isWrongSelection
+                              ? 'border-warning bg-warning/10 text-warning'
+                              : 'border-border bg-card'
+                          }`}
+                        >
+                          <span className="font-medium mr-2">
+                            {String.fromCharCode(65 + optIndex)}.
+                          </span>
+                          {option}
+                          {isCorrectOption && (
+                            <span className="ml-2 text-xs font-medium">(Correct)</span>
+                          )}
+                          {isUserSelection && !isCorrectOption && (
+                            <span className="ml-2 text-xs font-medium">(Sua Resposta)</span>
+                          )}
+                          {isUserSelection && isCorrectOption && (
+                            <span className="ml-2 text-xs font-medium">(Sua Resposta - Correta)</span>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
 
                   {qr.question.explanation && (

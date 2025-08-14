@@ -35,15 +35,32 @@ const Index = () => {
   const handleExamSubmit = (attempt: ExamAttempt) => {
     if (!selectedExam) return;
 
+    // Helper function to check if arrays are equal (for multiple choice comparison)
+    const arraysEqual = (a: number[], b: number[]) => {
+      if (a.length !== b.length) return false;
+      return a.sort().every((val, index) => val === b.sort()[index]);
+    };
+
     let correctAnswers = 0;
     const questionResults = selectedExam.questions.map(question => {
       const userAnswer = attempt.answers[question.id];
-      const isCorrect = userAnswer === question.correctAnswer;
+      
+      let isCorrect = false;
+      if (Array.isArray(question.correctAnswer)) {
+        // Multiple choice question
+        if (Array.isArray(userAnswer)) {
+          isCorrect = arraysEqual(userAnswer, question.correctAnswer);
+        }
+      } else {
+        // Single choice question
+        isCorrect = userAnswer === question.correctAnswer;
+      }
+      
       if (isCorrect) correctAnswers++;
 
       return {
         question,
-        userAnswer: userAnswer ?? null,
+        userAnswer: userAnswer !== undefined ? userAnswer : null,
         isCorrect
       };
     });
