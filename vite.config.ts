@@ -8,4 +8,7 @@ export default defineConfig({
   resolve: {
     alias: { "@": path.resolve(__dirname, "./src") },
   },
+  build: {
+    sourcemap: true,   // ⬅️ isto permite mapear o erro para o .tsx original
+  },
 });
