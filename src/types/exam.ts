@@ -2,8 +2,9 @@ export interface Question {
   id: string;
   question: string;
   options: string[];
-  correctAnswer: number;
+  correctAnswer: number | number[]; // Single answer (number) or multiple answers (array)
   explanation?: string;
+  multipleChoice?: boolean; // Optional flag to explicitly mark multiple choice questions
 }
 
 export interface Exam {
@@ -17,7 +18,7 @@ export interface Exam {
 
 export interface ExamAttempt {
   examId: string;
-  answers: Record<string, number>;
+  answers: Record<string, number | number[]>; // Support both single and multiple answers
   startTime: Date;
   endTime?: Date;
   score?: number;
@@ -32,7 +33,7 @@ export interface ExamResult {
   timeSpent: number; // in seconds
   questionResults: Array<{
     question: Question;
-    userAnswer: number | null;
+    userAnswer: number | number[] | null;
     isCorrect: boolean;
   }>;
 }

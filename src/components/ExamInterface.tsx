@@ -14,7 +14,7 @@ interface ExamInterfaceProps {
 
 export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [answers, setAnswers] = useState<Record<string, number | number[]>>({});
   const [timeLeft, setTimeLeft] = useState(exam.timeLimit * 60); // Convert to seconds
   const [startTime] = useState(new Date());
 
@@ -38,11 +38,35 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
+  // Helper function to determine if a question is multiple choice
+  const isMultipleChoice = (question: Question) => {
+    return question.multipleChoice || Array.isArray(question.correctAnswer);
+  };
+
   const handleAnswerSelect = (questionId: string, answerIndex: number) => {
-    setAnswers(prev => ({
-      ...prev,
-      [questionId]: answerIndex
-    }));
+    const question = exam.questions.find(q => q.id === questionId);
+    if (!question) return;
+
+    if (isMultipleChoice(question)) {
+      // Multiple choice logic
+      setAnswers(prev => {
+        const currentAnswers = prev[questionId] as number[] || [];
+        const newAnswers = currentAnswers.includes(answerIndex)
+          ? currentAnswers.filter(idx => idx !== answerIndex)
+          : [...currentAnswers, answerIndex];
+        
+        return {
+          ...prev,
+          [questionId]: newAnswers
+        };
+      });
+    } else {
+      // Single choice logic
+      setAnswers(prev => ({
+        ...prev,
+        [questionId]: answerIndex
+      }));
+    }
   };
 
   const handleSubmit = () => {
@@ -58,6 +82,8 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
   const progress = ((currentQuestion + 1) / exam.questions.length) * 100;
   const currentQ = exam.questions[currentQuestion];
   const answeredCount = Object.keys(answers).length;
+  const isCurrentMultiple = isMultipleChoice(currentQ);
+  const currentAnswer = answers[currentQ.id];
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
@@ -89,36 +115,60 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
       {/* Question */}
       <Card className="bg-gradient-card border-0 shadow-medium">
         <CardHeader>
-          <CardTitle className="text-lg leading-relaxed">
-            {currentQ.question}
-          </CardTitle>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <CardTitle className="text-lg leading-relaxed flex-1">
+                {currentQ.question}
+              </CardTitle>
+              {isCurrentMultiple && (
+                <Badge variant="outline" className="text-xs">
+                  Múltipla Escolha
+                </Badge>
+              )}
+            </div>
+            {isCurrentMultiple && (
+              <p className="text-sm text-muted-foreground">
+                Selecione todas as opções corretas
+              </p>
+            )}
+          </div>
         </CardHeader>
         <CardContent className="space-y-3">
-          {currentQ.options.map((option, index) => (
-            <button
-              key={index}
-              onClick={() => handleAnswerSelect(currentQ.id, index)}
-              className={`w-full p-4 text-left rounded-lg border-2 transition-all duration-fast hover:border-primary/50 hover:bg-primary/5 ${
-                answers[currentQ.id] === index
-                  ? 'border-primary bg-primary/10 shadow-soft'
-                  : 'border-border bg-card'
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${
-                  answers[currentQ.id] === index
-                    ? 'border-primary bg-primary text-primary-foreground'
-                    : 'border-muted-foreground'
-                }`}>
-                  {answers[currentQ.id] === index && (
-                    <div className="w-3 h-3 rounded-full bg-primary-foreground" />
-                  )}
+          {currentQ.options.map((option, index) => {
+            const isSelected = isCurrentMultiple 
+              ? Array.isArray(currentAnswer) && currentAnswer.includes(index)
+              : currentAnswer === index;
+            
+            return (
+              <button
+                key={index}
+                onClick={() => handleAnswerSelect(currentQ.id, index)}
+                className={`w-full p-4 text-left rounded-lg border-2 transition-all duration-fast hover:border-primary/50 hover:bg-primary/5 ${
+                  isSelected
+                    ? 'border-primary bg-primary/10 shadow-soft'
+                    : 'border-border bg-card'
+                }`}
+              >
+                <div className="flex items-center gap-3">
+                  <div className={`w-6 h-6 border-2 flex items-center justify-center ${
+                    isCurrentMultiple ? 'rounded-md' : 'rounded-full'
+                  } ${
+                    isSelected
+                      ? 'border-primary bg-primary text-primary-foreground'
+                      : 'border-muted-foreground'
+                  }`}>
+                    {isSelected && (
+                      isCurrentMultiple 
+                        ? <div className="w-3 h-3 bg-primary-foreground rounded-sm" />
+                        : <div className="w-3 h-3 rounded-full bg-primary-foreground" />
+                    )}
+                  </div>
+                  <span className="font-medium">{String.fromCharCode(65 + index)}.</span>
+                  <span>{option}</span>
                 </div>
-                <span className="font-medium">{String.fromCharCode(65 + index)}.</span>
-                <span>{option}</span>
-              </div>
-            </button>
-          ))}
+              </button>
+            );
+          })}
         </CardContent>
       </Card>
 
