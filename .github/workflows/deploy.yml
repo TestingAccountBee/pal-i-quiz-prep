@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -27,27 +27,20 @@ jobs:
           node-version: 20
           cache: npm
 
-      # Debug: mostrar o vite.config.ts que está a ser compilado
-      - name: Show vite.config.ts
+      - name: Show vite.config.ts (debug)
         run: sed -n '1,200p' vite.config.ts
 
       - name: Install deps
         run: npm ci
 
-      # Forçar outDir=dist e ver o resultado
       - name: Build
         run: npx vite build --outDir dist
 
-      - name: List root and dist
+      - name: List root and dist (debug)
         run: |
-          echo "::group::ROOT"
           ls -la
-          echo "::endgroup::"
-          echo "::group::DIST"
           ls -la dist || true
-          echo "::endgroup::"
 
-      # Falhar explicitamente se não existir dist/index.html
       - name: Ensure dist/index.html exists
         run: test -f dist/index.html
 
