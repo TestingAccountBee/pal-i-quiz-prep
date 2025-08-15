@@ -196,7 +196,8 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
           {currentQuestion < exam.questions.length - 1 ? (
             <Button
               onClick={() => setCurrentQuestion(currentQuestion + 1)}
-              className="bg-gradient-primary hover:shadow-glow transition-all duration-smooth"
+              disabled={!currentAnswer || (Array.isArray(currentAnswer) && currentAnswer.length === 0)}
+              className="bg-gradient-primary hover:shadow-glow transition-all duration-smooth disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Next
               <ChevronRight className="h-4 w-4 ml-1" />
