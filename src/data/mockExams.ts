@@ -124,7 +124,7 @@ export const mockExams: Exam[] = [
           'Work with the teams to create a business proposal in order to acquire the necessary environments and provide the funding for the additional headcount for UAT testing.',
           'They should make do with their current test environment, simulating production as much as possible, and doing as much User Acceptance Testing as they can within it.'
         ],
-        correctAnswer: 0,
+        correctAnswer: [0,3]
         explanation: 'The team should try to find a way to work with the current limitations if an external solution is not possible. Help the team collaborate with other people to help come up with a solution. Adding additional time or budget takes focus away from solving the core problem which is creating potentially shippable increments. (Note: This is a multiple correct answer question with options A and D both being correct)'
       },
       {
