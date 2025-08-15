@@ -144,7 +144,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
               
               return (
                 <div
-                  key={index}
+                  key={`${currentQ.id}-${index}`}
                   className={`p-4 rounded-lg border-2 transition-all duration-fast hover:border-primary/50 hover:bg-primary/5 ${
                     isSelected
                       ? 'border-primary bg-primary/10 shadow-soft'
@@ -155,10 +155,10 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
                     <Checkbox
                       checked={isSelected}
                       onCheckedChange={() => handleAnswerSelect(currentQ.id, index)}
-                      id={`option-${index}`}
+                      id={`${currentQ.id}-option-${index}`}
                     />
                     <Label
-                      htmlFor={`option-${index}`}
+                      htmlFor={`${currentQ.id}-option-${index}`}
                       className="flex items-center gap-2 cursor-pointer flex-1"
                     >
                       <span className="font-medium">{String.fromCharCode(65 + index)}.</span>
@@ -171,7 +171,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
           ) : (
             // Single choice with radio buttons
             <RadioGroup
-              value={currentAnswer?.toString()}
+              value={currentAnswer !== undefined && currentAnswer !== null ? currentAnswer.toString() : ""}
               onValueChange={(value) => handleAnswerSelect(currentQ.id, parseInt(value))}
             >
               {currentQ.options.map((option, index) => {
@@ -179,7 +179,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
                 
                 return (
                   <div
-                    key={index}
+                    key={`${currentQ.id}-${index}`}
                     className={`p-4 rounded-lg border-2 transition-all duration-fast hover:border-primary/50 hover:bg-primary/5 ${
                       isSelected
                         ? 'border-primary bg-primary/10 shadow-soft'
@@ -187,9 +187,9 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <RadioGroupItem value={index.toString()} id={`option-${index}`} />
+                      <RadioGroupItem value={index.toString()} id={`${currentQ.id}-option-${index}`} />
                       <Label
-                        htmlFor={`option-${index}`}
+                        htmlFor={`${currentQ.id}-option-${index}`}
                         className="flex items-center gap-2 cursor-pointer flex-1"
                       >
                         <span className="font-medium">{String.fromCharCode(65 + index)}.</span>
@@ -228,7 +228,10 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
           {currentQuestion < exam.questions.length - 1 ? (
             <Button
               onClick={() => setCurrentQuestion(currentQuestion + 1)}
-              disabled={currentAnswer === undefined || currentAnswer === null || (Array.isArray(currentAnswer) && currentAnswer.length === 0)}
+              disabled={
+                (isCurrentMultiple && (!Array.isArray(currentAnswer) || currentAnswer.length === 0)) ||
+                (!isCurrentMultiple && (currentAnswer === undefined || currentAnswer === null))
+              }
               className="bg-gradient-primary hover:shadow-glow transition-all duration-smooth disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Next
