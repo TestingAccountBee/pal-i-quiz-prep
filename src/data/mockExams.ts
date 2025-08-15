@@ -446,7 +446,7 @@ export const mockExams: Exam[] = [
     questions: [
       {
         id: 'q2_1',
-        question: 'What outcome would you expect for a newly formed team that has limited experience in Scrum and members in different countries: 3 in England, 4 in the United States, and 2 in Vietnam?',
+        question: 'What outcome would you expect for a newly formed team that has limited experience in Scrum and members in different countries: 3 in England, 4 in the United States, and 2 in Vietnam? (Choose the best answer)',
         options: [
           'Having the right collaboration tools can make a distributed team as productive as a co-located team.',
           'The cost of delivering the product will be significantly lower than if all team members were together in Vietnam.',
@@ -454,11 +454,11 @@ export const mockExams: Exam[] = [
           'Having team members in multiple locations can increase productivity because the number of hours utilized per day will be increased.'
         ],
         correctAnswer: 2,
-        explanation: 'One of the Agile principles states that the most efficient and effective method of conveying information to and within Developers is face-to-face conversation. Having remote team members adds complexity to collaboration and communication efforts. Facilitating conversations with the members on this issue will allow the team to give feedback and decide on how best to resolve the issue.'
+        explanation: 'One of the Agile principles states that the most efficient and effective method of conveying information to and within Developers is face-to-face conversation. Having remote team members adds complexity to collaboration and communication efforts. Facilitating conversations with the members on this issue will allow the team to give feedback and decide on how best to resolve the issue. This may require support from the organization, but ownership of the decision belongs to the team.'
       },
       {
         id: 'q2_2',
-        question: 'Five new Scrum Teams have been created to build one product. A few of the Developers on one of the Scrum Teams ask the Team Leader how to coordinate their work with the other teams. What should the Team Leader do?',
+        question: 'Five new Scrum Teams have been created to build one product. A few of the Developers on one of the Scrum Teams ask the Team Leader how to coordinate their work with the other teams. What should the Team Leader do? (Choose the best answer)',
         options: [
           'Collect the Sprint tasks from the teams at the end of their Sprint Planning and merge that into a consolidated plan for the entire Sprint.',
           'Teach the Product Owner to work with the lead developers on ordering Product Backlog in a way to avoid too much technical and development overlap during a Sprint',
@@ -466,7 +466,7 @@ export const mockExams: Exam[] = [
           'Teach them that it is their responsibility to work with the other teams to create an integrated Increment and as a Team Leader you can help them if needed.'
         ],
         correctAnswer: 3,
-        explanation: 'In Scrum, collaboration and integration among teams are crucial for delivering a coherent and integrated product increment. The Team Leader should teach the developers that it is their responsibility to work collaboratively with the other teams to ensure that the product increment is integrated smoothly.'
+        explanation: 'In Scrum, collaboration and integration among teams are crucial for delivering a coherent and integrated product increment. The Team Leader should teach the developers that it is their responsibility to work collaboratively with the other teams to ensure that the product increment is integrated smoothly. The Team Leader can support them in this endeavor if needed but should emphasize that collaboration and integration are key responsibilities of all team members. This approach fosters a culture of teamwork, shared ownership, and collective accountability for delivering value to the customer. Therefore, teaching the developers about their responsibility to collaborate with other teams aligns with Scrum principles and promotes effective cross-team coordination.'
       },
       {
         id: 'q2_3',
@@ -476,11 +476,11 @@ export const mockExams: Exam[] = [
           'False'
         ],
         correctAnswer: 1,
-        explanation: 'Scrum Teams should not normalize their estimations solely for the purpose of allowing management to measure and compare their performance. Estimations in Scrum are meant to be relative and based on the team\'s understanding of the work, rather than serving as a metric for performance evaluation.'
+        explanation: 'Scrum Teams should not normalize their estimations solely for the purpose of allowing management to measure and compare their performance. Estimations in Scrum are meant to be relative and based on the team\'s understanding of the work, rather than serving as a metric for performance evaluation. Normalizing estimations to allow for comparison can lead to inaccurate assessments and undermine the principles of self-organization and empiricism in Scrum. Instead, Scrum Teams should focus on delivering value to the customer and continuously improving their processes based on feedback and outcomes, rather than adhering to standardized measurements for management purposes.'
       },
       {
         id: 'q2_4',
-        question: 'As a manager of the product development department, what would be the best approach for understanding the status of different teams working on different products?',
+        question: 'As a manager of the product development department, what would be the best approach for understanding the status of different teams working on different products? (Choose the best answer)',
         options: [
           'Implement a tool that extracts the different team statuses into a single dashboard.',
           'Work with the teams to develop and agree on a common way to share their Sprint Goals and Sprint progress.',
@@ -492,7 +492,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_5',
-        question: 'A Product Owner\'s responsibilities are best described by which of the following statements?',
+        question: 'A Product Owner\'s responsibilities are best described by which of the following statements? (Choose the best answer)',
         options: [
           'Optimizing the value of the items that the Developers are or will be working on.',
           'Managing the project and ensuring that the work adheres to the commitments made to the stakeholders.',
@@ -511,7 +511,7 @@ export const mockExams: Exam[] = [
           'True'
         ],
         correctAnswer: 1,
-        explanation: 'One of the primary benefits of an Agile approach is indeed to make it easier to meet short time-to-market schedules. Agile methodologies, such as Scrum, emphasize iterative and incremental development, allowing teams to deliver small increments of value to customers quickly and frequently.'
+        explanation: 'One of the primary benefits of an Agile approach is indeed to make it easier to meet short time-to-market schedules. Agile methodologies, such as Scrum, emphasize iterative and incremental development, allowing teams to deliver small increments of value to customers quickly and frequently. By breaking down the project into manageable chunks and prioritizing features based on customer feedback and business value, Agile enables organizations to respond rapidly to changing market demands and deliver products to market faster. This iterative approach facilitates early and continuous delivery of valuable software, reducing time-to-market and increasing the organization\'s ability to adapt to evolving customer needs. Therefore, the statement is true.'
       },
       {
         id: 'q2_7',
@@ -521,7 +521,7 @@ export const mockExams: Exam[] = [
           'False'
         ],
         correctAnswer: 1,
-        explanation: 'While individuals with project management backgrounds may possess valuable skills and experience that can benefit them in the role of Scrum Master, it is not necessarily true that they are inherently best suited for the position. Scrum Masters require a unique set of skills and attributes that go beyond traditional project management.'
+        explanation: 'While individuals with project management backgrounds may possess valuable skills and experience that can benefit them in the role of Scrum Master, it is not necessarily true that they are inherently best suited for the position. Scrum Masters require a unique set of skills and attributes that go beyond traditional project management. They focus on removing impediments, fostering a collaborative team environment, and facilitating communication and decision-making within the team. While project management experience can certainly be helpful in understanding organizational dynamics and managing tasks and schedules, successful Scrum Masters also require strong interpersonal skills, empathy, facilitation skills, and a deep understanding of Agile principles and frameworks.'
       },
       {
         id: 'q2_8',
@@ -534,8 +534,8 @@ export const mockExams: Exam[] = [
           'Facilitate a discussion during the Sprint Retrospective about the importance of active participation in the Daily Scrum and its impact on team collaboration and progress.',
           'Publicly reprimand the two developers during the Daily Scrum for their lack of participation.'
         ],
-        correctAnswer: 0,
-        explanation: 'Facilitating a discussion during the retrospective about the importance of active participation in the Daily Scrum and its impact on team collaboration and progress is crucial as it allows the team to collectively address the issue in a constructive manner. Additionally, having private conversations with the two developers to understand their perspective is essential for identifying any underlying concerns or obstacles they may be facing that are hindering their participation. (Note: This is a multiple correct answer question with options A and E both being correct)'
+        correctAnswer: [0, 4],
+        explanation: 'Facilitating a discussion during the retrospective about the importance of active participation in the Daily Scrum and its impact on team collaboration and progress is crucial as it allows the team to collectively address the issue in a constructive manner. Additionally, having private conversations with the two developers to understand their perspective is essential for identifying any underlying concerns or obstacles they may be facing that are hindering their participation.'
       },
       {
         id: 'q2_9',
@@ -545,7 +545,7 @@ export const mockExams: Exam[] = [
           'True'
         ],
         correctAnswer: 0,
-        explanation: 'Agile approaches, such as Scrum, focuses on achieving outcomes. Traditional approaches, such as waterfall, mainly focuses on the process. One is not better than the other and not comparable. Which approach you use is not dependent on the number of people but rather the objective you want to achieve.'
+        explanation: 'Agile approaches, such as Scrum, focuses on achieving outcomes. Traditional approaches, such as waterfall, mainly focuses on the process. One is not better than the other and not comparable. Which approach you use is not dependent on the number of people but rather the objective you want to achieve. When working on complex problems, where there are unknowns and unpredictability, using an empirical approach is optimal. This is the purpose for which Scrum and other Agile approaches are created. Traditional processes work better when there are no unknowns and everything can be predicted upfront.'
       },
       {
         id: 'q2_10',
@@ -567,12 +567,12 @@ export const mockExams: Exam[] = [
           'Customer Satisfaction',
           'Time to Market'
         ],
-        correctAnswer: 0,
-        explanation: 'The Evidence-Based Management framework of Scrum encompasses three key value areas: Time to Market, Current Value, and Unrealized Value. Time to Market focuses on the efficiency of delivering products or features to the market, emphasizing rapid delivery to gain a competitive edge. (Note: This is a multiple correct answer question with options A, B, and E all being correct)'
+        correctAnswer: [0, 1, 4],
+        explanation: 'The Evidence-Based Management framework of Scrum encompasses three key value areas: Time to Market, Current Value, and Unrealized Value. Time to Market focuses on the efficiency of delivering products or features to the market, emphasizing rapid delivery to gain a competitive edge. Current Value assesses the value currently delivered to customers, reflecting their current satisfaction with the organization\'s offerings. Unrealized Value represents the untapped potential for future value creation if the organization perfectly meets all potential customer needs. Together, these key value areas provide a holistic view of the organization\'s performance.'
       },
       {
         id: 'q2_12',
-        question: 'Which is not a measurement of a team\'s level of effectiveness in delivering value to the customer?',
+        question: 'Which is not a measurement of a team\'s level of effectiveness in delivering value to the customer? (Choose the best answer)',
         options: [
           'Trends in technical debt.',
           'Trends in user feedback.',
@@ -584,7 +584,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_13',
-        question: 'The Developers are requesting to extend the Sprint an extra 2 days in order to complete the items in the Sprint Backlog. They are worried that management will be upset if they are not able to finish all of the items before the end of the Sprint. As a Product Owner, what should you do?',
+        question: 'The Developers are requesting to extend the Sprint an extra 2 days in order to complete the items in the Sprint Backlog. They are worried that management will be upset if they are not able to finish all of the items before the end of the Sprint. As a Product Owner, what should you do? (Choose the best answer)',
         options: [
           'Temporarily extend the Sprint in order to complete all of the items.',
           'Ask the Developers to commit to what was agreed at Sprint Planning and find a solution for the problem.',
@@ -593,11 +593,11 @@ export const mockExams: Exam[] = [
           'Reduce the testing effort or leave some items incomplete in order to maximize the work in progress.'
         ],
         correctAnswer: 2,
-        explanation: 'Time-boxes helps everyone focus on the same problem at the same time and encourages the people who are closest to the problem to create the best possible result in the time allotted, give the current context. The Sprint Backlog is a forecast of functionality that will be developed during the Sprint if completed would achieve the Sprint Goal.'
+        explanation: 'Time-boxes helps everyone focus on the same problem at the same time and encourages the people who are closest to the problem to create the best possible result in the time allotted, give the current context. The Sprint Backlog is a forecast of functionality that will be developed during the Sprint if completed would achieve the Sprint Goal. If the Developers determine it has too much or too little work, it may renegotiate the selected Product Backlog items with the Product Owner in order to produce a releasable Increment and achieve the Sprint Goal.'
       },
       {
         id: 'q2_14',
-        question: 'During a meeting at the outset of a new software development initiative utilizing Scrum, a stakeholder expresses skepticism about the methodology, stating that they do not "believe" in Scrum. They argue that traditional project management, with its fixed deadlines and budgets, mitigates business risk more effectively. They perceive Scrum as lacking these elements, making it a high-risk approach they are unwilling to embrace. What is the best response?',
+        question: 'During a meeting at the outset of a new software development initiative utilizing Scrum, a stakeholder expresses skepticism about the methodology, stating that they do not "believe" in Scrum. They argue that traditional project management, with its fixed deadlines and budgets, mitigates business risk more effectively. They perceive Scrum as lacking these elements, making it a high-risk approach they are unwilling to embrace. What is the best response? (Choose the best answer)',
         options: [
           'Explain that in complex product development, discoveries are made along the way. No guarantees can be given. Risk is inherent to building software.',
           'Provide a vague explanation of Scrum principles without addressing the stakeholder\'s specific concerns about risk management and adherence to deadlines and budgets.',
@@ -606,7 +606,7 @@ export const mockExams: Exam[] = [
           'Dismiss the stakeholder\'s concerns and insist that Scrum is the only viable approach, disregarding their perspective on traditional project management.'
         ],
         correctAnswer: 3,
-        explanation: 'It\'s essential to highlight that while Scrum indeed operates differently from traditional project management, it offers distinct advantages in managing complexity, fostering adaptability, and delivering value incrementally. Assure the stakeholder that Scrum provides mechanisms for managing risk through its iterative approach, frequent inspections, and opportunities for course correction.'
+        explanation: 'It\'s essential to highlight that while Scrum indeed operates differently from traditional project management, it offers distinct advantages in managing complexity, fostering adaptability, and delivering value incrementally. Assure the stakeholder that Scrum provides mechanisms for managing risk through its iterative approach, frequent inspections, and opportunities for course correction. Emphasize the flexibility inherent in Scrum, allowing teams to respond to changing requirements and market dynamics swiftly.'
       },
       {
         id: 'q2_15',
@@ -616,7 +616,7 @@ export const mockExams: Exam[] = [
           'False'
         ],
         correctAnswer: 1,
-        explanation: 'The primary benefit of an Agile approach is not solely about delivering on-time and within-budget, although those are important outcomes. Agile emphasizes adaptability, flexibility, and responsiveness to change, which allows teams to deliver value incrementally and iteratively while responding to evolving customer needs and market dynamics.'
+        explanation: 'The primary benefit of an Agile approach is not solely about delivering on-time and within-budget, although those are important outcomes. Agile emphasizes adaptability, flexibility, and responsiveness to change, which allows teams to deliver value incrementally and iteratively while responding to evolving customer needs and market dynamics. While on-time delivery and staying within budget are indeed objectives, Agile recognizes that priorities and requirements may change over the course of a project. Therefore, the primary benefit of Agile lies in its ability to deliver value continuously, foster collaboration, and enable teams to adapt quickly to changing circumstances.'
       },
       {
         id: 'q2_16',
@@ -627,8 +627,8 @@ export const mockExams: Exam[] = [
           'Synchronizing delivery schedules across all teams.',
           'Product Backlog refinement.'
         ],
-        correctAnswer: 0,
-        explanation: 'Scrum Teams should release early and often, regardless of whether their releases are synchronized or not. Synchronizing release schedules does not guarantee improved productivity. Decreasing dependencies between teams, automating the delivery pipeline, and a healthy Product Backlog will improve autonomy and localized decision making. (Note: This is a multiple correct answer question with options A, B, and D all being correct)'
+        correctAnswer: [0, 1, 3],
+        explanation: 'Scrum Teams should release early and often, regardless of whether their releases are synchronized or not. Synchronizing release schedules does not guarantee improved productivity. Decreasing dependencies between teams, automating the delivery pipeline, and a healthy Product Backlog will improve autonomy and localized decision making.'
       },
       {
         id: 'q2_17',
@@ -640,12 +640,12 @@ export const mockExams: Exam[] = [
           'Having a cross-functional team will increase opportunities for team members to develop and grow their skills by learning from others within the team.',
           'Having a cross-functional team will increase opportunities of delivering increments that provide value to the users.'
         ],
-        correctAnswer: 0,
-        explanation: 'To be a cross-functional team, the team has a combined set of skills and competencies to create a product increment. Individuals may have specializations but accountability belongs to the Scrum Team as a whole. Having a cross-functional team will reduce external dependencies and complexity as decisions can be made locally. (Note: This is a multiple correct answer question with options A, B, D, and E all being correct)'
+        correctAnswer: [0, 1, 3, 4],
+        explanation: 'To be a cross-functional team, the team has a combined set of skills and competencies to create a product increment. Individuals may have specializations but accountability belongs to the Scrum Team as a whole. Having a cross-functional team will reduce external dependencies and complexity as decisions can be made locally.'
       },
       {
         id: 'q2_18',
-        question: 'Which of the following can be used as a measurement of business Agility?',
+        question: 'Which of the following can be used as a measurement of business Agility? (Choose the best answer)',
         options: [
           'The number of Scrum Teams working on the same product. Increasing the number of teams working on a product will produce more value.',
           'The time it takes to go from having an idea to the point where a customer experiences the benefit of that idea, and customer feedback has been gathered.',
@@ -653,7 +653,7 @@ export const mockExams: Exam[] = [
           'The number of change requests during an active Sprint. Reducing the changes to the scope of work helps the team focus on delivering Increments.'
         ],
         correctAnswer: 1,
-        explanation: 'Lead Time is a measure of the time it takes to go from having an idea to the point where a customer experiences the benefit of that idea, and customer acceptance feedback has been gathered. This means that Lead Time is a way to measure business Agility.'
+        explanation: 'Lead Time is a measure of the time it takes to go from having an idea to the point where a customer experiences the benefit of that idea, and customer acceptance feedback has been gathered. This means that Lead Time is a way to measure business Agility. Delivering working software frequently and satisfying the customer through early and continuous delivery helps maximize opportunity for the business to deliver value.'
       },
       {
         id: 'q2_19',
@@ -677,7 +677,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_21',
-        question: 'Which one of the following statements is correct about the Product Owner?',
+        question: 'Which one of the following statements is correct about the Product Owner? (Choose the best answer)',
         options: [
           'The Product Owner a single person that is empowered by the organization to make product decisions.',
           'The Product Owner should have proficient Project Management experience. The Product Owner role is an extension of the Project Manager role.',
@@ -689,7 +689,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_22',
-        question: 'You are a manager at an organization that develops and provides products and services for customers. Your organization has 4 Scrum Teams. Over the past several Sprints it has come to your observation that one of the teams is only averaging 15-20 story points per Sprint whereas the other teams are averaging 30-40 story points. Is this something to be worried about?',
+        question: 'You are a manager at an organization that develops and provides products and services for customers. Your organization has 4 Scrum Teams. Over the past several Sprints it has come to your observation that one of the teams is only averaging 15-20 story points per Sprint whereas the other teams are averaging 30-40 story points. Is this something to be worried about? (Choose the best answer)',
         options: [
           'Yes, this is something to be concerned about. The team in question is not following the standardized story points like the other teams.',
           'No, this is not something to be concerned about. The velocity of the team in question will gradually increase over time.',
@@ -712,8 +712,8 @@ export const mockExams: Exam[] = [
           'Advise the Product Owner to accept the pressure from stakeholders and proceed with the planned release, reassuring them that any issues can be addressed in subsequent updates.',
           'Encourage the team to accelerate their pace of development, disregarding the Product Owner\'s concerns and prioritizing speed over quality and completeness.'
         ],
-        correctAnswer: 0,
-        explanation: 'Advocating for a transparent discussion during the Sprint Review emphasizes the importance of stakeholders understanding the product\'s current state and the risks associated with an early release. This fosters open communication and allows stakeholders to make informed decisions. Secondly, collaborating with the Product Owner to prioritize backlog items critical for ensuring product readiness demonstrates a commitment to delivering value while mitigating risk. (Note: This is a multiple correct answer question with options A and B both being correct)'
+        correctAnswer: [0, 1],
+        explanation: 'Advocating for a transparent discussion during the Sprint Review emphasizes the importance of stakeholders understanding the product\'s current state and the risks associated with an early release. This fosters open communication and allows stakeholders to make informed decisions. Secondly, collaborating with the Product Owner to prioritize backlog items critical for ensuring product readiness demonstrates a commitment to delivering value while mitigating risk. By focusing on high-value features and addressing stakeholders\' concerns, the team can maintain alignment with Scrum principles while navigating external pressures.'
       },
       {
         id: 'q2_24',
@@ -726,8 +726,8 @@ export const mockExams: Exam[] = [
           'The Product Owner should focus on Value, Flow and Quality',
           'The Scrum Master of the team acts as a subject matter expert and provides technical solutions to the team.'
         ],
-        correctAnswer: 0,
-        explanation: 'The cornerstone of Scrum is the Scrum Team, comprising a Scrum Master, a Product Owner, and Developers, without sub-teams or hierarchies. Scrum Teams are characterized by cross-functionality, where each member possesses the skills necessary to deliver value every Sprint, and self-management, allowing them to autonomously determine task allocation and execution. (Note: This is a multiple correct answer question with options A, B, D, and E all being correct)'
+        correctAnswer: [0, 1, 3, 4],
+        explanation: 'The cornerstone of Scrum is the Scrum Team, comprising a Scrum Master, a Product Owner, and Developers, without sub-teams or hierarchies. Scrum Teams are characterized by cross-functionality, where each member possesses the skills necessary to deliver value every Sprint, and self-management, allowing them to autonomously determine task allocation and execution. The Scrum Master plays a pivotal role in implementing Scrum principles, guiding the team and organization in understanding and applying Scrum theory and practices. Accountable for the team\'s effectiveness, the Scrum Master fosters continuous improvement within the Scrum framework.'
       },
       {
         id: 'q2_25',
@@ -741,7 +741,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_26',
-        question: 'The primary objective of a product is to provide value for its users/customers. Who is accountable for the value provided by the product?',
+        question: 'The primary objective of a product is to provide value for its users/customers. Who is accountable for the value provided by the product? (Choose the best answer)',
         options: [
           'The Developers.',
           'The Scrum Master.',
@@ -762,8 +762,8 @@ export const mockExams: Exam[] = [
           'Share the last stakeholder briefing document prepared by the Product Owner',
           'Scrum does not have Project Managers, so disregard their concerns'
         ],
-        correctAnswer: 1,
-        explanation: 'When a Project Manager working with your Scrum Team raises concerns about progress and expenses, it\'s essential to address them effectively. The best responses would include ensuring transparent communication regarding the team\'s progress, identifying any impediments or bottlenecks affecting productivity, and collaborating to find solutions to improve efficiency. (Note: This is a multiple correct answer question with options B and C both being correct)'
+        correctAnswer: [1, 2],
+        explanation: 'When a Project Manager working with your Scrum Team raises concerns about progress and expenses, it\'s essential to address them effectively. The best responses would include ensuring transparent communication regarding the team\'s progress, identifying any impediments or bottlenecks affecting productivity, and collaborating to find solutions to improve efficiency. Additionally, providing regular updates on budget utilization and highlighting any deviations from the plan can help in addressing financial concerns.'
       },
       {
         id: 'q2_28',
@@ -784,12 +784,12 @@ export const mockExams: Exam[] = [
           'Share different initiatives across multiple teams so that individual members can work on other products when they have no active tasks to do in their current team.',
           'Having teams consisting of specialists that are experts in their function.'
         ],
-        correctAnswer: 1,
-        explanation: 'The selected options would help decrease the effectiveness of the team. On the other side working on one team allows the team members to mature together and synergize and focusing on one product enables the team to inspect and adapt more effectively than working on multiple products at the same time. (Note: This is a multiple correct answer question with options B, C, and D all being correct)'
+        correctAnswer: [1, 2, 3],
+        explanation: 'The selected options would help decrease the effectiveness of the team. On the other side working on one team allows the team members to mature together and synergize and focusing on one product enables the team to inspect and adapt more effectively than working on multiple products at the same time. In most situations, having a single member working full-time on a single team is more effective than having cross-functional individuals. You would also have the risk of context switching as they would change their function (work domain) throughout a Sprint and that requires extra effort from the individual.'
       },
       {
         id: 'q2_30',
-        question: 'John a new Product Owner is hired to work on an existing product that has ongoing for five Sprints. He is unsure about all of the responsibilities of a Product Owner. Which of these Product Owner\'s activities are defined in Scrum?',
+        question: 'John a new Product Owner is hired to work on an existing product that has ongoing for five Sprints. He is unsure about all of the responsibilities of a Product Owner. Which of these Product Owner’s activities are defined in Scrum? (Choose the best answer)',
         options: [
           'Interacting with stakeholders and ensuring that the most valuable functionality is always produced first.',
           'Writing User Stories.',
@@ -801,7 +801,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_31',
-        question: 'One of your Developers has a medical issue in the middle of the Sprint. As a Team Leader what should you do?',
+        question: 'One of your Developers has a medical issue in the middle of the Sprint. As a Team Leader what should you do? (Choose the best answer)',
         options: [
           'Postpone the release.',
           'Ask the rest of the team to work overtime.',
@@ -813,7 +813,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_32',
-        question: 'You are a manager at an organization that develops and provides products and services for customers. You\'ve observed that the motivation level of a typically proactive developer decreasing. In a 1:1 meeting, he expresses his frustration that the other team members are not consulting with him on technical decisions in his area of expertise and feels his opinions are being ignored and not respected. After gathering enough information, you feel that his opinion may be well-founded. What should you decide to respond?',
+        question: 'You are a manager at an organization that develops and provides products and services for customers. You\'ve observed that the motivation level of a typically proactive developer decreasing. In a 1:1 meeting, he expresses his frustration that the other team members are not consulting with him on technical decisions in his area of expertise and feels his opinions are being ignored and not respected. After gathering enough information, you feel that his opinion may be well-founded. What should you decide to respond? (Choose the best answer)',
         options: [
           'Schedule a meeting with the team to discuss your concerns and explain that they need to respect the team member\'s opinions.',
           'Ask the Scrum Master to teach the other team members about the Scrum value of respect.',
@@ -825,7 +825,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_33',
-        question: 'You are a manager at an organization that develops and provides products and services for customers. The Scrum Master, for one of the teams, has asked you to reduce communicating directly with the Scrum Team members and to go through him instead. What is the most appropriate response?',
+        question: 'You are a manager at an organization that develops and provides products and services for customers. The Scrum Master, for one of the teams, has asked you to reduce communicating directly with the Scrum Team members and to go through him instead. What is the most appropriate response? (Choose the best answer)',
         options: [
           'It\'s not ok as you are accountable for the outcome of the team\'s work.',
           'It\'s ok but also let him know that there might be certain situations that you may still need to contact the team directly.'
@@ -835,7 +835,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_34',
-        question: 'What is the primary advantage of Agile product development?',
+        question: 'What is the primary advantage of Agile product development? (Choose the best answer)',
         options: [
           'It ensures that the planned scope is delivered on time.',
           'It makes it easier to maximize team utilization.',
@@ -847,7 +847,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q2_35',
-        question: 'You are a manager in charge of business transformation for a new Agile initiative in your organization. One of your responsibilities is to create the Agile teams that will be working on various products. As a manager, how do you decide which member will belong to which team?',
+        question: 'You are a manager in charge of business transformation for a new Agile initiative in your organization. One of your responsibilities is to create the Agile teams that will be working on various products. As a manager, how do you decide which member will belong to which team? (Choose the best answer)',
         options: [
           'Balance the teams so that each team has an equal amount of skills, experience and seniority.',
           'Allocate the team members into functional teams where each team focuses on a specific area of expertise.',
