@@ -3,6 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Label } from '@/components/ui/label';
 import { Clock, ChevronLeft, ChevronRight, Flag } from 'lucide-react';
 import { Exam, ExamAttempt, Question } from '@/types/exam';
 
@@ -134,41 +137,70 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
           </div>
         </CardHeader>
         <CardContent className="space-y-3">
-          {currentQ.options.map((option, index) => {
-            const isSelected = isCurrentMultiple 
-              ? Array.isArray(currentAnswer) && currentAnswer.includes(index)
-              : currentAnswer === index;
-            
-            return (
-              <button
-                key={index}
-                onClick={() => handleAnswerSelect(currentQ.id, index)}
-                className={`w-full p-4 text-left rounded-lg border-2 transition-all duration-fast hover:border-primary/50 hover:bg-primary/5 ${
-                  isSelected
-                    ? 'border-primary bg-primary/10 shadow-soft'
-                    : 'border-border bg-card'
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <div className={`w-6 h-6 border-2 flex items-center justify-center ${
-                    isCurrentMultiple ? 'rounded-md' : 'rounded-full'
-                  } ${
+          {isCurrentMultiple ? (
+            // Multiple choice with checkboxes
+            currentQ.options.map((option, index) => {
+              const isSelected = Array.isArray(currentAnswer) && currentAnswer.includes(index);
+              
+              return (
+                <div
+                  key={index}
+                  className={`p-4 rounded-lg border-2 transition-all duration-fast hover:border-primary/50 hover:bg-primary/5 ${
                     isSelected
-                      ? 'border-primary bg-primary text-primary-foreground'
-                      : 'border-muted-foreground'
-                  }`}>
-                    {isSelected && (
-                      isCurrentMultiple 
-                        ? <div className="w-3 h-3 bg-primary-foreground rounded-sm" />
-                        : <div className="w-3 h-3 rounded-full bg-primary-foreground" />
-                    )}
+                      ? 'border-primary bg-primary/10 shadow-soft'
+                      : 'border-border bg-card'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <Checkbox
+                      checked={isSelected}
+                      onCheckedChange={() => handleAnswerSelect(currentQ.id, index)}
+                      id={`option-${index}`}
+                    />
+                    <Label
+                      htmlFor={`option-${index}`}
+                      className="flex items-center gap-2 cursor-pointer flex-1"
+                    >
+                      <span className="font-medium">{String.fromCharCode(65 + index)}.</span>
+                      <span>{option}</span>
+                    </Label>
                   </div>
-                  <span className="font-medium">{String.fromCharCode(65 + index)}.</span>
-                  <span>{option}</span>
                 </div>
-              </button>
-            );
-          })}
+              );
+            })
+          ) : (
+            // Single choice with radio buttons
+            <RadioGroup
+              value={currentAnswer?.toString()}
+              onValueChange={(value) => handleAnswerSelect(currentQ.id, parseInt(value))}
+            >
+              {currentQ.options.map((option, index) => {
+                const isSelected = currentAnswer === index;
+                
+                return (
+                  <div
+                    key={index}
+                    className={`p-4 rounded-lg border-2 transition-all duration-fast hover:border-primary/50 hover:bg-primary/5 ${
+                      isSelected
+                        ? 'border-primary bg-primary/10 shadow-soft'
+                        : 'border-border bg-card'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <RadioGroupItem value={index.toString()} id={`option-${index}`} />
+                      <Label
+                        htmlFor={`option-${index}`}
+                        className="flex items-center gap-2 cursor-pointer flex-1"
+                      >
+                        <span className="font-medium">{String.fromCharCode(65 + index)}.</span>
+                        <span>{option}</span>
+                      </Label>
+                    </div>
+                  </div>
+                );
+              })}
+            </RadioGroup>
+          )}
         </CardContent>
       </Card>
 
