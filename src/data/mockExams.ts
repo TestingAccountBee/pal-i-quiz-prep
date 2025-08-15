@@ -21,7 +21,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_2',
-        question: 'Technical debt is any shortcomings in the code that makes it less than "good enough" (technical shortcuts and brittle or outdated legacy applications) that creates risks in the future. Which of the following statements is true about technical debt?',
+        question: 'Technical debt is any shortcomings in the code that makes it less than "good enough" (technical shortcuts and brittle or outdated legacy applications) that creates risks in the future. Which of the following statements is true about technical debt? (Choose the best answer)',
         options: [
           'Technical debt is a threat to the long-term viability of a product.',
           'Technical debt can be handled after delivery during the maintenance period.',
@@ -29,7 +29,7 @@ export const mockExams: Exam[] = [
           'Only the developers need to be concerned with technical debt.'
         ],
         correctAnswer: 0,
-        explanation: 'Technical debt is any shortcoming in the solution that makes it less than "good enough" and might create problems in the future. Technical debt will always exist and cannot be completely eliminated as it is a natural byproduct of working in complex environments thus may not be a sign of poor practices. When there\'s a lot of technical debt, the velocity might decrease in the future because developers have to deal with the shortcomings.'
+        explanation: 'Technical debt is any shortcoming in the solution that makes it less than "good enough" and might create problems in the future. Technical debt will always exist and cannot be completely eliminated as it is a natural byproduct of working in complex environments thus may not be a sign of poor practices. When there\'s a lot of technical debt, the velocity might decrease in the future because developers have to deal with the shortcomings. On the other hand, this debt might even remain in the final product and make it harder and more expensive to maintain the product. Refactoring is a common way of managing or reducing technical debt. Refactoring is when the code is improved without changing its external behavior. It\'s a good idea for Agile teams to spend some of their capacity on continuous refactoring. Improving the definition of "Done" is the another way of managing technical debt.'
       },
       {
         id: 'q1_3',
@@ -39,11 +39,11 @@ export const mockExams: Exam[] = [
           'True'
         ],
         correctAnswer: 0,
-        explanation: 'The primary benefit of an Agile approach as compared to a traditional plan-based approach is to deliver business value by improving customer outcomes. In the course of frequent product deliveries and empirical feedback, an Agile team will learn what customers really need, which may not align with the original scope of the release.'
+        explanation: 'The primary benefit of an Agile approach as compared to a traditional plan-based approach is to deliver business value by improving customer outcomes. In the course of frequent product deliveries and empirical feedback, an Agile team will learn what customers really need, which may not align with the original scope of the release. Because of this feedback, they are able to adapt the product based on feedback to provide better customer outcomes with the time and budget available.'
       },
       {
         id: 'q1_4',
-        question: 'There are benefits in both an Agile approach and a waterfall approach. The primary benefit for both can be different. What is the primary benefit of an Agile approach?',
+        question: 'There are benefits in both an Agile approach and a waterfall approach. The primary benefit for both can be different. What is the primary benefit of an Agile approach? (Choose the best answer)',
         options: [
           'To deliver the scope on-time and on-budget.',
           'To maximize efficiency.',
@@ -55,7 +55,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_5',
-        question: 'You are a Scrum Master for a Scrum Team. The Developers are having a disagreement on an objective of a particular requirement for an item they are currently working on. They are unable to come to an agreement on the purpose of the requirement and whether it is necessary or not. You observe that the conversation is starting to get heated and an argument will soon occur. As a Scrum Master, which would be the best approach?',
+        question: 'You are a Scrum Master for a Scrum Team. The Developers are having a disagreement on an objective of a particular requirement for an item they are currently working on. They are unable to come to an agreement on the purpose of the requirement and whether it is necessary or not. You observe that the conversation is starting to get heated and an argument will soon occur. As a Scrum Master, which would be the best approach? (Choose the best answer)',
         options: [
           'You ask the team to vote and let them take ownership of the decision.',
           'You ask the Business Analyst for more information and update the User Story accordingly.',
@@ -63,11 +63,11 @@ export const mockExams: Exam[] = [
           'You facilitate a meeting between the Product Owner and Developers to help clarify the requirements for the item.'
         ],
         correctAnswer: 3,
-        explanation: 'The Scrum Master is a servant-leader for the Scrum Team. The Scrum Master helps members of the Scrum Team understand which of their interactions are helpful and which aren\'t. The Scrum Master helps everyone change these interactions to maximize the value created by the Scrum Team.'
+        explanation: 'The Scrum Master is a servant-leader for the Scrum Team. The Scrum Master helps members of the Scrum Team understand which of their interactions are helpful and which aren\'t. The Scrum Master helps everyone change these interactions to maximize the value created by the Scrum Team. The Scrum Master is responsible for helping everyone understand Scrum theory, practices, rules, and values. The Scrum Master is responsible for facilitating when needed and helping the team remove impediments blocking their progress.'
       },
       {
         id: 'q1_6',
-        question: 'You are the manager in charge of the product development department in your organization. During one of the Sprint Reviews, the Product Owner communicates with you that the Scrum Team was not able to complete all of the items in the Sprint Backlog and that he will ensure that the Developers will commit to completing all Sprint Backlog items in the next Sprint. As the product development manager, what is the most appropriate response?',
+        question: 'You are the manager in charge of the product development department in your organization. During one of the Sprint Reviews, the Product Owner communicates with you that the Scrum Team was not able to complete all of the items in the Sprint Backlog and that he will ensure that the Developers will commit to completing all Sprint Backlog items in the next Sprint. As the product development manager, what is the most appropriate response? (Choose the best answer)',
         options: [
           'Support the Product Owner and encourage the Developers to find ways to work more efficiently.',
           'Ask a senior engineer, external to the team, to help estimate during the Sprint Planning.',
@@ -79,7 +79,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_7',
-        question: 'Who manages the progress of work being done during a Sprint?',
+        question: 'Who manages the progress of work being done during a Sprint? (Choose the best answer)',
         options: [
           'The Product Owner.',
           'The Development Manager.',
@@ -93,7 +93,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_8',
-        question: 'You\'re a Product Owner of a new product initiative to be developed by the organization. The product has multiple internal stakeholders. During a meeting to gather expectations, you observe that the stakeholders are unable to come to an agreement on the target users and the primary objective of the product. As a Product Owner, which is the best way to help the stakeholders with alignment?',
+        question: 'You\'re a Product Owner of a new product initiative to be developed by the organization. The product has multiple internal stakeholders. During a meeting to gather expectations, you observe that the stakeholders are unable to come to an agreement on the target users and the primary objective of the product. As a Product Owner, which is the best way to help the stakeholders with alignment? (Choose the best answer)',
         options: [
           'Ask the Developers to start working on the infrastructure and architecture while you work with the stakeholders to finalize the product requirements.',
           'Work with the stakeholders to finalize the product requirements before forming the Scrum Team.',
@@ -101,11 +101,11 @@ export const mockExams: Exam[] = [
           'Gather market insights by iteratively and incrementally building and delivering selective elements of the product. Share the results of the experiments with the stakeholders.'
         ],
         correctAnswer: 3,
-        explanation: 'Complex products requires experimentation as the cause and effect can only be deduced in retrospect. There\'s no singular method that leads to guaranteed success. The outcomes of earlier experiments plays a crucial role in making product decisions and deciding on the direction.'
+        explanation: 'Complex products requires experimentation as the cause and effect can only be deduced in retrospect. There’s no singular method that leads to guaranteed success. The outcomes of earlier experiments plays a crucial role in making product decisions and deciding on the direction. Short feedback loops from having an idea to gathering user feedback will improve business Agility. Ultimately, the market response will define the value of the work being done.'
       },
       {
         id: 'q1_9',
-        question: 'You are a leader in an Agile organization. You are trying to gain information regarding future work that will be done for the product, including technical enhancements suggested by the Developers. How should you do this?',
+        question: 'You are a leader in an Agile organization. You are trying to gain information regarding future work that will be done for the product, including technical enhancements suggested by the Developers. How should you do this? (Choose the best answer)',
         options: [
           'Consult with the Product Owner and ask about the Product Backlog, as the Product Backlog contains the current state and current intended ordering of all future items to be worked on for the product.',
           'Attend the Daily Scrum and ask the team each day to update you on the status of their tasks.',
@@ -117,30 +117,30 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_10',
-        question: 'You manage the product development department in your organization. Some of your teams will require a new testing environment that replicates production in order to perform User Acceptance Testing (UAT) during development. Current policies stipulate that UAT environments are only available when all other stages of development activities has been completed. UAT is the last stage before before making the done work shippable. Which would be the best two strategies?',
+        question: 'You manage the product development department in your organization. Some of your teams will require a new testing environment that replicates production in order to perform User Acceptance Testing (UAT) during development. Current policies stipulate that UAT environments are only available when all other stages of development activities has been completed. UAT is the last stage before before making the done work shippable. Which would be the best two strategies? (Choose the best two answers)',
         options: [
           'You help them find someone who can help them with setting up testing and simulation tools that can partially emulate the User Acceptance Test environment needed.',
           'Add additional time to the end of the project schedule that mainly focuses on UAT testing and support. Set stakeholder expectations accordingly.',
           'Work with the teams to create a business proposal in order to acquire the necessary environments and provide the funding for the additional headcount for UAT testing.',
           'They should make do with their current test environment, simulating production as much as possible, and doing as much User Acceptance Testing as they can within it.'
         ],
-        correctAnswer: [0,3],
-        explanation: 'The team should try to find a way to work with the current limitations if an external solution is not possible. Help the team collaborate with other people to help come up with a solution. Adding additional time or budget takes focus away from solving the core problem which is creating potentially shippable increments. (Note: This is a multiple correct answer question with options A and D both being correct)'
+        correctAnswer: [0, 3],
+        explanation: 'The team should try to find a way to work with the current limitations if an external solution is not possible. Help the team collaborate with other people to help come up with a solution. Adding additional time or budget takes focus away from solving the core problem which is creating potentially shippable increments.'
       },
       {
         id: 'q1_11',
-        question: 'Which one of the following best describes the Product Owner?',
+        question: 'Which one of the following best describes the Product Owner? (Choose the best answer)',
         options: [
           'Product Owner that constantly changes the requirements.',
           'The Product Owner isn\'t very important to the Scrum Team.',
           'A single long-serving Product Owner with subject matter expertise in the product that is being developed.'
         ],
         correctAnswer: 2,
-        explanation: 'An ideal Product Owner would be a single long-serving Product Owner with subject matter expertise in the product that is being developed. A team with a Product Owner does not constantly changes opinions. He / she keeps up with the market changes and provides a single vision to the team using the Product Backlog and Product Goals.'
+        explanation: 'An ideal Product Owner would be a single long-serving Product Owner with subject matter expertise in the product that is being developed. A team with a Product Owner does not constantly changes opinions. He / she keeps up with the market changes and provides a single vision to the team using the Product Backlog and Product Goals. It is alright to change the requirements, but not constantly changing them. If this happens something else might be wrong with the Product Owner or stakeholders.'
       },
       {
         id: 'q1_12',
-        question: 'You are a manager in an Agile organization. You need a way to measure how much business value each Scrum Team is producing in order to manage stakeholder expectations. How do you go about measuring the value produced by each team?',
+        question: 'You are a manager in an Agile organization. You need a way to measure how much business value each Scrum Team is producing in order to manage stakeholder expectations. How do you go about measuring the value produced by each team? (Choose the best answer)',
         options: [
           'Compare the velocity of each Scrum Team. Those with the highest average Story Points completed per Sprint is producing the most value.',
           'Consult with the Scrum Master of each Scrum Team. As the person who spends the most time with the Developers, they are best suited to help provide you with the information you seek.',
@@ -158,11 +158,11 @@ export const mockExams: Exam[] = [
           'True'
         ],
         correctAnswer: 0,
-        explanation: 'As an Agile leader, defining product goals and ensuring accountability are indeed vital aspects of the role, but they represent just one facet of a multifaceted leadership approach. In addition to setting clear objectives and holding team members accountable, Agile leadership encompasses a broader spectrum of responsibilities.'
+        explanation: 'As an Agile leader, defining product goals and ensuring accountability are indeed vital aspects of the role, but they represent just one facet of a multifaceted leadership approach. In addition to setting clear objectives and holding team members accountable, Agile leadership encompasses a broader spectrum of responsibilities. These include creating a compelling vision that aligns with organizational goals, empowering teams to make decisions and take ownership of their work, facilitating collaboration and communication, removing obstacles that hinder progress, supporting continuous improvement through experimentation and learning, and practicing servant leadership by prioritizing the needs of the team. By embracing this holistic approach, Agile leaders foster an environment conducive to innovation, collaboration, and adaptability, ultimately enabling teams to deliver value effectively and achieve sustainable success.'
       },
       {
         id: 'q1_14',
-        question: 'Who is responsible for resolving issues if a Scrum Team is continuously failing to deliver shippable increments by the end of the Sprints?',
+        question: 'Who is responsible for resolving issues if a Scrum Team is continuously failing to deliver shippable increments by the end of the Sprints? (Choose the best answer)',
         options: [
           'The Delivery Manager.',
           'The Scrum Master.',
@@ -172,7 +172,7 @@ export const mockExams: Exam[] = [
           'The Product Owner.'
         ],
         correctAnswer: 4,
-        explanation: 'In Scrum, the term "Scrum Team" encompasses the Developers, Scrum Master, and Product Owner collectively. Therefore, when referring to responsibility for resolving issues related to failing to deliver shippable increments, it is the responsibility of the Scrum Team as a whole, which includes both the Developers and the Scrum Master, with support and collaboration from the Product Owner.'
+        explanation: 'In Scrum, the term "Scrum Team" encompasses the Developers, Scrum Master, and Product Owner collectively. Therefore, when referring to responsibility for resolving issues related to failing to deliver shippable increments, it is the responsibility of the Scrum Team as a whole, which includes both the Developers and the Scrum Master, with support and collaboration from the Product Owner. Each member of the Scrum Team plays a role in addressing impediments and ensuring successful delivery.'
       },
       {
         id: 'q1_15',
@@ -182,24 +182,24 @@ export const mockExams: Exam[] = [
           'True'
         ],
         correctAnswer: 1,
-        explanation: 'People in key Scrum roles, like Scrum Masters, Product Owners, and Developers, need to understand their responsibilities well. When they do, they help the team work better, follow Scrum properly, and keep improving. But Agile maturity isn\'t just about individuals doing their jobs well.'
+        explanation: 'People in key Scrum roles, like Scrum Masters, Product Owners, and Developers, need to understand their responsibilities well. When they do, they help the team work better, follow Scrum properly, and keep improving. But Agile maturity isn’t just about individuals doing their jobs well. It also depends on how the team works together, how the company supports Agile ways of working, and how good the technical setup is. So, while role maturity is important, it’s only one part of what makes a team or organisation truly Agile.'
       },
       {
         id: 'q1_16',
         question: 'Which of the following statements does not support an Agile way of thinking? (Choose all that apply)',
         options: [
-          'The lack of upfront planning results in most failures in product development.',
-          'Predictability is the most important factor in project success.',
-          'A sign of a good project manager is the ability to follow the plan.',
-          'The level of unpredictability is a sign that someone has not invested enough time in upfront planning.',
-          'Working on complex problems is often unpredictable and unexpected things will occur. The best approach is to learn from them.'
+          '"The lack of upfront planning results in most failures in product development."',
+          '"Predictability is the most important factor in project success."',
+          '"A sign of a good project manager is the ability to follow the plan."',
+          '"The level of unpredictability is a sign that someone has not invested enough time in upfront planning."',
+          '"Working on complex problems is often unpredictable and unexpected things will occur. The best approach is to learn from them."'
         ],
-        correctAnswer: 0,
-        explanation: 'Complex contexts are often unpredictable, and the best approach here is to "Probe – Sense – Respond." Rather than trying to control the situation or insisting on a plan of action, it\'s often best to be patient, look for patterns, and encourage a solution to emerge. (Note: This is a multiple correct answer question - options A, B, C, and D are all correct)'
+        correctAnswer: [0, 1, 2, 3],
+        explanation: 'Complex contexts are often unpredictable, and the best approach here is to "Probe – Sense – Respond." Rather than trying to control the situation or insisting on a plan of action, it\'s often best to be patient, look for patterns, and encourage a solution to emerge.'
       },
       {
         id: 'q1_17',
-        question: 'As a Development Manager overseeing 5 Scrum Teams in an Agile organization, tasked with reducing costs, how would you evaluate the value generated by each Scrum Team to determine the potential removal of two teams?',
+        question: 'As a Development Manager overseeing 5 Scrum Teams in an Agile organization, tasked with reducing costs, how would you evaluate the value generated by each Scrum Team to determine the potential removal of two teams? (Choose the best answer)',
         options: [
           'Disband teams without considering the potential impact on ongoing projects or future workloads.',
           'Assess the teams based solely on their seniority or experience levels.',
@@ -209,7 +209,7 @@ export const mockExams: Exam[] = [
           'Remove the teams with the lowest headcount, assuming they are less valuable.'
         ],
         correctAnswer: 3,
-        explanation: 'In assessing the value of Scrum Teams to reduce costs, it\'s crucial to employ metrics that objectively evaluate their performance and efficiency. The most effective approach involves analyzing quantitative measures such as throughput, cycle time, and Sprint burndown.'
+        explanation: 'In assessing the value of Scrum Teams to reduce costs, it\'s crucial to employ metrics that objectively evaluate their performance and efficiency. The most effective approach involves analyzing quantitative measures such as throughput, cycle time, and Sprint burndown. By identifying teams with consistently lower performance or higher inefficiencies based on these metrics, informed decisions can be made regarding their removal. However, approaches based solely on headcount, seniority, qualitative factors, or project visibility may lead to inaccurate assessments and overlook the broader implications of disbanding teams. Therefore, prioritizing objective performance metrics ensures that decisions are grounded in data and aligned with organizational goals, ultimately enabling cost reduction without sacrificing productivity or effectiveness.'
       },
       {
         id: 'q1_18',
@@ -219,24 +219,24 @@ export const mockExams: Exam[] = [
           'True'
         ],
         correctAnswer: 1,
-        explanation: 'Supporting empiricism, which is a fundamental principle of Agile methodologies, involves making decisions based on empirical evidence, observation, and experimentation rather than speculation or assumptions. One effective way to support empiricism is by delivering a solution or increment of work and gathering feedback on its performance and impact in the real world.'
+        explanation: 'Supporting empiricism, which is a fundamental principle of Agile methodologies, involves making decisions based on empirical evidence, observation, and experimentation rather than speculation or assumptions. One effective way to support empiricism is by delivering a solution or increment of work and gathering feedback on its performance and impact in the real world. This feedback provides valuable insights into the effectiveness of the solution, identifies areas for improvement, and informs the decision-making process for determining the next best action. By embracing a cycle of delivery, feedback, and adaptation, teams can continuously improve their products or solutions and better meet the needs of their users or customers. Therefore, delivering a solution and gathering feedback before deciding on the next best action aligns with the principles of empiricism in Agile.'
       },
       {
         id: 'q1_19',
-        question: 'Which of the following activities is most effective for a Scrum Master to help the Scrum Team work at its highest productivity level possible?',
+        question: 'Which of the following activities is most effective for a Scrum Master to help the Scrum Team work at its highest productivity level possible? (Choose the best answer)',
         options: [
           'Make sure that the Scrum events start and end on-time.',
-          'Causing the removal of impediments to the Scrum Team\'s progress and facilitating its decisions when requested.',
+          'Causing the removal of impediments to the Scrum Team’s progress and facilitating its decisions when requested.',
           'Keeping high value items at the top of the Product Backlog.',
           'Ensuring that no changes are made to the scope of the Sprint Backlog once development begins.',
           'Managing the Daily Scrum.'
         ],
         correctAnswer: 1,
-        explanation: 'The Scrum Master is responsible for promoting and supporting Scrum as defined in the Scrum Guide. The Scrum Master serves the Scrum Team by causing the removal of impediments to the Scrum Team\'s progress and facilitating as requested or needed.'
+        explanation: 'The Scrum Master is responsible for promoting and supporting Scrum as defined in the Scrum Guide. The Scrum Master serves the Scrum Team by causing the removal of impediments to the Scrum Team’s progress and facilitating as requested or needed.'
       },
       {
         id: 'q1_20',
-        question: 'Which of the following is not a principle from the Manifesto for Agile Software Development?',
+        question: 'Which of the following is not a principle from the Manifesto for Agile Software Development? (Choose the best answer)',
         options: [
           'The most efficient and effective method of conveying information to and within a Scrum Team is via comprehensive documentation.',
           'Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.',
@@ -244,7 +244,7 @@ export const mockExams: Exam[] = [
           'At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.'
         ],
         correctAnswer: 0,
-        explanation: 'We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value: individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, responding to change over following a plan.'
+        explanation: 'We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value: individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, responding to change over following a plan. Remember the most efficient method of communications within a Scrum Team is face-to-face communication.'
       },
       {
         id: 'q1_21',
@@ -268,7 +268,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_23',
-        question: 'You are the Director of Customer Service in your organization. Several customers have been complaining about a missing feature in the product. When meeting with the Product Owner, you ask if he can include this feature in the next release. He responds that he feels the currently planned features are more important for the business at the moment. You believe that he may not have enough information to make this decision. As the Director of Customer Service, what should you do?',
+        question: 'You are the Director of Customer Service in your organization. Several customers have been complaining about a missing feature in the product. When meeting with the Product Owner, you ask if he can include this feature in the next release. He responds that he feels the currently planned features are more important for the business at the moment. You believe that he may not have enough information to make this decision. As the Director of Customer Service, what should you do? (Choose the best answer)',
         options: [
           'Allocate a separate team to address customer requests so not to impact the current release schedule or interrupt the Developers.',
           'Ask the Scrum Master to persuade the Product Owner to include the feature in the next Sprint.',
@@ -281,7 +281,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_24',
-        question: 'What best describes a responsibility of the Scrum Master?',
+        question: 'What best describes a responsibility of the Scrum Master? (Choose the best answer)',
         options: [
           'Being a servant/leader in order to help Scrum Team increase effectiveness in delivering product increments.',
           'Managing the project and ensuring that the work adheres to the committed timelines.',
@@ -294,7 +294,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_25',
-        question: 'What does the Unrealized Value (UV) Key Value Area from the Evidence Based Management framework of Scrum page reveals?',
+        question: 'What does the Unrealized Value (UV) Key Value Area from the Evidence Based Management framework of Scrum page reveals? (Choose the best answer)',
         options: [
           'Projected revenue for the next financial year.',
           'The potential future value that could be realized if the organization was able to approximately meet the needs of the high revenue customers only.',
@@ -302,7 +302,7 @@ export const mockExams: Exam[] = [
           'The planned revenue uplift expected in the next 12 months from scheduled new features to be delivered.'
         ],
         correctAnswer: 2,
-        explanation: 'The concept of Unrealized Value (UV) in the Evidence-Based Management framework of Scrum provides organizations with a lens through which to view the untapped potential within their market. UV represents the hypothetical future value that could be achieved if the organization perfectly met the needs of all potential customers.'
+        explanation: 'The concept of Unrealized Value (UV) in the Evidence-Based Management framework of Scrum provides organizations with a lens through which to view the untapped potential within their market. UV represents the hypothetical future value that could be achieved if the organization perfectly met the needs of all potential customers. By quantifying this potential, UV offers insights into the size of the market opportunity and underscores the importance of aligning products and services with customer needs. It emphasizes a customer-centric approach to product development and delivery, encouraging organizations to prioritize continuous improvement and innovation to better meet customer demands. Understanding UV not only identifies areas for potential growth and expansion but also serves as a catalyst for organizational evolution, prompting a shift towards iterative and adaptive strategies that aim to realize more of the untapped value within the market.'
       },
       {
         id: 'q1_26',
@@ -315,12 +315,12 @@ export const mockExams: Exam[] = [
           'Experience in project management methodologies.',
           'Demonstrated experience in product management, including defining product vision, roadmap, and release planning.'
         ],
-        correctAnswer: 1,
-        explanation: 'The correct answers highlight the significance of product management abilities and collaboration with stakeholders, aligning well with the Product Owner role in Scrum. Product Owners should possess a clear comprehension of the product vision, roadmap, and release planning to effectively guide the Developers. (Note: This is a multiple correct answer question with options B and F both being correct)'
+        correctAnswer: [1, 5],
+        explanation: 'The correct answers highlight the significance of product management abilities and collaboration with stakeholders, aligning well with the Product Owner role in Scrum. Product Owners should possess a clear comprehension of the product vision, roadmap, and release planning to effectively guide the Developers. Furthermore, robust communication and collaboration skills are indispensable for gathering and prioritizing requirements from stakeholders. Conversely, the incorrect answers propose qualifications that are not directly pertinent to the Product Owner role in Scrum. Proficiency in software development languages and frameworks is typically more suitable for developer roles, while micromanagement and minimal stakeholder interaction are contrary to the collaborative and customer-focused essence of the Product Owner role. Similarly, experience in Waterfall project management methodologies may not harmonize with the Agile principles embraced in Scrum.'
       },
       {
         id: 'q1_27',
-        question: 'You are a Team Leader of a Scrum Team. You are leading a team with an average velocity of 35 points per Sprint. Another team of the same size in your organization is working on a project. The other team\'s velocity is averaging 50 points per Sprint. What should you do as a Team Leader?',
+        question: 'You are a Team Leader of a Scrum Team. You are leading a team with an average velocity of 35 points per Sprint. Another team of the same size in your organization is working on a project. The other team’s velocity is averaging 50 points per Sprint. What should you do as a Team Leader? (Choose the best answer)',
         options: [
           'Hire more people to get the work done.',
           'Work overtime.',
@@ -332,7 +332,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_28',
-        question: 'You are a manager at an organization that develops and provides products and services for customers. The head of product development initiatives has asked you to provide a plan and schedule for what will be delivered for the upcoming year. As a manager, what is the best way to proceed?',
+        question: 'You are a manager at an organization that develops and provides products and services for customers. The head of product development initiatives has asked you to provide a plan and schedule for what will be delivered for the upcoming year. As a manager, what is the best way to proceed? (Choose the best answer)',
         options: [
           'Work with the Product Owner(s) to analyze current delivery capabilities of the teams and create a projected forecast based on the data to illustrate what might be achievable.',
           'Provide a plan based on your current knowledge and negotiate with the Scrum Teams during the implementation.',
@@ -340,7 +340,7 @@ export const mockExams: Exam[] = [
           'Work with the technical architect or technical leads to estimate the plan using a Gantt chart.'
         ],
         correctAnswer: 0,
-        explanation: 'This approach emphasizes collaboration with the Product Owner(s) to assess the team\'s current delivery capabilities and create a realistic forecast based on empirical data. It aligns with Agile principles by involving key stakeholders in the planning process and leveraging data-driven insights to inform decision-making.'
+        explanation: 'This approach emphasizes collaboration with the Product Owner(s) to assess the team\'s current delivery capabilities and create a realistic forecast based on empirical data. It aligns with Agile principles by involving key stakeholders in the planning process and leveraging data-driven insights to inform decision-making. This approach encourages transparency, accountability, and alignment between the development teams and the product vision, leading to a more realistic and achievable plan.'
       },
       {
         id: 'q1_29',
@@ -353,12 +353,12 @@ export const mockExams: Exam[] = [
           'There can be multiple Product Owners.',
           'There is only one Product Backlog.'
         ],
-        correctAnswer: 1,
-        explanation: 'Product Owners is one person not a committee and he/she owns one single Product Backlog. Each team has separate Sprint Backlog and Scrum Events and a single one Product Owner assists each one of them. (Note: This is a multiple correct answer question with options B, C, and F all being correct)'
+        correctAnswer: [1, 2, 5],
+        explanation: 'Product Owners is one person not a committee and he/she owns one single Product Backlog. Each team has separate Sprint Backlog and Scrum Events and a single one Product Owner assists each one of them.'
       },
       {
         id: 'q1_30',
-        question: 'You are a Team Leader of a team. Two Developers of your team argue regarding a solution of an item in the Product Backlog. What should be done to address this issue?',
+        question: 'You are a Team Leader of a team. Two Developers of your team argue regarding a solution of an item in the Product Backlog. What should be done to address this issue? (Choose the best answer)',
         options: [
           'You should assess the level of conflict and intervene appropriately.',
           'The team should gather to discuss the issue and come up with a collective solution.',
@@ -367,11 +367,11 @@ export const mockExams: Exam[] = [
           'The Product Owner should be consulted.'
         ],
         correctAnswer: 1,
-        explanation: 'When issues arise between members on a Scrum Team, they should have the courage to face them and have open, honest, and respectful conversations of the problem and come to a conclusion. On an Agile team, it is up to the team members to resolve their technical disputes collectively.'
+        explanation: 'When issues arise between members on a Scrum Team, they should have the courage to face them and have open, honest, and respectful conversations of the problem and come to a conclusion. On an Agile team, it is up to the team members to resolve their technical disputes collectively. In this particular situation, the coach, Scrum Master, or Product Owner are unlikely to have the knowledge required to make a decision on how to implement a story. Encouraging self-management and convening the team to collectively address issues aligns with Agile principles.'
       },
       {
         id: 'q1_31',
-        question: 'Your organization is selling a digital product for customers. You manage the department that is responsible for developing and maintaining the product. A sales executive comes to the Product Owner requesting for a specific feature to be added to the product in order to sign a deal with one of her customers. The Product Owner understands the need but believes that there are more valuable items on the Product Backlog that will lead to more long-term value to the business. Disappointed, the sales executive comes to you asking you to intervene. As the manager of the development department, how do you respond?',
+        question: 'Your organization is selling a digital product for customers. You manage the department that is responsible for developing and maintaining the product. A sales executive comes to the Product Owner requesting for a specific feature to be added to the product in order to sign a deal with one of her customers. The Product Owner understands the need but believes that there are more valuable items on the Product Backlog that will lead to more long-term value to the business. Disappointed, the sales executive comes to you asking you to intervene. As the manager of the development department, how do you respond? (Choose the best answer)',
         options: [
           'Persuade the Product Owner to implement the feature anyway because it will close a deal.',
           'Ask directly to the Developers to implement the feature if they have unused time during the Sprint.',
@@ -389,7 +389,7 @@ export const mockExams: Exam[] = [
           'False'
         ],
         correctAnswer: 0,
-        explanation: 'The risk of delivering the wrong product to your customer increases the longer you wait to receive feedback about that product. Agile product delivery aims to deliver a working product to the customer early and in smaller increments, allowing teams to correct course before valuable time and effort are invested to deliver a product that does not meet the customers expectations.'
+        explanation: 'The risk of delivering the wrong product to your customer increases the longer you wait to receive feedback about that product. Agile product delivery aims to deliver a working product to the customer early and in smaller increments, allowing teams to correct course before valuable time and effort are invested to deliver a product that does not meet the customers expectations. In addition, delivering working product on frequent intervals helps a team to manage and reduce technical risk.'
       },
       {
         id: 'q1_33',
@@ -400,8 +400,8 @@ export const mockExams: Exam[] = [
           'Managing the Developers.',
           'Optimizing the value of the items that the Developers are or will be working on.'
         ],
-        correctAnswer: 0,
-        explanation: 'The Product Owner is the primary role responsible for releasing the most valuable product possible resulting from work of the Developers. He/she does this by maximizing the flow of value throughout the development process and provide transparency on the overall progress. The Product Owner is also managing the Product Backlog. (Note: This is a multiple correct answer question with options A and C both being correct)'
+        correctAnswer: [0, 2],
+        explanation: 'The Product Owner is the primary role responsible for releasing the most valuable product possible resulting from work of the Developers. He/she does this by maximizing the flow of value throughout the development process and provide transparency on the overall progress. The Product Owner is also managing the Product Backlog.'
       },
       {
         id: 'q1_34',
@@ -425,7 +425,7 @@ export const mockExams: Exam[] = [
       },
       {
         id: 'q1_36',
-        question: 'You are coaching an Agile Team, what would you expect the team members to do?',
+        question: 'You are coaching an Agile Team, what would you expect the team members to do? (Choose the best answer)',
         options: [
           'Report their impediments during Daily Scrum event.',
           'Figure out everything by themselves.',
@@ -433,7 +433,7 @@ export const mockExams: Exam[] = [
           'Try their best to remove any impediments by themselves as the work proceeds.'
         ],
         correctAnswer: 3,
-        explanation: 'Agile team members are expected to solve most of their technical problems collectively as the work proceeds. They don\'t try to figure out everything on their own. Agile team members also would not bring their problems to their coach on a daily basis, since most of such problems would be solved by the team\'s collective technical expertise and diverse viewpoints.'
+        explanation: 'Agile team members are expected to solve most of their technical problems collectively as the work proceeds. They don\'t try to figure out everything on their own. Agile team members also would not bring their problems to their coach on a daily basis, since most of such problems would be solved by the team’s collective technical expertise and diverse viewpoints. Agile team members also don\'t report all their problems during Daily Scrum.'
       }
     ]
   },
