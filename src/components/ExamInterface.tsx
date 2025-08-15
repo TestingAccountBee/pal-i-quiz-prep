@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { Clock, ChevronLeft, ChevronRight, Flag } from 'lucide-react';
-import { Exam, ExamAttempt } from '@/types/exam';
+import { Exam, ExamAttempt, Question } from '@/types/exam';
 
 interface ExamInterfaceProps {
   exam: Exam;
