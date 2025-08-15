@@ -1299,15 +1299,421 @@ export const mockExams: Exam[] = [
     questions: [
       {
         id: 'q4_1',
-        question: 'What are the three pillars of empiricism in Scrum?',
+        question: 'As a Team Leader you have security concerns about the work. What are two good ways to address security concerns? (Choose all that apply)',
         options: [
-          'Planning, Monitoring, Controlling',
-          'Transparency, Inspection, Adaptation',
-          'People, Process, Technology',
-          'Vision, Strategy, Execution'
-        ],
-        correctAnswer: 1,
-        explanation: 'The three pillars of empiricism are Transparency, Inspection, and Adaptation.'
+          'Have special Sprints that ensure those concerns.',
+          'Add them to the Product Backlog.',
+          'Add them to the Definition of Done.',
+          'Get help from responsible departments to ensure those concerns.'
+      ],
+      correctAnswer: [1, 2],
+      explanation: 'Concerns related to the performance of an existing function should be added to the Product Backlog. If the concern applies to many items and affects how functional features work, it is a good choice to add it to the Definition of Done. There are no "special" Sprints, such as hardening or integration Sprints.'
+    },
+    {
+      id: 'q4_2',
+      question: 'You are a manager at an organization that develops and provides products and services for customers. The Scrum Master and the Developers have come to you asking for advice concerning the lack of availability of their team\'s Product Owner. Due to organizational limitations, the Product Owner has other responsibilities outside of the Scrum Team and cannot dedicate all of his time to the team. The Product Owner is the subject matter expert of the product that the Scrum Team is building and replacing or duplicating his knowledge is very difficult. The Scrum Master has discussed this issue with the Product Owner but the team is still struggling to meet their goals without more guidance from the Product Owner. As a manager, what is the best way for you to help the Scrum Master?',
+      options: [
+        'Offer to work with him, the Product Owner, and his manager, to find a way to ensure that the Product Owner\'s availability his high enough for the Scrum Team to continuously deliver value.',
+        'Work with the resource manager to hire a full time Product Owner.',
+        'Add additional team members such as a Business Analyst or Proxy Product Owner to assist the Product Owner and support the team when the Product Owner is not available.',
+        'Suggest to allow the Developers make the decisions based on what they think is best and ensure that the decisions are documented.'
+      ],
+      correctAnswer: 0,
+      explanation: 'The value delivered by the Scrum Team is affected by the Product Owner\'s participation and availability. Replacing the Product Owner or delegating his responsibilities may not fix the root cause.'
+    },
+    {
+      id: 'q4_3',
+      question: 'You are a manager in an Agile organization where there are multiple products with multiple teams. The organisation is doing redundancies and in the next two months each product should have one team less each, as part of the decisions made by investors. You need a way measure the value that each Scrum Team produces so that you can provide the information to investors and stakeholders about the teams that are not doing that well. How do you go about measuring the value for the various Scrum Teams in your organizations?',
+      options: [
+        'Speak with the Product Owner of the each product. As the person responsible of maximizing the value of the Scrum Team\'s work, they are best suited to help provide you with the information you seek.',
+        'You can compare the story point velocity of each Scrum Team.',
+        'Speak with the Product Owners of the teams. As the person responsible for managing the Scrum Teams, they are best suited to help provide you with the information you seek.'
+      ],
+      correctAnswer: 0,
+      explanation: 'The Product Owner is the sole person responsible for managing the Product Backlog to ensure the value of the product resulting from the work of the Developers is maximized. Consulting with them directly will provide the most accurate information on the value produced. The Product Owner will know which team delivers less value, even if it is due to challenges and issues. If there is no other choice, the organization may have to let go of the team that delivers less value. Ideally, the right solution would be to help the team remove impediments to improve their productivity.'
+    },
+    {
+      id: 'q4_4',
+      question: 'You manage the product development department in your organization. The Customer Service department is constantly interrupting David, a Developer on a Scrum Team, with customer support tickets. David is the only member that has domain knowledge of one of the products Customer Service is responsible for. The Scrum Team has asked you, as their department manager, for your help. As their department manager, which would be the best approach to take?',
+      options: [
+        'Explain to the Scrum Team that the customer is the most important stakeholder and let the team find ways to accommodate the unplanned work.',
+        'Work with David to help transfer his knowledge to another person outside of the Scrum Team.',
+        'Have David work directly with Customer Service to avoid disruptions to the Scrum Team.',
+        'Contact the team\'s Product Owner and let them handle the situation.'
+      ],
+      correctAnswer: 1,
+      explanation: 'A manager can best help Agile teams by removing organizational impediments. When a Scrum Team\'s work is disrupted by people outside the team, it is considered an organizational impediment. Helping the team member transfer their knowledge to someone outside the team will minimize or eliminate the current disruptions.'
+    },
+    {
+      id: 'q4_5',
+      question: 'What makes adaptation easier?',
+      options: [
+        'Lack of communication channels',
+        'Regular feedback from stakeholders',
+        'Open communication',
+        'Resistance to change',
+        'Adherence to outdated policies',
+        'Rigidity in organizational structure'
+      ],
+      correctAnswer: [1, 2],
+      explanation: 'Regular feedback from stakeholders is essential for adaptation because it provides insight into changing needs and priorities. This allows teams to adjust their strategies to align with stakeholder expectations and maximize value. Open and effective communication channels facilitate this process by allowing information to flow freely, which keeps teams informed and agile. Conversely, a lack of communication channels, rigidity, resistance to change, and outdated policies all hinder a team\'s ability to adapt.'
+    },
+    {
+      id: 'q4_6',
+      question: 'What is the purpose of the Experiment Loop in EBM?',
+      options: [
+        'To move from the Current State toward the Next Target Goal through small, measured steps',
+        'To inspect and adapt goals based on the organization\'s current state',
+        'To determine the Strategic Goal of the organization',
+        'To establish Immediate Tactical Goals'
+      ],
+      correctAnswer: 0,
+      explanation: 'The Experiment Loop is a key part of Evidence-Based Management (EBM) designed for continuous improvement. It is a cycle that starts with forming a hypothesis for improvement, which is then tested through small experiments. The results are inspected to see their impact, and based on these insights, the organization adapts its goals or approaches. This process fosters empirical decision-making and allows organizations to move toward their strategic goals.'
+    },
+    {
+      id: 'q4_7',
+      question: 'You are the manager in charge of the product development department in your organization. People from other departments are continuously interrupting one of your teams requesting customer support on a product they had completed in the past. Which is the best approach for the team to address the unplanned work and interruptions?',
+      options: [
+        'Work with the team to transfer knowledge to a different team that\'s more suitable in addressing support requests for the product in question.',
+        'Predefine an agreed upon fixed percentage of team capacity that will be allocated for support requests. Any undone requests will be moved to the next Sprint.',
+        'Have specific Sprints that are only focused on support requests so not to interrupt the product development Sprints.'
+      ],
+      correctAnswer: 0,
+      explanation: 'To handle unplanned work and interruptions, the team should establish clear boundaries and communication channels. They should work with stakeholders to prioritize requests based on their impact and urgency, ensuring they align with the team\'s Sprint goals. The team could also collaborate with other departments to address the root causes of the interruptions, for instance, by providing additional training or documentation. Creating a transparent process for handling interruptions and empowering the team to escalate significant issues can help minimize disruptions.'
+    },
+    {
+      id: 'q4_8',
+      question: 'Which of the following would help a Scrum Team increase its effectiveness?',
+      options: [
+        'Having dedicated team members focused on the work of a single product at a time.',
+        'Share different initiatives across multiple teams so that individual members can work on other products when they have no active tasks to do in their current team.',
+        'Having teams consisting of cross-functional individuals who have the ability to work in any function and any task needed.',
+        'Having teams consisting of specialists that are experts in their function.'
+      ],
+      correctAnswer: 0,
+      explanation: 'A team working on a single product can mature and synergize more effectively. This focus allows them to inspect and adapt better than if they were working on multiple products simultaneously. Having a team member working full-time on one team is generally more effective than having individuals who are cross-functional. A cross-functional team means the team as a whole has all the necessary skills, not that every individual is an expert in everything.'
+    },
+    {
+      id: 'q4_9',
+      question: 'What of the following is an important responsibility of leadership in an Agile organization?',
+      options: [
+        'Setting the Sprint Goals and defining the team commitments.',
+        'Prioritizing work in order to ensure team members are utilized fully.',
+        'Ensuring teams have what they need to succeed and helping them to remove impediments blocking their progress.',
+        'Hiring resources and setting up teams.',
+        'Setting priorities, planning the work and, managing progress.'
+      ],
+      correctAnswer: 2,
+      explanation: 'In an Agile organization, a crucial role of leadership is to support self-organizing teams by providing them with necessary resources and helping to remove any obstacles that hinder their progress. This includes addressing impediments that can range from a lack of tools to organizational barriers. Leaders use their influence to address these issues, allowing the team to focus on delivering value.'
+    },
+    {
+      id: 'q4_10',
+      question: 'Managers make good Scrum Masters since they are already used to organizing and running teams.',
+      options: [
+        'False',
+        'True'
+      ],
+      correctAnswer: 0,
+      explanation: 'The role of a Scrum Master requires a different skill set and mindset from that of a traditional manager. Scrum Masters act as servant-leaders who facilitate the Scrum process, remove impediments, and foster a collaborative environment. Their focus is on facilitation and coaching rather than traditional management practices. Therefore, being a manager does not automatically make someone a good Scrum Master.'
+    },
+    {
+      id: 'q4_11',
+      question: 'You are a Team Leader working on one product in an organization. Several of the Developers notify you that their team will need full-time help of an external technical specialist Julia in the upcoming two Sprints. What key concerns should you take into account?',
+      options: [
+        'The benefit of the members in the team solving the problem themselves and the ability to produce integrated Increments.',
+        'Hiring additional resources to fill the void in skillset.',
+        'Maintaining a consistent velocity.',
+        'Having enough work for all team members.'
+      ],
+      correctAnswer: 0,
+      explanation: 'When considering bringing in an external specialist, a Team Leader should weigh several factors. These include the impact on the team\'s productivity, as integrating a new person can be disruptive ; the specialist\'s availability and commitment ; the budget implications ; and potential communication or cultural challenges. It is also important to involve the team in the decision-making process.'
+    },
+    {
+      id: 'q4_12',
+      question: 'You are the manager in charge of the product development department in your organization. Part of your responsibilities include your department\'s budget and headcount. One of the teams has requested hiring additional team members in order to improve their ability to deliver. The request is well-founded and the team is known for making good decisions. As the department\'s manager, what is the best response?',
+      options: [
+        'Ask the organization\'s technical recruiter to hire additional team members.',
+        'Ask the team to send you potential candidates so you can expedite to the last interview stage in order to accelerate the onboarding process.',
+        'Let the team know the budget and headcount boundaries and empower the team to find, interview, and hire new team members with help from the hiring department.'
+      ],
+      correctAnswer: 2,
+      explanation: 'Self-managed teams decide for themselves how to best accomplish their work. A leader should provide the team with guidelines and support, but allow the team members to decide who would be the best fit, within the provided boundaries.'
+    },
+    {
+      id: 'q4_13',
+      question: 'Managers make good Product Owners since they are already used to making decisions and directing the teams responsible for product delivery.',
+      options: [
+        'False',
+        'True'
+      ],
+      correctAnswer: 0,
+      explanation: 'Product Owners are responsible for optimizing the value their Scrum Teams deliver, but they do not direct the team or make decisions for them. A manager transitioning to a Product Owner role often finds it challenging to focus on articulating needs and letting go of directing people. While a Product Owner has many roles, being a manager is not one of them.'
+    },
+    {
+      id: 'q4_14',
+      question: 'The transition from a traditional process focused environment to an Agile culture can be filled with challenges. Which traditional practices can make it challenging for an organization to adopt an Agile culture?',
+      options: [
+        'Specializing in a specific function or skillset.',
+        'Focusing on maximizing utilization of team members.',
+        'Measuring and recognizing individual performance.',
+        'Committing to fixed scope and schedule.',
+        'Imposing technical standards across the entire organization.'
+      ],
+      correctAnswer: [0, 1, 2, 3, 4],
+      explanation: 'Several traditional practices can hinder the adoption of an Agile culture. Specialization can impede the cross-functional collaboration required in Agile teams. Measuring individual performance can conflict with the Agile value of teamwork and collective ownership. Rigidly imposing technical standards can stifle the innovation and adaptability that are central to Agile. Focusing on maximizing team member utilization can lead to burnout, which is contrary to the Agile principle of a sustainable pace. Finally, committing to a fixed scope and schedule makes it difficult to embrace Agile\'s iterative approach and responsiveness to change.'
+    },
+    {
+      id: 'q4_15',
+      question: 'A self-managing team has complete freedom to decide how it works.',
+      options: [
+        'False',
+        'True'
+      ],
+      correctAnswer: 0,
+      explanation: 'Teams are governed by organizational standards and policies, as well as their own level of maturity. More mature teams may be granted more authority, but every organization has some rules that all teams must follow.'
+    },
+    {
+      id: 'q4_16',
+      question: 'Product Owners are interchangeable, without penalty, across Scrum Teams.',
+      options: [
+        'True',
+        'False'
+      ],
+      correctAnswer: 1,
+      explanation: 'The importance of a Product Owner having subject matter expertise and strong relationships with stakeholders cannot be overlooked. Especially in complex value chains, it can take a long time for a Product Owner to become effective.'
+    },
+    {
+      id: 'q4_17',
+      question: 'Which of the following are benefits of an Agile approach?',
+      options: [
+        'The shorter the feedback loop the better.',
+        'Ability to deliver more value.',
+        'Frequent releases increase predictability.',
+        'Elimination of managers.'
+      ],
+      correctAnswer: [0, 1, 2],
+      explanation: 'A direct benefit of the Agile approach is the ability to deliver more value. It enables teams to build a product, get feedback, and adapt based on that feedback, which in turn delivers more value.'
+    },
+    {
+      id: 'q4_18',
+      question: 'You are a manager at an organization that develops and provides products and services for customers. The head of product development has asked you to identify which Agile team is performing the best. Which of these statements is true?',
+      options: [
+        'Standardize the use of Story Points across the Scrum Teams in order to extract performance based on completed Story Points.',
+        'You need to look at several trends of different measures such as velocity, defects, and technical debt to get a picture of how the team is performing.',
+        'The best performing team is the one that is completing the most User Stories.',
+        'Unhealthy team behaviors often result from comparing performance between different teams. Instead, focus on identifying and eliminating impediments that slow down team performance.'
+      ],
+      correctAnswer: 3,
+      explanation: 'An organization\'s responsibility is to create an environment that maximizes the effectiveness of each team, rather than encouraging competition between them. The highest priority should be customer satisfaction through the early and continuous delivery of valuable software.'
+    },
+    {
+      id: 'q4_19',
+      question: 'What does a trend line through a release burndown chart indicate?',
+      options: [
+        'When the remaining work is supposed to be finished',
+        'When the project will likely finish, if the team develops with a speed equal to the last Sprint',
+        'The budgeted cost of the project',
+        'When the remaining work will likely be completed if nothing changes in the Product Backlog or the Scrum Team'
+      ],
+      correctAnswer: 3,
+      explanation: 'A release burndown chart tracks the team\'s progress toward a release date by comparing the remaining effort to the ideal effort. If the line representing the remaining effort is above the ideal effort line, it indicates that the team is behind schedule.'
+    },
+    {
+      id: 'q4_20',
+      question: 'You are a manager at an Agile organization. One of your direct reports comes to you with questions regarding some of their work. How should you handle this situation?',
+      options: [
+        'Instruct the employee that he/she should have courage to take risks and they should try to find answers on their own first.',
+        'Send the employee to training in order to increase or expand their skill set.',
+        'Instruct the employee to consult with a Scrum Master so that the Scrum Master can remove his/her impediments.',
+        'Work to help the employee find the answers to their questions.'
+      ],
+      correctAnswer: 3,
+      explanation: 'As a manager in an Agile organization, it\'s important to help team members find answers to their questions and overcome obstacles. This approach fosters a culture of collaboration, empowerment, and continuous learning. By assisting the employee, you show your commitment to their professional development and success, while also encouraging problem-solving skills and autonomy.'
+    },
+    {
+      id: 'q4_21',
+      question: 'How does the Scrum Team show value to the organization?',
+      options: [
+        'By eliminating technical debt.',
+        'Through the continuous reporting the Daily Scrum.',
+        'During each Sprint Review, the Product Owner provides value reports to stakeholders in attendance.',
+        'By consistent delivery of quality product at the end of each Sprint.'
+      ],
+      correctAnswer: 3,
+      explanation: 'A Scrum Team demonstrates its value to the organization by delivering shippable Increments at the end of each Sprint. These Increments are tangible outcomes that contribute to the organization\'s goals. By consistently delivering valuable and high-quality work in short iterations, the team provides clear evidence of its progress and achievements.'
+    },
+    {
+      id: 'q4_22',
+      question: 'You are a manager at an organization that develops and provides products and services for customers. One of the stakeholders feels that the Scrum Team, developing the product, lacks the experience and skills needed to meet expectations. As a manager, which is the most appropriate response?',
+      options: [
+        'Determine what to do based on a combination of the Scrum Team\'s feedback and your own personal experience.',
+        'Have the stakeholder discuss his concerns with the Scrum Master and leave the final decision to the Scrum Team on how to address the concerns and support them as needed.',
+        'Work with the other Scrum Teams to reorganize team members to form more balanced teams.',
+        'Allocate additional Developers to the Scrum Team in order to fill the skills and experience gap.'
+      ],
+      correctAnswer: 1,
+      explanation: 'It is more effective for the stakeholder to discuss their concerns directly with the team rather than going through a manager. The team can then address the concerns and decide on the best course of action. As a manager in an Agile environment, your role is to support the team by helping them remove any impediments to their progress.'
+    },
+    {
+      id: 'q4_23',
+      question: 'Which of the following best describes the role of an Agile leader in relation to the product goal?',
+      options: [
+        'Agile leaders are only concerned with enforcing deadlines and budget constraints, regardless of the product goal.',
+        'Agile leaders provide guidance and support to the team in defining and understanding the product goal.',
+        'Agile leaders are focused on individual tasks rather than the overarching product goal.',
+        'Agile leaders are solely responsible for setting the product goal without input from the team.'
+      ],
+      correctAnswer: 1,
+      explanation: 'In Agile, the product goal is a key element that guides the team\'s development efforts. Agile leaders, like Scrum Masters, are crucial in helping the team understand this goal. They assist the team in aligning their work with the product vision, remove obstacles, and ensure the team remains focused on delivering value to the customer.'
+    },
+    {
+      id: 'q4_24',
+      question: 'When Scrum is implemented correctly, managers are no longer needed.',
+      options: [
+        'True',
+        'False'
+      ],
+      correctAnswer: 1,
+      explanation: 'When Scrum is applied correctly, many leadership responsibilities are transferred to the roles within the Scrum Team. This may reduce the number of managers needed. However, experience shows that the manager\'s role evolves to creating and maintaining an environment where Scrum Teams can be successful.'
+    },
+    {
+      id: 'q4_25',
+      question: 'You are an Agile leader. A customer has come to you requesting a new feature for a product your company is developing for them. The customer\'s improvement idea seems to be outside the scope of the original product plan. What is the most appropriate response?',
+      options: [
+        'Do nothing, let the Scrum Team deal with it.',
+        'Begin negotiations with the customer on adding this scope change to the project. You want to ensure that the value you provide to the customer can be increased as it is your responsibility to handle negotiations between the customer and the Scrum Team.',
+        'Facilitate a meeting between the Product Owner of the team working on the customer\'s product and the customer. You want to make sure the customer is satisfied with the outcome and you hope to find a satisfactory and mutually beneficial solution to the customer\'s request.',
+        'Facilitate a meeting between the Developers working on the product and the customer. Instruct the Developers that as an Agile organization it is part of their duty to ensure that the customer is satisfied. Recommend that the team complete the customer\'s request for the next Sprint.'
+      ],
+      correctAnswer: 2,
+      explanation: 'The Product Owner is the single person responsible for managing the Product Backlog to maximize the value of the product created by the Scrum Team. Connecting the Product Owner with the customer will help them make the best decision for both the customer and the company.'
+    },
+    {
+      id: 'q4_26',
+      question: 'Three teams are currently building a single product and pulling work from the same Product Backlog. All three teams have identified that they will need Kareem, a database specialist, to work full time in their team for the next several Sprints. What should you do as a Team Leader to solve this potential problem/dependency?',
+      options: [
+        'Ask Kareem to work with the HR department to recruit and hire additional database specialists. In the meantime, have the Product Owner move items that do not depend on Kareem to the top of the Product Backlog.',
+        'Help the teams to self-manage this issue and help them implement their preferred solution.',
+        'Manage the items in the Sprint Backlogs so that Kareem can be utilized evenly for each team.',
+        'Assign Kareem to the team with the most urgent tasks first and then move him to the next team and so on until the required support is completed.'
+      ],
+      correctAnswer: 1,
+      explanation: 'A Scrum Master can facilitate conversations with open-ended questions to help team members make the best possible decisions based on the current information. The Scrum Master does not approve or reject team decisions but ensures the team operates within the Scrum framework.'
+    },
+    {
+      id: 'q4_27',
+      question: 'Forming teams and keeping them together is a good strategy for increasing utilization rates.',
+      options: [
+        'False',
+        'True'
+      ],
+      correctAnswer: 0,
+      explanation: 'While keeping teams together can seem like a way to increase utilization, Agile methodologies prioritize delivering value to customers over maximizing utilization rates. Although stable teams can foster better collaboration and efficiency, the primary goal remains to deliver high-quality products that meet customer needs. Agile teams should focus on continuous improvement and adapting to change rather than simply maximizing how busy they are.'
+    },
+    {
+      id: 'q4_28',
+      question: 'Several Sprints into a project, a client is complaining to the Product Owner about the poor performance of the product. As a Scrum Master, how can you help the Product Owner?',
+      options: [
+        'Note the issue for the next Sprint Retrospective.',
+        'Coach the Product Owner on effective ways to communicate this concern to the Developers and encourage the Product Owner to add the performance issue to the Product Backlog.',
+        'Notify the team responsible for system performance.',
+        'Tell the Product Owner performance is defined by the Developers.'
+      ],
+      correctAnswer: 1,
+      explanation: 'As a Scrum Master, you can help the Product Owner by facilitating a meeting with the client to get detailed feedback on the performance issues. This feedback can then be converted into actionable items for the Developers. You can also work with the Developers to prioritize fixing the most critical performance issues and help the Product Owner communicate the plan to stakeholders. Encouraging a culture of continuous improvement where client feedback is valued is also key.'
+    },
+    {
+      id: 'q4_29',
+      question: 'Eight months ago your company started development of a new platform consisting of several components and systems. You are a Team Leader on a team building the "core" application of the platform; your application connects with all other systems. The team works in monthly Sprints, and the team is expected to deliver all functionality in three Sprints. Recently the team\'s progress was slowed down because of changes to interfaces of other components that you integrate with, as well as unavailability of the program\'s testing infrastructure. The program manager is extremely upset and angry when they find out that the team will need two more Sprints. The Project Managers of the other components confirm their adherence to the expected date. As a Team Leader, what could you do to help the Product Owner?',
+      options: [
+        'You inform the program manager that there is a way. You remove all items from the Product Backlog for which development is forecasted to be beyond the expected date. These are likely to be low value anyhow.',
+        'You suggest working with the program manager and the project managers of the other systems on the ordering and the value of your open Product Backlog items to redefine the possible delivery date.',
+        'You calculate how many additional Developers it would take to increase velocity in order to make the original date. You inform the program manager of the additional budget for these Developers. This would then allow making the expected date.',
+        'You shorten your Sprints to be ready sooner.'
+      ],
+      correctAnswer: 1,
+      explanation: 'When facing delays, a Team Leader should support the Product Owner by ensuring transparent communication about the challenges. Collaborating with stakeholders, such as the program manager and other project managers, helps create a shared understanding of dependencies and allows for collective problem-solving. It\'s also important to adjust expectations with the Product Owner based on the new reality and prioritize critical tasks to ensure essential functionality is delivered.'
+    },
+    {
+      id: 'q4_30',
+      question: 'You are a manager at an organization that develops and provides products and services for customers. A Scrum Master has approached you asking for your help. Over the course of several Sprints, his Scrum Team is been distracted by unplanned support requests from other teams causing the team to regularly fail in meeting their Sprint Goals and not delivering Increments. As a manager, what should you decide?',
+      options: [
+        'Work with the Scrum Team and the other teams to find ways to re-assign the interrupting work to people outside of the Scrum Team.',
+        'Have the team be more flexible with the Sprint Goals and include buffer in their Sprint Backlogs for support tickets.',
+        'Add additional Sprints to the project to compensate for the interruptions.',
+        'Allocate additional people to the team to compensate for the interruptions.',
+        'Extend the Sprint time-box to compensate for the interruptions.'
+      ],
+      correctAnswer: 0,
+      explanation: 'By working with the Scrum Team and other teams, you can explore reassigning the disruptive work to individuals outside the Scrum Team. This helps to protect the Scrum Team\'s ability to focus on their Sprint Goals and ensures their capacity is not diminished by unrelated tasks. It is important to involve all relevant parties in this process.'
+    },
+    {
+      id: 'q4_31',
+      question: 'Re-work, when it results from feedback given by customers or stakeholders, is both expected and beneficial when adopting an Agile approach.',
+      options: [
+        'False',
+        'True'
+      ],
+      correctAnswer: 1,
+      explanation: 'Acknowledging that not every outcome can be predicted when working on complex products is a fundamental requirement of an Agile approach. Scrum\'s structure of frequent inspection and adaptation provides the opportunity to change course before going too far in a direction that might not deliver the intended value.'
+    },
+    {
+      id: 'q4_32',
+      question: 'The Product Owner is responsible for getting all stakeholders to agree on what provides the most value.',
+      options: [
+        'False',
+        'True'
+      ],
+      correctAnswer: 0,
+      explanation: 'The Product Owner is responsible for collecting input from stakeholders, but it is not their job to ensure all stakeholders agree. Their role is to listen to the input and then make an informed decision about what will be most valuable for the user or customer.'
+    },
+    {
+      id: 'q4_33',
+      question: 'Currently, your organization has a performance review process that rewards individuals based on a measure of their yearly performance. This results in some team members receiving larger bonuses than others. Some team members are unhappy as they feel the way bonuses are currently distributed is unfair as everyone contributes to their team\'s overall success. As their manager, what would be the best approach?',
+      options: [
+        'Bring the team members together and let them propose how to best distribute the bonuses and rewards.',
+        'Explain to the team members that rewarding high-performers will motivate others to improve their own performance.'
+      ],
+      correctAnswer: 0,
+      explanation: 'Self-organized and self-managing teams are capable of choosing how to best accomplish their work. They would be the best equipped to determine how to distribute bonuses and rewards, allowing them to take ownership of the decision.'
+    },
+    {
+      id: 'q4_34',
+      question: 'Which of the following is the primary focus of teams using an Agile approach?',
+      options: [
+        'Increasing customer satisfaction.',
+        'Maximizing productivity.',
+        'Delivering all predefined requirements.',
+        'Commitment towards scope and schedule.',
+        'Improving team member utilization.'
+      ],
+      correctAnswer: 0,
+      explanation: 'The main focus of Agile teams is client satisfaction. Agile methods emphasize delivering value to the customer continuously and frequently through iterative development. This customer-centric approach ensures the final product meets the client\'s needs and provides maximum value.'
+    },
+    {
+      id: 'q4_35',
+      question: 'You have been assigned a role to lead a new company wide initiative that includes multiple product lines and multiple teams. How would you help the teams get started?',
+      options: [
+        'Define the reporting lines in order to know who to go to when you have questions.',
+        'Work with the teams to define commitments on what will delivered and on what dates.',
+        'Help the team leads plan resources in order to manage membership changes throughout the projects.',
+        'Meet with the teams and explain the objective of the initiative, the specific users and their goals, and how success will be measured. Work together on the level of transparency needed.',
+        'Have the teams start and be available when they have questions or need support.'
+      ],
+      correctAnswer: 3,
+      explanation: 'As a leader, your role is to provide direction to the team and, as a servant-leader, to offer help when it is needed. Transparency is key to helping everyone, both inside and outside the team, stay aligned with the team\'s direction.'
+    },
+    {
+      id: 'q4_36',
+      question: 'You are a manager at an organization that develops and provides products and services for customers. In the past, your organization used 1:1 meetings with individual members, daily status reports, and project status meetings to understand the overall progress of the project and team \'health\'. How can Scrum provide you the same information without needing the extra meetings and status reports?',
+      options: [
+        'Pay attention to the improvement items that come from the Sprint Retrospectives and stay informed about the items in the Product Backlog (PBIs).',
+        'The Scrum Master can provide this information as he/she is responsible for managing the team and tracking the project status.',
+        'Attend Sprint Retrospectives to gain insights into how the team is working together and provide feedback on what needs to be improved.',
+        'The Product Owner can provide this information as he/she is responsible for managing the team and tracking the project status.'
+      ],
+      correctAnswer: 0,
+      explanation: 'Transparency is one of the pillars of empiricism, meaning that important aspects of the process must be visible to those responsible for the outcome. The Product Backlog offers the most insight into the project\'s progress, while Retrospectives provide information about improvements to the team\'s internal processes.'
       }
     ]
   },
