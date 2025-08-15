@@ -1726,15 +1726,466 @@ export const mockExams: Exam[] = [
     questions: [
       {
         id: 'q5_1',
-        question: 'What is the maximum length of a Sprint?',
-        options: [
-          '2 weeks',
-          '1 month',
-          '6 weeks',
-          '3 months'
-        ],
-        correctAnswer: 1,
-        explanation: 'Sprints are limited to one calendar month or less to ensure predictability and reduce risk.'
+      question: 'What is the primary goal for Agile Teams?',
+      options: [
+        'Increase Time To Market (T2M).',
+        'Reduce development costs.',
+        'Improve the Ability To Innovate (A2I).',
+        'Improve customer happiness.',
+        'Decrease Technical Debt.'
+      ],
+      correctAnswer: 3,
+      explanation: 'The most important objective for Agile Teams is to deliver valuable and high-quality software increments to the customer frequently and consistently, ensuring customer satisfaction and adapting to changing requirements throughout the development process.'
+    },
+    {
+      id: 'q5_2',
+      question: 'What is the fundamental outcome of the adaptive development approach, Agile?',
+      options: [
+        'Value maximisation',
+        'Delivering on time and under the budget',
+        'Risk minimization',
+        '100% utilization of the available resources'
+      ],
+      correctAnswer: 0,
+      explanation: 'Value maximization is considered the fundamental outcome of Agile\'s adaptive development approach because Agile focuses on delivering the highest possible value to the customer continuously and incrementally. By prioritizing customer satisfaction and responding to change, Agile teams aim to maximize the value delivered with each iteration or increment of work.'
+    },
+    {
+      id: 'q5_3',
+      question: 'What information should be gathered before initiating the development of a new product?',
+      options: [
+        'Clear understanding of customer needs and market demands.',
+        'Knowing how reporting will be done.',
+        'Comprehensive analysis of competitors and industry trends.',
+        'Knowing a one-year upfront plan that the team has to adhere to.',
+        'Knowing the Story Point target per Sprint.',
+        'Identification of potential technical challenges and resource requirements.'
+      ],
+      correctAnswer: [0, 2, 5],
+      explanation: 'The correct answers focus on gathering essential information directly related to the success of the new product. Understanding customer needs helps tailor the product, analyzing competitors informs strategic decisions, and identifying technical challenges helps in resource allocation. The other options, like rigid one-year plans, reporting methods, or Story Point targets, are considered less pertinent to the initial phase of product development success compared to understanding the market and technical landscape.'
+    },
+    {
+      id: 'q5_4',
+      question: 'What questions can be posed to assess the risk level in project delivery?',
+      options: [
+        'How often do team members take breaks during work hours?',
+        'How long is the Sprint?',
+        'How stable and complex is the technology?',
+        'How is the relationship between Scrum Team members?',
+        'How complex are the requirements?'
+      ],
+      correctAnswer: [1, 2, 3, 4],
+      explanation: 'The complexity of requirements or technology, as well as poor team relationships, can introduce risks. The stability and complexity of the technology can also affect the project\'s overall risk. Shorter Sprints can be used to create more learning cycles and limit the risk of cost and effort to a smaller timeframe. How often team members take breaks is not related to project risk.'
+    },
+    {
+      id: 'q5_5',
+      question: 'As a senior manager, a Scrum Team approaches you with a request to hire two additional developers, citing that it would enhance the team\'s capacity to deliver value promptly. You possess the necessary budget and have confidence in the team\'s judgment. What steps would you take in response to this request?',
+      options: [
+        'Conduct a detailed analysis of the team\'s historical performance and productivity metrics before making any decision on hiring, leading to unnecessary delays.',
+        'Hire the additional developers immediately without assessing the team\'s current workload and capacity, risking overstaffing and resource misallocation.',
+        'Request the Scrum Team to provide a comprehensive business case justifying the need for additional developers, adding unnecessary bureaucratic hurdles to the process.',
+        'Reject the request outright without further consideration, assuming that the current team size is sufficient to handle the workload adequately.',
+        'Initiate a lengthy approval process involving multiple stakeholders, delaying the hiring decision and potentially hindering the team\'s progress.',
+        'Trust the judgment of the Scrum Team and proceed with hiring the two additional developers to enhance productivity and value delivery.'
+      ],
+      correctAnswer: 5,
+      explanation: 'Trusting the Scrum Team\'s judgment aligns with the Agile principle of empowering self-organizing teams. The team is in the best position to assess their needs for delivering value. By acting on their request promptly, the organization shows trust, supports the team\'s autonomy, and promotes a culture of collaboration and accountability.'
+    },
+    {
+      id: 'q5_6',
+      question: 'When using an Agile approach, company leaders and the team developing the product have the final say on whether a product release delivers value or not.',
+      options: [
+        'True',
+        'False'
+      ],
+      correctAnswer: 1,
+      explanation: 'The market, including customers and users, ultimately determines if a product release is valuable. The opinions of leaders and developers can be incorrect; the only way to truly know if something is valuable is to present it to real users.'
+    },
+    {
+      id: 'q5_7',
+      question: 'What are the characteristics of distributed Scrum Teams, where five developers work in different time zones?',
+      options: [
+        'Distributed Scrum Teams should have rigid and inflexible schedules to ensure uniformity across time zones.',
+        'Team members should work independently without the need for communication or collaboration.',
+        'Team members in different time zones should be excluded from certain activities to avoid complications.',
+        'Agile ceremonies such as Daily Stand-ups and Sprint Reviews may require adjustments to accommodate team members\' schedules in different time zones.',
+        'Effective communication channels are established to ensure timely collaboration and information exchange among team members in different time zones.',
+        'Synchronization of work across time zones is not necessary for distributed Scrum Teams.'
+      ],
+      correctAnswer: [3, 4],
+      explanation: 'For distributed Scrum Teams, effective communication channels are essential to ensure seamless collaboration across different time zones. It is also necessary to adjust Agile ceremonies, like Daily Stand-ups, to accommodate everyone\'s schedules. Actions like excluding team members or imposing rigid schedules can damage team cohesion.'
+    },
+    {
+      id: 'q5_8',
+      question: 'What is the Key Value measure that assesses the duration between when an organization receives feedback or new information and its subsequent response to that feedback?',
+      options: [
+        'Customer Cycle Time',
+        'Lead Time for Changes',
+        'Time-to-Learn',
+        'Mean Time to Repair',
+        'Time to Restore Service',
+        'Time to Pivot'
+      ],
+      correctAnswer: 5,
+      explanation: 'Time to Pivot measures business Agility by tracking the time between receiving feedback and responding to it. An example is the time it takes for a company to react after a competitor releases a market-winning feature.'
+    },
+    {
+      id: 'q5_9',
+      question: 'What impact is expected on the original Scrum Team\'s velocity with the addition of three new Scrum Teams, considering that the existing team has been working together for several Sprints and achieving an average velocity of 30?',
+      options: [
+        'The velocity of the original Scrum Team is expected to increase once the new teams become mature enough.',
+        'Initially, the average velocity of the original Scrum Team will decrease.',
+        'The addition of new teams will lead to a significant decrease in the original Scrum Team\'s velocity.',
+        'The original Scrum Team\'s velocity will remain unaffected.',
+        'Initially, the addition of new teams will result in a decrease in the original Scrum Team\'s velocity.',
+        'The velocity of the original Scrum Team will steadily increase.'
+      ],
+      correctAnswer: [0, 1],
+      explanation: 'When new teams are added, the original team\'s velocity is likely to decrease at first because they will need to spend time mentoring and training the new members. However, once the new teams are up to speed, the original team\'s velocity is expected to increase as the workload is distributed, potentially increasing overall productivity.'
+    },
+    {
+      id: 'q5_10',
+      question: 'Scrum emphasizes value delivery. Which of the following factors does NOT directly influence the team\'s ability to deliver value?',
+      options: [
+        'The average velocity of the Scrum Teams, calculated based on Product Backlog items that have met the definition of done.',
+        'User happiness.',
+        'A reliable indicator is whether the team consistently achieves its Sprint Goals.',
+        'Technical debt.'
+      ],
+      correctAnswer: 0,
+      explanation: 'Velocity is not directly correlated with value; it primarily measures speed. Completing more Product Backlog Items does not guarantee the delivery of more value. On the other hand, consistently achieving Sprint Goals, user satisfaction, and managing technical debt are all factors that influence a team\'s ability to deliver value.'
+    },
+    {
+      id: 'q5_11',
+      question: 'How can Sam, as the Scrum Master of a newly established Scrum Team, support their effectiveness during their first Sprint?',
+      options: [
+        'Have the Scrum Team members discuss the process for turning Product Backlog items into increments.',
+        'Have the direct manager of each Developer introduce each member and his/her responsibilities.',
+        'Introduce each other and let them share their skills and work experience with each other.',
+        'Ensure the Definition of Done is transparent and understood from everyone.',
+        'Have the Product Owner discuss the product or project, its history, goals, and context, as well as answer questions.',
+        'Make sure that all Scrum Team members have compatible personalities.'
+      ],
+      correctAnswer: [0, 2, 3, 4],
+      explanation: 'To support a new team\'s effectiveness, a Scrum Master should facilitate introductions to build cohesion, ensure the Definition of Done is clear to set expectations, have the team discuss their process for creating increments, and have the Product Owner provide context on the project\'s goals. These actions help align the team and create a foundation for a productive first Sprint.'
+    },
+    {
+      id: 'q5_12',
+      question: 'When making an investment decision between two products, consider the following scenario: Product A boasts low Current Value but exhibits high Unrealized Value potential. Conversely, Product B presents high Current Value but features low Unrealized Value. Which product warrants a greater investment?',
+      options: [
+        'None of them',
+        'The Product B',
+        'Both of them',
+        'The Product A'
+      ],
+      correctAnswer: 3,
+      explanation: 'A product might have a low Current Value (CV) if it is in an early stage of development, but it could possess a high Unrealized Value (UV), indicating significant market potential. In this situation, investing in Product A to improve its CV is justified by the potential returns. Product B, with its high CV and low UV, is more like a "cash cow" that is profitable but nearing the end of its investment cycle.'
+    },
+    {
+      id: 'q5_13',
+      question: 'How should multiple Scrum Teams, working from the same Product Backlog, select the Product Backlog items their teams plan to work on?',
+      options: [
+        'The Scrum Team with the highest productivity will select the items first.',
+        'The Product Owner will present the work and the Developers will select the items they will work on.',
+        'Each Scrum Team would select an equal number of items.',
+        'The Product Owner creates separate Product Backlogs for each team.',
+        'The Product Owner assigns the work to each team.'
+      ],
+      correctAnswer: 1,
+      explanation: 'During Sprint Planning, the Product Owner presents the work items from the single Product Backlog. The Developers from all teams then collaborate to understand the items and, based on their capacity, select the work for the upcoming Sprint. This ensures transparency and alignment across the teams.'
+    },
+    {
+      id: 'q5_14',
+      question: 'The director of engineering in your organization always stresses the importance of meeting deadlines in order for the engineering department to be seen as a reliable source for the product management department. The director has calculated that the team’s velocity needs to increase an additional 15% to meet the commitment he made to management for the release date of the product. He asks Steven, the team’s Scrum Master, to increase his team’s velocity. Which would be the best two responses for Steven to take?',
+      options: [
+        'He informs the director of organizational impediments he is aware of that prevent the team from being more productive. He suggests collaborating with him on how to remove these impediments.',
+        'He tells the director that this is not his responsibility in Scrum. He tells the director to work with the Product Owner to check whether the estimates on the Product Backlog are being respected during implementation.',
+        'He explains how a team uses the velocity of a Sprint primarily to forecast work for the next Sprint, not to perfectly predict future productivity. He refers the director to the Product Owner for all information concerning the progress of development.',
+        'He helps the director understand that it typically takes a few Sprints for a team to gradually increase the velocity up to the level expected. Meanwhile he presents this to the team as a challenge and a company goal, leaving it however up to them to figure out exactly how to achieve this.',
+        'He educates his director how it is part of a team’s self-management to improve velocity. He invites the director to the next Sprint Retrospective to brainstorm on how they can improve.'
+      ],
+      correctAnswer: [0, 2],
+      explanation: 'The Scrum Master serves the organization by helping stakeholders understand Scrum and by making changes that increase the team\'s productivity. In this case, Steven should inform the director about any organizational impediments that are hindering the team\'s productivity and suggest working together to remove them. He should also clarify that a team\'s velocity is primarily a tool for forecasting the next Sprint\'s work, not for making long-term predictions about productivity.'
+    },
+    {
+      id: 'q5_15',
+      question: 'During a Product Backlog refinement meeting, the Product Owner introduces a business objective that will be worked on for the next several Sprints. The Product Owner envisions several key features necessary to be delivered in order to meet the business objective. As the features will be using sensitive user data it will be subjected to external security audits. These non-functional security requirements were not applicable to previous Increments. What are two good ways the Developers can handle these high-security concerns?',
+      options: [
+        'They should be planned in parallel Sprints so not to disrupt the Developers during feature development. After security concerns have been finalized, they will be applied to the work that is already completed before new feature development can continue.',
+        'They should be handled in a parallel Sprint by a separate security team so that security can be resolved through application enhancements without impacting the functional development.',
+        'They are added to the Product Backlog and addressed throughout the next Sprints, combined with creating the business functionality in those Sprints, no matter how small the business functionality.',
+        'A complete list of security-related Product Backlog items needs to be created before starting a new Sprint.',
+        'During the Sprint Retrospective, the Developers assess how to add these expectations to their Definition of Done so every future Increment will meet these security requirements. If needed they can work with external specialists to better understand the requirements.'
+      ],
+      correctAnswer: [2, 4],
+      explanation: 'Two effective ways for the Developers to handle new, high-security requirements are to incorporate them into the team\'s Definition of Done and to address them incrementally alongside business functionality in upcoming Sprints. The first approach ensures that security standards are consistently met in all future work. The second approach maintains a balance between delivering business value and addressing critical non-functional requirements. Both actions represent a proactive and collaborative method for integrating security concerns into the project.'
+    },
+    {
+      id: 'q5_16',
+      question: 'During the Sprint, the Developers of the Scrum Team realize that they may not achieve the Sprint Goal with the current work plan. After discussing the situation, they decide on an alternative approach to reach the Sprint Goal by adjusting the planned work. Which Scrum Values are demonstrated in this scenario?',
+      options: [
+        'Transparency, Respect',
+        'Focus, Transparency',
+        'Courage, Focus',
+        'Inspection, Adaption',
+        'Courage, Commitment'
+      ],
+      correctAnswer: 4,
+      explanation: 'The Scrum Team demonstrates courage by acknowledging they might not meet the Sprint Goal with their original plan and being willing to address the problem directly. They also show commitment by staying dedicated to the Sprint Goal and collaborating to find an alternative solution to achieve it.'
+    },
+    {
+      id: 'q5_17',
+      question: 'In Sprint Planning, the Product Owner and Developers encounter difficulty in reaching a consensus on the highest priority Product Backlog items, leading to uncertainty regarding the forecasted number of items for the upcoming Sprint. Despite this challenge, both parties manage to establish a shared Sprint Goal. In this scenario, what actions should the Scrum Master advocate for?',
+      options: [
+        'Scrum is not functioning effectively. Conduct comprehensive training for the entire team before initiating a new Sprint.',
+        'During the next Sprint Retrospective discuss why this happened and what changes will make it less likely to recur.',
+        'The Product Backlog refinement did not suffice to generate Product Backlog items that could be clearly understood and forecast for a Sprint. Encourage everyone to take the necessary time to thoroughly analyze the Product Backlog, and then reconvene for further discussion.',
+        'Extend Sprint Planning until the Developers have a thorough understanding of a sufficient number of Product Backlog items to make a comprehensive forecast, then start the Sprint.',
+        'Forecast the Product Backlog item that is most likely to align with the Sprint Goal and generate the Sprint Backlog. Conclude Sprint Planning and initiate development activities. Throughout the Sprint, persist in analyzing, decomposing, and augmenting additional functionalities as needed.'
+      ],
+      correctAnswer: [1, 4],
+      explanation: 'This situation points to an issue with Product Backlog refinement. The appropriate actions are to discuss the root cause in the next Sprint Retrospective to prevent it from happening again, which promotes continuous improvement. Additionally, encouraging the team to take the necessary time to analyze the backlog ensures that they can make well-informed decisions during Sprint Planning.'
+    },
+    {
+      id: 'q5_18',
+      question: 'In Agile methodology, it is both anticipated and advantageous to frequently adjust plans in response to feedback from customers or stakeholders.',
+      options: [
+        'False',
+        'True'
+      ],
+      correctAnswer: 1,
+      explanation: 'Adaptability is a central principle of Agile methodology. Agile processes are designed to be responsive to changing requirements and feedback. By adjusting plans based on real-time input, teams can ensure they deliver the most valuable results to their customers.'
+    },
+    {
+      id: 'q5_19',
+      question: 'Which of the following statements best describes Product Backlog items that are selected at the Sprint Planning to be included in the current Sprint?',
+      options: [
+        'They are stated as tasks and mapped to User Stories.',
+        'They are stated as use cases and must have test cases identified for acceptance testing.',
+        'Developers decide the order of the items.',
+        'They are User Stories such that they can be assigned to one person.',
+        'They are items that have been refined during Product Backlog refinement and are deemed ready for inclusion in the Sprint based on the team\'s capacity and Sprint Goal.'
+      ],
+      correctAnswer: 4,
+      explanation: 'According to the Scrum Guide, items selected for a Sprint must be refined and ready for development. The refinement process ensures items are clear, detailed, and estimated, which allows the team to plan their work effectively and maximize their efficiency in achieving the Sprint Goal.'
+    },
+    {
+      id: 'q5_20',
+      question: 'Which of the following is not correct about the Product Owner accountability?',
+      options: [
+        'Answers questions about the items in the Sprint Backlog',
+        'Is responsible for maximizing the value of the product',
+        'Explains the Product Backlog items',
+        'The Product Owner should be cross-functional'
+      ],
+      correctAnswer: 3,
+      explanation: 'It is the entire Scrum Team that is cross-functional, not the Product Owner alone. The Product Owner\'s primary responsibility is to maximize the value of the product being developed.'
+    },
+    {
+      id: 'q5_21',
+      question: 'If a Scrum Team does not finish all the items by the end of the Sprint, what should happen to unfinished items in the Sprint Backlog at the end of the Sprint?',
+      options: [
+        'The Definition of Done is adapted so that the items can be considered done under the new definition.',
+        'The Sprint is temporarily extended. The Sprint ends when all items are finished.',
+        'The items are resized and put back in the Product Backlog.',
+        'They are put back in the Product Backlog with the original estimates.'
+      ],
+      correctAnswer: 2,
+      explanation: 'Unfinished items from a Sprint are re-estimated and moved back to the Product Backlog. This keeps the Product Backlog current and allows the Product Owner to re-evaluate the priority of the unfinished items. This practice maintains transparency and helps prevent wasted effort on items that may no longer be a priority.'
+    },
+    {
+      id: 'q5_22',
+      question: 'A Scrum Team with eight Developers has started working on items selected during Sprint Planning. However, halfway through the Sprint, they realize they underestimated the workload and might not finish all Sprint Backlog items by the Sprint\'s end. What is the most appropriate course of action?',
+      options: [
+        'Move some of the items to another Scrum Team that has spare capacity.',
+        'As soon as possible, work with the Product Owner to remove some items from the Sprint Backlog.',
+        'Continue working on the most important items and share with the Product Owner what was done and not done at the Sprint Review.',
+        'Modify the Definition of Done until all of the work is able to be finished by the end of the Sprint.'
+      ],
+      correctAnswer: 1,
+      explanation: 'The best course of action is to collaborate with the Product Owner to remove some items from the Sprint Backlog. This ensures the team can focus on the highest-priority tasks, maintain transparency, and still deliver a valuable product Increment by the end of the Sprint.'
+    },
+    {
+      id: 'q5_23',
+      question: 'While Developers are working during the Sprint there are conversations regarding functional requirements only and nothing about non-functional ones. What should you recommend, as a Team Leader, to the Developers to do with non-functional requirements?',
+      options: [
+        'Assign them to the technical leads on the team.',
+        'They will be addressed in the Integration Sprints.',
+        'Add them to a separate non-functional requirements list.',
+        'Ensure they are addressed in every Increment.'
+      ],
+      correctAnswer: 3,
+      explanation: 'Non-functional requirements should be handled alongside functional development work. They can be included as acceptance criteria, as separate items, or as part of the Definition of Done. Ignoring them can lead to technical debt in the future.'
+    },
+    {
+      id: 'q5_24',
+      question: 'In Scrum, why is the term "forecast" used when planning?',
+      options: [
+        'To highlight that planning involves predicting future outcomes based on current knowledge.',
+        'To indicate that the plan is set in stone and cannot be changed.',
+        'To imply that the plan is infallible and will not be affected by any external factors.',
+        'To suggest that the team has full control over every aspect of the project.',
+        'To emphasize that the team is making a binding commitment to deliver all planned work.'
+      ],
+      correctAnswer: 0,
+      explanation: 'The term "forecast" is used in Scrum to signify that a plan is based on the team\'s best understanding at a specific point in time. It acknowledges that there are uncertainties and that the plan will likely need to be adapted as new information becomes available, which aligns with the Agile principle of responding to change.'
+    },
+    {
+      id: 'q5_25',
+      question: 'Releasing a small increment that provides value, inspecting the results, and planning the next steps is the correct approach when operating under conditions of uncertainty.',
+      options: [
+        'False',
+        'True'
+      ],
+      correctAnswer: 1,
+      explanation: 'This "inspect and adapt" cycle is a core principle of Agile and Scrum. By releasing small increments, teams can get frequent feedback, which helps to validate their assumptions and make adjustments as needed. This iterative approach is essential for navigating the uncertainty inherent in complex projects.'
+    },
+    {
+      id: 'q5_26',
+      question: 'Toby, the Product Owner of your team has noticed several Developers from the Scrum Team are working together on backlog items. He expresses concern that this "pair programming" will negatively impact the amount of work being done. What do you do as a Scrum Master?',
+      options: [
+        'Teach the Product Owner that the amount of work being done should not be the primary measure of progress.',
+        'Toby should raise this with the director.',
+        'Suggest the Product Owner find a suitable moment to show interest and ask the developers why they use this approach.',
+        'Make a note to possibly address this during the Sprint Retrospective.',
+        'Teach the Product Owner that the Scrum Team decides how best to do their work.',
+        'Raise this as soon as possible.'
+      ],
+      correctAnswer: [0, 2, 4],
+      explanation: 'As a Scrum Master, it is important to educate the Product Owner that progress should not be measured solely by the volume of work completed. The Scrum Team has the autonomy to decide how to perform their work, which includes practices like pair programming. To foster understanding and trust, the Product Owner should be encouraged to have an open conversation with the developers about their methods. This issue should be addressed in the Sprint Retrospective, not just noted as a possibility.'
+    },
+    {
+      id: 'q5_27',
+      question: 'James, serving as the Scrum Master for his team, has been diligently coaching them on understanding Sprint Goals. Which statement is misleading in regards to the Sprint Goal?',
+      options: [
+        'The Product Owner respects the Developers\' opinion on whether they can achieve it.',
+        'The Scrum Team discusses openly about alternative ways to reach it.',
+        'If it doesn\'t seem achievable, the Developers have the courage to tell the Product Owner.',
+        'It is only a forecast and changes during the Sprint as more is learned.',
+        'It helps increase focus.',
+        'The Developers commit to it.'
+      ],
+      correctAnswer: 3,
+      explanation: 'The Sprint Goal is a commitment made by the Developers and is intended to remain stable throughout the Sprint to provide focus and direction. Unlike the Sprint Backlog, it is not a forecast that changes as more is learned.'
+    },
+    {
+      id: 'q5_28',
+      question: 'During Sprint Planning, the Scrum Team successfully outlined a Sprint Goal. However, they encountered difficulty in gaining a clear understanding of the necessary items to achieve this goal throughout the Sprint. Consequently, the Developers lacked confidence in their ability to forecast the quantity of work they could accomplish within the Sprint. What are the most appropriate actions to take?',
+      options: [
+        'Discuss other Product Backlog items and have the team select only those that conform to the Definition of Ready. Once the Developers commit to the selected items, define the Sprint Goal.',
+        'Temporarily extend the Sprint time-box so that the Scrum Team\'s velocity is not impacted.',
+        'In the upcoming Sprint Retrospective, discuss why this happened and what can be done to make it less likely to happen again.',
+        'Have the Scrum Team forecast the most likely items to meet the Sprint Goal and create a Sprint Backlog based on enough information to start development work. During development, the team continuously analyzes and adapts the Sprint Backlog to meet the goal.',
+        'Extend the Sprint Planning until all Developers have sufficient information to commit to the Sprint\'s scope.'
+      ],
+      correctAnswer: [2, 3],
+      explanation: 'The situation indicates a problem with the clarity of the Product Backlog items. The team should forecast the work they can confidently start and then continue to analyze and adapt the Sprint Backlog as they proceed. It is also crucial to discuss the root cause of the issue in the next Sprint Retrospective to improve the process for future Sprints.'
+    },
+    {
+      id: 'q5_29',
+      question: 'Which of the following statements below is NOT a good reason to keep an Agile team together?',
+      options: [
+        'To improve focus.',
+        'To improve collaboration.',
+        'To increase utilization of the Developers.',
+        'To improve the ability to forecast.'
+      ],
+      correctAnswer: 2,
+      explanation: 'Keeping an Agile team together simply to increase developer utilization is not a good reason because it contradicts Agile principles. Agile focuses on delivering value, collaboration, and maintaining a sustainable pace, not on maximizing individual utilization, which can lead to burnout and lower quality work.'
+    },
+    {
+      id: 'q5_30',
+      question: 'Which of the following helps in addressing complex problems?',
+      options: [
+        'Probe-Sense-Respond over Act-Sense-Respond.',
+        'Focusing on best practices.',
+        'Sense-Analyze-Respond over Probe-Sense-Respond.',
+        'Serving and leading over command-and-control management.',
+        'Having safe environments for experimentation.',
+        'Having experts for providing solutions.'
+      ],
+      correctAnswer: [0, 3, 4],
+      explanation: 'To address complex problems effectively, it is beneficial to use a "Probe-Sense-Respond" approach, which favors exploration and learning over immediate action. Additionally, a leadership style based on serving the team rather than commanding them fosters collaboration and empowerment. Creating a safe environment for experimentation is also vital, as it allows teams to innovate and learn from both their successes and failures.'
+    },
+    {
+      id: 'q5_31',
+      question: 'Which of the following helps a team in applying Scrum?',
+      options: [
+        'Having clear shared goals and commitments.',
+        'Having a Product Owner that is able to shield the Developers from the Stakeholders.',
+        'The Scrum Team understanding that empiricism helps in addressing complex work.',
+        'The Scrum Team is self-managing.',
+        'Understanding that having a physical Scrum Board is mandatory for transparency.',
+        'The Technical Project Managers are involved in forming teams and selecting the technology.'
+      ],
+      correctAnswer: [0, 2, 3],
+      explanation: 'Several factors contribute to a team\'s effectiveness in applying Scrum. Understanding that empiricism (transparency, inspection, and adaptation) is essential for handling complex work is crucial. The team\'s ability to self-manage also enhances productivity by fostering autonomy. Finally, having clear, shared goals and commitments provides the team with direction and alignment.'
+    },
+    {
+      id: 'q5_32',
+      question: 'When the Scrum Team fully embraces and embodies the Scrum Values in their daily work, the foundational pillars of transparency, inspection, and adaptation become vibrant and effective. This enhances something fundamental to all Scrum implementations. What is it?',
+      options: [
+        'Trust',
+        'Agility',
+        'Empiricism',
+        'Value',
+        'Efficiency',
+        'Predictability'
+      ],
+      correctAnswer: 0,
+      explanation: 'Trust is the fundamental aspect that is enhanced when a Scrum Team embodies the Scrum Values and actively uses transparency, inspection, and adaptation. Trust is crucial for fostering collaboration, openness, and confidence among team members and stakeholders, which enables the successful delivery of value.'
+    },
+    {
+      id: 'q5_33',
+      question: 'During the Sprint Retrospective, as the team discusses the quality issues hindering the delivery of a releasable Increment, the Developers emphasize their accomplishment of a high velocity. In this scenario, what are the two most advisable actions for Steven, their Scrum Master, to undertake?',
+      options: [
+        'Stress the value of working software over measured velocity.',
+        'Acknowledge the hard work but remind the Developers that they need to improve in order to do even more in the next Sprint.',
+        'Agree and acknowledge the hard work of Developers, so they will be motivated to do even more in the next Sprint.',
+        'Help the Developers focus on creating high-value Increments that meet the Definition of Done, even if the measured velocity drops in the next Sprint.'
+      ],
+      correctAnswer: [0, 3],
+      explanation: 'In this situation, the Scrum Master should take actions that reinforce the importance of delivering valuable, high-quality increments. It is advisable for Steven to guide the team to focus on creating increments that meet the Definition of Done, even if it results in a lower velocity for the next Sprint. He should also emphasize the importance of working software over simply achieving a high velocity metric.'
+    },
+    {
+      id: 'q5_34',
+      question: 'What factors might have contributed to the stakeholders\' surprise and dissatisfaction when reviewing the first release, which consists of increments from the past 7 Sprints?',
+      options: [
+        'The Product Owner had not kept the stakeholders updated on the progress of the product.',
+        'The Head of Product had not been validating the Product Backlog.',
+        'The Scrum Master had not ensured that the project is adequately transparent.',
+        'The Scrum Team and stakeholders had not been using the Sprint Reviews to inspect outcomes and determine future adaptations.',
+        'The stakeholders were not attending the Sprint Reviews.'
+      ],
+      correctAnswer: [0, 2, 3, 4],
+      explanation: 'Stakeholder dissatisfaction can arise from a lack of communication and transparency. If the Product Owner did not keep stakeholders informed, if the Scrum Master failed to ensure transparency, or if stakeholders did not attend Sprint Reviews, it could lead to a misalignment of expectations. Sprint Reviews are a critical opportunity for inspection and adaptation, and a failure to use them effectively can contribute to such issues.'
+    },
+    {
+      id: 'q5_35',
+      question: 'What is the optimal approach for collecting progress updates from multiple Agile Teams working on various products, given your role as CEO?',
+      options: [
+        'Sending out a company-wide email asking for updates.',
+        'Conducting one-on-one meetings with each team member to gather information.',
+        'Reviewing the teams\' progress solely based on the completion of assigned tasks.',
+        'Ask each team to present the progress toward the Product Goals on a monthly basis.',
+        'Relying solely on project management software dashboards for updates.',
+        'Not collecting progress updates and trusting each team to manage themselves independently.'
+      ],
+      correctAnswer: 3,
+      explanation: 'Requesting detailed status reports in individual meetings is the recommended approach because it facilitates direct communication between the CEO and each Agile team. This ensures accurate and comprehensive updates, allowing the CEO to address concerns and provide guidance effectively. It also promotes accountability within the teams.'
+    },
+    {
+      id: 'q5_36',
+      question: 'What type of organizational structure is best for forming Scrum Teams?',
+      options: [
+        'Hierarchical structure',
+        'Matrix structure',
+        'Network structure',
+        'Cross-functional structure',
+        'Functional structure',
+        'Divisional structure'
+      ],
+      correctAnswer: 3,
+      explanation: 'A cross-functional structure is the most suitable for Scrum Teams as it gathers individuals with a variety of skills to collaborate effectively. This structure fosters collaboration, adaptability, and autonomy, allowing teams to deliver value incrementally and respond to changes efficiently, which is a core tenet of Scrum. Other structures like hierarchical or functional can create silos and hinder the self-organization necessary for Scrum.'
       }
     ]
   }
