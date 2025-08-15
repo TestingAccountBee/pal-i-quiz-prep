@@ -429,7 +429,7 @@ export const mockExams: Exam[] = [
         explanation: 'Agile team members are expected to solve most of their technical problems collectively as the work proceeds. They don\'t try to figure out everything on their own. Agile team members also would not bring their problems to their coach on a daily basis, since most of such problems would be solved by the team’s collective technical expertise and diverse viewpoints. Agile team members also don\'t report all their problems during Daily Scrum.'
       }
     ]
-  },
+  }
   {
     id: 'pal1-mock-2',
     title: 'PAL I Mock Exam #2',
