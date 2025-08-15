@@ -23,10 +23,10 @@ export default {
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'rgb(var(--background))',
-				foreground: 'hsl(var(--foreground))',
+				foreground: 'rgb(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))',
+					foreground: 'hsl(rgb(--primary-foreground))',
 					hover: 'hsl(var(--primary-hover))',
 					light: 'hsl(var(--primary-light))'
 				},
