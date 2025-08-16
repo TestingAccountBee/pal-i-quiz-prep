@@ -29,7 +29,7 @@ export const examCategories: ExamCategory[] = [
     id: 'pal-ebm',
     title: 'Professional Agile Leadership - EBM',
     description: 'Evidence-Based Management for Agile leaders',
-    examIds: [],
+    examIds: ['palebm-mock-1', 'palebm-mock-2', 'palebm-mock-3', 'palebm-mock-4', 'palebm-mock-5', 'palebm-mock-6'],
     color: 'bg-orange-500',
     icon: '📊'
   }
