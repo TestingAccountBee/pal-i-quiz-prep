@@ -2188,5 +2188,503 @@ export const mockExams: Exam[] = [
       explanation: 'A cross-functional structure is the most suitable for Scrum Teams as it gathers individuals with a variety of skills to collaborate effectively. This structure fosters collaboration, adaptability, and autonomy, allowing teams to deliver value incrementally and respond to changes efficiently, which is a core tenet of Scrum. Other structures like hierarchical or functional can create silos and hinder the self-organization necessary for Scrum.'
       }
     ]
+  };
+  {
+    id: 'palebm-mock-1',
+    title: 'PAL EBM Mock Exam #1',
+    description: 'Practice exam for the Professional Agile Leadership - Evidence-Based Management certification.',
+    timeLimit: 60,
+    passingScore: 85,
+    questions: [
+      {
+        id: 'q1_1',
+        question: 'An organization manages a portfolio of products across multiple industries. The organization is also trying to evaluate the effort and risk of launching a new product in a new market. The product has less competition and is wondering if it should pursue these untapped opportunities. The company wants to know if it should make further investments. Which KVA should the organization evaluate?',
+        options: [
+          'Current Value',
+          'Time to Market',
+          'Unrealized Value',
+          'Ability to Innovate'
+        ],
+        correctAnswer: 2,
+        explanation: 'Unrealized Value suggests the potential future value that could be realized if the organization could meet the needs of all potential customers or users. The goal of looking at Unrealized Value is for the organization to maximize the value that it realizes from a product or service over time. When customers, users, or clients experience a gap between their current experience and the experience that they would like to have, the difference between the two represents an opportunity; this opportunity is measured by Unrealized Value. Questions that organizations need to continually re-evaluate for unrealized value are: Can any additional value be created by our organization in this market or other markets? Is it worth the effort and risk to pursue these untapped opportunities? Should further investments be made to capture additional Unrealized Value?'
+      },
+      {
+        id: 'q1_2',
+        question: 'Your team has been tracking the Time to Market metric and noticed it has been steadily decreasing, which is positive. However, customer satisfaction has not improved correspondingly. What approach should you take?',
+        options: [
+          'Continue to reduce Time to Market as it is the most important metric.',
+          'Conduct customer feedback sessions to understand their needs and refine the Product Backlog to better align with customer expectations.',
+          'Increase the team size to further speed up development.',
+          'Focus on reducing costs to improve profitability.'
+        ],
+        correctAnswer: 1,
+        explanation: 'While a decreasing Time to Market is generally positive, it is crucial to ensure that the product being delivered meets customer needs and expectations. If customer satisfaction has not improved, it indicates that there might be a disconnect between what is being delivered and what customers actually value.'
+      },
+      {
+        id: 'q1_3',
+        question: 'Which of the following statements about EBM (Evidence-Based Management) are true?',
+        options: [
+          'Based on the best available evidence, EBM (Evidence-based management) helps organizations improve their ability to make decisions on ways to improve.',
+          'Evidence-based management improves the quality of managerial decision-making through the integration of current best evidence with practical experience and human values.',
+          'EBM (Evidence Based management) does not need the measures of current conditions nor does it need the measure of experimental impacts.',
+          'EBM (Evidence-based management) enables organizations to systematically improve their performance over time and refine their goals based on better information.'
+        ],
+        correctAnswer: [0, 1, 3],
+        explanation: 'Using intentional experimentation and evidence (measures), EBM enables organizations to systematically improve their performance over time and refine their goals based on better information. EBM helps organizations consider the best available evidence (to help them make decisions on ways to improve). EBM emphasizes using data, evidence, and experimentation to inform decision-making, leading to improved organizational performance.'
+      },
+      {
+        id: 'q1_4',
+        question: 'True or False, A benefit of using an agile approach is managing business risk more effectively.',
+        options: [
+          'True',
+          'False'
+        ],
+        correctAnswer: 0,
+        explanation: 'Unmanaged risk can reduce the long-term ability of an organization to deliver value to its customers. An Agile approach helps manage business risk more effectively by: Incremental Delivery: Delivering working increments early and regularly allows stakeholders to review progress and ensure alignment with business goals. Adaptability to Change: Agile accommodates changes in requirements, reducing the risk of delivering an outdated or irrelevant product. Continuous Feedback: Frequent interactions with customers and stakeholders provide opportunities to detect and address potential risks early. Transparency: Agile ceremonies, such as Sprint Reviews and Daily Scrums, make progress and challenges visible, enabling proactive risk mitigation.'
+      },
+      {
+        id: 'q1_5',
+        question: 'Which are the three types of goals described in the Evidence-Based Management framework?',
+        options: [
+          'The Strategic Goal.',
+          'Nexus Goals',
+          'The Intermediate Goal.',
+          'Tactical Goals.',
+          'Sprint Goals.'
+        ],
+        correctAnswer: [0, 2, 3],
+        explanation: 'EBM focuses on three levels of goals: Strategic Goals, Intermediate Goals, and Immediate Tactical Goals.'
+      },
+      {
+        id: 'q1_6',
+        question: 'What should be the Product Owner\'s approach if the Unrealized Value (UV) metric indicates a high potential value in an untapped market segment?',
+        options: [
+          'Continue focusing on the current market segment to maintain stability.',
+          'Prioritize exploring the new market segment by adjusting the Product Backlog.',
+          'Increase the team\'s velocity to tackle both current and potential markets.',
+          'Allocate additional resources to support the exploration of the new segment without changing current priorities.'
+        ],
+        correctAnswer: 1,
+        explanation: 'Unrealized Value signifies the potential for future growth and success. A high UV in a new market segment suggests a significant opportunity. Product Backlog prioritization allows the Product Owner to adapt to this new information. By adding user stories or features that target the untapped segment, the team can explore this potential and potentially capture that value.'
+      },
+      {
+        id: 'q1_7',
+        question: 'Unrealized Value is a gap that can be measured by looking at the difference between: (choose the best option)',
+        options: [
+          'Current product/service market size when compared to the total market size.',
+          'Actual user\'s experience when compared to the user\'s desired experience.',
+          'Product gap when compared to the roadmap.',
+          'All of the above.'
+        ],
+        correctAnswer: 1,
+        explanation: 'In EBM, we refer to this as Unrealized Value, which is the satisfaction gap between a beneficiary’s desired outcome and their current experience. When customers, users, or clients experience a gap between their current experience and the experience that they would like to have, the difference between the two represents an opportunity; this opportunity is measured by Unrealized Value.'
+      },
+      {
+        id: 'q1_8',
+        question: 'True or False, In order to stay aligned with the organizational strategy, goals should be achievable within the budget cycle.',
+        options: [
+          'True',
+          'False'
+        ],
+        correctAnswer: 1,
+        explanation: 'When dealing with complex problems, an organization does not know if the goals we set are achievable or not. It provides them with an objective on which they can base their experiments. Goals can change based on what the organization learns. Being within a budget does not necessarily guarantee alignment with business strategy.'
+      },
+      {
+        id: 'q1_9',
+        question: 'Organizations run experiments that are intended to advance them toward their current Intermediate Goal. As they run these experiments and gather results, they use the evidence to: (choose the best two options)',
+        options: [
+          'Evaluate their existing strategic, intermediate, and immediate actionable goals and determine their next steps to advance toward these.',
+          'Create a work plan for the entire release.',
+          'Validate or reject a hypothesis.',
+          'Create reliable estimates.'
+        ],
+        correctAnswer: [0, 2],
+        explanation: 'As they run these experiments and gather results, they use the evidence they obtain to evaluate their existing strategic, intermediate and immediate actionable goals and determine their next steps to advance toward these. Based on the results, hypotheses are also validated or rejected.'
+      },
+      {
+        id: 'q1_10',
+        question: 'What are the key characteristics of an effective strategic goal?',
+        options: [
+          'A strategic goal should be measurable.',
+          'A strategic goal is usually focused on achieving a highly desirable but unrealized outcome.',
+          'A strategic goal should encourage organizational alignment.',
+          'A strategic goal should be transparent.'
+        ],
+        correctAnswer: [0, 1, 2, 3],
+        explanation: 'A strategic goal should have clear metrics or criteria to evaluate progress and determine when the goal has been achieved. Measurability ensures that organizations can track performance and make data-driven decisions.'
+      },
+      {
+        id: 'q1_11',
+        question: 'Which Key Value Area would the following Key Value Measures (KVM) help: Defect Trends, Installed Version Index, Technical Debt, Active Product (Code) Branches?',
+        options: [
+          'Current Value',
+          'The experiment loop',
+          'Unrealized Value',
+          'Time-to-Market',
+          'Ability to Innovate'
+        ],
+        correctAnswer: 4,
+        explanation: 'The effectiveness of an organization to deliver new capabilities that might better meet customer needs is called the Ability to Innovate. Defect Trends, Installed Version Index, Technical Debt, and Active Product (Code) Branches come under A2I.'
+      },
+      {
+        id: 'q1_12',
+        question: 'Which of the following might NOT help a team increase its frequency of delivery?',
+        options: [
+          'Automating the delivery pipeline.',
+          'Product Backlog refinements.',
+          'Reducing cross-team dependencies.',
+          'Synchronizing release schedules across teams.'
+        ],
+        correctAnswer: 3,
+        explanation: 'While using a common release schedule could increase team synchronization, it is the role of the Product Owner to set common goals and help the teams to deliver value. Having the same release schedule might be a good recommendation but it does not guarantee increased value or frequent delivery (and thus time to market). Synchronization often requires waiting for multiple teams to be ready, which can slow down the delivery process.'
+      },
+      {
+        id: 'q1_13',
+        question: 'What benefits can an organization gain from short iterations?',
+        options: [
+          'Validate hypotheses faster.',
+          'Minimize and control risk better.',
+          'Get feedback from stakeholders faster.',
+          'Understand customers’ needs better.',
+          'All of the above.',
+          'None of the above.'
+        ],
+        correctAnswer: 4,
+        explanation: 'Short iterations in Agile development offer several benefits to organizations: Validate hypotheses faster: Short iterations allow for quicker testing of assumptions and hypotheses about the product, helping to validate or invalidate them early in the development process. Minimize and control risk better: By working in short iterations, teams can identify and address risks early, reducing the likelihood of major issues or failures later in the project. Get feedback from stakeholders faster: Short iterations enable organizations to gather feedback from stakeholders more frequently, ensuring that the product aligns with their needs and expectations. Understand customer\'s needs better: Regular interactions with stakeholders and continuous delivery of increments of the product help in gaining a deeper understanding of customer needs and preferences.'
+      },
+      {
+        id: 'q1_14',
+        question: 'Which statement describes the best way to learn from experiments?',
+        options: [
+          'Running one experiment on a product that is open-ended is the best way to gather the most sufficient and accurate data.',
+          'Running multiple experiments on the same product at the same time is the best way to reduce the cost of testing new ideas.',
+          'Running multiple experiments on the same product at the same time is the best way to reduce the time and complexity of testing new ideas.',
+          'Running one experiment on the product at a time is the best way to understand how the results observed affect desired outcomes.'
+        ],
+        correctAnswer: 3,
+        explanation: 'Running one experiment on the product at a time is the best way to understand how the results observed affect desired outcomes. This approach allows for a clear understanding of the specific impact of each experiment on the outcome of interest.'
+      },
+      {
+        id: 'q1_15',
+        question: 'Your company is considering investing in a large agile transformation. What should you measure to know if your initiative is successful?',
+        options: [
+          'The number of on-time, on-budget, and on-scope projects.',
+          'Average team velocity.',
+          'The number of Scrum Teams.',
+          'Customer outcomes.',
+          'All of the above.'
+        ],
+        correctAnswer: 3,
+        explanation: 'Customer outcomes are the most important measure of an agile transformation\'s success because they are a direct reflection of the value that the organization is delivering to its customers.'
+      },
+      {
+        id: 'q1_16',
+        question: 'Under what circumstances does an organization need an empirical approach to solving a problem?',
+        options: [
+          'When the market is changing rapidly.',
+          'When the technical risk is high.',
+          'When working with new and unproven technology.',
+          'When the business risk is high.',
+          'All of the above.'
+        ],
+        correctAnswer: 4,
+        explanation: 'An organization needs an empirical approach to handle different types of Risks in the product development process. The main categories of risk are technical, market, commercial, and organizational risks.'
+      },
+      {
+        id: 'q1_17',
+        question: 'An organization has been working on a Product for years. It has a large market share, no near competitors, and very satisfied customers. It does not warrant much new investment and is a classic cash cow product that is very profitable but nearing the end of its product investment cycle. How would you describe the KVA for such a product?',
+        options: [
+          'High Unrealized Value.',
+          'High Current Value.',
+          'Low Current Value.',
+          'Low Unrealized Value.'
+        ],
+        correctAnswer: [1, 3],
+        explanation: 'A product with a very high CV, large market share, no near competitors, and very satisfied customers may not warrant much new investment; this is the classic cash cow product that is very profitable but nearing the end of its product investment cycle with low UV.'
+      },
+      {
+        id: 'q1_18',
+        question: 'True or False, Reducing the number of features in a product release can dramatically improve Time-To-Market.',
+        options: [
+          'True',
+          'False'
+        ],
+        correctAnswer: 0,
+        explanation: 'Reducing the number of features in a product release can dramatically improve T2M; the smallest release possible is one that delivers at least some incremental improvement in value to some subset of the customers/users of the product.'
+      },
+      {
+        id: 'q1_19',
+        question: 'Which of the following statements is true: (choose the best option)',
+        options: [
+          'The more time spent defining and reviewing project requirements helps to increase the chances of success.',
+          'Empirical approaches are best suited for simple problems.',
+          'Spending more time identifying and mitigating risk helps to increase the chance of success.',
+          'Delivering a solution and gathering feedback provides valuable insights for what to do next.'
+        ],
+        correctAnswer: 3,
+        explanation: 'The most important stakeholders to satisfy are the end-users. Gathering feedback is an important step in understanding their needs and what should be done next. It highlights the importance of learning and adapting based on real-world data and user insights.'
+      },
+      {
+        id: 'q1_20',
+        question: 'The effectiveness of an organization in delivering new capabilities that might better meet customer needs can be analyzed by looking at: (Choose the best option)',
+        options: [
+          'Ability to innovate',
+          'Current Value',
+          'Time to market',
+          'Unrealized Value'
+        ],
+        correctAnswer: 0,
+        explanation: 'The Ability to Innovate expresses the ability of an organization to deliver new capabilities that might better meet customer needs. The goal of looking at the A2I is to maximize the organization’s ability to deliver new capabilities and innovative solutions.'
+      },
+      {
+        id: 'q1_21',
+        question: 'True or False, Each Scrum Team should ensure that their Product Goals and Sprint Goals are in support of the organization\'s Strategic Goals, Intermediate Goals, and Immediate Tactical Goals.',
+        options: [
+          'True',
+          'False'
+        ],
+        correctAnswer: 0,
+        explanation: 'The goals defined in the EBM guide are at an organizational level. Each Scrum Team should ensure that their Product Goal and Sprint Goal are in support of the organization\'s Strategic Goals, Intermediate Goals, and Immediate Tactical Goals.'
+      },
+      {
+        id: 'q1_22',
+        question: 'How does an organization know that a product built using Scrum is successful? (choose the best option)',
+        options: [
+          'By measuring that velocity has increased since the last release.',
+          'By measuring the actual time spent on development versus the time estimated for development.',
+          'By releasing frequently, and measuring the value customers/users experience.',
+          'By the Product Owner and stakeholders accepting the Increment at the Sprint Review.'
+        ],
+        correctAnswer: 2,
+        explanation: 'Scrum Teams deliver products iteratively and incrementally, maximizing opportunities for feedback. If a product is not released, the opportunity to capture user and market feedback is lost.'
+      },
+      {
+        id: 'q1_23',
+        question: 'Scrum addresses which of the following four risks in software development?',
+        options: [
+          'The stability and complexity of the technology.',
+          'The skills and working relationships of the people on the teams.',
+          'The timescale of the planned work.',
+          'The definition of incentive and bonus strategies by HR for all team members.',
+          'The clear definitions of stages and gateways in the overall governance model.',
+          'The complexity and unpredictability of the requirements.'
+        ],
+        correctAnswer: [0, 1, 2, 5],
+        explanation: 'Scrum addresses risks related to the skills and working relationships of the people on the teams by promoting cross-functional, self-organizing teams. It addresses risks related to the timescale of the planned work by breaking down work into small, manageable chunks and regularly reassessing priorities. It addresses risks related to the complexity and unpredictability of the requirements by encouraging ongoing collaboration between the scrum team and stakeholders and by regularly reassessing and adjusting the project plan. It addresses the stability and complexity of the technology by employing an iterative, incremental approach to optimize predictability and control risk.'
+      },
+      {
+        id: 'q1_24',
+        question: 'A product has been in the market for several years and has a high Customer Satisfaction Index. However, recent metrics show a decline in the Customer Usage Index, indicating that users are not engaging with the product as much as before. What should the Product Owner investigate first to address this issue using EBM principles?',
+        options: [
+          'Assess whether recent changes in the product have negatively impacted user engagement.',
+          'Increase marketing efforts to bring in new users.',
+          'Focus on adding new features to attract more user engagement.',
+          'Conduct a competitor analysis to understand market trends.'
+        ],
+        correctAnswer: 0,
+        explanation: 'The Product Owner should first investigate the most direct and immediate factors that could be affecting user engagement. If recent changes or updates to the product have caused user dissatisfaction or usability issues, identifying and resolving these issues will likely help improve the Customer Usage Index.'
+      },
+      {
+        id: 'q1_25',
+        question: 'A company has a product that belongs to the healthcare industry. In 2020, the compliance and regulations standards in this industry rapidly changed resulting into product features changes. The company wants to analyze how fast it can develop and release these features to its existing clients. Which KVA should the company analyze?',
+        options: [
+          'Current Value',
+          'Unrealized Value',
+          'Time-to-Market (T2M)',
+          'Ability to Innovate'
+        ],
+        correctAnswer: 2,
+        explanation: 'Time-to-market (T2M) expresses the organization’s ability to quickly deliver new capabilities, services, or products. The goal of looking at Time-to-Market is to minimize the amount of time it takes for the organization to deliver value.'
+      },
+      {
+        id: 'q1_26',
+        question: 'How would you know if a product is delivering value?',
+        options: [
+          'Decrease in the time spent writing code.',
+          'High company impact - the product generates profit for the organization.',
+          'The high velocity of the Developers - they get more PBI done now in comparison with a month ago (for the same period of time).',
+          'The customer base is growing.',
+          'Zero defects go to production.',
+          'High customer satisfaction score - increase in Current Value (CV).'
+        ],
+        correctAnswer: [1, 3, 5],
+        explanation: 'High company impact can be measured by looking at financial metrics such as revenue, profit, and return on investment. High customer satisfaction score can be measured by conducting surveys, interviews, or focus groups with customers to gather feedback on the product. A growing customer base can be measured by looking at metrics such as customer acquisition rate, customer retention rate, and overall customer count.'
+      },
+      {
+        id: 'q1_27',
+        question: 'You are the Product Owner for a product with multiple stakeholders and during a meeting, you find that the stakeholders are struggling to agree on the intended users and the main vision of the product. As a Product Owner, what is the best way to assist the stakeholders in reaching a consensus?',
+        options: [
+          'Collaborate with the stakeholders to draft the requirements before forming the Scrum Team.',
+          'Partner with the key stakeholders to develop the Product Backlog items and hold a vote.',
+          'Conduct experiments and gather market insights through incremental iterations. Share the experiment results with the stakeholders.',
+          'Request that the Developers start working on the infrastructure and architecture while you work with the stakeholders to define the requirements.'
+        ],
+        correctAnswer: 2,
+        explanation: 'This approach allows the stakeholders to see the data and feedback from real users, which can help to build consensus and make decisions about the product\'s target users and primary vision. It also allows the stakeholders to see the progress made, and to adjust the vision as needed.'
+      },
+      {
+        id: 'q1_28',
+        question: 'What are the best actions for a Product Owner to take when they have uncertainties regarding the needs of the end user?',
+        options: [
+          'Conduct small experiments to validate the end-user needs.',
+          'Engage in direct conversations with the end-users.',
+          'Release small increments to quickly gather feedback from the market.',
+          'Utilize Persona Canvases to gain a deeper understanding of the end-user requirements.',
+          'Brainstorm with the team and prioritize ideas with the highest potential for delivering value.'
+        ],
+        correctAnswer: [0, 1, 2],
+        explanation: 'Releasing small increments to quickly gather feedback from the market is a good approach, as it can help validate the product\'s value proposition and what users are looking for. Engaging in direct conversations with the end-user is a great way to find out more about them. Doing frequent releases and running small experiments to validate needs is the best way to go.'
+      },
+      {
+        id: 'q1_29',
+        question: 'As a Product Owner, what actions would you take if you discover that end users are not utilizing some of the key features of your product?',
+        options: [
+          'Engage in conversation with the end-users to comprehend their desired outcomes.',
+          'Hold a meeting with the stakeholders to examine what is missing from the key features so that the end-users can start utilizing them and obtain the intended value.',
+          'Conduct experiments to gain a deeper understanding of the end-user needs.',
+          'Inspect the reasons why the end-users are not using some of the key features.'
+        ],
+        correctAnswer: [0, 2, 3],
+        explanation: 'Engaging in conversation with end-users can help you understand why they are not using the main features. Conducting experiments can help gather data and insights to better understand the end user\'s needs and preferences. Inspecting the reasons why end-users are not using some of the key features can be done by gathering data on how they interact with the product.'
+      },
+      {
+        id: 'q1_30',
+        question: 'Which of the following would help you evaluate how much value is being delivered?',
+        options: [
+          'The number of Story Points delivered by the Developers.',
+          'How frequently your product is used by your customers.',
+          'The number of Product Backlog items in a release.',
+          'The cycle-time cost of the product release.',
+          'All of the above.',
+          'None of the above.'
+        ],
+        correctAnswer: 1,
+        explanation: 'This option focuses on the actual usage and adoption of the product by customers, which is a key indicator of value delivery. By assessing how frequently customers engage with the product, you can gain insights into how much value they are receiving from it.'
+      },
+      {
+        id: 'q1_31',
+        question: 'True or False, As low-value features and systemic impediments accumulate, more budget and time is consumed maintaining the product or overcoming impediments, reducing A2I (Ability to Innovate).',
+        options: [
+          'True',
+          'False'
+        ],
+        correctAnswer: 0,
+        explanation: 'As low-value features and systemic impediments accumulate, more budget and time are consumed maintaining the product or overcoming impediments, reducing its available capacity to innovate. In addition, anything that prevents users or customers from benefiting from innovation, such as hard-to-assemble/install products or new versions of products, will also reduce A2I.'
+      },
+      {
+        id: 'q1_32',
+        question: 'True or False, Typically a strategic goal is big, far away, has many uncertainties along the journey, and needs the use of empiricism.',
+        options: [
+          'True',
+          'False'
+        ],
+        correctAnswer: 0,
+        explanation: 'As the EBM guide states "A Strategic Goal, which is something important that the organization would like to achieve. This goal is so big and far away, with many uncertainties along the journey that the organization must use empiricism. Because the Strategic Goal is aspirational and the path to it is uncertain, the organization needs a series of practical targets, like Intermediate Goals, achievements of which will indicate that the organization is on the path to its Strategic Goal. The path to the Intermediate Goal is often still somewhat uncertain, but not completely unknown.”'
+      },
+      {
+        id: 'q1_33',
+        question: 'A company is trying to evaluate how happy its existing investors and stakeholders are. They are also trying to see if their happiness is improving or declining. Which KVA should they analyze?',
+        options: [
+          'Time to Market',
+          'Current Value',
+          'Unrealized Value',
+          'Ability to Innovate'
+        ],
+        correctAnswer: 1,
+        explanation: 'Current Value (CV) reveals the value that the product delivers to customers, as of today. The goal of looking at a CV is to maximize the value that an organization delivers to customers and stakeholders at the present time. Current Value considers only what exists right now, not the value that might exist in the future. Questions that organizations need to continually re-evaluate for current value are: How happy are users and customers today? Is their happiness improving or declining? How happy are your employees today? Is their happiness improving or declining? How happy are your investors and other stakeholders today? Is their happiness improving or declining?'
+      },
+      {
+        id: 'q1_34',
+        question: 'Which of the following can potentially help reduce time to market? (Choose all that apply)',
+        options: [
+          'Improving pipeline automation.',
+          'Reducing the number of features in a release.',
+          'Removing internal communication bottlenecks.',
+          'Removing technical debt.',
+          'Shorter sprint cycles.'
+        ],
+        correctAnswer: [0, 1, 2, 3, 4],
+        explanation: 'Reducing time to market (TTM) is crucial for gaining a competitive edge. Strategies that can help include: improving pipeline automation (CI/CD), reducing the number of features in a release (like an MVP), removing internal communication bottlenecks, removing technical debt to improve performance, and using shorter sprint cycles for more frequent feedback.'
+      },
+      {
+        id: 'q1_35',
+        question: 'A Scrum Team (Lifeline) completed 80 story points of work in two weeks. Another Team (Pacemakers) completed 40 story points of work in one week. Which team delivered more value?',
+        options: [
+          'Team Lifeline, since they finished more units of work.',
+          'Team Pacemakers since they finished the work sooner.',
+          'The amount of work completed is a measure of effort, not the delivered value.',
+          'Team Lifeline and Team Pacemakers delivered equal value.'
+        ],
+        correctAnswer: 2,
+        explanation: 'The value of the work is measured by the value experienced by the customer. Story points are a measure of effort and complexity, not a direct measure of value delivered. Velocity is a measure of the amount of work that a team can do. This is not the same as measuring the value or impact of this work. Since story points measure effort and not value, we cannot conclude that one team delivered more value based solely on the story points completed.'
+      },
+      {
+        id: 'q1_36',
+        question: 'As a Product Owner, which of the following would you focus on to ensure value is being delivered by the product?(Choose all that apply)',
+        options: [
+          'The ease with which the product can be absorbed and used by its customers.',
+          'Feedback from the product\'s users.',
+          'The increased velocity of the Scrum Team.',
+          'The number of features delivered.',
+          'How much of the product is being used.',
+          'The level of accuracy between the done Increment and the original requirements.'
+        ],
+        correctAnswer: [0, 1, 4],
+        explanation: 'To ensure value is being delivered, a Product Owner should focus on: the ease of use of the product, direct feedback from users, and how much of the product is actually being used. These factors directly relate to the user\'s experience and the value they derive from the product. Metrics like velocity or the number of features delivered are internal measures of output, not necessarily of value.'
+      },
+      {
+        id: 'q1_37',
+        question: 'Which of the following are examples of Key Value Measures for Unrealized Value (UV)? (choose the best two options)',
+        options: [
+          'Customer Usage Index.',
+          'Product Cost Ratio.',
+          'Potential Market Share.',
+          'Innovation Rate.',
+          'Customer or user satisfaction gap.'
+        ],
+        correctAnswer: [2, 4],
+        explanation: 'Unrealized Value (UV) reveals the potential future value that could be realized if the organization was able to perfectly meet the needs of all potential customers. The best two options for Key Value Measures for Unrealized Value (UV) are Potential Market Share (the relative percentage of the market not controlled by the product) and Customer or user satisfaction gap (the difference between a customer’s desired experience and their current experience). The other options are incorrect as they are associated with different Key Value Areas: Customer Usage Index and Product Cost Ratio are measures of Current Value (CV), and Innovation Rate is associated with the Ability to Innovate (A2I).'
+      },
+      {
+        id: 'q1_38',
+        question: 'Which of the following are examples of Key Value Measures for Time-to-Market (T2M)? (choose the best three options)',
+        options: [
+          'Mean Time to Repair',
+          'Product Cost Ratio',
+          'Release Frequency',
+          'Innovation Rate',
+          'Cycle Time & Lead Time'
+        ],
+        correctAnswer: [0, 2, 4],
+        explanation: 'Key Value Measures for Time-to-Market (T2M) include Build and Integration frequency, Release Frequency, Release Stabilization Period, Mean Time to Repair, Customer Cycle Time, Lead Time, and more. Mean Time to Repair reveals the efficiency of an organization in fixing errors. Release Frequency reflects the time needed to satisfy the customer with new products. Customer Cycle Time and Lead Time reflect an organization’s ability to reach its customer and the time from idea to customer benefit, respectively. Product Cost Ratio is part of Current Value (CV), and Innovation Rate is part of Ability to Innovate (A2I).'
+      },
+      {
+        id: 'q1_39',
+        question: 'A team can have a high velocity however the increment can result in less or no value for the customer and on the other hand another team can make a small tweak to the product (less work) which could produce high value for the customer. Which of the following is NOT a good reason to keep a team together for an extended period? (Choose the best option)',
+        options: [
+          'To Improve team collaboration.',
+          'To Improve utilization.',
+          'To improve the exchange of expertise among the developers.',
+          'To make forecasting more consistent.',
+          'To improve a team\'s focus.'
+        ],
+        correctAnswer: 1,
+        explanation: 'High utilization is not always a result when teams are kept together. Better reasons for keeping a team together include improving collaboration, making forecasting more consistent, improving focus, and increasing knowledge sharing.'
+      },
+      {
+        id: 'q1_40',
+        question: 'Your executive team thinks that your product has the potential to acquire a larger market share. The sales head is urging you to decrease the price of the product to draw in more customers. However, the Director of Finance is worried that a lower price will negatively affect the product\'s profitability. To decide whether to lower the price as suggested by the Sales Leader, what sources of data should you take into account? (choose the best four answers)',
+        options: [
+          'Customer satisfaction.',
+          'Channel sales strategy.',
+          'Competitor pricing.',
+          'Market Share.',
+          'Company earnings targets.',
+          'Unmet customer\'s needs.'
+        ],
+        correctAnswer: [0, 2, 3, 5],
+        explanation: 'You should first focus on whether your product delivers value to customers and if there are unmet needs that competitors are addressing more effectively. Key data sources to consider are customer satisfaction, competitor pricing, current market share, and any unmet customer needs. If a product already has a high market share (low Unrealized Value) and high customer satisfaction (high Current Value), it might be better to maintain it and explore new markets. Channel sales strategy and company earnings targets are less relevant to this specific pricing decision.'
+      }
+    ]
   }
 ];
