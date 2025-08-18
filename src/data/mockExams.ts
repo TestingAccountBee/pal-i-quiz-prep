@@ -3190,489 +3190,489 @@ export const mockExams: Exam[] = [
     ]
   },
   {
-    id: 'q3_1',
-      question: 'What does the Customer Usage Index measure? (Choose the best two options)',
-      options: [
-        'Whether actual usage meets expectations on how long users should be taking with a feature.',
-        'The difference between a customer or user’s desired experience and their current experience.',
-        'Usage, by feature, to help infer the degree to which customers find the product useful.',
-        'The experience that the customer would like to have.',
-        'Sentiment analysis to help gauge customer engagement and happiness with the product.'
-      ],
-      correctAnswer: [0, 2],
-      explanation: ''
-    },
-    {
-      id: 'q3_2',
-      question: 'As the Product Owner, you have a product with a low Current Value and three unsuccessful releases in improving it, but a high Unrealized Value. The product also has a high-cost ratio, which limits your ability to deliver new features and has a long time-to-market. In light of these factors, what strategy would you implement to guarantee the product\'s long-term success? (choose the best option)',
-      options: [
-        'Given the product\'s inability to improve customer satisfaction, it may be better to discontinue the product and direct focus toward alternative opportunities.',
-        'With limited capacity, concentrate on identifying and delivering features that hold high value in an attempt to attract customers and increase revenue.',
-        'Identify and eliminate sources of waste to improve the Product Cost Ratio and Time to Market, creating a solid foundation for future innovation.',
-        'All of the above options.'
-      ],
-      correctAnswer: 2,
-      explanation: ''
-    },
-    {
-      id: 'q3_3',
-      question: 'You are the product owner of a team developing a complex medical device. The team is unsure of the final product\'s appearance. How would you proceed? (choose the best option)',
-      options: [
-        'Create research spikes.',
-        'Set a goal and try the most promising experiments in short iterations and learn from them as you go.',
-        'Take a few weeks to do an in-depth risk analysis and define what your product should look like.',
-        'Ask the customer for more detailed information.',
-        'Create a project roadmap and follow it as closely as possible.'
-      ],
-      correctAnswer: 1,
-      explanation: ''
-    },
-    {
-      id: 'q3_4',
-      question: 'Select ways that the Product Owner can ensure the product will deliver value to users and customers. (choose the best three options)',
-      options: [
-        'The readiness with which the product has been absorbed by users and used by them.',
-        'The product design and quantity of requirements included in the launch',
-        'What percentage of the requirements developed, in fact, is being used by users.',
-        'Speak directly to the user to receive feedback on the released product.',
-        'Reduction in the number of change requests issued by customers.'
-      ],
-      correctAnswer: [0, 2, 3],
-      explanation: ''
-    },
-    {
-      id: 'q3_5',
-      question: 'How can organizations benefit from creating and running experiments? (choose the best option)',
-      options: [
-        'Experiments can help organizations test how effective an improvement is.',
-        'Experiments can help organizations test whether features are delivering value.',
-        'Experiments can help organizations determine the feasibility of a goal.',
-        'Experiments can help organizations validate assumptions.',
-        'All of the above.',
-        'None of the above.'
-      ],
-      correctAnswer: 4,
-      explanation: ''
-    },
-    {
-      id: 'q3_6',
-      question: 'As a Product Owner, you have various types of stakeholders who provide feedback and ideas for the product. At a recent meeting, the Sales Manager insisted that a new feature be added in order to reach untapped new customers. The CFO contends that this new feature is not cost-effective and suggests focusing on other features to improve the satisfaction of existing customers. You find merit in both stakeholder perspectives. How should you proceed in this situation? (choose the best option)',
-      options: [
-        'Agree with the Sales Manager\'s proposal by implementing the requested features as it will help to boost the sales team\'s revenue.',
-        'Gather the opinions of all stakeholders, then make a decision on which request to pursue based on this information.',
-        'Implement the CFO\'s request to prevent customer churn.',
-        'Implement a small part of the Sales Manager\'s proposal in order to gather more information to better understand its potential.'
-      ],
-      correctAnswer: 3,
-      explanation: ''
-    },
-    {
-      id: 'q3_7',
-      question: 'As the Product Owner of a small company, you\'ve observed a drop in the Scrum Team\'s retention rate. Exit interviews indicate that the Developers are feeling frustrated by constant interruptions and pointless meetings, and they feel that their work lacks significance. Given the high cost of training new Developers for a small organization like yours, what other factors should you consider when trying to improve retention rates? (choose the best option)',
-      options: [
-        'The Innovation Rate, which is the ratio of new work to total work.',
-        'The On-Product Index, which measures the proportion of work related to the product to total work.',
-        'Employee Net Promoter Scores, which measures the overall job satisfaction and company satisfaction of the developers.',
-        'All of the above.'
-      ],
-      correctAnswer: 3,
-      explanation: ''
-    },
-    {
-      id: 'q3_8',
-      question: 'You release your product to customers once every month, which is better than any competitor. Most of the features you deliver are simply minor changes or corrections to existing features, but customer satisfaction remains low. What Key Value Area should be your primary focus to improve the competitiveness of your product? (choose the two best options)',
-      options: [
-        'Time to Market.',
-        'Current Value.',
-        'Ability to Innovate.',
-        'Unrealized Value.'
-      ],
-      correctAnswer: [2, 3],
-      explanation: ''
-    },
-    {
-      id: 'q3_9',
-      question: 'As a Product Owner, you\'ve noticed a decline in users of your product according to a recent report. A stakeholder with expertise in the field informs you that in order to acquire new customers, more features need to be released. However, based on the data you\'ve gathered, you\'ve determined that the loss of customers is caused by market changes rather than a lack of features. The stakeholder is concerned that if you don\'t add more features in the next release, you\'ll miss a window of opportunity and lose important customers. Given this information, what are the two most appropriate steps for a Product Owner to take? (choose the best two options)',
-      options: [
-        'Acknowledge the stakeholder\'s perspective but decline to add more features in the next release.',
-        'Partner with other stakeholders to gather more ideas and conduct a vote on which to pursue.',
-        'Acknowledge the stakeholder’s perspective and increase features in the next release.',
-        'Run a small experiment, in collaboration with the stakeholder, to validate their feedback.'
-      ],
-      correctAnswer: [0, 3],
-      explanation: ''
-    },
-    {
-      id: 'q3_10',
-      question: 'A new competitor has arrived in your market and has been quickly gaining traction. They can release much faster than you and they can create better customer engagement and satisfaction rates with with each release. What is the best first response? (choose the best option)',
-      options: [
-        'Enhance your next product release with new features to retain current clients and attract new ones.',
-        'Reduce your product price to make it more appealing.',
-        'Improve your time-to-market and ability to innovate in order to respond faster.',
-        'Shift your product to a market with less competition.'
-      ],
-      correctAnswer: 2,
-      explanation: ''
-    },
-    {
-      id: 'q3_11',
-      question: 'As an experienced Product Owner, your organization has asked you for your advice on investment strategies for two products. Given the following information: - Product B generates more revenue than Product A - Product B has higher user satisfaction rates than Product A - Product A has bigger potential market opportunities than Product B Which of the following strategies would you advise? (choose the best option)',
-      options: [
-        'For both products, continually measure the impact of new investments or marketing.',
-        'Invest in Product A to boost its market share, customer satisfaction, and revenue.',
-        'Increase marketing for Product B to grow its market share.',
-        'All of the above.',
-        'None of the above.'
-      ],
-      correctAnswer: 1,
-      explanation: ''
-    },
-    {
-      id: 'q3_12',
-      question: 'A new competitor has joined the market and has quickly gained market share, which leads to a loss of sales. After investigating, you have found out that the new competitor can release to the market faster than you three times. What is the best first response? (choose one best option)',
-      options: [
-        'Add new features you think can attract new customers to the next release.',
-        'Launch the promotion campaign and reduce the product\'s price to attract more customers.',
-        'Improve your Time-to-Market to compete with the competitor',
-        'All of the above.'
-      ],
-      correctAnswer: 2,
-      explanation: ''
-    },
-    {
-      id: 'q3_13',
-      question: 'In order to justify the price increase of a product, your primary objective should be to (choose the best option)',
-      options: [
-        'Enhance the product by adding more features to make it more appealing.',
-        'Improve the value experienced by the customer.',
-        'Reduce the number of features to make the product easier to use.',
-        'Lower the price temporarily before raising it higher than the original.'
-      ],
-      correctAnswer: 1,
-      explanation: ''
-    },
-    {
-      id: 'q3_14',
-      question: 'Which two measures can help a Product Owner evaluate how much impact is being delivered? (choose the best two options)',
-      options: [
-        'How many items the team is delivering per Sprint?',
-        'How much of the scope has been delivered versus what was planned?',
-        'How many Story Points are completed per Sprint?',
-        'How satisfied the customers are?',
-        'How frequently your deliveries are being used?'
-      ],
-      correctAnswer: [3, 4],
-      explanation: ''
-    },
-    {
-      id: 'q3_15',
-      question: 'You started measuring product feature usage in your last release. You are surprised to learn that a sizable percentage of the features you thought were very important are never or rarely used. Which of the following actions could you take to further evaluate this unexpected result? (choose all that apply)',
-      options: [
-        'Spend more time talking with your users to understand their needs.',
-        'Evaluate whether the rarely used features are solving the intended problems.',
-        'Run experiments to increase your understanding of what customers find valuable.',
-        'Turn off the features that are never used and seek more user feedback.'
-      ],
-      correctAnswer: [0, 1, 2, 3],
-      explanation: ''
-    },
-    {
-      id: 'q3_16',
-      question: 'As the Product Owner of a product that tracks the usage rate of its features by customers, you have encountered an influential stakeholder who is skeptical of the usage data and insists that a particular feature is essential, despite data showing low usage rates. The stakeholder considers monitoring feature usage to be a pointless endeavor. You have verified that the data is correct and consider it to be useful for you and your team. What is your next move? (choose the best option)',
-      options: [
-        'Stop measuring feature usage to please the stakeholders.',
-        'Keep measuring usage but don\'t make it public, use it for decision-making.',
-        'Keep measuring and openly share the data for transparency, and use it for decision-making.',
-        'All of the above.'
-      ],
-      correctAnswer: 2,
-      explanation: ''
-    },
-    {
-      id: 'q3_17',
-      question: 'As a Product Owner, you\'ve gathered a lot of ideas and suggestions. Based on the limited budget and time, you will not be able to pursue all of them. Which would be the best approach? (choose the best option)',
-      options: [
-        'Rank proposals based on their unrealized value and fully finance as many as possible.',
-        'Fund small experiments to validate proposed ideas and assumptions, then evaluate outcomes.',
-        'Direct resources to proposals that are expected to yield the highest revenue in the coming year.',
-        'Invest in all proposals but at lower levels and observe their performance.',
-        'Distribute the budget evenly across all items in order to accurately compare the ROI among items.'
-      ],
-      correctAnswer: 1,
-      explanation: ''
-    },
-    {
-      id: 'q3_18',
-      question: 'Management has asked you for advice on which product to fund. Each product focuses on different markets. Given the following information: - Product A has very high user satisfaction scores and high market share. - Product B has low user satisfaction scores, and a low market share, but is in a growing market in which no other competitor has a significant market share. Which product would you suggest funding? (choose the best option)',
-      options: [
-        'Product A',
-        'Product B'
-      ],
-      correctAnswer: 1,
-      explanation: ''
-    },
-    {
-      id: 'q3_19',
-      question: 'You deliver a new feature that you think will improve customer satisfaction. When you measure the results, you not only find that it had no impact on customer satisfaction, it was hardly used. What is your next step? (choose the best option)',
-      options: [
-        'Redesign the feature to improve its effectiveness and re-release it.',
-        'Redesign the interface to improve the feature\'s ease of use and re-release it.',
-        'Drop the feature from the product and focus on the next most important feature.',
-        'Investigate why the feature was not used by interviewing users and watching usage.'
-      ],
-      correctAnswer: 3,
-      explanation: ''
-    },
-    {
-      id: 'q3_20',
-      question: 'Which of the following best describes the Key Value Area of Current Value (CV)? (choose the best option)',
-      options: [
-        'It expresses the organization\'s ability to quickly deliver new capabilities, services, or products.',
-        'It expresses the ability of a product development organization to deliver new capabilities that might better meet customer needs.',
-        'It reveals the value that the product delivers to customers, today.',
-        'It suggests the potential future value that could be realized if the organization could perfectly meet the needs of all potential customers.'
-      ],
-      correctAnswer: 2,
-      explanation: ''
-    },
-    {
-      id: 'q3_21',
-      question: 'An experiment will help you to: (choose the best option)',
-      options: [
-        'Create reliable estimations.',
-        'Validate or reject a hypothesis.',
-        'Understand how users use the product.',
-        'Create a work plan for a product release.'
-      ],
-      correctAnswer: 1,
-      explanation: ''
-    },
-    {
-      id: 'q3_22',
-      question: 'You cannot get your stakeholders to agree on which features might provide the most value. How should you resolve this disagreement? (choose the best option)',
-      options: [
-        'Organize an activity where stakeholders can vote and "buy a feature".',
-        'Find someone who has higher authority than the stakeholders to make a decision.',
-        'Deliver a small part of a feature to customers and gather insights.',
-        'All of the above.'
-      ],
-      correctAnswer: 2,
-      explanation: ''
-    },
-    {
-      id: 'q3_23',
-      question: 'An organization is currently having difficulties delivering new releases of their products in a timely manner. When asked, the teams say that they need to share team members across different teams and products in order for a team to get their work done. At least one team needs help from a member of another team at any point in time. Which of the following would be the most appropriate response? (choose the best option)',
-      options: [
-        'Reduce the number of products in order to help improve focus and reduce dependencies between teams.',
-        'Create project plans for each of the products to include how to coordinate between teams and team members.',
-        'Work with HR to hire more people to increase the capacity of the teams.',
-        'All of the above',
-        'None of the above.'
-      ],
-      correctAnswer: 0,
-      explanation: ''
-    },
-    {
-      id: 'q3_24',
-      question: 'Sam the Product Owner, decided to release continuously new features. He supposed that more frequent releases increase the quality of the value. What could be the potential problems with his release strategy? (Choose all that apply).',
-      options: [
-        'The end-users are confused and getting annoyed with the constant releases.',
-        'The Developers notify that technical debt is accumulating.',
-        'The stakeholders are unhappy because the budget is consumed too quickly.',
-        'There is no problem with Sam’s release strategy.'
-      ],
-      correctAnswer: [0, 1, 2],
-      explanation: ''
-    },
-    {
-      id: 'q3_25',
-      question: 'ABC company\'s best-selling app has started to have its user base eroded by new competing apps that have newer and more popular features. An important stakeholder believes that ABC\'s app user base can be restored by adding several customer requests to the product backlog that would be prioritized over other planned product initiatives. This set of requested features would take over a year to implement and release and delay other items in the backlog. What should ABC do? (choose the best option)',
-      options: [
-        'Implement and measure the result of a single feature in a shortened one-month release cycle.',
-        'Implement selected suggestions from each stakeholder so as not to upset any of your stakeholders.',
-        'Postpone previously planned initiatives and start working on the backlog of customer requests as soon as possible.',
-        'Reach out to the customers to learn more about their needs and decide what to do next based on the information.'
-      ],
-      correctAnswer: 3,
-      explanation: ''
-    },
-    {
-      id: 'q3_26',
-      question: 'True or False, Interacting directly with the product\'s customers is an effective way for the Product Owner to assess value.',
-      options: [
-        'True',
-        'False'
-      ],
-      correctAnswer: 0,
-      explanation: ''
-    },
-    {
-      id: 'q3_27',
-      question: 'What is the desired outcome of using the Evidence-Based Management (EBM) approach? (choose the best option)',
-      options: [
-        'Measuring team progress against the predefined project plan.',
-        'Identifying low-performing teams and deciding on training strategies.',
-        'Improving velocity and predictability of the developers.',
-        'Continuously improve product viability and business value by ways of measuring delivered value and the ability to deliver value.'
-      ],
-      correctAnswer: 3,
-      explanation: ''
-    },
-    {
-      id: 'q3_28',
-      question: 'What things might a Product Owner focus on to ensure the product is useful and delivers value? (Choose all that apply)',
-      options: [
-        'How much of the functionality of the product is being utilized?',
-        'How swiftly and easily the product can be consumed and used by the customers.',
-        'Minimizing changes to project scope.',
-        'The size of the product in "lines of code".',
-        'Direct customer feedback.'
-      ],
-      correctAnswer: [0, 1, 4],
-      explanation: ''
-    },
-    {
-      id: 'q3_29',
-      question: 'Your organization is new to Scrum. Management would like to understand what measures are helpful in determining if value is being delivered. As a Product Owner, which two metrics would be appropriate? (choose the best two options)',
-      options: [
-        'Velocity.',
-        'Scope.',
-        'Productivity.',
-        'Customer satisfaction.',
-        'Time-to-Market.'
-      ],
-      correctAnswer: [3, 4],
-      explanation: ''
-    },
-    {
-      id: 'q3_30',
-      question: 'What can help you improve product viability and business value? (choose the best option)',
-      options: [
-        'Using Evidence-Based Management.',
-        'Improving the predictability of the Scrum Team’s velocity.',
-        'Ensuring no changes are made after project plan approval.',
-        'Tracking team member utilization.'
-      ],
-      correctAnswer: 0,
-      explanation: ''
-    },
-    {
-      id: 'q3_31',
-      question: 'There are two products - Product A produces high revenue. - Product B is a new product. Using those two data points, the information provided, and taking a long-term view, which of the options below should you pursue? (choose the best option)',
-      options: [
-        'Invest in both products equally.',
-        'Weight your investment toward Product A; as it is the lead revenue generator and you do not want to risk losing customers.',
-        'Weight your investment toward Product B; since it has more future potential.'
-      ],
-      correctAnswer: 2,
-      explanation: ''
-    },
-    {
-      id: 'q3_32',
-      question: 'Which of the following actions can provide you with insights into your product\'s potential value? (choose all that apply)',
-      options: [
-        'Monitoring feature usage of customers.',
-        'Measuring the satisfaction of your customers.',
-        'Learning about feature requests from customers.',
-        'Evaluating your competitors\' products.'
-      ],
-      correctAnswer: [0, 1, 2, 3],
-      explanation: ''
-    },
-    {
-      id: 'q3_33',
-      question: 'Evidence-based management is … (choose the best option)',
-      options: [
-        'A management framework to ensure the delivery of maximum value.',
-        'Mandatory practice for Product Owners using Scrum.',
-        'Mandatory practice for Scrum Masters to apply for a Scrum Team.',
-        'A framework organizations can use to help them measure, manage, and increase the value they derive from their product delivery.',
-        'Methodology organizations can use to help them increase the value of their product.'
-      ],
-      correctAnswer: 3,
-      explanation: ''
-    },
-    {
-      id: 'q3_34',
-      question: 'You have 20 teams working on a single release that will deliver 30 different features to your customers. It is estimated that this release will be finished in 4-5 months. How can you improve your Time to Market? (choose the best option)',
-      options: [
-        'As soon as a feature is ready, deliver it in its own smaller release.',
-        'Automate parts of the development and testing process to reduce waste.',
-        'Add more developers to increase the overall development capacity.'
-      ],
-      correctAnswer: 0,
-      explanation: ''
-    },
-    {
-      id: 'q3_35',
-      question: 'True or False, A product with a High Current Value and low Unrealized Value. Some say you should maintain the product, but gradually reduce the investment then start seeking another opportunity for future growth.',
-      options: [
-        'True',
-        'False'
-      ],
-      correctAnswer: 0,
-      explanation: ''
-    },
-    {
-      id: 'q3_36',
-      question: 'What is an important characteristic of goals in Evidence-Based Management? (Choose the best option)',
-      options: [
-        'They should be long-term and fixed.',
-        'They should be flexible and subject to regular review.',
-        'They should be defined by the Scrum Master.',
-        'They should not be influenced by external feedback.'
-      ],
-      correctAnswer: 1,
-      explanation: ''
-    },
-    {
-      id: 'q3_37',
-      question: 'How does "Lead Time for Changes" contribute to the "Time to Market" Key Value Area? (Choose the best option)',
-      options: [
-        'It measures the time taken to implement changes, thereby reflecting the team\'s agility.',
-        'It tracks the satisfaction level of the scrum team.',
-        'It measures the potential future value of changes.',
-        'It evaluates the profitability of the product.'
-      ],
-      correctAnswer: 0,
-      explanation: ''
-    },
-    {
-      id: 'q3_38',
-      question: 'A company is facing issues with its releases. The Release dates are always delayed by a few months due to the bugs found. These bugs are always discovered during the last few months of the release. To improve the product’s time to market, the team should: (choose the best option)',
-      options: [
-        'Co-locate team members.',
-        'Reduce the number of features.',
-        'Commit team members to only one team, at a time.',
-        'All of the above.'
-      ],
-      correctAnswer: 3,
-      explanation: ''
-    },
-    {
-      id: 'q3_39',
-      question: 'Value stream mapping is a useful technique to: (choose the best option)',
-      options: [
-        'Understand customer requirements.',
-        'Understand how to break down work and assign it to teams.',
-        'Identify sources of waste and non-value-added work in a process.',
-        'Enable a Portfolio view of your “Epics.”.',
-        'Understand how to break down epics into smaller user stories.'
-      ],
-      correctAnswer: 2,
-      explanation: ''
-    },
-    {
-      id: 'q3_40',
-      question: 'Synchronizing release schedules across multiple teams will: (choose the best option)',
-      options: [
-        'Reduce dependency.',
-        'Always deliver the increment on time.',
-        'Increase productivity.',
-        'None of the above'
-      ],
-      correctAnswer: 3,
-      explanation: ''
+      id: 'q3_1',
+        question: 'What does the Customer Usage Index measure? (Choose the best two options)',
+        options: [
+          'Whether actual usage meets expectations on how long users should be taking with a feature.',
+          'The difference between a customer or user’s desired experience and their current experience.',
+          'Usage, by feature, to help infer the degree to which customers find the product useful.',
+          'The experience that the customer would like to have.',
+          'Sentiment analysis to help gauge customer engagement and happiness with the product.'
+        ],
+        correctAnswer: [0, 2],
+        explanation: ''
+      },
+      {
+        id: 'q3_2',
+        question: 'As the Product Owner, you have a product with a low Current Value and three unsuccessful releases in improving it, but a high Unrealized Value. The product also has a high-cost ratio, which limits your ability to deliver new features and has a long time-to-market. In light of these factors, what strategy would you implement to guarantee the product\'s long-term success? (choose the best option)',
+        options: [
+          'Given the product\'s inability to improve customer satisfaction, it may be better to discontinue the product and direct focus toward alternative opportunities.',
+          'With limited capacity, concentrate on identifying and delivering features that hold high value in an attempt to attract customers and increase revenue.',
+          'Identify and eliminate sources of waste to improve the Product Cost Ratio and Time to Market, creating a solid foundation for future innovation.',
+          'All of the above options.'
+        ],
+        correctAnswer: 2,
+        explanation: ''
+      },
+      {
+        id: 'q3_3',
+        question: 'You are the product owner of a team developing a complex medical device. The team is unsure of the final product\'s appearance. How would you proceed? (choose the best option)',
+        options: [
+          'Create research spikes.',
+          'Set a goal and try the most promising experiments in short iterations and learn from them as you go.',
+          'Take a few weeks to do an in-depth risk analysis and define what your product should look like.',
+          'Ask the customer for more detailed information.',
+          'Create a project roadmap and follow it as closely as possible.'
+        ],
+        correctAnswer: 1,
+        explanation: ''
+      },
+      {
+        id: 'q3_4',
+        question: 'Select ways that the Product Owner can ensure the product will deliver value to users and customers. (choose the best three options)',
+        options: [
+          'The readiness with which the product has been absorbed by users and used by them.',
+          'The product design and quantity of requirements included in the launch',
+          'What percentage of the requirements developed, in fact, is being used by users.',
+          'Speak directly to the user to receive feedback on the released product.',
+          'Reduction in the number of change requests issued by customers.'
+        ],
+        correctAnswer: [0, 2, 3],
+        explanation: ''
+      },
+      {
+        id: 'q3_5',
+        question: 'How can organizations benefit from creating and running experiments? (choose the best option)',
+        options: [
+          'Experiments can help organizations test how effective an improvement is.',
+          'Experiments can help organizations test whether features are delivering value.',
+          'Experiments can help organizations determine the feasibility of a goal.',
+          'Experiments can help organizations validate assumptions.',
+          'All of the above.',
+          'None of the above.'
+        ],
+        correctAnswer: 4,
+        explanation: ''
+      },
+      {
+        id: 'q3_6',
+        question: 'As a Product Owner, you have various types of stakeholders who provide feedback and ideas for the product. At a recent meeting, the Sales Manager insisted that a new feature be added in order to reach untapped new customers. The CFO contends that this new feature is not cost-effective and suggests focusing on other features to improve the satisfaction of existing customers. You find merit in both stakeholder perspectives. How should you proceed in this situation? (choose the best option)',
+        options: [
+          'Agree with the Sales Manager\'s proposal by implementing the requested features as it will help to boost the sales team\'s revenue.',
+          'Gather the opinions of all stakeholders, then make a decision on which request to pursue based on this information.',
+          'Implement the CFO\'s request to prevent customer churn.',
+          'Implement a small part of the Sales Manager\'s proposal in order to gather more information to better understand its potential.'
+        ],
+        correctAnswer: 3,
+        explanation: ''
+      },
+      {
+        id: 'q3_7',
+        question: 'As the Product Owner of a small company, you\'ve observed a drop in the Scrum Team\'s retention rate. Exit interviews indicate that the Developers are feeling frustrated by constant interruptions and pointless meetings, and they feel that their work lacks significance. Given the high cost of training new Developers for a small organization like yours, what other factors should you consider when trying to improve retention rates? (choose the best option)',
+        options: [
+          'The Innovation Rate, which is the ratio of new work to total work.',
+          'The On-Product Index, which measures the proportion of work related to the product to total work.',
+          'Employee Net Promoter Scores, which measures the overall job satisfaction and company satisfaction of the developers.',
+          'All of the above.'
+        ],
+        correctAnswer: 3,
+        explanation: ''
+      },
+      {
+        id: 'q3_8',
+        question: 'You release your product to customers once every month, which is better than any competitor. Most of the features you deliver are simply minor changes or corrections to existing features, but customer satisfaction remains low. What Key Value Area should be your primary focus to improve the competitiveness of your product? (choose the two best options)',
+        options: [
+          'Time to Market.',
+          'Current Value.',
+          'Ability to Innovate.',
+          'Unrealized Value.'
+        ],
+        correctAnswer: [2, 3],
+        explanation: ''
+      },
+      {
+        id: 'q3_9',
+        question: 'As a Product Owner, you\'ve noticed a decline in users of your product according to a recent report. A stakeholder with expertise in the field informs you that in order to acquire new customers, more features need to be released. However, based on the data you\'ve gathered, you\'ve determined that the loss of customers is caused by market changes rather than a lack of features. The stakeholder is concerned that if you don\'t add more features in the next release, you\'ll miss a window of opportunity and lose important customers. Given this information, what are the two most appropriate steps for a Product Owner to take? (choose the best two options)',
+        options: [
+          'Acknowledge the stakeholder\'s perspective but decline to add more features in the next release.',
+          'Partner with other stakeholders to gather more ideas and conduct a vote on which to pursue.',
+          'Acknowledge the stakeholder’s perspective and increase features in the next release.',
+          'Run a small experiment, in collaboration with the stakeholder, to validate their feedback.'
+        ],
+        correctAnswer: [0, 3],
+        explanation: ''
+      },
+      {
+        id: 'q3_10',
+        question: 'A new competitor has arrived in your market and has been quickly gaining traction. They can release much faster than you and they can create better customer engagement and satisfaction rates with with each release. What is the best first response? (choose the best option)',
+        options: [
+          'Enhance your next product release with new features to retain current clients and attract new ones.',
+          'Reduce your product price to make it more appealing.',
+          'Improve your time-to-market and ability to innovate in order to respond faster.',
+          'Shift your product to a market with less competition.'
+        ],
+        correctAnswer: 2,
+        explanation: ''
+      },
+      {
+        id: 'q3_11',
+        question: 'As an experienced Product Owner, your organization has asked you for your advice on investment strategies for two products. Given the following information: - Product B generates more revenue than Product A - Product B has higher user satisfaction rates than Product A - Product A has bigger potential market opportunities than Product B Which of the following strategies would you advise? (choose the best option)',
+        options: [
+          'For both products, continually measure the impact of new investments or marketing.',
+          'Invest in Product A to boost its market share, customer satisfaction, and revenue.',
+          'Increase marketing for Product B to grow its market share.',
+          'All of the above.',
+          'None of the above.'
+        ],
+        correctAnswer: 1,
+        explanation: ''
+      },
+      {
+        id: 'q3_12',
+        question: 'A new competitor has joined the market and has quickly gained market share, which leads to a loss of sales. After investigating, you have found out that the new competitor can release to the market faster than you three times. What is the best first response? (choose one best option)',
+        options: [
+          'Add new features you think can attract new customers to the next release.',
+          'Launch the promotion campaign and reduce the product\'s price to attract more customers.',
+          'Improve your Time-to-Market to compete with the competitor',
+          'All of the above.'
+        ],
+        correctAnswer: 2,
+        explanation: ''
+      },
+      {
+        id: 'q3_13',
+        question: 'In order to justify the price increase of a product, your primary objective should be to (choose the best option)',
+        options: [
+          'Enhance the product by adding more features to make it more appealing.',
+          'Improve the value experienced by the customer.',
+          'Reduce the number of features to make the product easier to use.',
+          'Lower the price temporarily before raising it higher than the original.'
+        ],
+        correctAnswer: 1,
+        explanation: ''
+      },
+      {
+        id: 'q3_14',
+        question: 'Which two measures can help a Product Owner evaluate how much impact is being delivered? (choose the best two options)',
+        options: [
+          'How many items the team is delivering per Sprint?',
+          'How much of the scope has been delivered versus what was planned?',
+          'How many Story Points are completed per Sprint?',
+          'How satisfied the customers are?',
+          'How frequently your deliveries are being used?'
+        ],
+        correctAnswer: [3, 4],
+        explanation: ''
+      },
+      {
+        id: 'q3_15',
+        question: 'You started measuring product feature usage in your last release. You are surprised to learn that a sizable percentage of the features you thought were very important are never or rarely used. Which of the following actions could you take to further evaluate this unexpected result? (choose all that apply)',
+        options: [
+          'Spend more time talking with your users to understand their needs.',
+          'Evaluate whether the rarely used features are solving the intended problems.',
+          'Run experiments to increase your understanding of what customers find valuable.',
+          'Turn off the features that are never used and seek more user feedback.'
+        ],
+        correctAnswer: [0, 1, 2, 3],
+        explanation: ''
+      },
+      {
+        id: 'q3_16',
+        question: 'As the Product Owner of a product that tracks the usage rate of its features by customers, you have encountered an influential stakeholder who is skeptical of the usage data and insists that a particular feature is essential, despite data showing low usage rates. The stakeholder considers monitoring feature usage to be a pointless endeavor. You have verified that the data is correct and consider it to be useful for you and your team. What is your next move? (choose the best option)',
+        options: [
+          'Stop measuring feature usage to please the stakeholders.',
+          'Keep measuring usage but don\'t make it public, use it for decision-making.',
+          'Keep measuring and openly share the data for transparency, and use it for decision-making.',
+          'All of the above.'
+        ],
+        correctAnswer: 2,
+        explanation: ''
+      },
+      {
+        id: 'q3_17',
+        question: 'As a Product Owner, you\'ve gathered a lot of ideas and suggestions. Based on the limited budget and time, you will not be able to pursue all of them. Which would be the best approach? (choose the best option)',
+        options: [
+          'Rank proposals based on their unrealized value and fully finance as many as possible.',
+          'Fund small experiments to validate proposed ideas and assumptions, then evaluate outcomes.',
+          'Direct resources to proposals that are expected to yield the highest revenue in the coming year.',
+          'Invest in all proposals but at lower levels and observe their performance.',
+          'Distribute the budget evenly across all items in order to accurately compare the ROI among items.'
+        ],
+        correctAnswer: 1,
+        explanation: ''
+      },
+      {
+        id: 'q3_18',
+        question: 'Management has asked you for advice on which product to fund. Each product focuses on different markets. Given the following information: - Product A has very high user satisfaction scores and high market share. - Product B has low user satisfaction scores, and a low market share, but is in a growing market in which no other competitor has a significant market share. Which product would you suggest funding? (choose the best option)',
+        options: [
+          'Product A',
+          'Product B'
+        ],
+        correctAnswer: 1,
+        explanation: ''
+      },
+      {
+        id: 'q3_19',
+        question: 'You deliver a new feature that you think will improve customer satisfaction. When you measure the results, you not only find that it had no impact on customer satisfaction, it was hardly used. What is your next step? (choose the best option)',
+        options: [
+          'Redesign the feature to improve its effectiveness and re-release it.',
+          'Redesign the interface to improve the feature\'s ease of use and re-release it.',
+          'Drop the feature from the product and focus on the next most important feature.',
+          'Investigate why the feature was not used by interviewing users and watching usage.'
+        ],
+        correctAnswer: 3,
+        explanation: ''
+      },
+      {
+        id: 'q3_20',
+        question: 'Which of the following best describes the Key Value Area of Current Value (CV)? (choose the best option)',
+        options: [
+          'It expresses the organization\'s ability to quickly deliver new capabilities, services, or products.',
+          'It expresses the ability of a product development organization to deliver new capabilities that might better meet customer needs.',
+          'It reveals the value that the product delivers to customers, today.',
+          'It suggests the potential future value that could be realized if the organization could perfectly meet the needs of all potential customers.'
+        ],
+        correctAnswer: 2,
+        explanation: ''
+      },
+      {
+        id: 'q3_21',
+        question: 'An experiment will help you to: (choose the best option)',
+        options: [
+          'Create reliable estimations.',
+          'Validate or reject a hypothesis.',
+          'Understand how users use the product.',
+          'Create a work plan for a product release.'
+        ],
+        correctAnswer: 1,
+        explanation: ''
+      },
+      {
+        id: 'q3_22',
+        question: 'You cannot get your stakeholders to agree on which features might provide the most value. How should you resolve this disagreement? (choose the best option)',
+        options: [
+          'Organize an activity where stakeholders can vote and "buy a feature".',
+          'Find someone who has higher authority than the stakeholders to make a decision.',
+          'Deliver a small part of a feature to customers and gather insights.',
+          'All of the above.'
+        ],
+        correctAnswer: 2,
+        explanation: ''
+      },
+      {
+        id: 'q3_23',
+        question: 'An organization is currently having difficulties delivering new releases of their products in a timely manner. When asked, the teams say that they need to share team members across different teams and products in order for a team to get their work done. At least one team needs help from a member of another team at any point in time. Which of the following would be the most appropriate response? (choose the best option)',
+        options: [
+          'Reduce the number of products in order to help improve focus and reduce dependencies between teams.',
+          'Create project plans for each of the products to include how to coordinate between teams and team members.',
+          'Work with HR to hire more people to increase the capacity of the teams.',
+          'All of the above',
+          'None of the above.'
+        ],
+        correctAnswer: 0,
+        explanation: ''
+      },
+      {
+        id: 'q3_24',
+        question: 'Sam the Product Owner, decided to release continuously new features. He supposed that more frequent releases increase the quality of the value. What could be the potential problems with his release strategy? (Choose all that apply).',
+        options: [
+          'The end-users are confused and getting annoyed with the constant releases.',
+          'The Developers notify that technical debt is accumulating.',
+          'The stakeholders are unhappy because the budget is consumed too quickly.',
+          'There is no problem with Sam’s release strategy.'
+        ],
+        correctAnswer: [0, 1, 2],
+        explanation: ''
+      },
+      {
+        id: 'q3_25',
+        question: 'ABC company\'s best-selling app has started to have its user base eroded by new competing apps that have newer and more popular features. An important stakeholder believes that ABC\'s app user base can be restored by adding several customer requests to the product backlog that would be prioritized over other planned product initiatives. This set of requested features would take over a year to implement and release and delay other items in the backlog. What should ABC do? (choose the best option)',
+        options: [
+          'Implement and measure the result of a single feature in a shortened one-month release cycle.',
+          'Implement selected suggestions from each stakeholder so as not to upset any of your stakeholders.',
+          'Postpone previously planned initiatives and start working on the backlog of customer requests as soon as possible.',
+          'Reach out to the customers to learn more about their needs and decide what to do next based on the information.'
+        ],
+        correctAnswer: 3,
+        explanation: ''
+      },
+      {
+        id: 'q3_26',
+        question: 'True or False, Interacting directly with the product\'s customers is an effective way for the Product Owner to assess value.',
+        options: [
+          'True',
+          'False'
+        ],
+        correctAnswer: 0,
+        explanation: ''
+      },
+      {
+        id: 'q3_27',
+        question: 'What is the desired outcome of using the Evidence-Based Management (EBM) approach? (choose the best option)',
+        options: [
+          'Measuring team progress against the predefined project plan.',
+          'Identifying low-performing teams and deciding on training strategies.',
+          'Improving velocity and predictability of the developers.',
+          'Continuously improve product viability and business value by ways of measuring delivered value and the ability to deliver value.'
+        ],
+        correctAnswer: 3,
+        explanation: ''
+      },
+      {
+        id: 'q3_28',
+        question: 'What things might a Product Owner focus on to ensure the product is useful and delivers value? (Choose all that apply)',
+        options: [
+          'How much of the functionality of the product is being utilized?',
+          'How swiftly and easily the product can be consumed and used by the customers.',
+          'Minimizing changes to project scope.',
+          'The size of the product in "lines of code".',
+          'Direct customer feedback.'
+        ],
+        correctAnswer: [0, 1, 4],
+        explanation: ''
+      },
+      {
+        id: 'q3_29',
+        question: 'Your organization is new to Scrum. Management would like to understand what measures are helpful in determining if value is being delivered. As a Product Owner, which two metrics would be appropriate? (choose the best two options)',
+        options: [
+          'Velocity.',
+          'Scope.',
+          'Productivity.',
+          'Customer satisfaction.',
+          'Time-to-Market.'
+        ],
+        correctAnswer: [3, 4],
+        explanation: ''
+      },
+      {
+        id: 'q3_30',
+        question: 'What can help you improve product viability and business value? (choose the best option)',
+        options: [
+          'Using Evidence-Based Management.',
+          'Improving the predictability of the Scrum Team’s velocity.',
+          'Ensuring no changes are made after project plan approval.',
+          'Tracking team member utilization.'
+        ],
+        correctAnswer: 0,
+        explanation: ''
+      },
+      {
+        id: 'q3_31',
+        question: 'There are two products - Product A produces high revenue. - Product B is a new product. Using those two data points, the information provided, and taking a long-term view, which of the options below should you pursue? (choose the best option)',
+        options: [
+          'Invest in both products equally.',
+          'Weight your investment toward Product A; as it is the lead revenue generator and you do not want to risk losing customers.',
+          'Weight your investment toward Product B; since it has more future potential.'
+        ],
+        correctAnswer: 2,
+        explanation: ''
+      },
+      {
+        id: 'q3_32',
+        question: 'Which of the following actions can provide you with insights into your product\'s potential value? (choose all that apply)',
+        options: [
+          'Monitoring feature usage of customers.',
+          'Measuring the satisfaction of your customers.',
+          'Learning about feature requests from customers.',
+          'Evaluating your competitors\' products.'
+        ],
+        correctAnswer: [0, 1, 2, 3],
+        explanation: ''
+      },
+      {
+        id: 'q3_33',
+        question: 'Evidence-based management is … (choose the best option)',
+        options: [
+          'A management framework to ensure the delivery of maximum value.',
+          'Mandatory practice for Product Owners using Scrum.',
+          'Mandatory practice for Scrum Masters to apply for a Scrum Team.',
+          'A framework organizations can use to help them measure, manage, and increase the value they derive from their product delivery.',
+          'Methodology organizations can use to help them increase the value of their product.'
+        ],
+        correctAnswer: 3,
+        explanation: ''
+      },
+      {
+        id: 'q3_34',
+        question: 'You have 20 teams working on a single release that will deliver 30 different features to your customers. It is estimated that this release will be finished in 4-5 months. How can you improve your Time to Market? (choose the best option)',
+        options: [
+          'As soon as a feature is ready, deliver it in its own smaller release.',
+          'Automate parts of the development and testing process to reduce waste.',
+          'Add more developers to increase the overall development capacity.'
+        ],
+        correctAnswer: 0,
+        explanation: ''
+      },
+      {
+        id: 'q3_35',
+        question: 'True or False, A product with a High Current Value and low Unrealized Value. Some say you should maintain the product, but gradually reduce the investment then start seeking another opportunity for future growth.',
+        options: [
+          'True',
+          'False'
+        ],
+        correctAnswer: 0,
+        explanation: ''
+      },
+      {
+        id: 'q3_36',
+        question: 'What is an important characteristic of goals in Evidence-Based Management? (Choose the best option)',
+        options: [
+          'They should be long-term and fixed.',
+          'They should be flexible and subject to regular review.',
+          'They should be defined by the Scrum Master.',
+          'They should not be influenced by external feedback.'
+        ],
+        correctAnswer: 1,
+        explanation: ''
+      },
+      {
+        id: 'q3_37',
+        question: 'How does "Lead Time for Changes" contribute to the "Time to Market" Key Value Area? (Choose the best option)',
+        options: [
+          'It measures the time taken to implement changes, thereby reflecting the team\'s agility.',
+          'It tracks the satisfaction level of the scrum team.',
+          'It measures the potential future value of changes.',
+          'It evaluates the profitability of the product.'
+        ],
+        correctAnswer: 0,
+        explanation: ''
+      },
+      {
+        id: 'q3_38',
+        question: 'A company is facing issues with its releases. The Release dates are always delayed by a few months due to the bugs found. These bugs are always discovered during the last few months of the release. To improve the product’s time to market, the team should: (choose the best option)',
+        options: [
+          'Co-locate team members.',
+          'Reduce the number of features.',
+          'Commit team members to only one team, at a time.',
+          'All of the above.'
+        ],
+        correctAnswer: 3,
+        explanation: ''
+      },
+      {
+        id: 'q3_39',
+        question: 'Value stream mapping is a useful technique to: (choose the best option)',
+        options: [
+          'Understand customer requirements.',
+          'Understand how to break down work and assign it to teams.',
+          'Identify sources of waste and non-value-added work in a process.',
+          'Enable a Portfolio view of your “Epics.”.',
+          'Understand how to break down epics into smaller user stories.'
+        ],
+        correctAnswer: 2,
+        explanation: ''
+      },
+      {
+        id: 'q3_40',
+        question: 'Synchronizing release schedules across multiple teams will: (choose the best option)',
+        options: [
+          'Reduce dependency.',
+          'Always deliver the increment on time.',
+          'Increase productivity.',
+          'None of the above'
+        ],
+        correctAnswer: 3,
+        explanation: ''
       }
     ]
   },
