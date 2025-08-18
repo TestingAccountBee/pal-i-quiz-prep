@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
 import { Clock, ChevronLeft, ChevronRight, Flag } from 'lucide-react';
 import { Exam, ExamAttempt, Question } from '@/types/exam';
 
@@ -206,13 +207,28 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
 
       {/* Navigation */}
       <div className="flex items-center justify-between">
-        <Button
-          variant="outline"
-          onClick={onBack}
-          className="border-border hover:border-primary hover:text-primary"
-        >
-          Exit Exam
-        </Button>
+        <AlertDialog>
+          <AlertDialogTrigger asChild>
+            <Button
+              variant="outline"
+              className="border-border hover:border-primary hover:text-primary"
+            >
+              Exit Exam
+            </Button>
+          </AlertDialogTrigger>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>Exit Exam?</AlertDialogTitle>
+              <AlertDialogDescription>
+                Are you sure you want to exit the exam? All unanswered questions will be considered incorrect.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogAction onClick={onBack}>Exit Exam</AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
 
         <div className="flex items-center gap-3">
           <Button
