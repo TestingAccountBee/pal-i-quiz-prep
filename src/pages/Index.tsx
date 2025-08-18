@@ -55,22 +55,49 @@ const Index = () => {
   const handleExamSubmit = (attempt: any) => {
     if (!selectedExam) return;
 
-    // Calculate results logic here (simplified for now)
-    const score = Math.floor(Math.random() * 40) + 60; // Mock score
-    const passed = score >= selectedExam.passingScore;
+    // Calculate real results based on user answers
+    const questionResults = selectedExam.questions.map((question) => {
+      const userAnswer = attempt.answers[question.id];
+      let isCorrect = false;
+
+      if (Array.isArray(question.correctAnswer)) {
+        // Multiple choice - check if arrays match
+        const userAnswerArray = Array.isArray(userAnswer) ? userAnswer : [];
+        const correctAnswerArray = question.correctAnswer;
+        isCorrect = userAnswerArray.length === correctAnswerArray.length && 
+                   userAnswerArray.sort().every((val, index) => val === correctAnswerArray.sort()[index]);
+      } else {
+        // Single choice - direct comparison
+        isCorrect = userAnswer === question.correctAnswer;
+      }
+
+      return {
+        question,
+        userAnswer: userAnswer !== undefined ? userAnswer : null,
+        isCorrect
+      };
+    });
+
+    const correctAnswers = questionResults.filter(qr => qr.isCorrect).length;
+    const totalQuestions = selectedExam.questions.length;
+    const scorePercentage = Math.round((correctAnswers / totalQuestions) * 100);
+    const passed = scorePercentage >= selectedExam.passingScore;
+
+    // Calculate actual time spent
+    const timeSpent = Math.floor((new Date().getTime() - attempt.startTime.getTime()) / 1000);
 
     const result: ExamResult = {
       attempt: {
         ...attempt,
         endTime: new Date(),
-        score,
+        score: scorePercentage,
         passed
       },
       exam: selectedExam,
-      correctAnswers: Math.floor((score / 100) * selectedExam.questions.length),
-      totalQuestions: selectedExam.questions.length,
-      timeSpent: 3600,
-      questionResults: []
+      correctAnswers,
+      totalQuestions,
+      timeSpent,
+      questionResults
     };
 
     // Save to localStorage
