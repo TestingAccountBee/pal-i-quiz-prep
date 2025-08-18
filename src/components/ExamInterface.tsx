@@ -83,6 +83,11 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
     onSubmit(attempt);
   };
 
+  const handleExitExam = () => {
+    // Same as handleSubmit - we want to show results even on exit
+    handleSubmit();
+  };
+
   const progress = ((currentQuestion + 1) / exam.questions.length) * 100;
   const currentQ = exam.questions[currentQuestion];
   const answeredCount = Object.keys(answers).length;
@@ -225,7 +230,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
             </AlertDialogHeader>
             <AlertDialogFooter>
               <AlertDialogCancel>Cancel</AlertDialogCancel>
-              <AlertDialogAction onClick={onBack}>Exit Exam</AlertDialogAction>
+              <AlertDialogAction onClick={handleExitExam}>Exit Exam</AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialog>
