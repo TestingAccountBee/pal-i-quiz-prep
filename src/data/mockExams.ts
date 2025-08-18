@@ -3190,7 +3190,14 @@ export const mockExams: Exam[] = [
     ]
   },
   {
-      id: 'q3_1',
+    id: 'palebm-mock-3',
+  title: 'PAL EBM Mock Exam #3',
+  description: 'Practice exam for the Professional Agile Leadership - Evidence-Based Management certification.',
+  timeLimit: 60,
+  passingScore: 85,
+  questions: [
+    {
+        id: 'q3_1',
         question: 'What does the Customer Usage Index measure? (Choose the best two options)',
         options: [
           'Whether actual usage meets expectations on how long users should be taking with a feature.',
