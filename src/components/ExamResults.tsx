@@ -2,8 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { CheckCircle, XCircle, Clock, RotateCcw, Home } from 'lucide-react';
+import { CheckCircle, XCircle, Clock, RotateCcw, Home, Filter } from 'lucide-react';
 import { ExamResult } from '@/types/exam';
+import { useState } from 'react';
 
 interface ExamResultsProps {
   result: ExamResult;
@@ -16,6 +17,16 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
   const scorePercentage = Math.round((correctAnswers / totalQuestions) * 100);
   const passed = scorePercentage >= exam.passingScore;
   const timeUsed = Math.floor(timeSpent / 60);
+
+  // Filter state
+  const [filter, setFilter] = useState<'all' | 'correct' | 'incorrect'>('all');
+  
+  // Filter questions based on current filter
+  const filteredQuestions = questionResults.filter((qr) => {
+    if (filter === 'correct') return qr.isCorrect;
+    if (filter === 'incorrect') return !qr.isCorrect;
+    return true;
+  });
 
   // Helper function to determine if a question is multiple choice
   const isMultipleChoice = (question: any) => {
@@ -94,24 +105,58 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
       {/* Question Review */}
       <Card className="bg-gradient-card border-0 shadow-medium">
         <CardHeader>
-          <CardTitle className="text-xl">Question Review</CardTitle>
-          <p className="text-muted-foreground">
-            Review your answers and learn from the explanations below.
-          </p>
+          <div className="flex items-center justify-between mb-4">
+            <div>
+              <CardTitle className="text-xl">Question Review</CardTitle>
+              <p className="text-muted-foreground">
+                Review your answers and learn from the explanations below.
+              </p>
+            </div>
+            
+            {/* Filter Buttons */}
+            <div className="flex gap-2">
+              <Button
+                variant={filter === 'all' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setFilter('all')}
+              >
+                <Filter className="h-4 w-4 mr-1" />
+                Todas ({questionResults.length})
+              </Button>
+              <Button
+                variant={filter === 'correct' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setFilter('correct')}
+                className={filter === 'correct' ? 'bg-success hover:bg-success/90' : 'border-success text-success hover:bg-success hover:text-white'}
+              >
+                <CheckCircle className="h-4 w-4 mr-1" />
+                Corretas ({questionResults.filter(qr => qr.isCorrect).length})
+              </Button>
+              <Button
+                variant={filter === 'incorrect' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setFilter('incorrect')}
+                className={filter === 'incorrect' ? 'bg-destructive hover:bg-destructive/90' : 'border-destructive text-destructive hover:bg-destructive hover:text-white'}
+              >
+                <XCircle className="h-4 w-4 mr-1" />
+                Incorretas ({questionResults.filter(qr => !qr.isCorrect).length})
+              </Button>
+            </div>
+          </div>
         </CardHeader>
         <CardContent className="space-y-4">
-          {questionResults.map((qr, index) => (
+          {filteredQuestions.map((qr, index) => (
             <div
               key={qr.question.id}
               className={`p-4 rounded-lg border-2 ${
-                qr.isCorrect ? 'border-success/20 bg-success/5' : 'border-warning/20 bg-warning/5'
+                qr.isCorrect ? 'border-success/20 bg-success/5' : 'border-destructive/20 bg-destructive/5'
               }`}
             >
               <div className="flex items-start gap-3 mb-3">
                 {qr.isCorrect ? (
                   <CheckCircle className="h-5 w-5 text-success mt-1 flex-shrink-0" />
                 ) : (
-                  <XCircle className="h-5 w-5 text-warning mt-1 flex-shrink-0" />
+                  <XCircle className="h-5 w-5 text-destructive mt-1 flex-shrink-0" />
                 )}
                 <div className="flex-1">
                   <h4 className="font-semibold mb-2">
@@ -146,7 +191,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
                             isCorrectOption
                               ? 'border-success bg-success/10 text-success'
                               : isWrongSelection
-                              ? 'border-warning bg-warning/10 text-warning'
+                              ? 'border-destructive bg-destructive/10 text-destructive'
                               : 'border-border bg-card'
                           }`}
                         >
