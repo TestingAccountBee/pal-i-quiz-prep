@@ -145,7 +145,11 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
           </div>
         </CardHeader>
         <CardContent className="space-y-4">
-          {filteredQuestions.map((qr, index) => (
+          {filteredQuestions.map((qr) => {
+            // Find the original index of this question in the full exam
+            const originalIndex = questionResults.findIndex(originalQr => originalQr.question.id === qr.question.id);
+            
+            return (
             <div
               key={qr.question.id}
               className={`p-4 rounded-lg border-2 ${
@@ -160,7 +164,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
                 )}
                 <div className="flex-1">
                   <h4 className="font-semibold mb-2">
-                    Question {index + 1}: {qr.question.question}
+                    Question {originalIndex + 1}: {qr.question.question}
                   </h4>
                   
                   {isMultipleChoice(qr.question) && (
@@ -223,7 +227,8 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </CardContent>
       </Card>
     </div>
