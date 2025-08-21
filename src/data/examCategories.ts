@@ -13,7 +13,32 @@ export const examCategories: ExamCategory[] = [
     id: 'pspo',
     title: 'Professional Scrum Product Owner (PSPO)',
     description: 'Product ownership and value maximization',
-    examIds: [],
+    subcategories: [
+      {
+        id: 'pspo-i',
+        title: 'PSPO I',
+        description: 'Professional Scrum Product Owner Level I certification',
+        examIds: [],
+        color: 'bg-green-400',
+        icon: '📋'
+      },
+      {
+        id: 'pspo-ii',
+        title: 'PSPO II',
+        description: 'Professional Scrum Product Owner Level II certification',
+        examIds: [],
+        color: 'bg-green-600',
+        icon: '📊'
+      },
+      {
+        id: 'pspo-iii',
+        title: 'PSPO III',
+        description: 'Professional Scrum Product Owner Level III certification',
+        examIds: [],
+        color: 'bg-green-800',
+        icon: '🎯'
+      }
+    ],
     color: 'bg-green-500',
     icon: '📋'
   },
@@ -21,7 +46,32 @@ export const examCategories: ExamCategory[] = [
     id: 'psm',
     title: 'Professional Scrum Master (PSM)',
     description: 'Scrum framework mastery and team facilitation',
-    examIds: [],
+    subcategories: [
+      {
+        id: 'psm-i',
+        title: 'PSM I',
+        description: 'Professional Scrum Master Level I certification',
+        examIds: [],
+        color: 'bg-purple-400',
+        icon: '🎯'
+      },
+      {
+        id: 'psm-ii',
+        title: 'PSM II',
+        description: 'Professional Scrum Master Level II certification',
+        examIds: [],
+        color: 'bg-purple-600',
+        icon: '🚀'
+      },
+      {
+        id: 'psm-iii',
+        title: 'PSM III',
+        description: 'Professional Scrum Master Level III certification',
+        examIds: [],
+        color: 'bg-purple-800',
+        icon: '👑'
+      }
+    ],
     color: 'bg-purple-500',
     icon: '🎯'
   },
