@@ -6,6 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import { Input } from '@/components/ui/input';
 import { CheckCircle, XCircle, Clock, RotateCcw, Home, Filter, Flag } from 'lucide-react';
 import { ExamResult } from '@/types/exam';
 import { useState } from 'react';
@@ -15,9 +16,11 @@ interface ExamResultsProps {
   result: ExamResult;
   onRetakeExam: () => void;
   onBackToHome: () => void;
+  category?: string;
+  subcategory?: string;
 }
 
-export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsProps) => {
+export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subcategory }: ExamResultsProps) => {
   const { attempt, exam, correctAnswers, totalQuestions, timeSpent, questionResults } = result;
   const scorePercentage = Math.round((correctAnswers / totalQuestions) * 100);
   const passed = scorePercentage >= exam.passingScore;
@@ -31,6 +34,8 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
   const [reportOpen, setReportOpen] = useState(false);
   const [selectedQuestion, setSelectedQuestion] = useState<string>('');
   const [reportText, setReportText] = useState('');
+  const [webhookUrl, setWebhookUrl] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   
   // Filter questions based on current filter
   const filteredQuestions = questionResults.filter((qr) => {
@@ -51,7 +56,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
   };
 
   // Handle report submission
-  const handleReportSubmit = () => {
+  const handleReportSubmit = async () => {
     if (!selectedQuestion || !reportText.trim()) {
       toast({
         title: "Required fields",
@@ -61,16 +66,69 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
       return;
     }
 
-    // For now, just show a success toast. Later this can be connected to Supabase
-    toast({
-      title: "Report sent",
-      description: `Thank you for your feedback on question ${selectedQuestion}. We will review your suggestion.`,
-    });
+    if (!webhookUrl.trim()) {
+      toast({
+        title: "Webhook URL required",
+        description: "Please enter your Zapier webhook URL to send the report via email.",
+        variant: "destructive",
+      });
+      return;
+    }
 
-    // Reset form and close dialog
-    setSelectedQuestion('');
-    setReportText('');
-    setReportOpen(false);
+    setIsLoading(true);
+
+    try {
+      // Create email subject with category and subcategory
+      let emailSubject = "Question Report";
+      if (category) {
+        emailSubject += ` - ${category}`;
+        if (subcategory) {
+          emailSubject += ` - ${subcategory}`;
+        }
+      }
+
+      // Prepare data for Zapier webhook
+      const reportData = {
+        to_email: "dfts10.profissional@gmail.com",
+        subject: emailSubject,
+        exam_title: exam.title,
+        question_number: selectedQuestion,
+        question_text: questionResults[parseInt(selectedQuestion) - 1]?.question.question,
+        user_feedback: reportText,
+        category: category || "N/A",
+        subcategory: subcategory || "N/A",
+        timestamp: new Date().toISOString(),
+        triggered_from: window.location.origin,
+      };
+
+      const response = await fetch(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        mode: "no-cors",
+        body: JSON.stringify(reportData),
+      });
+
+      toast({
+        title: "Report sent",
+        description: "Your report has been sent via email. Thank you for your feedback!",
+      });
+
+      // Reset form and close dialog
+      setSelectedQuestion('');
+      setReportText('');
+      setReportOpen(false);
+    } catch (error) {
+      console.error("Error sending report:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send the report. Please check the webhook URL and try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -117,6 +175,20 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
               </div>
               
               <div className="space-y-2">
+                <Label htmlFor="webhook-url">Zapier Webhook URL</Label>
+                <Input
+                  id="webhook-url"
+                  type="url"
+                  placeholder="https://hooks.zapier.com/hooks/catch/..."
+                  value={webhookUrl}
+                  onChange={(e) => setWebhookUrl(e.target.value)}
+                />
+                <p className="text-xs text-muted-foreground">
+                  Create a Zap with a webhook trigger and paste the URL here to send reports via email.
+                </p>
+              </div>
+              
+              <div className="space-y-2">
                 <Label htmlFor="report-text">Describe the problem</Label>
                 <Textarea
                   id="report-text"
@@ -134,8 +206,8 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
                 >
                   Cancel
                 </Button>
-                <Button onClick={handleReportSubmit}>
-                  Send Report
+                <Button onClick={handleReportSubmit} disabled={isLoading}>
+                  {isLoading ? "Sending..." : "Send Report"}
                 </Button>
               </div>
             </div>
