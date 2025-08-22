@@ -2,9 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { CheckCircle, XCircle, Clock, RotateCcw, Home, Filter } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { CheckCircle, XCircle, Clock, RotateCcw, Home, Filter, Flag } from 'lucide-react';
 import { ExamResult } from '@/types/exam';
 import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 
 interface ExamResultsProps {
   result: ExamResult;
@@ -17,9 +22,15 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
   const scorePercentage = Math.round((correctAnswers / totalQuestions) * 100);
   const passed = scorePercentage >= exam.passingScore;
   const timeUsed = Math.floor(timeSpent / 60);
+  const { toast } = useToast();
 
   // Filter state
   const [filter, setFilter] = useState<'all' | 'correct' | 'incorrect'>('all');
+  
+  // Report state
+  const [reportOpen, setReportOpen] = useState(false);
+  const [selectedQuestion, setSelectedQuestion] = useState<string>('');
+  const [reportText, setReportText] = useState('');
   
   // Filter questions based on current filter
   const filteredQuestions = questionResults.filter((qr) => {
@@ -39,8 +50,99 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
     return a.sort().every((val, index) => val === b.sort()[index]);
   };
 
+  // Handle report submission
+  const handleReportSubmit = () => {
+    if (!selectedQuestion || !reportText.trim()) {
+      toast({
+        title: "Campos obrigatórios",
+        description: "Por favor, selecione uma pergunta e escreva seu comentário.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // For now, just show a success toast. Later this can be connected to Supabase
+    toast({
+      title: "Report enviado",
+      description: `Obrigado pelo seu feedback sobre a pergunta ${selectedQuestion}. Iremos analisar sua sugestão.`,
+    });
+
+    // Reset form and close dialog
+    setSelectedQuestion('');
+    setReportText('');
+    setReportOpen(false);
+  };
+
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
+      {/* Report Button - Fixed Position */}
+      <div className="fixed top-4 right-4 z-50">
+        <Dialog open={reportOpen} onOpenChange={setReportOpen}>
+          <DialogTrigger asChild>
+            <Button
+              variant="outline"
+              size="sm"
+              className="bg-background/80 backdrop-blur-sm border-warning hover:bg-warning hover:text-warning-foreground"
+            >
+              <Flag className="h-4 w-4 mr-2" />
+              Reportar Pergunta
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-md">
+            <DialogHeader>
+              <DialogTitle>Reportar Pergunta Incorreta</DialogTitle>
+            </DialogHeader>
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="exam-info">Exame</Label>
+                <div className="text-sm text-muted-foreground p-2 bg-accent/50 rounded">
+                  {exam.title}
+                </div>
+              </div>
+              
+              <div className="space-y-2">
+                <Label htmlFor="question-select">Número da Pergunta</Label>
+                <Select value={selectedQuestion} onValueChange={setSelectedQuestion}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Selecione uma pergunta" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {questionResults.map((qr, index) => (
+                      <SelectItem key={qr.question.id} value={`${index + 1}`}>
+                        Pergunta {index + 1}: {qr.question.question.substring(0, 50)}...
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              
+              <div className="space-y-2">
+                <Label htmlFor="report-text">Descreva o problema</Label>
+                <Textarea
+                  id="report-text"
+                  placeholder="Explique por que acredita que a resposta está incorreta..."
+                  value={reportText}
+                  onChange={(e) => setReportText(e.target.value)}
+                  className="min-h-[100px]"
+                />
+              </div>
+              
+              <div className="flex gap-2 justify-end">
+                <Button
+                  variant="outline"
+                  onClick={() => setReportOpen(false)}
+                >
+                  Cancelar
+                </Button>
+                <Button onClick={handleReportSubmit}>
+                  Enviar Report
+                </Button>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
+      </div>
+
       {/* Results Header */}
       <Card className={`bg-gradient-card border-0 shadow-large ${passed ? 'ring-2 ring-success/20' : 'ring-2 ring-warning/20'}`}>
         <CardHeader className="text-center">
