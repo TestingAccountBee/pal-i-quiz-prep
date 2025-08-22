@@ -10,8 +10,13 @@ interface ExamCategoryCardProps {
 }
 
 export function ExamCategoryCard({ category, onViewExams }: ExamCategoryCardProps) {
-  const availableExams = mockExams.filter(exam => category.examIds.includes(exam.id));
+  const availableExams = category.examIds 
+    ? mockExams.filter(exam => category.examIds!.includes(exam.id))
+    : [];
+  
+  const subcategoryCount = category.subcategories?.length || 0;
   const examCount = availableExams.length;
+  const totalCount = examCount + subcategoryCount;
 
   return (
     <Card className="hover:shadow-lg transition-all duration-smooth border-2 hover:border-primary/20">
@@ -26,16 +31,22 @@ export function ExamCategoryCard({ category, onViewExams }: ExamCategoryCardProp
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="flex justify-center">
-          <Badge variant="secondary" className="text-sm">
-            {examCount} {examCount === 1 ? 'exam' : 'exams'} available
-          </Badge>
+          {subcategoryCount > 0 ? (
+            <Badge variant="secondary" className="text-sm">
+              {subcategoryCount} {subcategoryCount === 1 ? 'subcategory' : 'subcategories'}
+            </Badge>
+          ) : (
+            <Badge variant="secondary" className="text-sm">
+              {examCount} {examCount === 1 ? 'exam' : 'exams'} available
+            </Badge>
+          )}
         </div>
         <Button 
           onClick={() => onViewExams(category)} 
           className="w-full"
-          disabled={examCount === 0}
+          disabled={totalCount === 0}
         >
-          {examCount === 0 ? 'Coming Soon' : 'View Exams'}
+          {totalCount === 0 ? 'Coming Soon' : subcategoryCount > 0 ? 'View Categories' : 'View Exams'}
         </Button>
       </CardContent>
     </Card>
