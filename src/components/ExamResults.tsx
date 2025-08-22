@@ -54,8 +54,8 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
   const handleReportSubmit = () => {
     if (!selectedQuestion || !reportText.trim()) {
       toast({
-        title: "Campos obrigatórios",
-        description: "Por favor, selecione uma pergunta e escreva seu comentário.",
+        title: "Required fields",
+        description: "Please select a question and write your comment.",
         variant: "destructive",
       });
       return;
@@ -63,8 +63,8 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
 
     // For now, just show a success toast. Later this can be connected to Supabase
     toast({
-      title: "Report enviado",
-      description: `Obrigado pelo seu feedback sobre a pergunta ${selectedQuestion}. Iremos analisar sua sugestão.`,
+      title: "Report sent",
+      description: `Thank you for your feedback on question ${selectedQuestion}. We will review your suggestion.`,
     });
 
     // Reset form and close dialog
@@ -85,31 +85,31 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
               className="bg-background/80 backdrop-blur-sm border-warning hover:bg-warning hover:text-warning-foreground"
             >
               <Flag className="h-4 w-4 mr-2" />
-              Reportar Pergunta
+              Report Question
             </Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
-              <DialogTitle>Reportar Pergunta Incorreta</DialogTitle>
+              <DialogTitle>Report Incorrect Question</DialogTitle>
             </DialogHeader>
             <div className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="exam-info">Exame</Label>
+                <Label htmlFor="exam-info">Exam</Label>
                 <div className="text-sm text-muted-foreground p-2 bg-accent/50 rounded">
                   {exam.title}
                 </div>
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="question-select">Número da Pergunta</Label>
+                <Label htmlFor="question-select">Question Number</Label>
                 <Select value={selectedQuestion} onValueChange={setSelectedQuestion}>
                   <SelectTrigger>
-                    <SelectValue placeholder="Selecione uma pergunta" />
+                    <SelectValue placeholder="Select a question" />
                   </SelectTrigger>
                   <SelectContent>
                     {questionResults.map((qr, index) => (
                       <SelectItem key={qr.question.id} value={`${index + 1}`}>
-                        Pergunta {index + 1}: {qr.question.question.substring(0, 50)}...
+                        Question {index + 1}: {qr.question.question.substring(0, 50)}...
                       </SelectItem>
                     ))}
                   </SelectContent>
@@ -117,10 +117,10 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="report-text">Descreva o problema</Label>
+                <Label htmlFor="report-text">Describe the problem</Label>
                 <Textarea
                   id="report-text"
-                  placeholder="Explique por que acredita que a resposta está incorreta..."
+                  placeholder="Explain why you believe the answer is incorrect..."
                   value={reportText}
                   onChange={(e) => setReportText(e.target.value)}
                   className="min-h-[100px]"
@@ -132,10 +132,10 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
                   variant="outline"
                   onClick={() => setReportOpen(false)}
                 >
-                  Cancelar
+                  Cancel
                 </Button>
                 <Button onClick={handleReportSubmit}>
-                  Enviar Report
+                  Send Report
                 </Button>
               </div>
             </div>
