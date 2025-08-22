@@ -151,7 +151,45 @@ const Index = () => {
 
   // Render category exams when in category mode
   if (currentView === 'category' && selectedCategory) {
-    const categoryExams = mockExams.filter(exam => selectedCategory.examIds.includes(exam.id));
+    // Check if this category has subcategories
+    if (selectedCategory.subcategories && selectedCategory.subcategories.length > 0) {
+      return (
+        <div className="min-h-screen bg-gradient-subtle p-4">
+          <div className="mx-auto max-w-7xl space-y-8">
+            <div className="text-center space-y-4">
+              <Button 
+                variant="outline" 
+                onClick={handleBackToCategories}
+                className="mb-4"
+              >
+                ← Back to Categories
+              </Button>
+              <h1 className="text-4xl font-bold text-foreground">
+                {selectedCategory.title}
+              </h1>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                {selectedCategory.description}
+              </p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {selectedCategory.subcategories.map((subcategory) => (
+                <ExamCategoryCard
+                  key={subcategory.id}
+                  category={subcategory}
+                  onViewExams={handleViewCategory}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+    
+    // Original logic for categories with direct exams
+    const categoryExams = selectedCategory.examIds 
+      ? mockExams.filter(exam => selectedCategory.examIds!.includes(exam.id))
+      : [];
     
     return (
       <div className="min-h-screen bg-gradient-subtle p-4">
