@@ -6173,7 +6173,7 @@ export const mockExams: Exam[] = [
           ],
           "correctAnswer": 1,
           "explanation": "No explanation provided in the source text."
-        }
-      ]
-    }
-  ];
+     }
+    ]
+  }
+];
