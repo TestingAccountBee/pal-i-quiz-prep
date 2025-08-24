@@ -6184,366 +6184,366 @@ export const mockExams: Exam[] = [
     "passingScore": 85,
     "questions": [
       {
-          "id": "q5_1",
-          "question": "What things are best considered when deciding on the Sprint length? (choose 1)",
-          "options": [
-            "How often team membership changes and the size of the team.",
-            "Having consistent Sprint length across all Scrum Teams in the Nexus.",
-            "The level of expertise over the technology to be used, ability to release an Increment to the end users, and the risk of being disconnected from the stakeholders."
-          ],
-          "correctAnswer": 2,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_2",
-          "question": "During the Sprint, the Developers realizes they might not be able to finish all of the items in the Sprint Backlog. As the Scrum Master what would you suggest? (choose 1)",
-          "options": [
-            "The Sprint length holds and the Developers continuously learn what is actually possible to do within the Sprint timebox.",
-            "Continue Sprinting until the work is complete and redefine a new Sprint based on the results of the current Sprint.",
-            "The Developers cancel the Sprint because they will not be able to meet the Sprint Goal."
-          ],
-          "correctAnswer": 0,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_3",
-          "question": "Anne is a Product Owner who needs to inform the board when the next release of a product is likely. With the Developers she considers the items in the Product Backlog needed to develop the Increment for the next release. Based on the team’s velocity she predicts the next release will be possible in 3 Sprints time. However the Developers admit to skipping some integration tests and believe that extra tests should be added to the Definition of Done before release. They believe it will take a further 10% of Sprint time to include these additional tests and believe that the release in 3 Sprints is still possible. What is the most effective way to recover? (choose 1)",
-          "options": [
-            "The undone work of the previous Sprints is estimated and added to the Sprint Backlog. For the next 3 Sprints this development dept is considered and added to the Sprint Backlogs, through considering past velocity taking this approach seems achievable to have the release ready in 3 Sprints time. Anne reassures the board.",
-            "Transparency needs to be restored by adding the undone work to the Product Backlog. The Developers must figure out a way to deliver in the upcoming Sprints their current velocity plus 3 more units of work to catch up on development debt. It is the Scrum Master's duty to assess whether such repair is possible. If not, then Anne will have to restart the project potentially with a different team and will have to inform the board and the stakeholders.",
-            "The Developers set the open work aside to be performed in one or more “catch-up” Sprints. They inform Anne that they need more time, It is Anne’s responsibility to inform users and stakeholders of the impact on the release date.",
-            "The Developers inform Anne that the progress she has perceived to date is not correct. The Increment is not releasable. They give Anne their estimate of the effort it would take to get the past work done, and suggest doing that work first before proceeding with new features. The Developers also re-estimate the effort to complete the remaining backlog, including all integration tests. In the end, it is Anne’s call to continue the project or to cancel."
-          ],
-          "correctAnswer": 3,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_4",
-          "question": "What is likely to happen if an organization only changed their current project terminology to fit Scrum without the proper understanding of Scrum as defined in the Scrum Guide? (choose all that apply)",
-          "options": [
-            "The organization may not realize the real benefits of Scrum as there would be no real change on the way the teams work.",
-            "Confusion will arise between those that understand Scrum and those that don’t.",
-            "Organizations may feel less stressed as the behaviours would remain familiar to management.",
-            "Very little change will happen as Scrum is more than a set of terminology."
-          ],
-          "correctAnswer": [0, 1, 2, 3],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_5",
-          "question": "As the Scrum Master what advice would you give to the Product Owner when ordering the Product Backlog? (choose 1)",
-          "options": [
-            "Delegate the work to the Assistant Product Owner. Delay the Sprint in order for the Product Owner to have enough time to prioritize the Product Backlog.",
-            "As the Developers are closest to the work and doing the work, have them order the work instead of the Product Owner.",
-            "Have the Product Owner order the items based on size, having the Developers work on the smallest items first for quick velocity.",
-            "Offer the Product Owner help in understanding that the goal of ordering the Product Backlog is to maximize the flow of value."
-          ],
-          "correctAnswer": 3,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_6",
-          "question": "What is the relationship between technical debt and delivery? (choose all that apply.)",
-          "options": [
-            "The more technical debt there is, the more difficult it is to maintain and add to the product.",
-            "Technical debt should be a concern of the Scrum Team.",
-            "A Product with a lot of technical debt may be unstable.",
-            "Developers are responsible for making technical debt transparent and sharing the true product status and risk with the Scrum Team.",
-            "Technical debt is allowed within certain limits."
-          ],
-          "correctAnswer": [0, 1, 2, 3],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_7",
-          "question": "What should you advise a Developer to do if he/she is approached by a key stakeholder and pressures the Developer to add a “very important” item to the current Sprint? (choose 1)",
-          "options": [
-            "Inform the Product Owner so he/she can work with the person.",
-            "Add the item to the bottom of the Sprint Backlog.",
-            "Add the item to the top of the next Sprint Backlog.",
-            "Replace an item in the current Sprint of equal size."
-          ],
-          "correctAnswer": 0,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_8",
-          "question": "What should the Developers do if whilst working they realize mid-sprint that development is more complex than they forecasted and they have chosen too much work to do after starting the Sprint? (choose 1)",
-          "options": [
-            "Work with the Product Owner to remove some work or Product Backlog items as soon as possible, whilst considering the impact on the Sprint Goal.",
-            "Add additional team members to handle the extra work.",
-            "Continue working and update the Product Owner at the Sprint Review.",
-            "Modify the Definition of “Done” to ensure all Product Backlog items can be done by the end of the Sprint."
-          ],
-          "correctAnswer": 0,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_9",
-          "question": "A sensitive data breach has occurred with the live product, this is a disaster for the product, the company and the users. Immediate changes have to be made including adding more security tests and functionality to the Definition of Done. What should the team do? (choose 2)",
-          "options": [
-            "A complete list of security-related Product Backlog items needs to be created before starting a new Sprint.",
-            "Increments should be fixed in parallel Sprints so as not to disrupt the release of new features. After the security concerns have been fixed, they will be applied to the work that is already in progress for new features.",
-            "During the Sprint Retrospective, the Developers assess how to add these additions to their Definition of Done so every future Increment will meet these security requirements.",
-            "The additional security requirements are added to the Product Backlog and addressed by the Product Owner to prioritize."
-          ],
-          "correctAnswer": [2, 3],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_10",
-          "question": "The Product Owner is under pressure to release key features in 2 sprints time, ahead of competitors in the market and capitalising on this window of opportunity. The Developers do not think this is possible due to past reliance on external teams in the company that have been unreliable in the past. As the Scrum Master what do you suggest? (choose 1)",
-          "options": [
-            "You reduce the length of your Sprints to deliver sooner.",
-            "You determine how many extra developers would be required to increase velocity to meet the original deadline.",
-            "You propose working with the other team’s Developers to reduce dependencies and discuss reliability for this crucial release date.",
-            "You deprioritize any items from the Product Backlog which are projected to take longer than expected.",
-            "Nothing, you can only estimate one Sprint at a time."
-          ],
-          "correctAnswer": 2,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_11",
-          "question": "There is a new addition to the Developers, her name is Hilda. She is very creative and whilst developing she added new features to the increment that were not on the Product Backlog. This is discovered on the day of the Sprint Review. What should be done about these new features? (choose 2)",
-          "options": [
-            "If possible, the Developers should remove the feature from the Increment before the Sprint Review",
-            "Discuss the Scrum Framework and reasons for the Product Backlog in the Sprint Retrospective",
-            "Developers report the problem to the Scrum Master, to take actions against Hilda",
-            "Hilda should ask the Product Owner to add this feature to the Product Backlog because it is already part of the Increment"
-          ],
-          "correctAnswer": [0, 1],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_12",
-          "question": "A Scrum Team just released the first iteration of the Product, great news, it has been a success. The board want to speed up development and have allocated more budget to bring in 2 new Scrum Teams to work on the product. What would be the biggest concern for the current Developers? (choose 1)",
-          "options": [
-            "Who will be a part of each team?",
-            "Who will be the Scrum Master?",
-            "How to reduce dependencies between teams?",
-            "Which team will work on the front end and which team will work on the backend?"
-          ],
-          "correctAnswer": 2,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_13",
-          "question": "What is the relationship between velocity and technical debt? (choose 2)",
-          "options": [
-            "They are not related. Technical debt does not affect velocity.",
-            "The Velocity measures the amount of technical debt to be fixed.",
-            "Allowing technical debt for a few Sprints artificially increases the velocity.",
-            "Estimating the technical debt and using the past velocity will help to predict when the project can be delivered.",
-            "When the Developers run into technical debt, the velocity will likely drop in the future."
-          ],
-          "correctAnswer": [2, 4],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_14",
-          "question": "Which Product Backlog items can be considered ready for a Sprint? (choose 1)",
-          "options": [
-            "Any Product Backlog Item",
-            "It is up to the Product Owner",
-            "Product Backlog items that are estimated",
-            "Product Backlog items that are estimated, with a value and description",
-            "Product Backlog items that meet the Definition of Ready",
-            "Product Backlog items that can be done within one Sprint"
-          ],
-          "correctAnswer": 5,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_15",
-          "question": "Can the Sprint Backlog items be changed mid-sprint? (choose 1)",
-          "options": [
-            "No",
-            "Yes"
-          ],
-          "correctAnswer": 1,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_16",
-          "question": "The Product Owner is under great pressure to release certain functionalities as soon as possible. To accelerate development, the Product Owner removes certain testing aspects temporarily from the Definition of Done. However, the Product Owner adds the missing testing to the Product Backlog to be done in the future. The Developers warn that this will increase technical debt. (choose the best 2 answer)",
-          "options": [
-            "This approach is fine if you also schedule in a Technical Debt fixing Sprint after the release.",
-            "Unknown issues will grow as work develops and functionality is added to the reduced Definition of Done. Stabilization of the system becomes increasingly challenging. Work on the current release and future releases will be slowed in unanticipated ways.",
-            "As long as the increment isn’t released before the testing is done this is acceptable to get the increment to Sprint Review. The Definition of Done can be reduced temporarily.",
-            "Releasing with a reduced Definition of Done leads to incorrect assumptions about the product’s current condition. This is likely to cause unanticipated difficulties in future increments caused by not meeting the Definition of Done.",
-            "The Product Backlog item must include a precise calculation and estimation of the technical debt resulting from reduced testing so that the overall amount of additional work can be forecasted and planned for."
-          ],
-          "correctAnswer": [1, 3],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_17",
-          "question": "A Project Manager would like to use Scrum for a new project and comes to you for advice. After explaining the Scrum Framework he expresses his intention to skip the Daily Scrums favouring weekly meetups as his employees already meet every day. What would you advise? (choose 1)",
-          "options": [
-            "The Daily Scrum is necessary to update the Scrum board with the team's progress.",
-            "If the team members meet in other meetings, it is actually fine to skip the Daily Scrum",
-            "The Daily Scrum will keep the senior managers up to date.",
-            "Daily Scrums eliminate the need for other meetings.",
-            "During the Daily Scrum, the team members will discuss important technical solutions."
-          ],
-          "correctAnswer": 3,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_18",
-          "question": "How much time should be spent refining the Product Backlog? (choose 2)",
-          "options": [
-            "The Scrum Team decides how and when refinement is done. The Product Backlog items can be updated at any time by the Product Owner or at the Product Owner’s discretion.",
-            "No more than 10% of the capacity of the Scrum Team.",
-            "Up to 10% of the capacity of the Developers in a typical Sprint, but as much as 90% in early Sprints.",
-            "As much as the Scrum Team agrees is necessary to create enough ready Product Backlog Items.",
-            "At least one Product Backlog refinement session should take place each sprint."
-          ],
-          "correctAnswer": [0, 3],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_19",
-          "question": "Your Scrum team has been working on a Product for 6 months. The product passes usability test and delivers an increment at the end of each Sprint, however it has not yet been released to real users. The stakeholders are putting a lot of pressure to release next month. The Product Owner does not think this is viable because the their is still a lot of work required before he has confidence in a release. He has a delivery date of 6 months and has been working towards that. What guidance or assistance can you provide by the Scrum Framework? (choose 3 answers.)",
-          "options": [
-            "Encourage the Product Owner to interact with the Stakeholders to validate how much the current product satisfies their needs and the minimal things to add to release it.",
-            "Challenge the Product Owner to validate if all the pending work is needed to release and how the number of features in a product release can be reduced.",
-            "Suggest the Product Owner meet with the team and rescope the scheduled work. Find out what can be released in one month to match the stakeholder's demands.",
-            "Inform the Product Owner that the whole organization must respect his judgments. Maintain the present product vision and six-month timeline.",
-            "Advise adding more teams to work on the product."
-          ],
-          "correctAnswer": [0, 1, 2],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_20",
-          "question": "What can you do to ensure the Developers understand the Product Backlog items discussed at Sprint Planning? (choose 1)",
-          "options": [
-            "Request a business analysts to help explain the high-priority items in the Product Backlog.",
-            "Request the Developers use some time during each Sprint to be involved in Backlog Refinement, helping the Product Owner decompose the items that are prioritised.",
-            "Having a separate group of Developers to dedicate full time to helping the Product Owner add new items based on their development expectations."
-          ],
-          "correctAnswer": 1,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_21",
-          "question": "If the Technical Debt builds up, false assumptions about the present status of the Product and the Increment examined at Sprint Review might be made. (choose 1)",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correctAnswer": 0,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_22",
-          "question": "Are stakeholders only allowed to meet with the Scrum team at the Sprint Review? (choose 1)",
-          "options": [
-            "No",
-            "Yes"
-          ],
-          "correctAnswer": 0,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_23",
-          "question": "Considering the Product Owner, which of the following will be a risk for the success of the Product Owner? (choose 1)",
-          "options": [
-            "Frequent interactions with the Stakeholders.",
-            "Having to clarify Product Backlog Items although expectations are written.",
-            "Sharing responsibilities with another Product Owner when overloaded.",
-            "Repeating the Product vision and goals to the team often.",
-            "Autonomy on Product Backlog management."
-          ],
-          "correctAnswer": 2,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_24",
-          "question": "At the eleventh Sprint Review, the stakeholders are very disappointed. They say the product so far will not meet their needs and is going to cost more than they budgeted for. What might have led to this? (choose the best 3 answers)",
-          "options": [
-            "Changes to the project plan were not adequately documented and shared. The change request procedure was not diligently followed.",
-            "The Scrum Master has not ensured transparency.",
-            "The Product Owner has not been interacting frequently with the stakeholders and kept them aware of the progress of the project.",
-            "The stakeholders have not been using the Sprint Reviews to actively engage, and inspect and evaluate progress.",
-            "The stakeholders were not allowed to enter the development area, and were not present at the Daily Scrums."
-          ],
-          "correctAnswer": [1, 2, 3],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_25",
-          "question": "At the Sprint Retrospective, you decide on 3 highly impactful changes to make. What should you do? (choose 2)",
-          "options": [
-            "Address them as soon as possible",
-            "Add to the next Sprint Backlog",
-            "Add them to the Product Backlog",
-            "Record them in the Retrospective decision log",
-            "Ask the Scrum Master when and how to implement them"
-          ],
-          "correctAnswer": [0, 2],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_26",
-          "question": "It takes a few Sprints before a major stakeholder begins utilizing the product. The unsatisfied stakeholder contacts the Product Owner to express concerns about the unsatisfactory performance. The Product Owner seeks guidance from the Scrum Master. What would you recommend? (choose 1)",
-          "options": [
-            "Explain to the Product Owner that it’s up to the Developers to decide on acceptable performance standards as they own the Definition of Done.",
-            "Wait until the next Sprint Retrospective as it is the most opportune time to modify the Definition of Done.",
-            "Encourage the Product Owner to bring the performance concerns to the Developers and work with them on how to improve performance, and ultimately have a stronger Definition of Done.",
-            "Bring the concern to the testers and ask them to include performance testing."
-          ],
-          "correctAnswer": 2,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_27",
-          "question": "The Product Owner decides to release the current Increment to production. The stakeholders ask to stop “Sprinting” to react more quickly to the user feedback that is expected after this release. As the Scrum Master, what would you advise? (choose the best 2 answers)",
-          "options": [
-            "Stop sprinting and let the Developers work on new customer requests as they arise.",
-            "Continue sprinting but allow customer feedback to change the Sprint Goal within the Sprint.",
-            "Continue sprinting but shorten the Sprint length to allow for shorter feedback loops.",
-            "Continue sprinting and include the customer feedback in the Product Backlog."
-          ],
-          "correctAnswer": [2, 3],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_28",
-          "question": "During the Sprint Review, the topic of budget was brought up and the project's budget may be cut owing to recent market developments. This causes the atmosphere to become tense, which in turn leads to disputes breaking out between people. What are the two most important things for the Scrum Master to do? (choose 2 best answers.)",
-          "options": [
-            "Encourage the stakeholders and Product Owner to focus on delivering the highest-value items for the next Sprint.",
-            "Be objective and request for a short break for people to calm down.",
-            "Inform everyone that the team needs to stay busy until it is confirmed the team and Product is not needed anymore.",
-            "Avoid getting involved as it is the Product Owner’s responsibility to manage stakeholder expectations.",
-            "Defend the original budget and request the stakeholders adhere to the original agreed funding for the product."
-          ],
-          "correctAnswer": [0, 1],
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_29",
-          "question": "When multiple Scrum Teams are working on the same Product it’s important that they all work on the same Product Backlog? (choose 1)",
-          "options": [
-            "False",
-            "True"
-          ],
-          "correctAnswer": 1,
-          "explanation": "No explanation provided in the source text."
-        },
-        {
-          "id": "q5_30",
-          "question": "If the Product Owner asks your opinion as the Scrum Master as to who the most important stakeholder is, how would you respond? (choose 1)",
-          "options": [
-            "The Product’s users",
-            "The Product budget holder",
-            "Any stakeholder on the board of directors",
-            "The company owner"
-          ],
-          "correctAnswer": 0,
-          "explanation": "No explanation provided in the source text."
+            "id": "q5_1",
+            "question": "What things are best considered when deciding on the Sprint length? (choose 1)",
+            "options": [
+              "How often team membership changes and the size of the team.",
+              "Having consistent Sprint length across all Scrum Teams in the Nexus.",
+              "The level of expertise over the technology to be used, ability to release an Increment to the end users, and the risk of being disconnected from the stakeholders."
+            ],
+            "correctAnswer": 2,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_2",
+            "question": "During the Sprint, the Developers realizes they might not be able to finish all of the items in the Sprint Backlog. As the Scrum Master what would you suggest? (choose 1)",
+            "options": [
+              "The Sprint length holds and the Developers continuously learn what is actually possible to do within the Sprint timebox.",
+              "Continue Sprinting until the work is complete and redefine a new Sprint based on the results of the current Sprint.",
+              "The Developers cancel the Sprint because they will not be able to meet the Sprint Goal."
+            ],
+            "correctAnswer": 0,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_3",
+            "question": "Anne is a Product Owner who needs to inform the board when the next release of a product is likely. With the Developers she considers the items in the Product Backlog needed to develop the Increment for the next release. Based on the team’s velocity she predicts the next release will be possible in 3 Sprints time. However the Developers admit to skipping some integration tests and believe that extra tests should be added to the Definition of Done before release. They believe it will take a further 10% of Sprint time to include these additional tests and believe that the release in 3 Sprints is still possible. What is the most effective way to recover? (choose 1)",
+            "options": [
+              "The undone work of the previous Sprints is estimated and added to the Sprint Backlog. For the next 3 Sprints this development dept is considered and added to the Sprint Backlogs, through considering past velocity taking this approach seems achievable to have the release ready in 3 Sprints time. Anne reassures the board.",
+              "Transparency needs to be restored by adding the undone work to the Product Backlog. The Developers must figure out a way to deliver in the upcoming Sprints their current velocity plus 3 more units of work to catch up on development debt. It is the Scrum Master's duty to assess whether such repair is possible. If not, then Anne will have to restart the project potentially with a different team and will have to inform the board and the stakeholders.",
+              "The Developers set the open work aside to be performed in one or more “catch-up” Sprints. They inform Anne that they need more time, It is Anne’s responsibility to inform users and stakeholders of the impact on the release date.",
+              "The Developers inform Anne that the progress she has perceived to date is not correct. The Increment is not releasable. They give Anne their estimate of the effort it would take to get the past work done, and suggest doing that work first before proceeding with new features. The Developers also re-estimate the effort to complete the remaining backlog, including all integration tests. In the end, it is Anne’s call to continue the project or to cancel."
+            ],
+            "correctAnswer": 3,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_4",
+            "question": "What is likely to happen if an organization only changed their current project terminology to fit Scrum without the proper understanding of Scrum as defined in the Scrum Guide? (choose all that apply)",
+            "options": [
+              "The organization may not realize the real benefits of Scrum as there would be no real change on the way the teams work.",
+              "Confusion will arise between those that understand Scrum and those that don’t.",
+              "Organizations may feel less stressed as the behaviours would remain familiar to management.",
+              "Very little change will happen as Scrum is more than a set of terminology."
+            ],
+            "correctAnswer": [0, 1, 2, 3],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_5",
+            "question": "As the Scrum Master what advice would you give to the Product Owner when ordering the Product Backlog? (choose 1)",
+            "options": [
+              "Delegate the work to the Assistant Product Owner. Delay the Sprint in order for the Product Owner to have enough time to prioritize the Product Backlog.",
+              "As the Developers are closest to the work and doing the work, have them order the work instead of the Product Owner.",
+              "Have the Product Owner order the items based on size, having the Developers work on the smallest items first for quick velocity.",
+              "Offer the Product Owner help in understanding that the goal of ordering the Product Backlog is to maximize the flow of value."
+            ],
+            "correctAnswer": 3,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_6",
+            "question": "What is the relationship between technical debt and delivery? (choose all that apply.)",
+            "options": [
+              "The more technical debt there is, the more difficult it is to maintain and add to the product.",
+              "Technical debt should be a concern of the Scrum Team.",
+              "A Product with a lot of technical debt may be unstable.",
+              "Developers are responsible for making technical debt transparent and sharing the true product status and risk with the Scrum Team.",
+              "Technical debt is allowed within certain limits."
+            ],
+            "correctAnswer": [0, 1, 2, 3],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_7",
+            "question": "What should you advise a Developer to do if he/she is approached by a key stakeholder and pressures the Developer to add a “very important” item to the current Sprint? (choose 1)",
+            "options": [
+              "Inform the Product Owner so he/she can work with the person.",
+              "Add the item to the bottom of the Sprint Backlog.",
+              "Add the item to the top of the next Sprint Backlog.",
+              "Replace an item in the current Sprint of equal size."
+            ],
+            "correctAnswer": 0,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_8",
+            "question": "What should the Developers do if whilst working they realize mid-sprint that development is more complex than they forecasted and they have chosen too much work to do after starting the Sprint? (choose 1)",
+            "options": [
+              "Work with the Product Owner to remove some work or Product Backlog items as soon as possible, whilst considering the impact on the Sprint Goal.",
+              "Add additional team members to handle the extra work.",
+              "Continue working and update the Product Owner at the Sprint Review.",
+              "Modify the Definition of “Done” to ensure all Product Backlog items can be done by the end of the Sprint."
+            ],
+            "correctAnswer": 0,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_9",
+            "question": "A sensitive data breach has occurred with the live product, this is a disaster for the product, the company and the users. Immediate changes have to be made including adding more security tests and functionality to the Definition of Done. What should the team do? (choose 2)",
+            "options": [
+              "A complete list of security-related Product Backlog items needs to be created before starting a new Sprint.",
+              "Increments should be fixed in parallel Sprints so as not to disrupt the release of new features. After the security concerns have been fixed, they will be applied to the work that is already in progress for new features.",
+              "During the Sprint Retrospective, the Developers assess how to add these additions to their Definition of Done so every future Increment will meet these security requirements.",
+              "The additional security requirements are added to the Product Backlog and addressed by the Product Owner to prioritize."
+            ],
+            "correctAnswer": [2, 3],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_10",
+            "question": "The Product Owner is under pressure to release key features in 2 sprints time, ahead of competitors in the market and capitalising on this window of opportunity. The Developers do not think this is possible due to past reliance on external teams in the company that have been unreliable in the past. As the Scrum Master what do you suggest? (choose 1)",
+            "options": [
+              "You reduce the length of your Sprints to deliver sooner.",
+              "You determine how many extra developers would be required to increase velocity to meet the original deadline.",
+              "You propose working with the other team’s Developers to reduce dependencies and discuss reliability for this crucial release date.",
+              "You deprioritize any items from the Product Backlog which are projected to take longer than expected.",
+              "Nothing, you can only estimate one Sprint at a time."
+            ],
+            "correctAnswer": 2,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_11",
+            "question": "There is a new addition to the Developers, her name is Hilda. She is very creative and whilst developing she added new features to the increment that were not on the Product Backlog. This is discovered on the day of the Sprint Review. What should be done about these new features? (choose 2)",
+            "options": [
+              "If possible, the Developers should remove the feature from the Increment before the Sprint Review",
+              "Discuss the Scrum Framework and reasons for the Product Backlog in the Sprint Retrospective",
+              "Developers report the problem to the Scrum Master, to take actions against Hilda",
+              "Hilda should ask the Product Owner to add this feature to the Product Backlog because it is already part of the Increment"
+            ],
+            "correctAnswer": [0, 1],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_12",
+            "question": "A Scrum Team just released the first iteration of the Product, great news, it has been a success. The board want to speed up development and have allocated more budget to bring in 2 new Scrum Teams to work on the product. What would be the biggest concern for the current Developers? (choose 1)",
+            "options": [
+              "Who will be a part of each team?",
+              "Who will be the Scrum Master?",
+              "How to reduce dependencies between teams?",
+              "Which team will work on the front end and which team will work on the backend?"
+            ],
+            "correctAnswer": 2,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_13",
+            "question": "What is the relationship between velocity and technical debt? (choose 2)",
+            "options": [
+              "They are not related. Technical debt does not affect velocity.",
+              "The Velocity measures the amount of technical debt to be fixed.",
+              "Allowing technical debt for a few Sprints artificially increases the velocity.",
+              "Estimating the technical debt and using the past velocity will help to predict when the project can be delivered.",
+              "When the Developers run into technical debt, the velocity will likely drop in the future."
+            ],
+            "correctAnswer": [2, 4],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_14",
+            "question": "Which Product Backlog items can be considered ready for a Sprint? (choose 1)",
+            "options": [
+              "Any Product Backlog Item",
+              "It is up to the Product Owner",
+              "Product Backlog items that are estimated",
+              "Product Backlog items that are estimated, with a value and description",
+              "Product Backlog items that meet the Definition of Ready",
+              "Product Backlog items that can be done within one Sprint"
+            ],
+            "correctAnswer": 5,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_15",
+            "question": "Can the Sprint Backlog items be changed mid-sprint? (choose 1)",
+            "options": [
+              "No",
+              "Yes"
+            ],
+            "correctAnswer": 1,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_16",
+            "question": "The Product Owner is under great pressure to release certain functionalities as soon as possible. To accelerate development, the Product Owner removes certain testing aspects temporarily from the Definition of Done. However, the Product Owner adds the missing testing to the Product Backlog to be done in the future. The Developers warn that this will increase technical debt. (choose the best 2 answer)",
+            "options": [
+              "This approach is fine if you also schedule in a Technical Debt fixing Sprint after the release.",
+              "Unknown issues will grow as work develops and functionality is added to the reduced Definition of Done. Stabilization of the system becomes increasingly challenging. Work on the current release and future releases will be slowed in unanticipated ways.",
+              "As long as the increment isn’t released before the testing is done this is acceptable to get the increment to Sprint Review. The Definition of Done can be reduced temporarily.",
+              "Releasing with a reduced Definition of Done leads to incorrect assumptions about the product’s current condition. This is likely to cause unanticipated difficulties in future increments caused by not meeting the Definition of Done.",
+              "The Product Backlog item must include a precise calculation and estimation of the technical debt resulting from reduced testing so that the overall amount of additional work can be forecasted and planned for."
+            ],
+            "correctAnswer": [1, 3],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_17",
+            "question": "A Project Manager would like to use Scrum for a new project and comes to you for advice. After explaining the Scrum Framework he expresses his intention to skip the Daily Scrums favouring weekly meetups as his employees already meet every day. What would you advise? (choose 1)",
+            "options": [
+              "The Daily Scrum is necessary to update the Scrum board with the team's progress.",
+              "If the team members meet in other meetings, it is actually fine to skip the Daily Scrum",
+              "The Daily Scrum will keep the senior managers up to date.",
+              "Daily Scrums eliminate the need for other meetings.",
+              "During the Daily Scrum, the team members will discuss important technical solutions."
+            ],
+            "correctAnswer": 3,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_18",
+            "question": "How much time should be spent refining the Product Backlog? (choose 2)",
+            "options": [
+              "The Scrum Team decides how and when refinement is done. The Product Backlog items can be updated at any time by the Product Owner or at the Product Owner’s discretion.",
+              "No more than 10% of the capacity of the Scrum Team.",
+              "Up to 10% of the capacity of the Developers in a typical Sprint, but as much as 90% in early Sprints.",
+              "As much as the Scrum Team agrees is necessary to create enough ready Product Backlog Items.",
+              "At least one Product Backlog refinement session should take place each sprint."
+            ],
+            "correctAnswer": [0, 3],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_19",
+            "question": "Your Scrum team has been working on a Product for 6 months. The product passes usability test and delivers an increment at the end of each Sprint, however it has not yet been released to real users. The stakeholders are putting a lot of pressure to release next month. The Product Owner does not think this is viable because the their is still a lot of work required before he has confidence in a release. He has a delivery date of 6 months and has been working towards that. What guidance or assistance can you provide by the Scrum Framework? (choose 3 answers.)",
+            "options": [
+              "Encourage the Product Owner to interact with the Stakeholders to validate how much the current product satisfies their needs and the minimal things to add to release it.",
+              "Challenge the Product Owner to validate if all the pending work is needed to release and how the number of features in a product release can be reduced.",
+              "Suggest the Product Owner meet with the team and rescope the scheduled work. Find out what can be released in one month to match the stakeholder's demands.",
+              "Inform the Product Owner that the whole organization must respect his judgments. Maintain the present product vision and six-month timeline.",
+              "Advise adding more teams to work on the product."
+            ],
+            "correctAnswer": [0, 1, 2],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_20",
+            "question": "What can you do to ensure the Developers understand the Product Backlog items discussed at Sprint Planning? (choose 1)",
+            "options": [
+              "Request a business analysts to help explain the high-priority items in the Product Backlog.",
+              "Request the Developers use some time during each Sprint to be involved in Backlog Refinement, helping the Product Owner decompose the items that are prioritised.",
+              "Having a separate group of Developers to dedicate full time to helping the Product Owner add new items based on their development expectations."
+            ],
+            "correctAnswer": 1,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_21",
+            "question": "If the Technical Debt builds up, false assumptions about the present status of the Product and the Increment examined at Sprint Review might be made. (choose 1)",
+            "options": [
+              "True",
+              "False"
+            ],
+            "correctAnswer": 0,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_22",
+            "question": "Are stakeholders only allowed to meet with the Scrum team at the Sprint Review? (choose 1)",
+            "options": [
+              "No",
+              "Yes"
+            ],
+            "correctAnswer": 0,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_23",
+            "question": "Considering the Product Owner, which of the following will be a risk for the success of the Product Owner? (choose 1)",
+            "options": [
+              "Frequent interactions with the Stakeholders.",
+              "Having to clarify Product Backlog Items although expectations are written.",
+              "Sharing responsibilities with another Product Owner when overloaded.",
+              "Repeating the Product vision and goals to the team often.",
+              "Autonomy on Product Backlog management."
+            ],
+            "correctAnswer": 2,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_24",
+            "question": "At the eleventh Sprint Review, the stakeholders are very disappointed. They say the product so far will not meet their needs and is going to cost more than they budgeted for. What might have led to this? (choose the best 3 answers)",
+            "options": [
+              "Changes to the project plan were not adequately documented and shared. The change request procedure was not diligently followed.",
+              "The Scrum Master has not ensured transparency.",
+              "The Product Owner has not been interacting frequently with the stakeholders and kept them aware of the progress of the project.",
+              "The stakeholders have not been using the Sprint Reviews to actively engage, and inspect and evaluate progress.",
+              "The stakeholders were not allowed to enter the development area, and were not present at the Daily Scrums."
+            ],
+            "correctAnswer": [1, 2, 3],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_25",
+            "question": "At the Sprint Retrospective, you decide on 3 highly impactful changes to make. What should you do? (choose 2)",
+            "options": [
+              "Address them as soon as possible",
+              "Add to the next Sprint Backlog",
+              "Add them to the Product Backlog",
+              "Record them in the Retrospective decision log",
+              "Ask the Scrum Master when and how to implement them"
+            ],
+            "correctAnswer": [0, 2],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_26",
+            "question": "It takes a few Sprints before a major stakeholder begins utilizing the product. The unsatisfied stakeholder contacts the Product Owner to express concerns about the unsatisfactory performance. The Product Owner seeks guidance from the Scrum Master. What would you recommend? (choose 1)",
+            "options": [
+              "Explain to the Product Owner that it’s up to the Developers to decide on acceptable performance standards as they own the Definition of Done.",
+              "Wait until the next Sprint Retrospective as it is the most opportune time to modify the Definition of Done.",
+              "Encourage the Product Owner to bring the performance concerns to the Developers and work with them on how to improve performance, and ultimately have a stronger Definition of Done.",
+              "Bring the concern to the testers and ask them to include performance testing."
+            ],
+            "correctAnswer": 2,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_27",
+            "question": "The Product Owner decides to release the current Increment to production. The stakeholders ask to stop “Sprinting” to react more quickly to the user feedback that is expected after this release. As the Scrum Master, what would you advise? (choose the best 2 answers)",
+            "options": [
+              "Stop sprinting and let the Developers work on new customer requests as they arise.",
+              "Continue sprinting but allow customer feedback to change the Sprint Goal within the Sprint.",
+              "Continue sprinting but shorten the Sprint length to allow for shorter feedback loops.",
+              "Continue sprinting and include the customer feedback in the Product Backlog."
+            ],
+            "correctAnswer": [2, 3],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_28",
+            "question": "During the Sprint Review, the topic of budget was brought up and the project's budget may be cut owing to recent market developments. This causes the atmosphere to become tense, which in turn leads to disputes breaking out between people. What are the two most important things for the Scrum Master to do? (choose 2 best answers.)",
+            "options": [
+              "Encourage the stakeholders and Product Owner to focus on delivering the highest-value items for the next Sprint.",
+              "Be objective and request for a short break for people to calm down.",
+              "Inform everyone that the team needs to stay busy until it is confirmed the team and Product is not needed anymore.",
+              "Avoid getting involved as it is the Product Owner’s responsibility to manage stakeholder expectations.",
+              "Defend the original budget and request the stakeholders adhere to the original agreed funding for the product."
+            ],
+            "correctAnswer": [0, 1],
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_29",
+            "question": "When multiple Scrum Teams are working on the same Product it’s important that they all work on the same Product Backlog? (choose 1)",
+            "options": [
+              "False",
+              "True"
+            ],
+            "correctAnswer": 1,
+            "explanation": "No explanation provided in the source text."
+          },
+          {
+            "id": "q5_30",
+            "question": "If the Product Owner asks your opinion as the Scrum Master as to who the most important stakeholder is, how would you respond? (choose 1)",
+            "options": [
+              "The Product’s users",
+              "The Product budget holder",
+              "Any stakeholder on the board of directors",
+              "The company owner"
+            ],
+            "correctAnswer": 0,
+            "explanation": "No explanation provided in the source text."
         }
       ]
     }
