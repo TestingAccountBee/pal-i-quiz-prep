@@ -6184,7 +6184,7 @@ export const mockExams: Exam[] = [
     ]
   },
   {
-      "id": "psm-mock-5",
+      "id": "psm-ii-mock-5",
     "title": "PSM Mock Exam #5",
     "description": "Professional Scrum Master practice exam #5 (Questions 1-30) based on provided content.",
     "timeLimit": 90,
