@@ -5809,7 +5809,7 @@ export const mockExams: Exam[] = [
         }
       ]
     };
-  {
+    {
         "id": "q4_1",
           "question": "How does Scrum apply Empiricism? (choose 3)",
           "options": [
