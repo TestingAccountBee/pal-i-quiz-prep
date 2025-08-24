@@ -6,18 +6,34 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { CheckCircle, XCircle, Clock, RotateCcw, Home, Filter, Flag } from 'lucide-react';
+import { CheckCircle, XCircle, Clock, RotateCcw, Home, Filter, Flag, Send } from 'lucide-react';
 import { ExamResult } from '@/types/exam';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
 interface ExamResultsProps {
   result: ExamResult;
   onRetakeExam: () => void;
   onBackToHome: () => void;
+  category?: string;
+  subcategory?: string;
 }
 
-export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsProps) => {
+// EmailJS Configuration - Replace with your actual IDs
+const EMAILJS_CONFIG = {
+  SERVICE_ID: 'service_17yvge4', // Replace with your Service ID
+  TEMPLATE_ID: 'template_4buc6e9', // Replace with your Template ID
+  PUBLIC_KEY: 'oYqYQl8I6Z4w_ZXO_', // Replace with your Public Key
+};
+
+// Declare EmailJS types for TypeScript
+declare global {
+  interface Window {
+    emailjs: any;
+  }
+}
+
+export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subcategory }: ExamResultsProps) => {
   const { attempt, exam, correctAnswers, totalQuestions, timeSpent, questionResults } = result;
   const scorePercentage = Math.round((correctAnswers / totalQuestions) * 100);
   const passed = scorePercentage >= exam.passingScore;
@@ -31,7 +47,39 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
   const [reportOpen, setReportOpen] = useState(false);
   const [selectedQuestion, setSelectedQuestion] = useState<string>('');
   const [reportText, setReportText] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [emailJSLoaded, setEmailJSLoaded] = useState(false);
   
+  // Load EmailJS from CDN
+  useEffect(() => {
+    const loadEmailJS = () => {
+      if (window.emailjs) {
+        setEmailJSLoaded(true);
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+      script.onload = () => {
+        if (window.emailjs) {
+          window.emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+          setEmailJSLoaded(true);
+        }
+      };
+      script.onerror = () => {
+        console.error('Failed to load EmailJS');
+        toast({
+          title: "Error loading email service",
+          description: "Please refresh the page and try again.",
+          variant: "destructive",
+        });
+      };
+      document.head.appendChild(script);
+    };
+
+    loadEmailJS();
+  }, []);
+
   // Filter questions based on current filter
   const filteredQuestions = questionResults.filter((qr) => {
     if (filter === 'correct') return qr.isCorrect;
@@ -44,33 +92,108 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
     return question.multipleChoice || Array.isArray(question.correctAnswer);
   };
 
-  // Helper function to check if arrays are equal (for multiple choice comparison)
-  const arraysEqual = (a: number[], b: number[]) => {
-    if (a.length !== b.length) return false;
-    return a.sort().every((val, index) => val === b.sort()[index]);
+  // Helper function to format answers for display
+  const formatAnswer = (answer: any) => {
+    if (answer === null || answer === undefined) return 'No answer';
+    if (Array.isArray(answer)) {
+      return answer.map(idx => String.fromCharCode(65 + idx)).join(', ');
+    }
+    return String.fromCharCode(65 + answer);
   };
 
-  // Handle report submission
-  const handleReportSubmit = () => {
+  // Handle report submission using EmailJS via CDN
+  const handleReportSubmit = async () => {
     if (!selectedQuestion || !reportText.trim()) {
       toast({
-        title: "Required fields",
-        description: "Please select a question and write your comment.",
+        title: "Campos obrigatórios",
+        description: "Por favor seleciona uma pergunta e escreve o teu comentário.",
         variant: "destructive",
       });
       return;
     }
 
-    // For now, just show a success toast. Later this can be connected to Supabase
-    toast({
-      title: "Report sent",
-      description: `Thank you for your feedback on question ${selectedQuestion}. We will review your suggestion.`,
-    });
+    if (!emailJSLoaded || !window.emailjs) {
+      toast({
+        title: "Email service not ready",
+        description: "Please wait a moment and try again.",
+        variant: "destructive",
+      });
+      return;
+    }
 
-    // Reset form and close dialog
-    setSelectedQuestion('');
-    setReportText('');
-    setReportOpen(false);
+    setIsLoading(true);
+
+    try {
+      // Get the selected question details
+      const questionIndex = parseInt(selectedQuestion) - 1;
+      const selectedQuestionData = questionResults[questionIndex];
+
+      // Create email subject
+      let subjectCategory = "Question Report";
+      if (category) {
+        subjectCategory = `${category}`;
+        if (subcategory) {
+          subjectCategory += ` / ${subcategory}`;
+        }
+      }
+
+      // Prepare template parameters for EmailJS
+      const templateParams = {
+        to_email: 'dfts10.profissional@gmail.com',
+        subject_category: subjectCategory,
+        exam_title: exam.title,
+        categoria: category || "N/A",
+        subcategoria: subcategory || "N/A",
+        question_number: selectedQuestion,
+        question_text: selectedQuestionData?.question.question || "Question not found",
+        user_feedback: reportText,
+        user_score: scorePercentage,
+        timestamp: new Date().toLocaleString('pt-PT'),
+        question_options: selectedQuestionData?.question.options?.join(' | ') || "No options",
+        correct_answer: formatAnswer(selectedQuestionData?.question.correctAnswer),
+        user_answer: formatAnswer(selectedQuestionData?.userAnswer),
+        explanation: selectedQuestionData?.question.explanation || "No explanation provided",
+      };
+
+      // Send email via EmailJS
+      const response = await window.emailjs.send(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        templateParams
+      );
+
+      console.log('EmailJS Response:', response);
+
+      toast({
+        title: "Report enviado! ✅",
+        description: "O teu report foi enviado diretamente por email. Obrigado pelo feedback!",
+      });
+
+      // Reset form and close dialog
+      setSelectedQuestion('');
+      setReportText('');
+      setReportOpen(false);
+
+    } catch (error) {
+      console.error("Erro ao enviar report via EmailJS:", error);
+      
+      let errorMessage = "Falha ao enviar o report. Por favor tenta novamente.";
+      if (error && typeof error === 'object' && 'text' in error) {
+        if (error.text.includes('Invalid email')) {
+          errorMessage = "Erro de configuração de email. Contacta o suporte.";
+        } else if (error.text.includes('network') || error.text.includes('fetch')) {
+          errorMessage = "Erro de conexão. Verifica a tua internet e tenta novamente.";
+        }
+      }
+
+      toast({
+        title: "Erro ao enviar ❌",
+        description: errorMessage,
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -90,13 +213,19 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
           </DialogTrigger>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
-              <DialogTitle>Report Incorrect Question</DialogTitle>
+              <DialogTitle>Report Question 📝</DialogTitle>
             </DialogHeader>
             <div className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="exam-info">Exam</Label>
                 <div className="text-sm text-muted-foreground p-2 bg-accent/50 rounded">
                   {exam.title}
+                  {(category || subcategory) && (
+                    <div className="text-xs mt-1">
+                      {category && <Badge variant="outline" className="mr-1">{category}</Badge>}
+                      {subcategory && <Badge variant="outline">{subcategory}</Badge>}
+                    </div>
+                  )}
                 </div>
               </div>
               
@@ -104,7 +233,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
                 <Label htmlFor="question-select">Question Number</Label>
                 <Select value={selectedQuestion} onValueChange={setSelectedQuestion}>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select a question" />
+                    <SelectValue placeholder="Seleciona uma pergunta" />
                   </SelectTrigger>
                   <SelectContent>
                     {questionResults.map((qr, index) => (
@@ -120,22 +249,46 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome }: ExamResultsP
                 <Label htmlFor="report-text">Describe the problem</Label>
                 <Textarea
                   id="report-text"
-                  placeholder="Explain why you believe the answer is incorrect..."
+                  placeholder="Explica porque acreditas que a resposta está incorreta, ou sugere melhorias à pergunta..."
                   value={reportText}
                   onChange={(e) => setReportText(e.target.value)}
                   className="min-h-[100px]"
                 />
+                <div className="text-xs text-muted-foreground bg-blue-50 p-2 rounded">
+                  ✨ O email será enviado diretamente da plataforma para dfts10.profissional@gmail.com
+                </div>
               </div>
+              
+              {!emailJSLoaded && (
+                <div className="text-xs text-amber-600 bg-amber-50 p-2 rounded">
+                  ⚡ A carregar serviço de email...
+                </div>
+              )}
               
               <div className="flex gap-2 justify-end">
                 <Button
                   variant="outline"
                   onClick={() => setReportOpen(false)}
+                  disabled={isLoading}
                 >
                   Cancel
                 </Button>
-                <Button onClick={handleReportSubmit}>
-                  Send Report
+                <Button 
+                  onClick={handleReportSubmit} 
+                  disabled={isLoading || !emailJSLoaded}
+                  className="bg-gradient-primary hover:shadow-glow"
+                >
+                  {isLoading ? (
+                    <>
+                      <div className="animate-spin h-4 w-4 border-2 border-current border-t-transparent rounded-full mr-2" />
+                      A enviar...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="h-4 w-4 mr-2" />
+                      Send Report
+                    </>
+                  )}
                 </Button>
               </div>
             </div>
