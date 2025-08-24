@@ -373,7 +373,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                 onClick={() => setFilter('all')}
               >
                 <Filter className="h-4 w-4 mr-1" />
-                Todas ({questionResults.length})
+                All ({questionResults.length})
               </Button>
               <Button
                 variant={filter === 'correct' ? 'default' : 'outline'}
@@ -382,7 +382,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                 className={filter === 'correct' ? 'bg-success hover:bg-success/90' : 'border-success text-success hover:bg-success hover:text-white'}
               >
                 <CheckCircle className="h-4 w-4 mr-1" />
-                Corretas ({questionResults.filter(qr => qr.isCorrect).length})
+                Correct ({questionResults.filter(qr => qr.isCorrect).length})
               </Button>
               <Button
                 variant={filter === 'incorrect' ? 'default' : 'outline'}
@@ -391,7 +391,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                 className={filter === 'incorrect' ? 'bg-destructive hover:bg-destructive/90' : 'border-destructive text-destructive hover:bg-destructive hover:text-white'}
               >
                 <XCircle className="h-4 w-4 mr-1" />
-                Incorretas ({questionResults.filter(qr => !qr.isCorrect).length})
+                Incorrect ({questionResults.filter(qr => !qr.isCorrect).length})
               </Button>
             </div>
           </div>
