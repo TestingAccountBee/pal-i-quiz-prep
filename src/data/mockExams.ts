@@ -6553,5 +6553,384 @@ export const mockExams: Exam[] = [
         "explanation": "No explanation provided in the source text."
       }
     ]
+  },
+  {
+    "id": "psm-ii-mock-6",
+  "title": "PSM II Mock Exam #6",
+  "description": "Professional Scrum Master Level II practice exam #6 based on provided content.",
+  "timeLimit": 90,
+  "passingScore": 85,
+  "questions": [
+    {
+        "id": "q6_1",
+        "question": "How is a cross-functional Scrum team defined? (Choose the best two answers)",
+        "options": [
+          "A group of full-stack Developers shared across multiple teams.",
+          "Cross-skilled Developers can do all the work necessary to deliver a shippable Increment at the end of the Sprint.",
+          "A team of skilled Developers that can effectively multi-task on multiple Product Backlog items at the same time.",
+          "Cross-functional teams operate independently without relying on external dependencies.",
+          "A team that consists of engineers, testers, business analysts, technical architects and functional managers."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "A cross-functional Scrum team is defined as a group of individuals within the Scrum Team who possess all the skills and expertise necessary to deliver a potentially shippable product increment at the end of each Sprint. These teams are not limited by specialized roles or hierarchies and are instead composed of professionals with diverse skills relevant to the project or product. This inclusivity ensures that the team can effectively collaborate and adapt to changing requirements, thereby maximizing its ability to deliver value."
+      },
+      {
+        "id": "q6_2",
+        "question": "What potential issues may arise if the director of a department also takes on the role of a Developer within one of the Scrum Teams developing a product? (Choose the best two answers)",
+        "options": [
+          "Reduced transparency and openness within the team, as team members may hesitate to raise concerns or provide honest feedback to someone in a position of authority.",
+          "Increased risk of micromanagement and stifled creativity, as the director may impose their ideas and decisions on the team, limiting autonomy and innovation.",
+          "Difficulty in providing unbiased feedback and evaluation to team members due to the director's dual role and hierarchical position.",
+          "Confusion and blurred lines of accountability, as the director may struggle to balance their responsibilities as a leader and as a team member, leading to ambiguity in decision-making processes and role expectations.",
+          "Potential disruption to team dynamics and collaboration, as the director's authority may overshadow the contributions and perspectives of other team members.",
+          "Lack of impartiality and potential conflicts of interest, as the director may prioritize departmental interests over the team's goals."
+        ],
+        "correctAnswer": [3, 4],
+        "explanation": "The correct answers highlight potential issues that may arise from the director of a department also functioning as a Developer within a Scrum Team. When a director assumes a dual role, there is a risk of disrupting team dynamics and collaboration. The director's authoritative position may overshadow the contributions of other team members, hindering open communication and shared decision-making. Additionally, there may be confusion regarding accountability and role expectations, as the director juggles responsibilities as both a leader and a team member. While other concerns are valid in a hierarchical structure, they may not directly relate to the specific challenges posed by the director's dual role within a Scrum Team."
+      },
+      {
+        "id": "q6_3",
+        "question": "A six-member Scrum team is developing a new application to support their organization's payroll processes. Darren is a new Developer, and in the Increment, he added a new feature that was not on the Product Backlog. He did it because one of the business stakeholders approached him directly, and it only took him 30 minutes to implement the requirements. Other Developers discovered this just before the Sprint Review. What should the Developers do? (Choose the best three answers)",
+        "options": [
+          "Educate Darren about the importance of following the agreed-upon process and not adding features outside of the Product Backlog without proper evaluation and approval.",
+          "The Developers should inform the Scrum Master about the request and remove Darren from the Team.",
+          "Darren should ask the Product Owner to add this feature to the Product Backlog because it is already part of the Increment.",
+          "They should discuss the issue in the Sprint Retrospective.",
+          "The Developers should retain the feature in the Increment but should not present it to the stakeholders.",
+          "Discuss the situation with the Product Owner to determine whether the new feature aligns with the product vision and goals."
+        ],
+        "correctAnswer": [0, 3, 5],
+        "explanation": "In this scenario, where a new feature was added to the Increment without being on the Product Backlog, it's essential for the team to take appropriate action. Firstly, discussing the situation with the Product Owner is crucial, as they are responsible for managing the Product Backlog and ensuring alignment with the product vision. Additionally, educating Darren about the proper Scrum process is important to prevent similar incidents in the future. Discussing the issue in the Sprint Retrospective allows the team to reflect and improve its processes."
+      },
+      {
+        "id": "q6_4",
+        "question": "What would be two boundaries, defined in Scrum, that give guidance for teams to effectively self-manage? (Choose the best two answers)",
+        "options": [
+          "Creating an integrated and potentially shippable Increment by the end of each Sprint.",
+          "Having a mixture of different levels of skills and experience to promote domain knowledge sharing.",
+          "Clearly defined functional teams within the Scrum team to define handoff phases during development.",
+          "Timeboxing the events in Scrum to allow for regular inspection and adaptation, creating opportunities to adjust course in any given path."
+        ],
+        "correctAnswer": [0, 3],
+        "explanation": "Timeboxing the events in Scrum ensures that each phase has a predefined duration, fostering discipline and prioritization. It also facilitates regular inspection and adaptation. Creating an integrated and potentially shippable Increment by the end of each Sprint sets a clear boundary for the team's deliverables, motivating them to prioritize essential tasks and deliver tangible value. These boundaries provide structure for teams to self-manage effectively."
+      },
+      {
+        "id": "q6_5",
+        "question": "What is the recommended size for a Scrum team? (Choose the best answer)",
+        "options": [
+          "Typically 10 or fewer members",
+          "Minimal 5",
+          "3 to 9",
+          "7 plus or minus 2"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Scrum Team is small enough to remain nimble and large enough to complete significant work within a Sprint, typically 10 or fewer people. In general, we have found that smaller teams communicate better and are more productive. If Scrum Teams become too large, they should consider reorganizing into multiple cohesive Scrum Teams, each focused on the same product."
+      },
+      {
+        "id": "q6_6",
+        "question": "How can a Scrum Master support the team when a new Product Owner replaces the outgoing one, and the team lacks confidence in the newcomer's ability to fulfill the role effectively? (Choose the best two answers)",
+        "options": [
+          "Organize team-building activities and collaborative sessions to help the new Product Owner integrate smoothly and foster a positive relationship with the team.",
+          "Facilitate open communication between the team and the new Product Owner to express concerns, provide support, and build trust gradually.",
+          "Provide extensive training and guidance to the new Product Owner, assuming they will quickly adapt and gain the team's trust.",
+          "Encourage the team to challenge the new Product Owner's decisions openly and frequently to test their competence.",
+          "Keep the team's concerns about the new Product Owner's abilities to yourself and hope for the best without taking any action."
+        ],
+        "correctAnswer": [0, 1],
+        "explanation": "The most effective approaches for the Scrum Master involve fostering open communication and organizing collaborative activities to support the team during the transition to a new Product Owner. This helps build trust gradually and address any uncertainties about the new Product Owner's abilities."
+      },
+      {
+        "id": "q6_7",
+        "question": "Who is accountable for knowing the most about the progress towards a business objective or a release and also being able to clearly explain the alternatives? (Choose the best answer)",
+        "options": [
+          "The Scrum Master",
+          "The Development manager",
+          "The Product Owner",
+          "The Developers",
+          "The Release Manager"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The Product Owner is accountable for knowing the most about the progress towards a business objective or a release. This stems from their responsibility to prioritize the Product Backlog based on business value and guide the team in making decisions that align with the overall objectives and maximize the value delivered to stakeholders."
+      },
+      {
+        "id": "q6_8",
+        "question": "What must the Developers do during the first Sprint? (Choose the best answer)",
+        "options": [
+          "Create a potentially shippable product Increment that includes at least one piece of functionality.",
+          "Only design and develop the architecture and infrastructure.",
+          "Create a project plan in order to map the functional development to Sprint dates.",
+          "Analyze and estimate the requirements for the subsequent Sprints."
+        ],
+        "correctAnswer": 0,
+        "explanation": "During the first Sprint, the Developers must collaborate with the Product Owner to understand the selected Product Backlog items and define a Sprint Goal. They then create a plan for delivering the Increment (Sprint Backlog) and commit to adhering to the Definition of Done to ensure the Increment meets quality standards."
+      },
+      {
+        "id": "q6_9",
+        "question": "Which statement best describes the concept of empirical process control in Scrum? (Choose the best answer)",
+        "options": [
+          "Scrum Teams prioritize following rigid processes and procedures over adapting to change.",
+          "Scrum Teams continuously inspect and adapt their processes and work based on empirical evidence.",
+          "Scrum Teams rely on predetermined plans and predictions to guide their work.",
+          "Scrum Teams delegate decision-making authority to external stakeholders.",
+          "Scrum Teams follow a fixed set of rules and guidelines without flexibility."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Empirical process control in Scrum emphasizes continuous inspection and adaptation based on real-world data and experience. This approach allows Scrum Teams to make informed decisions and adjustments to optimize their processes and achieve better outcomes. The other options do not align with these principles."
+      },
+      {
+        "id": "q6_10",
+        "question": "As a Scrum Master, you encounter conflicts among team members, hindering collaboration and productivity. How would you navigate these conflicts? (Choose the best answer)",
+        "options": [
+          "Encourage team members to avoid discussing conflicts and focus solely on work, risking unresolved tension and reduced team cohesion.",
+          "Facilitate open and honest communication to address conflicts and find mutually agreeable solutions, fostering a culture of trust and collaboration within the team.",
+          "Assign blame and consequences to the parties involved in the conflict, creating a hostile work environment and further exacerbating the conflict.",
+          "Intervene directly and impose solutions without involving the team, undermining their autonomy and potentially creating resentment among team members.",
+          "Ignore conflicts and hope they resolve themselves over time, risking escalating tensions and negatively impacting team morale and performance."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Facilitating open and honest communication is the most appropriate approach. This creates a safe space for team members to express their concerns, fosters a culture of trust and collaboration, and allows them to address conflicts constructively to find mutually agreeable solutions. Other options can escalate tensions and hinder team performance."
+      },
+      {
+        "id": "q6_11",
+        "question": "According to the latest Scrum Guide, every Scrum Team should include Developers who possess the necessary competencies and skills to deliver a \"Done\" Increment in a Sprint.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": 0,
+        "explanation": "According to the latest version of the Scrum Guide, each Scrum Team should consist of Developers with the required skills and competencies to deliver a potentially releasable product Increment at the end of each Sprint. This ensures the team is self-sufficient and capable of completing all aspects of the work without dependencies on individuals outside the team."
+      },
+      {
+        "id": "q6_12",
+        "question": "Professional development is crucial for the growth and success of individuals and teams. How can a Scrum Master support the professional development of team members? (Choose the best answer)",
+        "options": [
+          "Support continuous learning and skill development through training, mentoring, and coaching, empowering team members to reach their full potential and contribute effectively to the team.",
+          "Discourage team members from pursuing additional training or certifications, stunting their professional growth and limiting their value to the team.",
+          "Encourage team members to focus solely on their current responsibilities without pursuing further development, limiting their potential and adaptability.",
+          "Provide limited opportunities for learning and growth to team members, hindering their career advancement and skill development.",
+          "Limit access to resources and opportunities for career advancement within the organization, stifling motivation and engagement among team members."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Supporting continuous learning through training, mentoring, and coaching is the most suitable approach. This empowers team members to reach their full potential, which not only enhances individual growth but also strengthens the team's capabilities and performance. Other options limit opportunities and stifle motivation."
+      },
+      {
+        "id": "q6_13",
+        "question": "Which of the following best describes a Product Owner? (Choose the best answer)",
+        "options": [
+          "Value optimizer.",
+          "Go-between for the Developers and stakeholders.",
+          "Team leader.",
+          "The Product Owner is responsible for estimating the items."
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Product Owner is a key role in Scrum responsible for maximizing the value of the product and the work of the Developers. They manage the Product Backlog, represent stakeholder interests, and ensure the team delivers the most valuable features with each iteration."
+      },
+      {
+        "id": "q6_14",
+        "question": "Which statement best describes the responsibility of the Product Owner? (Choose the best two answers)",
+        "options": [
+          "To optimize the value of the work being done by the Developers.",
+          "To provide clarity on Product Backlog items.",
+          "To act as a go-between for stakeholders.",
+          "To manage the Developers.",
+          "To ensure that the work meets the commitments of the stakeholders."
+        ],
+        "correctAnswer": [0, 1],
+        "explanation": "The Product Owner is responsible for maximizing the value of the work done by the Developers. This includes managing the Product Backlog and ensuring it is transparent, visible, and understood. This clarity on Product Backlog items is a key part of their role."
+      },
+      {
+        "id": "q6_15",
+        "question": "Who must ensure that the work done for a Product Backlog item conforms to the Definition of Done? (Choose the best answer)",
+        "options": [
+          "The Scrum team.",
+          "The Product Owner.",
+          "The Scrum Master.",
+          "The Developers.",
+          "The test team."
+        ],
+        "correctAnswer": 3,
+        "explanation": "While the whole Scrum Team must create a Definition of Done, the Developers are the ones who do the work. Therefore, they are responsible for making sure the produced work meets the agreed-upon standards and conforms to the Definition of Done."
+      },
+      {
+        "id": "q6_16",
+        "question": "What primary responsibilities do the Developers hold in Scrum? (Choose all that apply)",
+        "options": [
+          "Organizing the work required to meet the Sprint Goal and resolving internal team conflicts.",
+          "Doing the actions required to fulfil the Sprint Goal.",
+          "Delivers items that meet the Definition of Done.",
+          "Writing User Stories and ordering the Product Backlog.",
+          "Reporting productivity and selecting the Sprint timebox."
+        ],
+        "correctAnswer": [0, 1, 2],
+        "explanation": "Developers are responsible for converting Product Backlog items into a shippable increment. This includes organizing the work, executing the tasks to meet the Sprint Goal, and ensuring the work conforms to the Definition of Done. They are self-organizing in these efforts."
+      },
+      {
+        "id": "q6_17",
+        "question": "Which statement is correct regarding the length of the Sprints? (Choose the best two answers)",
+        "options": [
+          "The Sprint length depends on the forecasted development effort (amount of items selected) during Sprint Planning.",
+          "If the duration of the Sprint extends beyond a certain point, it could lead to an increase in complexity, and a higher level of risk for the project or product.",
+          "The Sprint Length is defined by the Scrum Master.",
+          "The length of all Sprints must be no more than one month and it is optimal to have a consistent Sprint length.",
+          "The Sprint length is calculated by aggregating the time required to design, code and test."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Sprints are time-boxed to one month or less. Longer Sprints can increase complexity and risk. A consistent Sprint length provides a steady rhythm. A new Sprint starts immediately after the previous one concludes."
+      },
+      {
+        "id": "q6_18",
+        "question": "Which of these tools is mandatory for the Product Owner to use? (Choose the best answer)",
+        "options": [
+          "Project Gantt chart.",
+          "The Product Owner has the discretion to select appropriate tools, provided they align with the guidelines outlined in the Scrum Guide.",
+          "Release burnup chart.",
+          "Burndown chart.",
+          "Version control and Jira."
+        ],
+        "correctAnswer": 1,
+        "explanation": "While various tools like burnup and burndown charts can be helpful, none are mandatory in Scrum. The Product Owner can choose any tool or method that best suits their needs for decision-making and managing the Product Backlog."
+      },
+      {
+        "id": "q6_19",
+        "question": "Scrum has an accountability called “Project Manager.”",
+        "options": [
+          "False",
+          "True"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Scrum does not have a role called \"Project Manager.\" It operates with three distinct accountabilities: Scrum Master, Product Owner, and Developers. The absence of a Project Manager is intentional to promote self-organization and collaboration."
+      },
+      {
+        "id": "q6_20",
+        "question": "When could the Developers cancel the Sprint? (Choose the best answer)",
+        "options": [
+          "When the Sprint Backlog is determined to be unachievable.",
+          "When the availability of the Product Owner is less than expected.",
+          "When the requirements for the work to be done become unclear or not understood.",
+          "When too many impediments occur.",
+          "They can't. Only the Product Owner can cancel the Sprint."
+        ],
+        "correctAnswer": 4,
+        "explanation": "According to Scrum principles, only the Product Owner has the authority to cancel a Sprint. This is a significant decision made if the Sprint Goal becomes obsolete or unfeasible, and requires consultation with stakeholders."
+      },
+      {
+        "id": "q6_21",
+        "question": "A high performing Scrum team will have frequent Release Sprints.",
+        "options": [
+          "False",
+          "True"
+        ],
+        "correctAnswer": 0,
+        "explanation": "In Scrum, there are no special Sprints designated as Release Sprints. Every Sprint is structured to produce a potentially shippable product Increment. The Developers are accountable for creating a usable Increment each Sprint that adheres to the Definition of Done."
+      },
+      {
+        "id": "q6_22",
+        "question": "How would you facilitate continuous improvement within a mature Scrum team that has been working together for several years? (Choose the best three answers)",
+        "options": [
+          "Provide additional training and certification opportunities to team members to enhance their professional development.",
+          "Introduce new tools and techniques gradually to prevent disruption to the team's workflow.",
+          "Rotate team members across different roles to encourage skill development and cross-functional collaboration.",
+          "Encourage team members to experiment with different approaches and share their learnings with the rest of the team.",
+          "Conduct retrospective meetings less frequently to avoid monotony."
+        ],
+        "correctAnswer": [1, 2, 3],
+        "explanation": "Rotating team members, gradually introducing new tools, and encouraging experimentation are effective ways to stimulate continuous improvement. These options focus on promoting collaboration, skill development, and ongoing learning within the team, which are essential for a mature Scrum environment."
+      },
+      {
+        "id": "q6_23",
+        "question": "Who manages the progress of work during a Sprint? (Choose the best answer)",
+        "options": [
+          "The Scrum Master knows the specific senior Developers that have the responsibility to manage the progress of work.",
+          "The Developers",
+          "The Team Leader",
+          "The stakeholders",
+          "The Product Owner"
+        ],
+        "correctAnswer": 1,
+        "explanation": "During a Sprint, the progress of work is managed collectively by the Developers. This collective responsibility fosters self-management, empowering them to organize their work, collaborate effectively, and make decisions autonomously to achieve the Sprint Goal."
+      },
+      {
+        "id": "q6_24",
+        "question": "As a Scrum Master, how would you support a team that is experiencing burnout or morale issues due to sustained high pressure and workload? (Choose the best two answers)",
+        "options": [
+          "Ignore the issue and focus solely on meeting project deadlines and deliverables.",
+          "Foster a supportive and inclusive team culture by promoting work-life balance, organizing team-building activities, and offering emotional support and encouragement.",
+          "Encourage team members to work longer hours to catch up on missed deadlines.",
+          "Provide financial incentives and bonuses to motivate team members to work harder.",
+          "Implement strategies for workload management, such as adjusting sprint goals and timelines to reduce stress."
+        ],
+        "correctAnswer": [1, 4],
+        "explanation": "Implementing strategies for workload management (like adjusting sprint goals) and fostering a supportive team culture are crucial for alleviating burnout. These proactive approaches demonstrate responsiveness to the team's needs and promote a healthier work environment. Ignoring the issue or encouraging longer hours can lead to further stress."
+      },
+      {
+        "id": "q6_25",
+        "question": "James made racist comments directed at John, prompting John to report the incident to HR. Despite James' high level of skill as a developer, the Software Manager advocated for dismissing the incident and retaining James on the team. Is this statement true or false?",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": 1,
+        "explanation": "This statement is false. Regardless of James's skills, making racist comments is unacceptable behavior. Ignoring such an incident creates a hostile work environment, undermines company values, and is not aligned with proper HR protocols, potentially leading to legal and ethical ramifications."
+      },
+      {
+        "id": "q6_26",
+        "question": "You are a Scrum Master and were asked to conduct an interview by management for a new team member. Which characteristics would you look for in the candidate? (Choose the best answer)",
+        "options": [
+          "Eagerness to take on leadership roles and drive decision-making processes within the team.",
+          "Proven track record of delivering projects on time and within budget.",
+          "Flexibility and adaptability to embrace changing requirements and priorities.",
+          "Strong collaboration and communication skills, with the ability to work effectively in a team environment.",
+          "Extensive experience in a specific technology or domain relevant to the project."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Strong collaboration and communication skills are essential for a new team member in a Scrum environment. The ability to work effectively with others, communicate openly, and contribute to a positive team dynamic are crucial for the success of the self-organizing team."
+      },
+      {
+        "id": "q6_27",
+        "question": "Cross-functional teams possess expertise on specific system components and areas like design, database management, back-end development, and front-end development, allowing them to focus on specific aspects of a project effectively.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": 1,
+        "explanation": "This statement describes component teams, not cross-functional teams. Cross-functional teams are composed of individuals with diverse skills who work together towards a common goal, rather than being specialized in one area. They can independently deliver complete increments of work."
+      },
+      {
+        "id": "q6_28",
+        "question": "Which statement best describes Scrum? (Choose the best answer)",
+        "options": [
+          "A clearly defined and predictable process that follows the principles of Computer Science.",
+          "A clearly defined methodology that determines the software development processes",
+          "A manual methodology for defining best practices for software development.",
+          "Scrum is a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Scrum is a lightweight framework designed to address complex problems by promoting adaptability and iterative development, as outlined in the Scrum Guide. It provides a structure for teams to work collaboratively, respond to change, and deliver value quickly and effectively."
+      },
+      {
+        "id": "q6_29",
+        "question": "In a scenario where Toby, a diligent Product Owner overseeing the development of a cutting-edge e-commerce platform, actively engages with the Developers to refine the Product Backlog, what fundamental truths should be acknowledged about this crucial aspect of the Scrum framework? (Choose all that apply)",
+        "options": [
+          "Product Backlog refinement involves collaboration between the Product Owner and the Developers",
+          "Product Backlog refinement focuses only on adding new items to the Product Backlog",
+          "Product Backlog refinement is the sole responsibility of the Product Owner",
+          "Product Backlog refinement is an ongoing process.",
+          "Product Backlog refinement occurs only at the beginning of the Sprint",
+          "Product Backlog refinement ensures that Product Backlog items are clear and actionable"
+        ],
+        "correctAnswer": [0, 3, 5],
+        "explanation": "Product Backlog refinement is an essential, continuous activity in Scrum. It is a collaborative effort between the Product Owner and Developers to ensure backlog items are clear, actionable, and aligned with the product vision. This ongoing process helps the team understand upcoming work and adapt to changes."
+      },
+      {
+        "id": "q6_30",
+        "question": "James made racist comments directed at John, prompting John to report the incident to HR. Despite James' high level of skill as a developer, the Software Manager advocated for dismissing the incident and retaining James on the team. Is this decision true or false?",
+        "options": [
+          "False",
+          "True"
+        ],
+        "correctAnswer": 0,
+        "explanation": "This decision is false from an ethical and professional standpoint. Regardless of James's skills, making racist comments is unacceptable. Ignoring it creates a hostile work environment, undermines company values, and is not aligned with proper HR protocols, which could lead to legal ramifications."
+      }
+    ]
   }
 ];
