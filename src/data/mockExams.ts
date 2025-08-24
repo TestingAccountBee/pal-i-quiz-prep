@@ -5434,5 +5434,379 @@ export const mockExams: Exam[] = [
         "explanation": "The new Sprint needs to start immediately after the end of the previous one. There shouldn't be any Release Sprint or anything similar"
         }
       ]
-    }
+    },
+  {
+      "id": "psm-ii-mock-3",
+    "title": "PSM II Mock Exam #3",
+    "description": "Professional Scrum Master Level II practice exam #3 based on provided content.",
+    "timeLimit": 90,
+    "passingScore": 85,
+    "questions": [
+      {
+        "id": "q3_1",
+        "question": "What is the first event of the Sprint? (choose 1)",
+        "options": [
+          "Sprint Retrospective",
+          "Backlog Refinement",
+          "Sprint Review",
+          "Daily Scrum",
+          "Sprint Planning"
+        ],
+        "correctAnswer": 4,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_2",
+        "question": "Developing new or revising existing technical documentation is a requirement of the team's Definition of Done. This is done to ensure that the product and/or its features can be maintained in the future. During the Sprint, the team's technical writer will be on holiday. What action should you take? (choose 1)",
+        "options": [
+          "The Scrum Team is still accountable to meeting the Definition of Done, the Developers should write the documentation, they are best placed to do so as the developers of the product.",
+          "Delay the documentation for the technical writer’s return and create a backlog of work to be handled in one technical writing sprint.",
+          "Tell the developers to form a specialist team of technical writers to work on documentation for this product and any others in the company."
+        ],
+        "correctAnswer": 0,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_3",
+        "question": "As a Scrum Master, which of the following would you do to make the Scrum Team more productive during the first Sprint? (choose all that apply)",
+        "options": [
+          "Suggest the team splits into a hierarchy of Developers with Senior Developers and Junior Developers.",
+          "Allow the Developers to identify and discuss the procedure for converting the Product Backlog Items into a possibly releasable increment.",
+          "Make certain that the Definition of Done is known and understood.",
+          "Allow the Product Owner to answer questions about the product, its history, goals, and context.",
+          "Check that the Scrum Team members get along with each other.",
+          "Introduce the Scrum Team members to one another and provide a brief background on their talents and work history."
+        ],
+        "correctAnswer": [1, 2, 3, 5],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_4",
+        "question": "The Developers have realized that it does not possess the necessary tools and infrastructure to complete each of the items chosen from the Product Backlog. What action would you recommend as the Scrum Master? (choose 1)",
+        "options": [
+          "Stop the Sprint and have the Developers work on the infrastructure before continuing.",
+          "Encourage the Product Owner to accept partially done Increments and complete the work in the Hardening Sprint.",
+          "Coach the Developers to improve its skills, tools and infrastructure over time and establish a Definition of “Done” that is actually possible to achieve given the current circumstances."
+        ],
+        "correctAnswer": 2,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_5",
+        "question": "During a Daily Scrum 2 developers disagree on a task and get into a heated argument, what are the best things a Scrum Master should do? (choose the 2 best answers)",
+        "options": [
+          "Try to move the team members away from each other to avoid further conflict as soon as possible to be productive.",
+          "Don't handle problems for the team. Instead, assist them in identifying and resolving issues on their own.",
+          "Talk with each team member to understand why they have differences. Report them to their managers if they cannot solve their differences.",
+          "Help create the environment and space to discuss conflicts, find agreements in a productive and positive way. Remind the other members of the Scrum Team that conflicting ideas are natural, but making it personal does not help.",
+          "Wait till the Sprint Retrospective and show the importance of not wasting time in conflict, concentrating on work, and improving performance."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_6",
+        "question": "You join an established Scrum team as the new Scrum Master, you notice that the Product Owner has not been attending the Sprint Retrospectives. Through some investigation, you realise that the Developers don’t want to invite him fearing that he might make the Sprint Retrospective ineffective and even provide destructive criticism. As the new Scrum Master what should you do? (choose the best answer)",
+        "options": [
+          "Work with the Developers to explore the problem and find a safe way to introduce the Product Owner to the Sprint Retrospective to enable greater transparency.",
+          "Facilitate a discussion in the Scrum Team and allow them to decide what is best to do.",
+          "Respect the Developer's wishes as a self-managing team.",
+          "Speak to the Product Owner and see what he thinks. Do what they suggest is best."
+        ],
+        "correctAnswer": 0,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_7",
+        "question": "You are a Scrum Master of a 9 member Scrum Team; you haven't joined the Daily Scrum for some time because you thought it was running well. However, you join today and notice it took 20 minutes. The Developers often go over 15 minutes and they propose dividing the Scrum Team into two cohesive groups with their own Daily Scrum. What is your response? (choose 1)",
+        "options": [
+          "You say that it is common and reasonable to extend the Daily Scrum. The 15 minute rule is just a guideline.",
+          "You offer to join the Daily Scrum and teach them to keep the Daily Scrum within a 15-minute timebox.",
+          "You agree. If the Daily Scrum becomes too long, the team should consider reorganizing into multiple cohesive Scrum Teams, each focused on the same Product and Product Backlog."
+        ],
+        "correctAnswer": 1,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_8",
+        "question": "Once born, who in the Scrum team can update or change an increment? (choose 1)",
+        "options": [
+          "The Product Owner",
+          "Release Management",
+          "The Scrum Master",
+          "The Developers",
+          "Senior Developers"
+        ],
+        "correctAnswer": 3,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_9",
+        "question": "The product owner has used the Scrum team’s velocity to estimate delivery in 3 months. This is the reported delivery date to customers and stakeholders that desperately need the new functionality. However, at the last Sprint Review, it has been discovered that the current increment did not work! At the Sprint Retrospective, some developers admitted they have not been adhering to all elements of the Definition of Done. What is the most effective way to recover by the deadline? (choose 1)",
+        "options": [
+          "The team needs to restore transparency by adding the undone work to the Product Backlog. The Developers must figure out a way to deliver in the upcoming Sprints a greater velocity than they have previously been able to do. The Scrum Master monitors progress and if needed initiates a restart with a more reliable team or cancels the project.",
+          "The Developers set the technical debt work aside to be performed in one or more hardening Sprints. They ask for more resource from other scrum teams to assist.",
+          "In the next Sprints, the Developers keep making sure that all of the selected scope per Sprint is as done as possible, at least at the past level of 85%. In every Sprint the undone work of the previous Sprint is estimated and added to the Sprint Backlog. The developers think they can complete all forecasted work.",
+          "The Developers inform the Product Owner that the progress she has perceived to date is not correct. The Increment is not releasable. They give a new estimate of the effort it would take to get the past work done, and suggest doing that work first before proceeding with new features. The Developers also re-estimate the effort to complete the remaining backlog, including all testing. In the end, it is Product Owner's call to continue the product or to cancel."
+        ],
+        "correctAnswer": 3,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_10",
+        "question": "It's important that product development teams be cross-functional and comprised of people with a wide range of expertise to succeed. When implementing Scrum, what are the benefits of maintaining the existing component teams (for example, design, database, backend, and frontend)? (choose 1)",
+        "options": [
+          "Because their productivity is already predictable, they can deliver more valuable Increments than a newly formed team",
+          "Component teams would have all the skills needed to deliver an increment of value",
+          "There is less communication overhead than working in feature teams",
+          "Because they have been working together for some time, there will be less initial disruption than a newly formed team. As they begin working, they will discover what works best and how to move towards cross-functional teams"
+        ],
+        "correctAnswer": 3,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_11",
+        "question": "After discussions you as the Scrum Master have convinced them that they need to have the Daily Scrum every day, but this still does not solve the problem of the trouble in hosting these meetings. As the Scrum Master what should you do? (choose the best answer)",
+        "options": [
+          "Cause the removal of this impediment by informing management and challenge the distributed nature of the team",
+          "Mandate the use of tools used elsewhere in the organisation that have helped other teams who are in different locations",
+          "Bring up the topic for discussion and allow the Developers to determine for themselves what to do as a self­ managing team.",
+          "Tell the Developers to alternate who attends.",
+          "You as the Scrum Master are responsible for setting up the meetings.",
+          "Divide the Developers into subteams per location."
+        ],
+        "correctAnswer": 2,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_12",
+        "question": "Which of these answers is a good sign the team is self-managing. (choose the 2 best answers)",
+        "options": [
+          "Management is able to know which members are working on which items.",
+          "The Developers are cross-functional and know what they need to do to complete all tasks committed to in Sprint Planning",
+          "Creativity thrives and new possibilities are explored.",
+          "The Developers are able to resolve internal conflicts between members in order to continue working."
+        ],
+        "correctAnswer": [2, 3],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_13",
+        "question": "At the moment, the engineering branch of your company is organized in siloed teams that specialize according to function (for example, design, front-end, back-end, database, and testing). What factors do you think are important to consider while transitioning from component teams to feature teams? (choose 2)",
+        "options": [
+          "Feature teams will require time to become productive as people from the different layers and components become accustomed to working and delivering unified functionality together as one Scrum Team.",
+          "It is impossible to do Scrum without feature teams. Do not try to adopt Scrum until teams are reorganized into feature teams.",
+          "Productivity, in terms of lines of code or story points, will probably suffer during the transition, although even then delivery of business value is still likely to increase.",
+          "With feature teams, it is easier to calculate and compare the productivity per team. Incentives on productivity are likely to speed up the transition to feature teams and, therefore the adoption of Scrum."
+        ],
+        "correctAnswer": [0, 2],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_14",
+        "question": "The Sprint Review often overruns resulting in many stakeholders needing to leave before the end of the meeting and missing key information. The stakeholders request to have a follow-up meeting the next day. As a Scrum Master how would you handle this situation? (choose 2)",
+        "options": [
+          "Coach the Developers with time management techniques and how to present the most valuable functionalities first.",
+          "Split the Sprint Review into 2 parts and continue the Sprint Review the next day.",
+          "Coach the stakeholders to understand Scrum and that all events are timeboxed and should not be extended.",
+          "Coach the Product Owner to send an email to the stakeholders with a list of items that have been \"Done\" and what has not been \"Done\" before the Sprint Review to save time.",
+          "Schedule the Sprint Review an hour earlier than usual so that the event can be extended if necessary."
+        ],
+        "correctAnswer": [0, 2],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_15",
+        "question": "Who plans the work during the Sprint? (choose 1)",
+        "options": [
+          "The Product Owner",
+          "The Scrum Master",
+          "The Senior Developers",
+          "The Developers"
+        ],
+        "correctAnswer": 3,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_16",
+        "question": "The Product Owner Josh regularly joins the Daily Scrum and tries to bring some encouragement by cheering and congratulating with cakes each time a Developer moves an item into the done pile. What should a Scrum Master do? (choose 1)",
+        "options": [
+          "Coach the team about the purpose of the Daily Scrum and that working software is the primary measure of success.",
+          "Congratulate the Product Owner for promoting teamwork.",
+          "Take advantage of the chance to boost positivity by encouraging this behaviour of celebration for Done items.",
+          "Take no action. The Developers seem to be happy with this."
+        ],
+        "correctAnswer": 0,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_17",
+        "question": "A Scrum Team decides to implement a semi-frequent \"hardening and release sprint.\" What should a Scrum Master suggest? (choose all that apply)",
+        "options": [
+          "Hardening Sprints are supported by the Scrum framework so this is acceptable.",
+          "Investigating if the team is adhering to the Definition of Done every Sprint.",
+          "If a Sprint is needed to make the product stable then there is development debt to take care of.",
+          "The team should review the Definition of Done as it does not look like it is stringent enough to ensure a stable increment for release.",
+          "Having a specific Sprint for hardening is a good idea, Scrum can be adapted to suit different situations."
+        ],
+        "correctAnswer": [1, 2, 3],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_18",
+        "question": "A key and very senior stakeholder directly asks a particular developer to add a piece of functionality to the sprint backlog now as an urgent task, is it disrespectful to refuse to add the functionality immediately? (choose 1)",
+        "options": [
+          "No",
+          "Yes"
+        ],
+        "correctAnswer": 0,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_19",
+        "question": "3 Scrum teams are working in a Nexus on the same Product. At the Sprint Review, each team tells the Product Owner that their increments are ready for release but they show their Increments independently in different environments. Would this be cause for concern? (choose 1)",
+        "options": [
+          "No",
+          "Yes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_20",
+        "question": "At the Sprint Retrospective the Scrum Team are addressing the quality difficulties that prevented completing an appropriate Increment at Sprint end. However, the Developments did indicate that they were able to accomplish a high velocity. Which two of these responses would you think their Scrum Master is best to take? (choose 2)",
+        "options": [
+          "Agree and acknowledge the team’s hard work, so they will be motivated to do even more in the next Sprint.",
+          "Stress the value of working software over measured velocity",
+          "Facilitate a discussion on how to improve the quality to a level high enough for the Increment to be releasable, even if the measured velocity drops in the next Sprint.",
+          "Acknowledge the hard work but remind the Developers that they need to improve in order to do even more in the next Sprint."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_21",
+        "question": "How do Timeboxes help a self-managing team? (choose the 2 best answers)",
+        "options": [
+          "Developers can determine on their own how much overtime they should work to meet the timebox deadline.",
+          "Timeboxes encourage people to create the best possible result in the given time.",
+          "Timeboxes help everyone focus on the same problem at the same time.",
+          "Timeboxes shield the Developers from interruptions by the stakeholders and Product Owner."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_22",
+        "question": "You are finding that Daily Scrums always take more than 15 minutes due to one of the more experienced developers going into a lot of depth about his work and issues the team is facing. What should you do? (choose 2)",
+        "options": [
+          "You remind the Developers that the Daily Scrum should take a maximum of 15 minutes and coach the Developers on how to be more efficient with their updates and that they can meet outside of the Daily Scrum to discuss what needs to be discussed.",
+          "You start using a timer and assign a timebox to each person to speak at the Daily Scrum and make sure that everyone has the opportunity to speak.",
+          "You ask the experienced developer how he sees his impact on the Daily Scrum, effectively coaching him into work better as an equal team member.",
+          "You suggest passing a token around, where the person holding the token Is the only one allowed to speak and the rest will be listening to that person.",
+          "Contact the team member's Line Manager and raise his ability to be concise as an issue."
+        ],
+        "correctAnswer": [0, 2],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_23",
+        "question": "Why might it benefit Empiricism to have shorter Sprints rather than longer Sprints? (choose all that apply):",
+        "options": [
+          "Shorter Sprints allow more time working and reduces the amount of time in meetings",
+          "Shorter feedback loops reduce the risk of deviating",
+          "Shorter Sprints allow for more opportunities to inspect and adapt",
+          "Shorter Sprints mean more chances to adapt to changes in the environment",
+          "Shorter Sprints minimizes further deviation by frequent inspecting and adapting"
+        ],
+        "correctAnswer": [1, 2, 3, 4],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_24",
+        "question": "How often should the Scrum Team members change? (choose 1)",
+        "options": [
+          "Never, as knowledge can be lost.",
+          "Frequently in order to be Agile",
+          "As needed, whilst taking into account a short-term reduction in productivity.",
+          "As needed, as long as it doesn’t impact productivity."
+        ],
+        "correctAnswer": 2,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_25",
+        "question": "How should a Scrum Master divide a group of 50 people into multiple scrum teams? (choose 1)",
+        "options": [
+          "Create teams based on the functional layer they are working on.",
+          "Create teams based on the health of the working relationship of the team members.",
+          "Ask the developers to divide themselves into teams."
+        ],
+        "correctAnswer": 2,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_26",
+        "question": "You have a choice of ways and locations to hold the Daily Scrum, how do you decide what option is best? (choose 1)",
+        "options": [
+          "It should be held in a room where management cannot overhear.",
+          "It should be held wherever you can get on that particular day.",
+          "It should be held around the Scrum board.",
+          "It should be held in a secluded area of the office so not to disturb others.",
+          "It should be held wherever the Developers think is best."
+        ],
+        "correctAnswer": 4,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_27",
+        "question": "At Sprint Planning, three Developers get into an argument about the Sprint Plan. After an hour of raised tempers personal insults are exchanged. What should the Scrum Master do? (choose 1)",
+        "options": [
+          "Conduct a session to help the Scrum Team resolve the conflict and create Sprint Plan. Remind the other members of the Scrum Team that conflicting ideas are to be expected, but they are accountable as professionals and should not make it personal.",
+          "Take the people involved aside. Ask them to resolve the situation outside of the Scrum Team, if required through their managers.",
+          "Defuse the conflict. By suggesting techniques to better plan work.",
+          "End the discussion. Speak to the Product Owner and see if certain developers need to be removed from the team."
+        ],
+        "correctAnswer": 0,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_28",
+        "question": "During the Sprint Retrospective, the Product Owner raised a concern that the Developers only just met the Sprint Goal for the last Sprint. Developers think that the cause of the problem might be that some of them were working on other projects at the same time and that delayed the work. Which Scrum value were they not following? (choose 1)",
+        "options": [
+          "Focus",
+          "Openness",
+          "Courage",
+          "Respect",
+          "Commitment"
+        ],
+        "correctAnswer": 0,
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_29",
+        "question": "You are a Scrum master for a Nexus team. Some of the developers in 2 Scrum Teams come to you with a risk that will soon become an impediment. The next Sprints will require a lot of commitment from Stacey, an external specialist who is not a member of the Scrum Team and cannot dedicate all her time to this product. What would you do? (choose the best 3 answers)",
+        "options": [
+          "Create a team with Stacy and identify people from the Scrum Teams to temporarily work in Stacey’s domain to learn to better serve the existing teams.",
+          "Ask Stacy to help with hiring and training additional people, and for now, work with the Product Owner and Scrum Teams to re-prioritize the work so that tasks not depending on Stacey can be done first.",
+          "Have the Developers work with the Product Owner to re-order the Product Backlog so Stacy can serve one team each Sprint.",
+          "Investigate whether additional techniques or frameworks for scaling Scrum would be appropriate for these Scrum Teams.",
+          "Developers with an interest in Stacey’s domain could volunteer to learn from Stacey and take on this work in their respective Scrum Teams."
+        ],
+        "correctAnswer": [2, 3, 4],
+        "explanation": "No explanation provided in the source text."
+      },
+      {
+        "id": "q3_30",
+        "question": "The Developers have realized that it does not possess the necessary tools and infrastructure to complete each of the items chosen from the Product Backlog. What action would you recommend as the Scrum Master? (choose 1)",
+        "options": [
+          "Encourage the Product Owner to accept partially done Increments and complete the work in the Hardening Sprint.",
+          "Stop the Sprint and have the Developers work on the infrastructure before continuing.",
+          "Coach the Developers to improve its skills, tools and infrastructure over time and establish a Definition of “Done” that is actually possible to achieve given the current circumstances."
+        ],
+        "correctAnswer": 2,
+        "explanation": "No explanation provided in the source text."
+      }
+    ]
+  }
 ];
