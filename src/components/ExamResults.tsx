@@ -233,7 +233,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                 <Label htmlFor="question-select">Question Number</Label>
                 <Select value={selectedQuestion} onValueChange={setSelectedQuestion}>
                   <SelectTrigger>
-                    <SelectValue placeholder="Seleciona uma pergunta" />
+                    <SelectValue placeholder="Select a question" />
                   </SelectTrigger>
                   <SelectContent>
                     {questionResults.map((qr, index) => (
