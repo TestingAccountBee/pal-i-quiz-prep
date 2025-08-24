@@ -5810,370 +5810,370 @@ export const mockExams: Exam[] = [
       ]
     };
   {
-      "id": "q4_1",
-        "question": "How does Scrum apply Empiricism? (choose 3)",
-        "options": [
-          "All the artifacts are immutable, they do not change for clarity.",
-          "During each Scrum Event, decisions are made on one or more artifacts.",
-          "Scrum is based on Lean thinking, which is empiricism.",
-          "The accountabilities are inspected and adapted in every event.",
-          "One or more artifacts are inspected in each event.",
-          "Scrum Artifacts help with transparency."
-        ],
-        "correctAnswer": [1, 4, 5],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_2",
-        "question": "You are one of 3 Scrum teams working on a product and your Sprints are one month long. Changes have been made to the company’s technical infrastructure that will cause extended testing for your increment. You are unable to deliver the increment in time for the other Scrum Teams that rely on your contribution to their increment. Also, the CEO is extremely unsatisfied with your team’s velocity on in this sprint. As a Scrum Master is the best thing to do? (choose 1)",
-        "options": [
-          "You lengthen your Sprints to accommodate the delays.",
-          "You suggest working with the other scrum teams on the ordering and the value of your open Product Backlog items to redefine the possible delivery date.",
-          "You calculate how many additional developers it would take to increase velocity to make the original date. You inform the program manager of the additional budget for these developers.",
-          "You remove all items from the Product Backlog for which development is forecast to be beyond the expected date."
-        ],
-        "correctAnswer": 1,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_3",
-        "question": "The Product Owner is concerned about the slow progress of releases and thinks the Definition of Done should be reduced to speed up progress. As the Scrum Master what would you advise? (choose 4)",
-        "options": [
-          "Ask the Developers and the Product Owner what problem they are trying to solve by reducing the Definition of Done. In what ways will this decision impact transparency and quality?",
-          "Advise seeking the stakeholder’s permission by informing them that reducing the Definition of Done will lead to more frequent releases and greater velocity.",
-          "Reducing the Definition of Done will introduce technical debt such as unknown errors as functionality is added. The product might become more difficult to stabilize as work progresses. Development for future releases is likely to be slowed down in unpredictable ways.",
-          "Accept the decision as a mutual agreement has been made between the Developers and the Product Owner.",
-          "Releasing the version with a reduced Definition of Done creates false assumptions about the actual state of the system and is risky. Fixes may need to be added post-release impacting user experience, reputation and development progress.",
-          "Ask the Developers and the Product Owner if they are still able to produce releasable Increments by altering the Definition of Done."
-        ],
-        "correctAnswer": [0, 2, 4, 5],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_4",
-        "question": "After a recent Sprint Review some of the stakeholders felt that the information presented was too fast and they didn’t get chance to go into the depth that they felt they needed to. The meeting had to finish because it ended at the end of the business day. The stakeholders ask the Scrum Master to hold a follow up Sprint Review and extend the future Sprint Reviews. What should the Scrum Master do? (choose 2)",
-        "options": [
-          "Invite the stakeholders to a Sprint Review Part 2 meeting.",
-          "Coach the Developers with time management techniques and how to present the key information the Stakeholders need.",
-          "Schedule the next Sprint Review an hour earlier so that the event can be extended if necessary.",
-          "Coach the stakeholders to understand Scrum and that all events are timeboxed and should not be extended, however they will discuss the timebox of the Sprint Review in the Sprint Retrospective and see if it can be extended for future Sprints. In the meantime help the Scrum Team to interact more with the stakeholders throughout the Sprint."
-        ],
-        "correctAnswer": [1, 3],
-        [cite_start]"explanation": "The Scrum guide says the Sprint Review \"is timeboxed to a maximum of four hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.\" [cite: 1221, 1222] As the Sprint should never be longer than a month, we can deduce that the maximum a Sprint Review should be is 4hrs. It is always best if the Scrum team can learn to manage time better and present key information in the time allotted. However, the Sprint Review is there to make improvements for future Sprints, so this situation should certainly be discussed. [cite_start]If the Sprint Review is too short and then it makes sense to make future ones longer, so long as they aren't so long that they break the Scrum Guide guidelines. [cite: 1223]"
-      },
-      {
-        "id": "q4_5",
-        "question": "How many Increments should there be per sprint… (choose 1)",
-        "options": [
-          "Just one",
-          "It depends on the Sprint Goal",
-          "At least one"
-        ],
-        "correctAnswer": 2,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_6",
-        "question": "In Scaled Scrum should Scrum teams working on the same Increment have the same Start and End date? (choose 1)",
-        "options": [
-          "Yes",
-          "No"
-        ],
-        "correctAnswer": 1,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_7",
-        "question": "What is Scrum Based on? (choose 2)",
-        "options": [
-          "A Hybrid Model",
-          "Lean thinking",
-          "Empiricisum",
-          "A Defined Process",
-          "A Complex Process"
-        ],
-        "correctAnswer": [1, 2],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_8",
-        "question": "Which two items best describe what ‘done’ means? (choose 2)",
-        "options": [
-          "Having an Increment of working software that is potentially releasable to the end users.",
-          "All the work needed to prepare the Increment for testing.",
-          "All the work completed within the current skills of the Developers.",
-          "All the work performed as defined in the Definition of Done."
-        ],
-        "correctAnswer": [0, 3],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_9",
-        "question": "One of the developers is disruptive and constantly disagrees with the team, this developer is slowing the decision-making progress and has started disregarding the team’s decisions and making his own decisions. What should you do as the Scrum Master? (choose the best 2 answers)",
-        "options": [
-          "At the Sprint Retrospective, you wait to see if this topic is raised. If it does not happen, you raise it checking how everyone feels with the way team decisions are made.",
-          "In a private conversation, you express your concern over his disagreements and tell him to comply with the team's decisions.",
-          "You raise this issue with the human resources department.",
-          "You facilitate an out-of-work team-building event.",
-          "To anyone expressing this concern you suggest raising this with the entire team. You offer to help facilitate the conversation but not to resolve the concern yourself."
-        ],
-        "correctAnswer": [0, 4],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_10",
-        "question": "What is the maximum time allowed between the conclusion of one Sprint to the start of the next? (choose 1)",
-        "options": [
-          "Enough time to test the Increment",
-          "There is no time between Sprints",
-          "Enough time for the Product Backlog Refinement to get it ready for Sprint Planning"
-        ],
-        "correctAnswer": 1,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_11",
-        "question": "Which Scrum Artifacts have commitments and when are they inspected? (Choose 3)",
-        "options": [
-          "For the Increment, its commitment is the Definition of Done, inspected at the Sprint Review",
-          "For the Sprint Goal, its commitment is the Definition of Done, inspected at the Daily Scrum.",
-          "For the Sprint Backlog, its commitment is the Product Goal, inspected at the backlog refinement session.",
-          "For the Product Backlog, its commitment is the Product Goal, inspected at Sprint Planning and the Sprint Review.",
-          "For the Sprint Backlog, its commitment is the Sprint Goal, inspected at the Daily Scrum.",
-          "For the Sprint, its commitments are the Scrum Values and Empirical Pillars."
-        ],
-        "correctAnswer": [0, 3, 4],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_12",
-        "question": "A highly respected and influential Developer often takes up a lot of time in the Daily Scrum by going off on tangents on things not so relative to the Sprint Goal. The Daily Scrum rarely finishes within 15 minutes. The other Developers dare not interrupt this Developer or ask him to stick to the topics in hand because the Developer is highly integral to the development of the product. As the Scrum Master has accountability to ensure the timebox is kept to 15 minutes, what should you do? (choose the best 2 answers)",
-        "options": [
-          "You suggest privately asking them what they believe the key outcomes for the Daily Scrum are. Effectively coaching them to help create focus during the Daily Scrum.",
-          "You contact the Developer’s Manager and raise this as an impediment to the Manager, and ask that they resolve this matter.",
-          "You suggest coaching the Developers to help them find a way to solve the problem, bringing this up in the Sprint Retrospective at the latest and ask the team to find a solution.",
-          "You suggest passing a baton around. The person holding the baton can speak for 3 minutes only."
-        ],
-        "correctAnswer": [0, 2],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_13",
-        "question": "You have senior stakeholders that are very busy people. You invite them to the sprint reviews but they often do not attend. How does this affect empiricism and what might be the consequences? (choose 3)",
-        "options": [
-          "Decisions on the increment and how to adapt cannot be made",
-          "There are no tangible consequences",
-          "Product Backlog prioritization decisions are made on limited information",
-          "Key Stakeholders' feedback loop is too long risking high deviation",
-          "Members who cannot attend the Sprint Review will have problems making product decisions"
-        ],
-        "correctAnswer": [2, 3, 4],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_14",
-        "question": "When multiple Scrum teams are working from the same Product Backlog, how should the work be distributed between teams? (choose 1)",
-        "options": [
-          "The Scrum Team with the highest capacity will choose what to work on first.",
-          "The Developers from each team pull in work from a shared Product Backlog in agreement with the Product Owner and the other teams.",
-          "The Product Owner separates the Product Backlog items based on knowing the strengths of each team."
-        ],
-        "correctAnswer": 1,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_15",
-        "question": "You are a Scrum Master of a team that has members working in different time zones around the world. Organizing the Scrum events is time-consuming and requires a lot of effort to set up and run. The Developers suggest only having the Daily Scrum every two days. Which responses would be most appropriate from yourself? (choose 3)",
-        "options": [
-          "Point out that having less frequent Daily Scrums means less frequent opportunities to inspect and adapt introducing risk of undesired deviation from the Sprint Goal. The Sprint plan might become inaccurate with reduced transparency over progress toward the Sprint Goal.",
-          "Coach the team on why having a Daily Scrum every day is an important opportunity to update the Sprint plan and how it helps the team self-organize work toward achieving the Sprint Goal.",
-          "Hold a vote and ensure that there is a consensus before reducing the Daily Scrum to every other day.",
-          "Help the team understand that lowering the frequency of communication will only increase the feeling of disconnect between the team members.",
-          "Acknowledge and support their decision."
-        ],
-        "correctAnswer": [0, 1, 3],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_16",
-        "question": "Which of the below statements is true about the Sprint Goal? (choose all that apply)",
-        "options": [
-          "It is the Scrum Team that crafts the Sprint Goal at Sprint planning, based on an objective the Product Owner would like achieved in that Sprint.",
-          "Sprint Goals give Developers flexibility and creativity on how to turn Product Backlog items into an increment of value.",
-          "The use of Sprint Goals is optional because the Product Goal exists to guide development.",
-          "Sprint Goals often change during the Sprint as new insights emerge during working."
-        ],
-        "correctAnswer": [0, 1],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_17",
-        "question": "One of the new developers feels left out of discussions and that his opinions are not considered. He brings this up at the Sprint Retrospective. What values are being displayed here? (choose 3)",
-        "options": [
-          "Focus",
-          "Commitment",
-          "Respect",
-          "Openness",
-          "Courage"
-        ],
-        "correctAnswer": [2, 3, 4],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_18",
-        "question": "The pillars of Empirical Process Control are: (choose 1)",
-        "options": [
-          "Courage, Openness, Commitment, Respect, and Focus.",
-          "Transparency, Iteration, Adaption.",
-          "Transparency, Inspection, and Adaptation.",
-          "Transparency, Investigation, and Adaption.",
-          "Transformation, Inspection, and Adaptation."
-        ],
-        "correctAnswer": 2,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_19",
-        "question": "The Product Owner wants to know what each Developer is working on every day and insists that the developers send a report to her daily based on the information from the Daily Scrum. As the Scrum Master what should you do? (choose 1)",
-        "options": [
-          "Coach the Product Owner and Developers on the purpose of Scrum Artifacts and Events and facilitate a discussion about their concerns and help them to find a solution to the root cause of the problem.",
-          "Suggest the Product Owner look at the Sprint Backlog and burndown chart to report daily progress to the stakeholders.",
-          "Request that the Product Owner no longer attends the Daily Scrum.",
-          "Do nothing. The Product Owner needs to continue to track progress."
-        ],
-        "correctAnswer": 0,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_20",
-        "question": "You need to put together four Scrum Teams with a Nexus team that will be developing a web application. The stakeholders expects one Increment at the end of the first Sprint. What would be your main advice as the Scrum Master of this team? (choose 3)",
-        "options": [
-          "It would be good to use only one Product Backlog for all the teams",
-          "Teach them that it is their responsibility to form Scrum Teams with the skills and knowledge to create an Increment by the end of every Sprint.",
-          "Each development team will have a Development Lead to coordinate the development work between the Scrum Teams",
-          "It would be better to use the first Sprint to coordinate work and prepare the environments, and set things up. Increments can be delivered from the second Sprint onwards.",
-          "Each Scrum Team should deliver done increments from its own sprint. Each increment is shown in a separate environment at the Sprint Review, then the code is isolated for future stabilization.",
-          "All Scrum Teams agree on a shared Definition of Done describing all the work needed to deliver an integrated increment for Sprint Review."
-        ],
-        "correctAnswer": [0, 1, 5],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_21",
-        "question": "How would you define Empiricism? (choose 2)",
-        "options": [
-          "Knowledge comes from theorising",
-          "Making decisions based on what is observed",
-          "Knowledge comes from experience",
-          "Making decisions based on predictions"
-        ],
-        "correctAnswer": [1, 2],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_22",
-        "question": "When it comes to completing all the items in the Sprint Backlog, all the Product Backlog Items added to the Sprint Backlog must be done by the end of the Sprint? (choose 1)",
-        "options": [
-          "False",
-          "True"
-        ],
-        "correctAnswer": 0,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_23",
-        "question": "By the end of the Sprint, a Product Backlog item in the Sprint Backlog does not meet the team's Definition of Done. What two things should happen with the item? (choose 2)",
-        "options": [
-          "It will be inspected at the Sprint Review and if it is acceptable by the stakeholders then include it in the Increment.",
-          "Do not include the item in the Increment for the Sprint.",
-          "Review the item, add the done part to the Increment. Estimate the remaining work and add that to the Product Backlog.",
-          "Estimate the remaining work needed to make it \"done\" and add it to the Product Backlog for the Product Owner to decide what to do with it."
-        ],
-        "correctAnswer": [1, 3],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_24",
-        "question": "A Scrum Team has been working together for 10 Sprints and the Developers have become quite mature as a team, working well together and have a good understanding of the product. A new Product Owner is appointed and doesn’t know much about the product or the company. What activities would you recommend that the Product Owner focuses on? (choose the best 2 answers.)",
-        "options": [
-          "You inform the Product Owner that the Developers need to be updated on changing business priorities daily. This is why there is a Daily Scrum meeting.",
-          "You advise the Product Owner to rely on the others in the Scrum Team and the stakeholders for amending the Product Backlog for now, but work closely with them to get up to speed as soon as possible. This is because they are the most knowledgeable about the market and the product for now.",
-          "Tell the Product Owner to focus on the requirements and make sure there are no ambiguities or potential misunderstandings in the Product Backlog. Capture requirements in an analysis stage which would be considered the main output of an analysis Sprint.",
-          "Advise the Product Owner to start building great relationships with the stakeholders and set up ongoing interaction with them. This will help the Product Owner maximise the value of the product in an environment of changing organizational or market expectations."
-        ],
-        "correctAnswer": [1, 3],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_25",
-        "question": "Should the Definition of Done include testing? Choose the best answer",
-        "options": [
-          "Yes testing is mandatory to ensure the increment is ready to be released.",
-          "It’s not mandatory, it’s up to the organisation and the Scrum team to decide on the Definition of Done."
-        ],
-        "correctAnswer": 0,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_26",
-        "question": "What is the best description of the Definition of Done? (choose 3)",
-        "options": [
-          "At Sprint Planning it guides the Developers when creating a forecast for items.",
-          "It serves as a checklist to inspect whether the Developers have performed all their tasks by the Sprint end.",
-          "It creates transparency of the state of the Increment for inspection at the Sprint Review.",
-          "It helps the Developers identify the work remaining for an Increment to be ready for release.",
-          "It serves to track how much of a Product Backlog item is completed during the Sprint."
-        ],
-        "correctAnswer": [0, 2, 3],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_27",
-        "question": "Two Scrum teams are working on the same product. In the coming Sprints some of the Developers have realised that both teams are going to need the help of Chris, an external specialist who is the only person with the knowledge and authority to build the database environment. However, Chris is notoriously busy and has already said he can only spare enough of his time for one Scrum team per Sprint. What should the Scrum Master do? (choose 1)",
-        "options": [
-          "Facilitate a discussion with all Developers from both teams on how they want to deal with this issue, and help them implement their preferred solution.",
-          "Ask Chris to help with recruiting additional database specialists. In the meantime, have the Product Owner prioritise the items that do not depend on Chris.",
-          "Manage the items in the Sprint Backlogs so that Chris can be utilized evenly for each team.",
-          "Assign Chris to the team with the most urgent tasks first and then move him to the next team until the required support is completed."
-        ],
-        "correctAnswer": 0,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_28",
-        "question": "What questions should be answered during the Daily Scrum? (choose 1)",
-        "options": [
-          "What did I do yesterday and what do I plan to do today?",
-          "None of these questions.",
-          "Both of these questions.",
-          "Do I see any impediment that prevents the Developers or me from meeting the Sprint Goal?"
-        ],
-        "correctAnswer": 1,
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_29",
-        "question": "You are a Scrum Master for three Scrum Teams who are all working on the same Product. Management wants to measure the velocity of all three teams so that they know which teams are working well and which teams may benefit from more assistance. What are your best responses? (choose 2)",
-        "options": [
-          "Standardizing velocity across teams is a good way to understand which teams are producing the most value.",
-          "There is no direct relationship between velocity and value. Value of the increment to the stakeholders is measured in other ways.",
-          "Velocity is the amount of business functionality that a particular Scrum Team creates in a Sprint. It is unique to that team and used to forecast work in Sprint Planning.",
-          "Providing incentives based on velocity can increase the Scrum Team’s motivation to produce more value."
-        ],
-        "correctAnswer": [1, 2],
-        "explanation": "No explanation provided in the source text."
-      },
-      {
-        "id": "q4_30",
-        "question": "You join a team as the Scrum Master and notice it is currently one single team of 15 developers and a Product Owner, what should you do? (choose 1)",
-        "options": [
-          "Insist the team splits and decide who works with who",
-          "Suggest the team split into teams of 10 or fewer, facilitate the discussion on how to split the teams up",
-          "Ask the department head to split the teams into less than 10 members per team"
-        ],
-        "correctAnswer": 1,
-        "explanation": "No explanation provided in the source text."
-      }
-    ]
-  }
+        "id": "q4_1",
+          "question": "How does Scrum apply Empiricism? (choose 3)",
+          "options": [
+            "All the artifacts are immutable, they do not change for clarity.",
+            "During each Scrum Event, decisions are made on one or more artifacts.",
+            "Scrum is based on Lean thinking, which is empiricism.",
+            "The accountabilities are inspected and adapted in every event.",
+            "One or more artifacts are inspected in each event.",
+            "Scrum Artifacts help with transparency."
+          ],
+          "correctAnswer": [1, 4, 5],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_2",
+          "question": "You are one of 3 Scrum teams working on a product and your Sprints are one month long. Changes have been made to the company’s technical infrastructure that will cause extended testing for your increment. You are unable to deliver the increment in time for the other Scrum Teams that rely on your contribution to their increment. Also, the CEO is extremely unsatisfied with your team’s velocity on in this sprint. As a Scrum Master is the best thing to do? (choose 1)",
+          "options": [
+            "You lengthen your Sprints to accommodate the delays.",
+            "You suggest working with the other scrum teams on the ordering and the value of your open Product Backlog items to redefine the possible delivery date.",
+            "You calculate how many additional developers it would take to increase velocity to make the original date. You inform the program manager of the additional budget for these developers.",
+            "You remove all items from the Product Backlog for which development is forecast to be beyond the expected date."
+          ],
+          "correctAnswer": 1,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_3",
+          "question": "The Product Owner is concerned about the slow progress of releases and thinks the Definition of Done should be reduced to speed up progress. As the Scrum Master what would you advise? (choose 4)",
+          "options": [
+            "Ask the Developers and the Product Owner what problem they are trying to solve by reducing the Definition of Done. In what ways will this decision impact transparency and quality?",
+            "Advise seeking the stakeholder’s permission by informing them that reducing the Definition of Done will lead to more frequent releases and greater velocity.",
+            "Reducing the Definition of Done will introduce technical debt such as unknown errors as functionality is added. The product might become more difficult to stabilize as work progresses. Development for future releases is likely to be slowed down in unpredictable ways.",
+            "Accept the decision as a mutual agreement has been made between the Developers and the Product Owner.",
+            "Releasing the version with a reduced Definition of Done creates false assumptions about the actual state of the system and is risky. Fixes may need to be added post-release impacting user experience, reputation and development progress.",
+            "Ask the Developers and the Product Owner if they are still able to produce releasable Increments by altering the Definition of Done."
+          ],
+          "correctAnswer": [0, 2, 4, 5],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_4",
+          "question": "After a recent Sprint Review some of the stakeholders felt that the information presented was too fast and they didn’t get chance to go into the depth that they felt they needed to. The meeting had to finish because it ended at the end of the business day. The stakeholders ask the Scrum Master to hold a follow up Sprint Review and extend the future Sprint Reviews. What should the Scrum Master do? (choose 2)",
+          "options": [
+            "Invite the stakeholders to a Sprint Review Part 2 meeting.",
+            "Coach the Developers with time management techniques and how to present the key information the Stakeholders need.",
+            "Schedule the next Sprint Review an hour earlier so that the event can be extended if necessary.",
+            "Coach the stakeholders to understand Scrum and that all events are timeboxed and should not be extended, however they will discuss the timebox of the Sprint Review in the Sprint Retrospective and see if it can be extended for future Sprints. In the meantime help the Scrum Team to interact more with the stakeholders throughout the Sprint."
+          ],
+          "correctAnswer": [1, 3],
+          [cite_start]"explanation": "The Scrum guide says the Sprint Review \"is timeboxed to a maximum of four hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.\" [cite: 1221, 1222] As the Sprint should never be longer than a month, we can deduce that the maximum a Sprint Review should be is 4hrs. It is always best if the Scrum team can learn to manage time better and present key information in the time allotted. However, the Sprint Review is there to make improvements for future Sprints, so this situation should certainly be discussed. [cite_start]If the Sprint Review is too short and then it makes sense to make future ones longer, so long as they aren't so long that they break the Scrum Guide guidelines. [cite: 1223]"
+        },
+        {
+          "id": "q4_5",
+          "question": "How many Increments should there be per sprint… (choose 1)",
+          "options": [
+            "Just one",
+            "It depends on the Sprint Goal",
+            "At least one"
+          ],
+          "correctAnswer": 2,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_6",
+          "question": "In Scaled Scrum should Scrum teams working on the same Increment have the same Start and End date? (choose 1)",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_7",
+          "question": "What is Scrum Based on? (choose 2)",
+          "options": [
+            "A Hybrid Model",
+            "Lean thinking",
+            "Empiricisum",
+            "A Defined Process",
+            "A Complex Process"
+          ],
+          "correctAnswer": [1, 2],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_8",
+          "question": "Which two items best describe what ‘done’ means? (choose 2)",
+          "options": [
+            "Having an Increment of working software that is potentially releasable to the end users.",
+            "All the work needed to prepare the Increment for testing.",
+            "All the work completed within the current skills of the Developers.",
+            "All the work performed as defined in the Definition of Done."
+          ],
+          "correctAnswer": [0, 3],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_9",
+          "question": "One of the developers is disruptive and constantly disagrees with the team, this developer is slowing the decision-making progress and has started disregarding the team’s decisions and making his own decisions. What should you do as the Scrum Master? (choose the best 2 answers)",
+          "options": [
+            "At the Sprint Retrospective, you wait to see if this topic is raised. If it does not happen, you raise it checking how everyone feels with the way team decisions are made.",
+            "In a private conversation, you express your concern over his disagreements and tell him to comply with the team's decisions.",
+            "You raise this issue with the human resources department.",
+            "You facilitate an out-of-work team-building event.",
+            "To anyone expressing this concern you suggest raising this with the entire team. You offer to help facilitate the conversation but not to resolve the concern yourself."
+          ],
+          "correctAnswer": [0, 4],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_10",
+          "question": "What is the maximum time allowed between the conclusion of one Sprint to the start of the next? (choose 1)",
+          "options": [
+            "Enough time to test the Increment",
+            "There is no time between Sprints",
+            "Enough time for the Product Backlog Refinement to get it ready for Sprint Planning"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_11",
+          "question": "Which Scrum Artifacts have commitments and when are they inspected? (Choose 3)",
+          "options": [
+            "For the Increment, its commitment is the Definition of Done, inspected at the Sprint Review",
+            "For the Sprint Goal, its commitment is the Definition of Done, inspected at the Daily Scrum.",
+            "For the Sprint Backlog, its commitment is the Product Goal, inspected at the backlog refinement session.",
+            "For the Product Backlog, its commitment is the Product Goal, inspected at Sprint Planning and the Sprint Review.",
+            "For the Sprint Backlog, its commitment is the Sprint Goal, inspected at the Daily Scrum.",
+            "For the Sprint, its commitments are the Scrum Values and Empirical Pillars."
+          ],
+          "correctAnswer": [0, 3, 4],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_12",
+          "question": "A highly respected and influential Developer often takes up a lot of time in the Daily Scrum by going off on tangents on things not so relative to the Sprint Goal. The Daily Scrum rarely finishes within 15 minutes. The other Developers dare not interrupt this Developer or ask him to stick to the topics in hand because the Developer is highly integral to the development of the product. As the Scrum Master has accountability to ensure the timebox is kept to 15 minutes, what should you do? (choose the best 2 answers)",
+          "options": [
+            "You suggest privately asking them what they believe the key outcomes for the Daily Scrum are. Effectively coaching them to help create focus during the Daily Scrum.",
+            "You contact the Developer’s Manager and raise this as an impediment to the Manager, and ask that they resolve this matter.",
+            "You suggest coaching the Developers to help them find a way to solve the problem, bringing this up in the Sprint Retrospective at the latest and ask the team to find a solution.",
+            "You suggest passing a baton around. The person holding the baton can speak for 3 minutes only."
+          ],
+          "correctAnswer": [0, 2],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_13",
+          "question": "You have senior stakeholders that are very busy people. You invite them to the sprint reviews but they often do not attend. How does this affect empiricism and what might be the consequences? (choose 3)",
+          "options": [
+            "Decisions on the increment and how to adapt cannot be made",
+            "There are no tangible consequences",
+            "Product Backlog prioritization decisions are made on limited information",
+            "Key Stakeholders' feedback loop is too long risking high deviation",
+            "Members who cannot attend the Sprint Review will have problems making product decisions"
+          ],
+          "correctAnswer": [2, 3, 4],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_14",
+          "question": "When multiple Scrum teams are working from the same Product Backlog, how should the work be distributed between teams? (choose 1)",
+          "options": [
+            "The Scrum Team with the highest capacity will choose what to work on first.",
+            "The Developers from each team pull in work from a shared Product Backlog in agreement with the Product Owner and the other teams.",
+            "The Product Owner separates the Product Backlog items based on knowing the strengths of each team."
+          ],
+          "correctAnswer": 1,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_15",
+          "question": "You are a Scrum Master of a team that has members working in different time zones around the world. Organizing the Scrum events is time-consuming and requires a lot of effort to set up and run. The Developers suggest only having the Daily Scrum every two days. Which responses would be most appropriate from yourself? (choose 3)",
+          "options": [
+            "Point out that having less frequent Daily Scrums means less frequent opportunities to inspect and adapt introducing risk of undesired deviation from the Sprint Goal. The Sprint plan might become inaccurate with reduced transparency over progress toward the Sprint Goal.",
+            "Coach the team on why having a Daily Scrum every day is an important opportunity to update the Sprint plan and how it helps the team self-organize work toward achieving the Sprint Goal.",
+            "Hold a vote and ensure that there is a consensus before reducing the Daily Scrum to every other day.",
+            "Help the team understand that lowering the frequency of communication will only increase the feeling of disconnect between the team members.",
+            "Acknowledge and support their decision."
+          ],
+          "correctAnswer": [0, 1, 3],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_16",
+          "question": "Which of the below statements is true about the Sprint Goal? (choose all that apply)",
+          "options": [
+            "It is the Scrum Team that crafts the Sprint Goal at Sprint planning, based on an objective the Product Owner would like achieved in that Sprint.",
+            "Sprint Goals give Developers flexibility and creativity on how to turn Product Backlog items into an increment of value.",
+            "The use of Sprint Goals is optional because the Product Goal exists to guide development.",
+            "Sprint Goals often change during the Sprint as new insights emerge during working."
+          ],
+          "correctAnswer": [0, 1],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_17",
+          "question": "One of the new developers feels left out of discussions and that his opinions are not considered. He brings this up at the Sprint Retrospective. What values are being displayed here? (choose 3)",
+          "options": [
+            "Focus",
+            "Commitment",
+            "Respect",
+            "Openness",
+            "Courage"
+          ],
+          "correctAnswer": [2, 3, 4],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_18",
+          "question": "The pillars of Empirical Process Control are: (choose 1)",
+          "options": [
+            "Courage, Openness, Commitment, Respect, and Focus.",
+            "Transparency, Iteration, Adaption.",
+            "Transparency, Inspection, and Adaptation.",
+            "Transparency, Investigation, and Adaption.",
+            "Transformation, Inspection, and Adaptation."
+          ],
+          "correctAnswer": 2,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_19",
+          "question": "The Product Owner wants to know what each Developer is working on every day and insists that the developers send a report to her daily based on the information from the Daily Scrum. As the Scrum Master what should you do? (choose 1)",
+          "options": [
+            "Coach the Product Owner and Developers on the purpose of Scrum Artifacts and Events and facilitate a discussion about their concerns and help them to find a solution to the root cause of the problem.",
+            "Suggest the Product Owner look at the Sprint Backlog and burndown chart to report daily progress to the stakeholders.",
+            "Request that the Product Owner no longer attends the Daily Scrum.",
+            "Do nothing. The Product Owner needs to continue to track progress."
+          ],
+          "correctAnswer": 0,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_20",
+          "question": "You need to put together four Scrum Teams with a Nexus team that will be developing a web application. The stakeholders expects one Increment at the end of the first Sprint. What would be your main advice as the Scrum Master of this team? (choose 3)",
+          "options": [
+            "It would be good to use only one Product Backlog for all the teams",
+            "Teach them that it is their responsibility to form Scrum Teams with the skills and knowledge to create an Increment by the end of every Sprint.",
+            "Each development team will have a Development Lead to coordinate the development work between the Scrum Teams",
+            "It would be better to use the first Sprint to coordinate work and prepare the environments, and set things up. Increments can be delivered from the second Sprint onwards.",
+            "Each Scrum Team should deliver done increments from its own sprint. Each increment is shown in a separate environment at the Sprint Review, then the code is isolated for future stabilization.",
+            "All Scrum Teams agree on a shared Definition of Done describing all the work needed to deliver an integrated increment for Sprint Review."
+          ],
+          "correctAnswer": [0, 1, 5],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_21",
+          "question": "How would you define Empiricism? (choose 2)",
+          "options": [
+            "Knowledge comes from theorising",
+            "Making decisions based on what is observed",
+            "Knowledge comes from experience",
+            "Making decisions based on predictions"
+          ],
+          "correctAnswer": [1, 2],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_22",
+          "question": "When it comes to completing all the items in the Sprint Backlog, all the Product Backlog Items added to the Sprint Backlog must be done by the end of the Sprint? (choose 1)",
+          "options": [
+            "False",
+            "True"
+          ],
+          "correctAnswer": 0,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_23",
+          "question": "By the end of the Sprint, a Product Backlog item in the Sprint Backlog does not meet the team's Definition of Done. What two things should happen with the item? (choose 2)",
+          "options": [
+            "It will be inspected at the Sprint Review and if it is acceptable by the stakeholders then include it in the Increment.",
+            "Do not include the item in the Increment for the Sprint.",
+            "Review the item, add the done part to the Increment. Estimate the remaining work and add that to the Product Backlog.",
+            "Estimate the remaining work needed to make it \"done\" and add it to the Product Backlog for the Product Owner to decide what to do with it."
+          ],
+          "correctAnswer": [1, 3],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_24",
+          "question": "A Scrum Team has been working together for 10 Sprints and the Developers have become quite mature as a team, working well together and have a good understanding of the product. A new Product Owner is appointed and doesn’t know much about the product or the company. What activities would you recommend that the Product Owner focuses on? (choose the best 2 answers.)",
+          "options": [
+            "You inform the Product Owner that the Developers need to be updated on changing business priorities daily. This is why there is a Daily Scrum meeting.",
+            "You advise the Product Owner to rely on the others in the Scrum Team and the stakeholders for amending the Product Backlog for now, but work closely with them to get up to speed as soon as possible. This is because they are the most knowledgeable about the market and the product for now.",
+            "Tell the Product Owner to focus on the requirements and make sure there are no ambiguities or potential misunderstandings in the Product Backlog. Capture requirements in an analysis stage which would be considered the main output of an analysis Sprint.",
+            "Advise the Product Owner to start building great relationships with the stakeholders and set up ongoing interaction with them. This will help the Product Owner maximise the value of the product in an environment of changing organizational or market expectations."
+          ],
+          "correctAnswer": [1, 3],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_25",
+          "question": "Should the Definition of Done include testing? Choose the best answer",
+          "options": [
+            "Yes testing is mandatory to ensure the increment is ready to be released.",
+            "It’s not mandatory, it’s up to the organisation and the Scrum team to decide on the Definition of Done."
+          ],
+          "correctAnswer": 0,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_26",
+          "question": "What is the best description of the Definition of Done? (choose 3)",
+          "options": [
+            "At Sprint Planning it guides the Developers when creating a forecast for items.",
+            "It serves as a checklist to inspect whether the Developers have performed all their tasks by the Sprint end.",
+            "It creates transparency of the state of the Increment for inspection at the Sprint Review.",
+            "It helps the Developers identify the work remaining for an Increment to be ready for release.",
+            "It serves to track how much of a Product Backlog item is completed during the Sprint."
+          ],
+          "correctAnswer": [0, 2, 3],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_27",
+          "question": "Two Scrum teams are working on the same product. In the coming Sprints some of the Developers have realised that both teams are going to need the help of Chris, an external specialist who is the only person with the knowledge and authority to build the database environment. However, Chris is notoriously busy and has already said he can only spare enough of his time for one Scrum team per Sprint. What should the Scrum Master do? (choose 1)",
+          "options": [
+            "Facilitate a discussion with all Developers from both teams on how they want to deal with this issue, and help them implement their preferred solution.",
+            "Ask Chris to help with recruiting additional database specialists. In the meantime, have the Product Owner prioritise the items that do not depend on Chris.",
+            "Manage the items in the Sprint Backlogs so that Chris can be utilized evenly for each team.",
+            "Assign Chris to the team with the most urgent tasks first and then move him to the next team until the required support is completed."
+          ],
+          "correctAnswer": 0,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_28",
+          "question": "What questions should be answered during the Daily Scrum? (choose 1)",
+          "options": [
+            "What did I do yesterday and what do I plan to do today?",
+            "None of these questions.",
+            "Both of these questions.",
+            "Do I see any impediment that prevents the Developers or me from meeting the Sprint Goal?"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_29",
+          "question": "You are a Scrum Master for three Scrum Teams who are all working on the same Product. Management wants to measure the velocity of all three teams so that they know which teams are working well and which teams may benefit from more assistance. What are your best responses? (choose 2)",
+          "options": [
+            "Standardizing velocity across teams is a good way to understand which teams are producing the most value.",
+            "There is no direct relationship between velocity and value. Value of the increment to the stakeholders is measured in other ways.",
+            "Velocity is the amount of business functionality that a particular Scrum Team creates in a Sprint. It is unique to that team and used to forecast work in Sprint Planning.",
+            "Providing incentives based on velocity can increase the Scrum Team’s motivation to produce more value."
+          ],
+          "correctAnswer": [1, 2],
+          "explanation": "No explanation provided in the source text."
+        },
+        {
+          "id": "q4_30",
+          "question": "You join a team as the Scrum Master and notice it is currently one single team of 15 developers and a Product Owner, what should you do? (choose 1)",
+          "options": [
+            "Insist the team splits and decide who works with who",
+            "Suggest the team split into teams of 10 or fewer, facilitate the discussion on how to split the teams up",
+            "Ask the department head to split the teams into less than 10 members per team"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No explanation provided in the source text."
+        }
+      ]
+    }
 ];
