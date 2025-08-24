@@ -211,7 +211,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
               Report Question
             </Button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-md">
+          <DialogContent className="sm:max-w-md bg-white">
             <DialogHeader>
               <DialogTitle>Report Question 📝</DialogTitle>
             </DialogHeader>
