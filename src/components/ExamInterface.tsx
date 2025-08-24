@@ -137,7 +137,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
             </div>
             {isCurrentMultiple && (
               <p className="text-sm text-muted-foreground">
-                Selecione todas as opções corretas
+                Select all correct options
               </p>
             )}
           </div>
