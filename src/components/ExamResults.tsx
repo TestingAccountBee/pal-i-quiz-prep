@@ -105,8 +105,8 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
   const handleReportSubmit = async () => {
     if (!selectedQuestion || !reportText.trim()) {
       toast({
-        title: "Campos obrigatórios",
-        description: "Por favor seleciona uma pergunta e escreve o teu comentário.",
+        title: "Required fields",
+        description: "Please select a question and write your comment.",
         variant: "destructive",
       });
       return;
@@ -165,8 +165,8 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
       console.log('EmailJS Response:', response);
 
       toast({
-        title: "Report enviado! ✅",
-        description: "O teu report foi enviado diretamente por email. Obrigado pelo feedback!",
+        title: "Report submitted!✅",
+        description: "Your report has been sent. Thank you for your feedback!",
       });
 
       // Reset form and close dialog
@@ -177,12 +177,12 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
     } catch (error) {
       console.error("Erro ao enviar report via EmailJS:", error);
       
-      let errorMessage = "Falha ao enviar o report. Por favor tenta novamente.";
+      let errorMessage = "Failed to send the report. Please try again.";
       if (error && typeof error === 'object' && 'text' in error) {
         if (error.text.includes('Invalid email')) {
-          errorMessage = "Erro de configuração de email. Contacta o suporte.";
+          errorMessage = "Email configuration error. Contact support.";
         } else if (error.text.includes('network') || error.text.includes('fetch')) {
-          errorMessage = "Erro de conexão. Verifica a tua internet e tenta novamente.";
+          errorMessage = "Connection error. Check your internet connection and try again.";
         }
       }
 
@@ -249,19 +249,16 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                 <Label htmlFor="report-text">Describe the problem</Label>
                 <Textarea
                   id="report-text"
-                  placeholder="Explica porque acreditas que a resposta está incorreta, ou sugere melhorias à pergunta..."
+                  placeholder="Explain why you believe the answer is incorrect, or suggest improvements..."
                   value={reportText}
                   onChange={(e) => setReportText(e.target.value)}
                   className="min-h-[100px]"
                 />
-                <div className="text-xs text-muted-foreground bg-blue-50 p-2 rounded">
-                  ✨ O email será enviado diretamente da plataforma para dfts10.profissional@gmail.com
-                </div>
-              </div>
+                              </div>
               
               {!emailJSLoaded && (
                 <div className="text-xs text-amber-600 bg-amber-50 p-2 rounded">
-                  ⚡ A carregar serviço de email...
+                  ⚡ Loading service...
                 </div>
               )}
               
@@ -281,7 +278,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                   {isLoading ? (
                     <>
                       <div className="animate-spin h-4 w-4 border-2 border-current border-t-transparent rounded-full mr-2" />
-                      A enviar...
+                      Sending...
                     </>
                   ) : (
                     <>
@@ -425,7 +422,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                   {isMultipleChoice(qr.question) && (
                     <div className="mb-2">
                       <Badge variant="outline" className="text-xs">
-                        Múltipla Escolha
+                        Multiple Choice
                       </Badge>
                     </div>
                   )}
