@@ -131,7 +131,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
               </CardTitle>
               {isCurrentMultiple && (
                 <Badge variant="outline" className="text-xs">
-                  Múltipla Escolha
+                  Multiple Choice
                 </Badge>
               )}
             </div>
