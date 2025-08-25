@@ -59,7 +59,7 @@ export const examCategories: ExamCategory[] = [
         id: 'psm-ii',
         title: 'PSM II',
         description: 'Professional Scrum Master Level II certification',
-        examIds: ['psm-ii-mock-1', 'psm-ii-mock-2', 'psm-ii-mock-3', 'psm-ii-mock-4', 'psm-ii-mock-5', 'psm-ii-mock-6', 'psm-ii-mock-7', 'psm-ii-mock-8'],
+        examIds: ['psm-ii-mock-1', 'psm-ii-mock-2', 'psm-ii-mock-3', 'psm-ii-mock-4', 'psm-ii-mock-5', 'psm-ii-mock-6', 'psm-ii-mock-7', 'psm-ii-mock-8', 'psm-ii-mock-9', 'psm-ii-mock-10', 'psm-ii-mock-11'],
         color: 'bg-purple-600',
         icon: '🚀'
       },
