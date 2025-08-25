@@ -8682,7 +8682,7 @@ export const mockExams: Exam[] = [
     ]
   },
   {
-    "id": "psm-ii-mock-11",
+        "id": "psm-ii-mock-11",
   "title": "PSM II Mock Exam #11",
   "description": "Professional Scrum Master Level II practice exam #11 based on provided content.",
   "timeLimit": 90,
