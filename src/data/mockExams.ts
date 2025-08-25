@@ -8279,7 +8279,7 @@ export const mockExams: Exam[] = [
       },
       {
         "id": "q10_3",
-        ]"question": "As a Scrum Master, what objectives would you aim for when five new Scrum teams are tasked with working on a single product?",
+        "question": "As a Scrum Master, what objectives would you aim for when five new Scrum teams are tasked with working on a single product?",
         "options": [
           "There should be five Product Backlogs and one Product Owner to manage them.",
           "There should be five Product Backlogs and five Product Owners.",
