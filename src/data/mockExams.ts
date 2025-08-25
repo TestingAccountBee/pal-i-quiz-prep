@@ -8253,6 +8253,13 @@ export const mockExams: Exam[] = [
     ]
   },
   {
+    "id": "psm-ii-mock-10",
+  "title": "PSM II Mock Exam #10",
+  "description": "Professional Scrum Master Level II practice exam #10 based on provided content.",
+  "timeLimit": 90,
+  "passingScore": 85,
+  "questions": [
+    {
       "id": "q10_1",
         "question": "Which of the following statements are true about the Scrum Master accountability?",
         "options": [
