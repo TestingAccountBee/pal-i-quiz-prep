@@ -459,10 +459,10 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                             <span className="ml-2 text-xs font-medium">(Correct)</span>
                           )}
                           {isUserSelection && !isCorrectOption && (
-                            <span className="ml-2 text-xs font-medium">(Sua Resposta)</span>
+                            <span className="ml-2 text-xs font-medium">(Your Answer)</span>
                           )}
                           {isUserSelection && isCorrectOption && (
-                            <span className="ml-2 text-xs font-medium">(Sua Resposta - Correta)</span>
+                            <span className="ml-2 text-xs font-medium">(Your Answer - Correct)</span>
                           )}
                         </div>
                       );
