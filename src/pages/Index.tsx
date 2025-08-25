@@ -145,6 +145,8 @@ const Index = () => {
         result={examResults}
         onBackToHome={handleBackToDashboard}
         onRetakeExam={handleRetakeExam}
+        category={selectedCategory?.title || ''}
+        subcategory={selectedCategory?.subcategories ? 'N/A' : ''}
       />
     );
   }
