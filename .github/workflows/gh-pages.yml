@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths:
       - 'data/pending/**'
-      - 'src/data/mockExams.ts'
+      - 'src/data/mockexams.ts'
       - 'scripts/**'
       - 'src/**'
       - 'vite.config.*'
@@ -40,13 +40,15 @@ jobs:
       - name: Merge pending exams into mockexams.ts
         run: node scripts/merge-exams-to-ts.mjs
 
-      - name: Commit updated mockExams.ts (if changed)
+      - name: Commit updated mockexams.ts (if changed)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore: merge pending exams into mockexams.ts'
-          file_pattern: src/data/mockExams.ts
+          file_pattern: src/data/mockexams.ts
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          skip_dirty_check: true
+          skip_fetch: true
 
       - name: Build site
         run: npm run build
