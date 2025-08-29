@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 
 const INBOX_DIR = "data/pending";
-const TS_TARGET = "src/data/mockexams.ts";
+const TS_TARGET = "src/data/mockExams.ts";
 
 function isValidExam(e) {
   return e && typeof e.id === "string" && e.title && Array.isArray(e.questions);
