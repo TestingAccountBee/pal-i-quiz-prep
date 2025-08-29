@@ -7,7 +7,7 @@ function isValidExam(e) {
   return e && typeof e.id === "string" && e.title && Array.isArray(e.questions);
 }
 
-// Lê array do mockexams.ts
+// Lê array do mockExams.ts
 async function readFromTs(tsPath) {
   try {
     const ts = await fs.readFile(tsPath, "utf8");
