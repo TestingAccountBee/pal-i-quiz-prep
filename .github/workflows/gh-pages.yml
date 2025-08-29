@@ -1,118 +1,61 @@
-import { promises as fs } from 'fs';
-import path from 'path';
+name: Merge exams & Deploy to GitHub Pages
 
-// ficheiros-alvo
-const OFFICIAL_JSON = 'public/mockExams.json';
-const INBOX_DIR = 'data/pending';
-const TS_TARGET = 'src/data/mockexams.ts';
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/pending/**'
+      - 'public/mockExams.json'
+      - 'src/**'
+      - 'index.html'
+      - 'vite.config.*'
+      - 'package*.json'
+      - 'scripts/**'
+  workflow_dispatch:
 
-// tenta extrair array do TS (caso o OFFICIAL_JSON esteja vazio)
-async function tryExtractFromTS(tsPath) {
-  try {
-    const ts = await fs.readFile(tsPath, 'utf8');
-    // procura: export const mockExams = [ ... ];
-    const m = ts.match(/export\s+const\s+mockExams\s*=\s*(\[[\s\S]*?\]);?/);
-    if (!m) return null;
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
-    // tenta normalizar para JSON:
-    // 1) aspas simples -> duplas
-    // 2) remover trailing commas simples
-    // 3) true/false/null ficam OK em JSON
-    let arrTxt = m[1]
-      .replace(/(['"])?([a-zA-Z0-9_]+)(['"])?:/g, '"$2":') // chaves sem aspas -> aspas
-      .replace(/'/g, '"') // aspas simples -> duplas
-      .replace(/,\s*([}\]])/g, '$1'); // trailing commas
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
-    // agora tenta fazer parse
-    return JSON.parse(arrTxt);
-  } catch {
-    return null;
-  }
-}
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-function isValidExam(e) {
-  return e && typeof e.id === 'string' && e.title && Array.isArray(e.questions);
-}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-async function readJsonSafe(p, fallback) {
-  try {
-    const txt = await fs.readFile(p, 'utf8');
-    return JSON.parse(txt);
-  } catch {
-    return fallback;
-  }
-}
+      - name: Install deps
+        run: npm ci
 
-async function gatherInbox(dir) {
-  try {
-    const files = (await fs.readdir(dir)).filter(f => f.toLowerCase().endsWith('.json'));
-    const payloads = [];
-    for (const f of files) {
-      const full = path.join(dir, f);
-      try {
-        const txt = await fs.readFile(full, 'utf8');
-        const data = JSON.parse(txt);
-        payloads.push({ full, data });
-      } catch {
-        // ignora ficheiro malformado
-      }
-    }
-    return payloads;
-  } catch {
-    return [];
-  }
-}
+      - name: Merge pending exams and regenerate TS
+        run: node scripts/merge-exams-to-ts.mjs
 
-function mergeById(base, additions) {
-  const map = new Map(base.map(e => [e.id, e]));
-  let added = 0;
-  for (const e of additions) {
-    if (isValidExam(e) && !map.has(e.id)) {
-      map.set(e.id, e);
-      added++;
-    }
-  }
-  return { merged: Array.from(map.values()), added };
-}
+      - name: Commit updated files (if changed)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: merge pending exams -> regenerate mockexams.ts'
+          file_pattern: |
+            public/mockExams.json
+            src/data/mockexams.ts
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
-function toTsModule(exams) {
-  const json = JSON.stringify(exams, null, 2);
-  return `// AUTO-GERADO pelo workflow — NÃO editar à mão
-export const mockExams = ${json};
+      - name: Build
+        run: npm run build
 
-export default mockExams;
-`;
-}
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
 
-async function main() {
-  // 1) lê fonte oficial (ou extrai do TS numa primeira vez)
-  let official = await readJsonSafe(OFFICIAL_JSON, null);
-  if (!official || !Array.isArray(official)) {
-    const extracted = await tryExtractFromTS(TS_TARGET);
-    official = Array.isArray(extracted) ? extracted : [];
-  }
-
-  // 2) recolhe JSONs da inbox
-  const inbox = await gatherInbox(INBOX_DIR);
-  const incoming = inbox.flatMap(({ data }) => (Array.isArray(data) ? data : [data]));
-
-  // 3) merge por id
-  const { merged, added } = mergeById(official, incoming);
-
-  // 4) escreve JSON oficial e TS de runtime
-  await fs.mkdir(path.dirname(OFFICIAL_JSON), { recursive: true });
-  await fs.writeFile(OFFICIAL_JSON, JSON.stringify(merged, null, 2) + '\n', 'utf8');
-  await fs.writeFile(TS_TARGET, toTsModule(merged), 'utf8');
-
-  // 5) limpa inbox (se preferires manter, comenta as 3 linhas abaixo)
-  for (const it of inbox) {
-    await fs.unlink(it.full);
-  }
-
-  console.log(`Merge concluído: +${added} novos exames; total ${merged.length}.`);
-}
-
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
