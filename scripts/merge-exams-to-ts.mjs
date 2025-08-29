@@ -1,31 +1,40 @@
-import { promises as fs } from 'fs';
-import path from 'path';
+import { promises as fs } from "fs";
 
-const INBOX_DIR = 'data/pending';
-const TS_TARGET = 'src/data/mockExams.ts';
+const INBOX_DIR = "data/pending";
+const TS_TARGET = "src/data/mockexams.ts";
 
 function isValidExam(e) {
-  return e && typeof e.id === 'string' && e.title && Array.isArray(e.questions);
+  return e && typeof e.id === "string" && e.title && Array.isArray(e.questions);
 }
 
-async function tryExtractFromTS(tsPath) {
-  const ts = await fs.readFile(tsPath, 'utf8');
-  const m = ts.match(/export\s+const\s+mockExams\s*=\s*(\[[\s\S]*?\]);?/);
-  if (!m) return [];
-  let arrTxt = m[1]
-    .replace(/(['"])?([a-zA-Z0-9_]+)(['"])?:/g, '"$2":') // chaves sem aspas -> aspas
-    .replace(/'/g, '"')
-    .replace(/,\s*([}\]])/g, '$1');
-  return JSON.parse(arrTxt);
-}
-
-async function gatherInbox(dir) {
+// Lê array do mockexams.ts
+async function readFromTs(tsPath) {
   try {
-    const files = (await fs.readdir(dir)).filter(f => f.endsWith('.json'));
+    const ts = await fs.readFile(tsPath, "utf8");
+    const match = ts.match(/export const mockExams\s*=\s*(\[[\s\S]*?\]);/);
+    if (!match) return [];
+
+    // Extrai só o conteúdo do array
+    let arrTxt = match[1]
+      .replace(/(['"])?([a-zA-Z0-9_]+)(['"])?:/g, '"$2":') // chaves sem aspas -> aspas
+      .replace(/'/g, '"') // aspas simples -> duplas
+      .replace(/,\s*([}\]])/g, "$1"); // trailing commas
+
+    return JSON.parse(arrTxt);
+  } catch {
+    return [];
+  }
+}
+
+// Junta todos os JSONs novos
+async function readInbox() {
+  try {
+    const files = (await fs.readdir(INBOX_DIR)).filter(f =>
+      f.toLowerCase().endsWith(".json")
+    );
     let all = [];
     for (const f of files) {
-      const txt = await fs.readFile(path.join(dir, f), 'utf8');
-      const data = JSON.parse(txt);
+      const data = JSON.parse(await fs.readFile(`${INBOX_DIR}/${f}`, "utf8"));
       all.push(...(Array.isArray(data) ? data : [data]));
     }
     return all;
@@ -56,14 +65,17 @@ export default mockExams;
 }
 
 async function main() {
-  const existing = await tryExtractFromTS(TS_TARGET);
-  const incoming = await gatherInbox(INBOX_DIR);
+  const existing = await readFromTs(TS_TARGET);
+  const incoming = await readInbox();
 
   const { merged, added } = mergeById(existing, incoming);
 
-  await fs.writeFile(TS_TARGET, toTsModule(merged), 'utf8');
-
-  console.log(`Merge concluído: +${added} novos exames; total ${merged.length}.`);
+  if (added > 0) {
+    await fs.writeFile(TS_TARGET, toTsModule(merged), "utf8");
+    console.log(`Merge concluído: +${added} novos exames; total ${merged.length}.`);
+  } else {
+    console.log("Nenhum exame novo adicionado.");
+  }
 }
 
 main().catch(err => {
