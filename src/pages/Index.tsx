@@ -321,9 +321,9 @@ const Index = () => {
                 <h4 className="font-semibold text-card-foreground mb-2">Available Certifications:</h4>
                 <ul className="space-y-1 text-sm text-muted-foreground">
                   <li>• Professional Agile Leadership (PAL I)</li>
-                  <li>• Professional Scrum Product Owner (PSPO I & II)</li>
-                  <li>• Professional Scrum Master (PSM I & II)</li>
-                  <li>• Professional Agile Leadership - EBM</li>
+                  <li>• Professional Scrum Product Owner (PSPO I, II & III)</li>
+                  <li>• Professional Scrum Master (PSM I, II & III)</li>
+                  <li>• Professional Agile Leadership - EBM (PAL EBM)</li>
                 </ul>
               </div>
               <div>
