@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths:
       - 'data/pending/**'
-      - 'src/data/mockexams.ts'
+      - 'src/data/mockExams.ts'
       - 'scripts/**'
       - 'src/**'
       - 'vite.config.*'
@@ -44,7 +44,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore: merge pending exams into mockexams.ts'
-          file_pattern: src/data/mockexams.ts
+          file_pattern: src/data/mockExams.ts
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
           skip_dirty_check: true
