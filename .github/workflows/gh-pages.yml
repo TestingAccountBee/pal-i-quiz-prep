@@ -5,12 +5,12 @@ on:
     branches: [ main ]
     paths:
       - 'data/pending/**'
-      - 'public/mockExams.json'
-      - 'src/**'
-      - 'index.html'
-      - 'vite.config.*'
-      - 'package*.json'
+      - 'src/data/mockExams.ts'
       - 'scripts/**'
+      - 'src/**'
+      - 'vite.config.*'
+      - 'index.html'
+      - 'package*.json'
   workflow_dispatch:
 
 permissions:
@@ -26,29 +26,29 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install deps
+      - name: Install dependencies
         run: npm ci
 
-      - name: Merge pending exams and regenerate TS
+      - name: Merge pending exams into mockexams.ts
         run: node scripts/merge-exams-to-ts.mjs
 
-      - name: Commit updated files (if changed)
+      - name: Commit updated mockExams.ts (if changed)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'chore: merge pending exams -> regenerate mockexams.ts'
-          file_pattern: |
-            public/mockExams.json
-            src/data/mockexams.ts
+          commit_message: 'chore: merge pending exams into mockexams.ts'
+          file_pattern: src/data/mockExams.ts
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
-      - name: Build
+      - name: Build site
         run: npm run build
 
       - name: Upload artifact
@@ -56,6 +56,6 @@ jobs:
         with:
           path: dist
 
-      - name: Deploy to Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
