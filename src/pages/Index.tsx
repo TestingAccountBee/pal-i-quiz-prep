@@ -214,7 +214,7 @@ const Index = () => {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {categoryExams.map((exam) => {
-              const result = completedExams.filter(r => r.exam.id === exam.id);
+              const examResults = completedExams.filter(r => r.exam.id === exam.id);
               const result = examResults.length > 0 
                 ? examResults.sort((a, b) => new Date(b.attempt.endTime || 0).getTime() - new Date(a.attempt.endTime || 0).getTime())[0]
                 : undefined;
