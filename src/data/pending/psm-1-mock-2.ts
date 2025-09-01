@@ -1,7 +1,6 @@
 const exam = {
   id: "psm-i-mock-2",
   title: "PSM I – Mock Exam 2",
-  questions: [
   {
     "id": "q2_81",
     "question": "What is the main goal of conducting a Sprint Review? (choose the best answer)",
@@ -11,7 +10,9 @@ const exam = {
       "To improve team morale.",
       "To assess the validity of the project."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "To review the product Increment with stakeholders and gather feedback for future work."
+    ],
     "explanation": "The purpose of a Sprint Review is to inspect the product Increment with the stakeholders and collect feedback on the next steps. During the Sprint Review, the Scrum Team and stakeholders collaborate to review what was accomplished during the Sprint and discuss what could be done in the next Sprint. This allows for transparency and helps ensure that the product is meeting the needs of the stakeholders."
   },
   {
@@ -23,7 +24,9 @@ const exam = {
       "Whoever the Developers choose to start.",
       "The person holding the talking stick."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Whoever the Developers choose to start."
+    ],
     "explanation": "The Daily Scrum is started by whoever the Developers decide should start. The Daily Scrum is an event for the Developers, and they are responsible for conducting it. The Scrum Master's role is to ensure that the event takes place and stays within the timebox, but it is up to the Developers to decide how to conduct the event."
   },
   {
@@ -36,7 +39,10 @@ const exam = {
       "Wait until a specialist can perform a performance audit and create a list of performance-related Product Backlog items.",
       "Add an extra Sprint specifically to address all performance concerns."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Create Product Backlog items for each performance concern.",
+      "Include performance concerns in the Definition of Done."
+    ],
     "explanation": "Two effective ways for a Scrum Team to ensure that performance concerns are satisfied are to create Product Backlog items for each concern and to add performance concerns to the Definition of Done. By creating Product Backlog items for performance concerns, the team can prioritize and plan for addressing these concerns during Sprint Planning. By adding performance concerns to the Definition of Done, the team ensures that all work meets the necessary performance standards before being considered complete."
   },
   {
@@ -48,7 +54,9 @@ const exam = {
       "The Developers on the Scrum Team should write the user documentation themselves.",
       "Wait until a technical writer is available to join the Scrum Team and take care of the documentation."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Developers on the Scrum Team should write the user documentation themselves."
+    ],
     "explanation": "If user documentation is part of the Definition of Done, the Developers on the Scrum Team should write the user documentation. The Scrum Team is responsible for delivering a useful, valuable Increment every Sprint, and this includes meeting all the criteria in the Definition of Done."
   },
   {
@@ -61,7 +69,9 @@ const exam = {
       "Conducting Release Planning.",
       "All of the above."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Sprint Retrospective."
+    ],
     "explanation": "The Sprint Retrospective is the only thing listed that is required by Scrum. The Sprint Retrospective is an opportunity for the Scrum Team to inspect itself and create a plan for improvements to be enacted during the next Sprint. It is held after the Sprint Review and prior to the next Sprint Planning."
   },
   {
@@ -74,7 +84,9 @@ const exam = {
       "Add the item to the current Sprint without any adjustments",
       "Add the item to the Product Backlog"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Inform the Product Owner so that the matter can be worked with the CEO"
+    ],
     "explanation": "The Product Backlog is the single source of work undertaken by the Scrum Team. Thus, a request from the CEO can not be fulfilled by the Scrum Team, if it is not a Product Backlog item. Those wanting to change the Product Backlog, including the CEO, can do so by trying to convince the Product Owner. Notice that, during the Sprint, the scope may be clarified and renegotiated with the Product Owner as more is learned. Thus, there are several possible scenarios here: - The request might be rejected and not added to the Product Backlog - The request might be accepted and added to the Product Backlog by the Product Owner, and considered in future Sprint Planning events by the Scrum Team - If the request is important and in line with the current Sprint Goal, the request might be accepted and added to the Product Backlog by the Product Owner and transferred to the current Sprint through discussion between the Product Owner and the Developers. - If the request is urgent and makes the Sprint Goal obsolete, the Product Owner might cancel the Sprint."
   },
   {
@@ -88,7 +100,11 @@ const exam = {
       "Sprint Goal",
       "Definition of Done"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Product Goal",
+      "Sprint Goal",
+      "Definition of Done"
+    ],
     "explanation": "Each artifact contains a commitment to ensure it provides information that enhances transparency and focus against which progress can be measured: - For the Product Backlog it is the Product Goal. - For the Sprint Backlog it is the Sprint Goal. - For the Increment it is the Definition of Done."
   },
   {
@@ -100,7 +116,9 @@ const exam = {
       "As a whole, are cross-functional",
       "Explain the Product Backlog items"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Explain the Product Backlog items"
+    ],
     "explanation": "- Writing test cases is a technical task, therefore, the Developers do it. (correct) - It's up to the Developers to see how many items they can develop during the Sprint, and no one can force them to pick more (or fewer) items. (correct) - The Scrum Team is cross-functional, thus, the Developers are cross-functional. (correct - Explaining the Product Backlog items is the Product Owner's responsibility (incorrect)"
   },
   {
@@ -111,7 +129,9 @@ const exam = {
       "A complete process to deliver complex products.",
       "A software development cookbook including the best agile practices."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Scrum is a lightweight framework that helps people, teams, and organizations generate value through adaptive solutions for complex problems."
+    ],
     "explanation": "Scrum is a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems."
   },
   {
@@ -124,7 +144,9 @@ const exam = {
       "The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint.",
       "Make sure the Sprint Backlog for the next Sprint includes all the improvements."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint."
+    ],
     "explanation": "During Sprint Retrospective, the Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint."
   },
   {
@@ -136,7 +158,9 @@ const exam = {
       "Updating the Burndown charts.",
       "Forming Scrum Teams."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Helping employees and stakeholders understand and enact an empirical approach for complex work."
+    ],
     "explanation": "The Scrum Master serves the organization in several ways, including: - Leading, training, and coaching the organization in its Scrum adoption; - Planning and advising Scrum implementations within the organization; - Helping employees and stakeholders understand and enact an empirical approach for complex work; - Removing barriers between stakeholders and Scrum Teams."
   },
   {
@@ -148,7 +172,12 @@ const exam = {
       "The Product Owner",
       "Invited people"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Developers",
+      "The Scrum Master",
+      "The Product Owner",
+      "Invited people"
+    ],
     "explanation": "The Scrum Team may also invite other people to attend Sprint Planning to provide advice."
   },
   {
@@ -160,7 +189,11 @@ const exam = {
       "DoD is used to assess when work is complete.",
       "DoD ensures artifact transparency."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "DoD guides the Developers in knowing how many Product Backlog items it can select during Sprint Planning.",
+      "DoD is used to assess when work is complete.",
+      "DoD ensures artifact transparency."
+    ],
     "explanation": "The Definition of Done is a formal description of the state of the Increment when it meets the quality measures required for the product.  The Definition of Done creates transparency by providing everyone a shared understanding of what work was completed as part of the Increment."
   },
   {
@@ -172,7 +205,10 @@ const exam = {
       "They are treated as regular Product Backlog items and addressed in early Sprints. However, independent of the situation, every Sprint must have at least some business functionality, no matter how small.",
       "Throughout the product development."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "They are treated as regular Product Backlog items and addressed in early Sprints. However, independent of the situation, every Sprint must have at least some business functionality, no matter how small.",
+      "Throughout the product development."
+    ],
     "explanation": "During a Sprint, the Scrum Team turns a selection of the work into an Increment of value. In other words, for each Sprint, the Scrum Teams must deliver business functionality. Further, Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value for each Sprint."
   },
   {
@@ -184,7 +220,11 @@ const exam = {
       "A Product Backlog could be closed when it contains no items to include in the next Sprint.",
       "It is emergent."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "It is continuously refined.",
+      "As long as a product exists, its Product Backlog also exists.",
+      "It is emergent."
+    ],
     "explanation": "A Product Backlog is emergent. The earliest development of it only lays out the initially known and best-understood requirements. Further, it is refined as the product and the environment in which it will be used evolves. Finally, it is refined to identify what the product needs to be appropriate, competitive, and useful. As long as a product exists, its Product Backlog also exists since it is the single source of work undertaken by the Scrum Team."
   },
   {
@@ -197,7 +237,9 @@ const exam = {
       "As soon as possible to minimize further deviation.",
       "Whenever the Scrum Master approves it."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "As soon as possible to minimize further deviation."
+    ],
     "explanation": "If any aspects of a process deviate outside acceptable limits or if the resulting product is unacceptable, the process being applied or the materials being produced must be adjusted. The adjustment must be made as soon as possible to minimize further deviation."
   },
   {
@@ -207,7 +249,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "FALSE"
+    ],
     "explanation": "The Scrum Team inspects how the last Sprint went with regards to individuals, interactions, processes, tools, and their Definition of Done."
   },
   {
@@ -219,7 +263,10 @@ const exam = {
       "Refine the Product Backlog",
       "Identify the most helpful changes to improve its effectiveness"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The team's collaboration",
+      "Identify the most helpful changes to improve its effectiveness"
+    ],
     "explanation": "The purpose of the Sprint Retrospective is to plan ways to increase quality and effectiveness. The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint."
   },
   {
@@ -231,7 +278,9 @@ const exam = {
       "Maximum 4 hours in a one-month Sprint, and usually shorter for shorter Sprints.",
       "3 hours"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Maximum 4 hours in a one-month Sprint, and usually shorter for shorter Sprints."
+    ],
     "explanation": "The timeboxed duration of events is as follows: Sprint - Maximum 1 month Daily Scrum - 15 minutes Sprint Planning - 8 hours in a one-month Sprint, and normally shorter proportionally for shorter Sprints Sprint Review - 4 hours in a one-month Sprint, and normally shorter proportionally for shorter Sprints Sprint Retrospective - 3 hours in a one-month Sprint, and normally shorter proportionally for shorter Sprints Note 1: if you have a shorter Sprint, it's not mandatory to shorten the timeboxed durations proportionally, but it's the normal thing to do. Otherwise, for example, in a project with one-week Sprints (i.e., 5 working days), you will spend 2 days, equal to 40% of the time, on meetings instead of creating the product. Note 2: Yes, being shorter \"proportionally\" is not mentioned in the Scrum Guide, but not everything you will see in the exam comes from the Scrum Guide."
   },
   {
@@ -245,7 +294,9 @@ const exam = {
       "The Product Owner",
       "The Scrum Master and The Developers"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Product Owner"
+    ],
     "explanation": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team."
   },
   {
@@ -257,7 +308,9 @@ const exam = {
       "Dependencies, start times and stop times for project tasks",
       "Hierarchy of tasks that comprise a project"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "How much work remains till the end of the Sprint"
+    ],
     "explanation": "Burn-down chart shows the evolution of remaining effort against time."
   },
   {
@@ -270,7 +323,11 @@ const exam = {
       "Ordering Product Backlog items",
       "Developing and explicitly communicating the Product Goal"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Ensuring that the Product Backlog is transparent, visible, and understood",
+      "Ordering Product Backlog items",
+      "Developing and explicitly communicating the Product Goal"
+    ],
     "explanation": "Product Backlog management includes: - Developing and explicitly communicating the Product Goal; - Creating and clearly communicating Product Backlog items; - Ordering Product Backlog items; and, - Ensuring that the Product Backlog is transparent, visible, and understood."
   },
   {
@@ -283,7 +340,11 @@ const exam = {
       "Any completed and \"Done\" Product Backlog items are reviewed",
       "Several top Product Backlog Items are taken into the Sprint Backlog to replace the obsolete items"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "All incomplete Product Backlog Items are re-estimated and put back on the Product Backlog",
+      "If part of the work is potentially releasable, the Product Owner typically accepts it",
+      "Any completed and \"Done\" Product Backlog items are reviewed"
+    ],
     "explanation": "The Scrum Guide is not explicit anymore about what happens. However, these are the best options following Scrum's mindset. Independent of the case, if a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review. Instead, it returns to the Product Backlog for future consideration."
   },
   {
@@ -295,7 +356,9 @@ const exam = {
       "How much is known about the Product over time.",
       "Defines all the things a project needs to accomplish, organized into multiple levels, and displayed graphically."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "How much is known about the Product over time."
+    ],
     "explanation": "The “Cone of Uncertainty” describes the reduction of the uncertainty about scope after each iteration. At the uncertainty is eliminated and the exact amount of scope is known. (with a cone graph)."
   },
   {
@@ -308,7 +371,10 @@ const exam = {
       "Facilitate the process of having the Scrum Team improve its skills, tools, and environment over time and adjust the Definition of Done (Correto) as needed",
       "Declare that the Scrum Team is not mature enough to adopt Scrum"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Coach the Scrum Team on defining a Definition of Done that is achievable given current circumstances",
+      "Facilitate the process of having the Scrum Team improve its skills, tools, and environment over time and adjust the Definition of Done (Correto) as needed"
+    ],
     "explanation": "The Definition of Done is a formal description of the state of the Increment when it meets the quality measures required for the product. However, as with any goal, it must be attainable. Thus, to keep the team motivated, but aware that the Definition of Done must be met, the best solution is to work with the Definition of Done. Notice that, in this case, the Scrum Team must recognize that, whenever the Definition of Done becomes more stringent in the future, technical debt will need to be paid off."
   },
   {
@@ -322,7 +388,10 @@ const exam = {
       "The Developers, but the Product Owner remains accountable.",
       "The Scrum Master."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Product Owner.",
+      "The Developers, but the Product Owner remains accountable."
+    ],
     "explanation": "The Product Owner may perform activities related to Product Backlog management or may delegate the responsibility to others. Regardless, the Product Owner remains accountable."
   },
   {
@@ -332,7 +401,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "TRUE"
+    ],
     "explanation": "If Scrum Teams become too large, they should consider reorganizing into multiple cohesive Scrum Teams, each focused on the same product. Therefore, they should share the same Product Goal, Product Backlog, and Product Owner."
   },
   {
@@ -345,7 +416,9 @@ const exam = {
       "The Scrum Team",
       "The Scrum Master and the Product Owner"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Scrum Master"
+    ],
     "explanation": "The Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide. They do this by helping everyone understand Scrum theory and practice, both within the Scrum Team and the organization."
   },
   {
@@ -359,7 +432,11 @@ const exam = {
       "Ask the development managers to introduce their departments and capabilities.",
       "Ask the Scrum Team to work together and prepare a complete Product Backlog."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Ask the Product Owner to explain the product, its business needs, history, goals, and context.",
+      "Ask the Developers to introduce themselves to each other and tell about their skills and background.",
+      "Ask the Developers to discuss and identify the way they are going to develop the product."
+    ],
     "explanation": "Product Backlog is never complete. It has to be about the project and people internal to it, not the external departments. Remember that the team is cross-functional and does everything needed for the project, without outside help. Having a reward system is harmful to the unity of the team."
   },
   {
@@ -372,7 +449,11 @@ const exam = {
       "Product Backlog.",
       "Increment"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Sprint Backlog.",
+      "Product Backlog.",
+      "Increment"
+    ],
     "explanation": "Scrum artifacts are the Product Backlog, Sprint Backlog, and Increment. The remaining options are commitments associated with the artifacts."
   },
   {
@@ -382,7 +463,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "FALSE"
+    ],
     "explanation": "It is not recommended. The Scrum Team delivers Done, usable Increment Sprint."
   },
   {
@@ -394,7 +477,9 @@ const exam = {
       "The CEO of the Organization",
       "The Product Backlog"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Product Backlog"
+    ],
     "explanation": "The Product Backlog is an ordered list of everything that is known to be needed in the product. It is the single source of requirements for any changes to be made to the product."
   },
   {
@@ -404,7 +489,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "FALSE"
+    ],
     "explanation": "The Scrum Team may also invite other people to attend Sprint Planning to provide advice."
   },
   {
@@ -416,7 +503,9 @@ const exam = {
       "A common understanding of progress toward the Sprint Goal and how progress is trending toward completing the work in the Sprint Backlog",
       "A revised Product Backlog that defines the probable Product Backlog items for the next Sprint"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "A revised Product Backlog that defines the probable Product Backlog items for the next Sprint"
+    ],
     "explanation": "During the event, the Scrum Team and stakeholders review what was accomplished in the Sprint and what has changed in their environment. Based on this information, attendees collaborate on what to do next. The Product Backlog may also be adjusted to meet new opportunities."
   },
   {
@@ -429,7 +518,9 @@ const exam = {
       "Complex work that can include all the suggested options and even more",
       "Research and identifying of viable markets, technologies, and Product capabilities"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Complex work that can include all the suggested options and even more"
+    ],
     "explanation": "When the words “develop” and “development” are used in the Scrum Guide, they refer to complex work including software and hardware development, development and releasing of products and enhancements, development and sustaining product operational environments, research and identifying of viable markets and technologies, and even more."
   },
   {
@@ -442,7 +533,12 @@ const exam = {
       "Product Visionary",
       "Facilitator of Scrum events"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Product Value Maximizer",
+      "Product Marketplace Expert",
+      "Lead Facilitator of Key Stakeholder Involvement",
+      "Product Visionary"
+    ],
     "explanation": "About \"Lead Facilitator of Key Stakeholder Involvement,\" this is a tricky one because of the changes in the latest version of the Scrum Guide where \"stakeholder management\" officially moved from the Product Owner's accountability to the Scrum Team's. In this question, it is a correct answer because I asked for the \"best four answers.\" And, in practice, the Product Owner needs to stay in constant communication with them to help him direct the product. However, in general, it is better to say that there is no \"lead facilitator of key stakeholder involvement,\" since this accountability is shared by the whole Scrum Team. If I had asked for the \"three best answers,\" you shouldn't select this one."
   },
   {
@@ -454,7 +550,10 @@ const exam = {
       "It should be flexible enough to complete all the work planned for the Sprint even if some team members are on vacation",
       "It should have all the skills necessary to create value each Sprint"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "It should choose how best to accomplish their work, rather than being directed by others outside the team",
+      "It should have all the skills necessary to create value each Sprint"
+    ],
     "explanation": "Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value for each Sprint. They are also self-managing, meaning they internally decide who does what, when, and how."
   },
   {
@@ -464,7 +563,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "FALSE"
+    ],
     "explanation": "The Scrum Guide reads: \"The Scrum Team is responsible for all product-related activities from stakeholder collaboration, verification, maintenance, operation, experimentation, research and development, and anything else that might be required\". The point here is to avoid behavior such as having the Developers pointing to the Product Owner if the customers are not satisfied with WHAT is being delivered and to encourage the Developers (and Scrum Master) to work with the Product Owner and help him/her defining the Product. However, in practice, if you would have to choose between the PO, Scrum Master, or Developers, who would be responsible for engaging the stakeholders? The PO, of course, because he/she is accountable for maximizing the value of the product and the Developers are busy developing the Increment. Just as an example, the Developers could proactively make \"mini-reviews\" with stakeholders during the Sprint to gather feedback on the Increments being built. This is \"stakeholder engagement\"."
   },
   {
@@ -477,7 +578,10 @@ const exam = {
       "Sprint scope is defined at the Sprint Planning and cannot be changed",
       "The Sprint Goal is changed frequently to reflect the status of the remaining work"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Sprint scope is defined at the Sprint Planning and cannot be changed",
+      "The Sprint Goal is changed frequently to reflect the status of the remaining work"
+    ],
     "explanation": "During the Sprint: - No changes are made that would endanger the Sprint Goal; - Quality does not decrease; - The Product Backlog is refined as needed; and, - Scope may be clarified and renegotiated with the Product Owner as more is learned."
   },
   {
@@ -490,7 +594,9 @@ const exam = {
       "The Scrum Master.",
       "The Learning process."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "A small team of people."
+    ],
     "explanation": "The fundamental unit of Scrum is a small team of people, a Scrum Team."
   },
   {
@@ -504,7 +610,11 @@ const exam = {
       "Helping establish the project plan",
       "Leading and coaching the organization in its Scrum adoption."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Facilitating stakeholder collaboration as requested or needed",
+      "Helping find techniques for effective Product Backlog management",
+      "Helping the Scrum Team understand the need for clear and concise Product Backlog items"
+    ],
     "explanation": "The Scrum Master serves the Product Owner in several ways, including: - Helping find techniques for effective Product Goal definition and Product Backlog management; - Helping the Scrum Team understand the need for clear and concise Product Backlog items; - Helping establish empirical product planning for a complex environment; and, - Facilitating stakeholder collaboration as requested or needed."
   },
   {
@@ -517,7 +627,9 @@ const exam = {
       "The Key Stakeholders",
       "The Scrum Team"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Scrum Team"
+    ],
     "explanation": "The whole Scrum Team then collaborates to define a Sprint Goal that communicates why the Sprint is valuable to stakeholders."
   },
   {
@@ -530,7 +642,9 @@ const exam = {
       "The Scrum Team.",
       "The Product Owner."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Scrum Team."
+    ],
     "explanation": "The entire Scrum Team is accountable for creating a valuable, useful Increment every Sprint."
   },
   {
@@ -543,7 +657,10 @@ const exam = {
       "Rapid Application Development",
       "Empiricism"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Lean Thinking",
+      "Empiricism"
+    ],
     "explanation": "Scrum is founded on empiricism and lean thinking."
   },
   {
@@ -553,7 +670,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "FALSE"
+    ],
     "explanation": "The Sprint Backlog is a plan by and for the Developers. It is a highly visible, real-time picture of the work that the Developers plan to accomplish during the Sprint in order to achieve the Sprint Goal. Consequently, the Sprint Backlog is updated throughout the Sprint as more is learned. It should have enough detail that they can inspect their progress in the Daily Scrum."
   },
   {
@@ -569,7 +688,13 @@ const exam = {
       "Commitment",
       "Focus"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Respect",
+      "Openness",
+      "Courage",
+      "Commitment",
+      "Focus"
+    ],
     "explanation": "When the values of commitment, courage, focus, openness and respect are embodied and lived by the Scrum Team, the Scrum pillars of transparency, inspection, and adaptation come to life and build trust for everyone."
   },
   {
@@ -581,7 +706,9 @@ const exam = {
       "It is a meeting to inspect the Increment and adapt the Product Backlog if needed.",
       "It is a meeting where the Development Team plans work for the next 24 hours."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "It is an opportunity for the Scrum Team to plan ways to increase quality and effectiveness."
+    ],
     "explanation": "The purpose of the Sprint Retrospective is to plan ways to increase quality and effectiveness."
   },
   {
@@ -593,7 +720,9 @@ const exam = {
       "It is up to the Scrum Team.",
       "Not more than 5%"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "It is up to the Scrum Team."
+    ],
     "explanation": "During the Sprint, the Product Backlog is refined as needed;"
   },
   {
@@ -603,7 +732,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "FALSE"
+    ],
     "explanation": "Scrum Masters are true leaders who serve the Scrum Team and the larger organization. The Scrum Master helps those outside the Scrum Team understand which of their interactions with the Scrum Team are helpful and which aren’t. The Scrum Master helps everyone change these interactions to maximize the value created by the Scrum Team."
   },
   {
@@ -614,7 +745,9 @@ const exam = {
       "Larger than those on the Product Backlog",
       "Smaller than those on the Product Backlog"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Smaller than those on the Product Backlog"
+    ],
     "explanation": "The items on the Sprint Backlog come from the top of the Product Backlog, therefore, we can say that the items on the Sprint Backlog are, on average, smaller than items on the entire Product Backlog."
   },
   {
@@ -626,7 +759,10 @@ const exam = {
       "By causing the removal of impediments to the Scrum Team's progress",
       "By scheduling rooms for the Scrum Events"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "By facilitating Scrum decisions",
+      "By causing the removal of impediments to the Scrum Team's progress"
+    ],
     "explanation": "Updating the issue tracker or scheduling rooms are not a priority since the Scrum Master is not a secretary. Further, the Scrum Master, respecting the Scrum Team’s self-management characteristic, causes the removal impediments that the Scrum Team members can’t deal with or facilitates decision-making."
   },
   {
@@ -638,7 +774,12 @@ const exam = {
       "Accountabilities",
       "Rules"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Events",
+      "Artifacts",
+      "Accountabilities",
+      "Rules"
+    ],
     "explanation": "The Scrum framework contains Accountabilities (i.e., Scrum Master, Product Owner, Developers), Artifacts (i.e., Product Backlog, Sprint Backlog, Increment), Events (i.e., Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective), and rules. Here go a few of Scrum rules: - Having timeboxed events is a rule. - Having a single Product Owner is another rule. - Self-managed Scrum Team. - Sprints timeboxed to at most one month. - Scrum Team containing one Product Owner, one Scrum Master, and Developers. - The Increment is only Done when in conformance with the Definition of Done. - and many others discussed in this course."
   },
   {
@@ -650,7 +791,9 @@ const exam = {
       "The Developers",
       "The Product Owner"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Scrum Team"
+    ],
     "explanation": "If the Definition of Done for an increment is part of the standards of the organization, all Scrum Teams must follow it as a minimum. If it is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product. The Developers are required to conform to the Definition of Done. If there are multiple Scrum Teams working together on a product, they must mutually define and comply with the same Definition of Done."
   },
   {
@@ -662,7 +805,12 @@ const exam = {
       "The Product Owner.",
       "The Developers."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Key Stakeholders.",
+      "The Scrum Master.",
+      "The Product Owner.",
+      "The Developers."
+    ],
     "explanation": "During the Sprint Review, the Scrum Team and stakeholders review what was accomplished in the Sprint and what has changed in their environment."
   },
   {
@@ -674,7 +822,10 @@ const exam = {
       "The Scrum Team prioritizes the list and works on them in order",
       "The Scrum Master discusses the impediments with the Scrum Team"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Scrum Team prioritizes the list and works on them in order",
+      "The Scrum Master discusses the impediments with the Scrum Team"
+    ],
     "explanation": "The Scrum Team is self-managed and must figure out how to remove the impediments. However, the Scrum Master is accountable for causing the removal of impediments, which might include discussing them with the Scrum Team when needed."
   },
   {
@@ -687,7 +838,11 @@ const exam = {
       "Having at least one test engineer as a Developer",
       "Everybody must be full-time"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Accountability belongs to the Scrum Team as a whole",
+      "Cross-functional",
+      "Scrum recognizes no sub-teams or hierarchies, within a Scrum Team"
+    ],
     "explanation": "The fundamental unit of Scrum is a small team of people, a Scrum Team. The Scrum Team consists of one Scrum Master, one Product Owner, and Developers. Within a Scrum Team, there are no sub-teams or hierarchies. It is a cohesive unit of professionals focused on one objective at a time, the Product Goal. Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value for each Sprint. They are also self-managing, meaning they internally decide who does what, when, and how. The Scrum Team is responsible for all product-related activities from stakeholder collaboration, verification, maintenance, operation, experimentation, research and development, and anything else that might be required. They are structured and empowered by the organization to manage their own work. Working in Sprints at a sustainable pace improves the Scrum Team’s focus and consistency. The entire Scrum Team is accountable for creating a valuable, useful Increment every Sprint. Scrum defines three specific accountabilities within the Scrum Team: the Developers, the Product Owner, and the Scrum Master."
   },
   {
@@ -699,7 +854,9 @@ const exam = {
       "After the Daily Scrum",
       "As frequently as possible"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Frequently, but it should not get in the way of the work"
+    ],
     "explanation": "The Scrum artifacts and the progress toward agreed goals must be inspected frequently and diligently to detect potentially undesirable variances or problems. Their inspection should not be so frequent that inspection gets in the way of the work. Inspections are most beneficial when diligently performed by skilled inspectors at the point of work."
   },
   {
@@ -712,7 +869,9 @@ const exam = {
       "The Product Owner",
       "The Product Owner and the Scrum Master"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Product Owner"
+    ],
     "explanation": "Only the Product Owner has the authority to cancel the Sprint, although he or she may do so under influence from the stakeholders, the Developers, or the Scrum Master."
   },
   {
@@ -727,7 +886,12 @@ const exam = {
       "The Product Goal must consist of a vision statement, the main features, a deadline, and target measures.",
       "Once a product reaches the Product Goal, it must be released."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "If there are multiple Scrum Teams working on the same product, they should share the same Product Goal.",
+      "The Scrum Team must only pursue one Product Goal at a time.",
+      "An Increment is a concrete stepping stone toward the Product Goal.",
+      "During the Sprint Review, progress toward the Product Goal is discussed."
+    ],
     "explanation": "The Scrum Guide does not prescribe the use of a Product Roadmap, the components of the Product Goal, neither when to release the product."
   },
   {
@@ -739,7 +903,9 @@ const exam = {
       "The Product Backlog items selected for the Sprint.",
       "The Sprint Goal, the set of Product Backlog items selected for the Sprint, plus an actionable plan for delivering the product Increment."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Sprint Goal, the set of Product Backlog items selected for the Sprint, plus an actionable plan for delivering the product Increment."
+    ],
     "explanation": "The Sprint Backlog is composed of the Sprint Goal (why), the set of Product Backlog items selected for the Sprint (what), as well as an actionable plan for delivering the Increment (how)."
   },
   {
@@ -749,7 +915,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "TRUE"
+    ],
     "explanation": "The Product Goal is the long-term objective of the Scrum Team. They must fulfill (or abandon) one objective before taking on the next."
   },
   {
@@ -762,7 +930,10 @@ const exam = {
       "Experience of the Product Owner",
       "Definition of Done of other Scrum Teams working on other products"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The standards of the Organization",
+      "Definition of Done of other Scrum Teams working on the same Product"
+    ],
     "explanation": "If the Definition of Done for an increment is part of the standards of the organization, all Scrum Teams must follow it as a minimum. If it is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product. The Developers are required to conform to the Definition of Done. If there are multiple Scrum Teams working together on a product, they must mutually define and comply with the same Definition of Done."
   },
   {
@@ -774,7 +945,9 @@ const exam = {
       "When the Sprint is over",
       "When it meets the Definition of Done."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "When it meets the Definition of Done."
+    ],
     "explanation": "- Maybe you may not even start working on the item before the Sprint was over, then you can't call it complete. - They can still miss something. On the other hand, if the test is focused on the unit, what about testing the integrated solution? It may break something. - It doesn't guarantee that we're absolutely Done with the item and that it satisfies the customer and user. - Product Backlog item that you have in the Sprint Backlog is Done when it satisfies the Definition of Done."
   },
   {
@@ -786,7 +959,10 @@ const exam = {
       "Short enough to keep the business risks acceptable",
       "At most, one month"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Short enough to keep the business risks acceptable",
+      "At most, one month"
+    ],
     "explanation": "The Sprints are fixed length events of one month or less to create consistency. When a Sprint’s horizon is too long the Sprint Goal may become invalid, complexity may rise, and risk may increase. Shorter Sprints can be employed to generate more learning cycles and limit the risk of cost and effort to a smaller time frame."
   },
   {
@@ -798,7 +974,10 @@ const exam = {
       "The Scrum Master is responsible for conducting the Daily Scrum",
       "The Scrum Master teaches the Developers to keep the Daily Scrum within the 15-minute time-box"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Scrum Master ensures that the Developers has the meeting",
+      "The Scrum Master teaches the Developers to keep the Daily Scrum within the 15-minute time-box"
+    ],
     "explanation": "The Scrum Master ensures that all Scrum events take place and are positive, productive, and kept within the timebox."
   },
   {
@@ -813,7 +992,12 @@ const exam = {
       "Teamwork",
       "Cross-functionality"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Self-organization",
+      "Agility",
+      "Teamwork",
+      "Cross-functionality"
+    ],
     "explanation": "Scrum is founded on empiricism and lean thinking. Empiricism asserts that knowledge comes from experience and making decisions based on what is observed. Lean thinking reduces waste and focuses on the essentials. Scrum employs an iterative, incremental approach to optimize predictability and to control risk. Scrum engages groups of people who collectively have all the skills and expertise to do the work and share or acquire such skills as needed. Scrum combines four formal events for inspection and adaptation within a containing event, the Sprint. These events work because they implement the empirical Scrum pillars of transparency, inspection, and adaptation."
   },
   {
@@ -825,7 +1009,9 @@ const exam = {
       "Yes, Sprint Backlog is decomposed down into user stories, and the delivery time and effort are estimated considering the Sprint duration.",
       "Yes, all items in the Sprint Backlog should be decomposed to units of one day or less by the end of the Sprint Planning."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "No, this is not a rule and it is up to the Developers to plan the work necessary to create an Increment that meets the Definition of Done."
+    ],
     "explanation": "For each selected Product Backlog item, the Developers plan the work necessary to create an Increment that meets the Definition of Done. This is often done by decomposing Product Backlog items into smaller work items of one day or less. How this is done is at the sole discretion of the Developers. No one else tells them how to turn Product Backlog items into Increments of value. Further, the Sprint Backlog is updated throughout the Sprint as more is learned. It should have enough detail that they can inspect their progress in the Daily Scrum.. Thus, it is not recommended to attempt to plan the work for all days of the Sprint during Sprint Planning."
   },
   {
@@ -837,7 +1023,9 @@ const exam = {
       "All \"Done\" items in the Sprint Backlog",
       "The sum of all the Product Backlog items completed during the Sprint, excluding the value of the increments of all previous Sprints"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Additive to all prior Increments and thoroughly verified, ensuring that all Increments work together."
+    ],
     "explanation": "Each Increment is additive to all prior Increments and thoroughly verified, ensuring that all Increments work together."
   },
   {
@@ -847,7 +1035,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "FALSE"
+    ],
     "explanation": "While implementing only parts of Scrum is possible, the result is not Scrum. Scrum exists only in its entirety and functions well as a container for other techniques, methodologies, and practices."
   },
   {
@@ -861,7 +1051,9 @@ const exam = {
       "The Scrum Team",
       "Upper management"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The Developers"
+    ],
     "explanation": "The Sprint Backlog is a plan by and for the Developers. It is a highly visible, real-time picture of the work that the Developers plan to accomplish during the Sprint in order to achieve the Sprint Goal. No one else tells them how to turn Product Backlog items into Increments of value."
   },
   {
@@ -871,7 +1063,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "FALSE"
+    ],
     "explanation": "During the Sprint Retrospective, the Scrum Team inspects how the last Sprint went with regards to individuals, interactions, processes, tools, and their Definition of Done. Thus, the Definition of Done can be adapted."
   },
   {
@@ -884,7 +1078,10 @@ const exam = {
       "Tell the Product Owner that, in Scrum, the technical expertise is expected from the Developers and they are the ones responsible for defining acceptable quality standards, not the stakeholder",
       "Tell the Product Owner that she should talk to the testers, because, such an issue should not leak to the users and they must improve their quality control procedures"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Coach the Product Owner on how to address the Developers about this issue",
+      "Encourage the Product Owner to add Product Backlog items focusing on the given quality concerts and express the stakeholder's concern to the Developers"
+    ],
     "explanation": "In Scrum, the team is encouraged to adapt as soon as they receive new insights. Hence, the Product Owner should be informed promptly about the key stakeholder's concerns, without waiting for the Sprint Retrospective. Next, it's crucial that the Developers are apprised of the feedback. It might be necessary to guide the Product Owner on how to communicate this issue effectively to them to avoid any negative impact. Remember, Scrum does not identify a specific \"testers\" role. All members of the Scrum Team collaboratively work towards solving problems, including quality issues. In relation to quality concerns, these can be addressed in two ways. They can be treated as individual items on the Product Backlog, or incorporated within the Definition of Done. Lastly, it's essential to note that in Scrum, no single member is assumed to have complete knowledge to solve a complex problem. Scrum operates on a continuous process of inspection and adaptation to respond to arising issues."
   },
   {
@@ -896,7 +1093,10 @@ const exam = {
       "The ability of the Scrum Teams to produce Increments",
       "The benefits of having the Developers figure out a solution for themselves"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "The ability of the Scrum Teams to produce Increments",
+      "The benefits of having the Developers figure out a solution for themselves"
+    ],
     "explanation": "Scrum Teams are self-managed and cross-functional. Thus, the Scrum Master should coach the team to be autonomous whenever possible. However, it is also important for the Scrum Master to consider the cases in which specialists are really needed and that problem at hand is too complex for the Developers to figure out on their own. In these cases, the Scrum Master can work with the Developers with the possibility of having specialized training or even having the specialist join the Scrum Team for the period in which his/her expertise is needed. Whatever the case, keep in mind that the Scrum Master has to respect the Scrum Team's self-management, but fulfill his/her accountability for the Scrum Team’s effectiveness."
   },
   {
@@ -908,7 +1108,10 @@ const exam = {
       "They should be placed on the Product Backlog",
       "If the Product Owner is satisfied with the work, he can accept them and release them"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "They must not be included as part of the Increment",
+      "They should be placed on the Product Backlog"
+    ],
     "explanation": "The Definition of Done creates transparency by providing everyone a shared understanding of what work was completed as part of the Increment. If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review. Instead, it returns to the Product Backlog for future consideration."
   },
   {
@@ -920,7 +1123,9 @@ const exam = {
       "They are mandatory",
       "The Product Backlog commits to the Product Vision"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "They are mandatory"
+    ],
     "explanation": "Each artifact contains a commitment to ensure it provides information that enhances transparency and focus against which progress can be measured: - For the Product Backlog it is the Product Goal. - For the Sprint Backlog it is the Sprint Goal. - For the Increment it is the Definition of Done. These commitments exist to reinforce empiricism and the Scrum values for the Scrum Team and their stakeholders."
   },
   {
@@ -934,7 +1139,9 @@ const exam = {
       "The Scrum Team must fulfill (or abandon) one Product Goal before taking on the next.",
       "For the Product Goal to be fulfilled, the entire Product Backlog must be Done."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "For the Product Goal to be fulfilled, the entire Product Backlog must be Done."
+    ],
     "explanation": "The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to plan against. The Product Goal is in the Product Backlog. The rest of the Product Backlog emerges to define “what” will fulfill the Product Goal. The Product Goal is the long-term objective for the Scrum Team. They must fulfill (or abandon) one objective before taking on the next."
   },
   {
@@ -947,7 +1154,13 @@ const exam = {
       "Research and identify viable markets, technologies, and product capabilities.",
       "Sustain and renew products."
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Develop products and enhancements.",
+      "Release products and enhancements, as frequently as many times per day.",
+      "Develop and sustain Cloud (online, secure, on-demand) and other operational environments for product use",
+      "Research and identify viable markets, technologies, and product capabilities.",
+      "Sustain and renew products."
+    ],
     "explanation": "Scrum was initially developed for managing and developing products. Starting in the early 1990s, Scrum has been used extensively, worldwide, to: 1. Research and identify viable markets, technologies, and product capabilities; 2. Develop products and enhancements; 3. Release products and enhancements, as frequently as many times per day; 4. Develop and sustain Cloud (online, secure, on-demand) and other operational environments for product use; and, 5. Sustain and renew products. Scrum has been used to develop software, hardware, embedded software, networks of interacting function, autonomous vehicles, schools, government, marketing, managing the operation of organizations and almost everything we use in our daily lives, as individuals and societies."
   },
   {
@@ -957,7 +1170,9 @@ const exam = {
       "TRUE",
       "FALSE"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "FALSE"
+    ],
     "explanation": "Scrum does not require having aligned Sprints for multiple teams. The Scrum Teams self-manage and define the best option for them."
   },
   {
@@ -971,7 +1186,10 @@ const exam = {
       "There should be only a single Product Owner",
       "There should be five Project Backlogs, inheriting from a single Product Backlog"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "There should be only a single Product Backlog",
+      "There should be only a single Product Owner"
+    ],
     "explanation": "The group of five Scrum Teams working together to deliver a single product is called a Nexus. A Nexus has a single Product Owner who manages a single Product Backlog from which the Scrum Teams work."
   },
   {
@@ -983,9 +1201,14 @@ const exam = {
       "Helping the Scrum Team focus on creating high-value Increments that meet the Definition of Done",
       "Causing the removal of impediments to the Scrum Team's progress"
     ],
-    "correctAnswer": [],
+    "correctAnswer": [
+      "Coaching the team members in self-management and cross- functionality",
+      "Helping the Scrum Team focus on creating high-value Increments that meet the Definition of Done",
+      "Causing the removal of impediments to the Scrum Team's progress"
+    ],
     "explanation": "The Scrum Master serves the Scrum Team in several ways, including: - Coaching the team members in self-management and cross-functionality; - Helping the Scrum Team focus on creating high-value Increments that meet the Definition of Done; - Causing the removal of impediments to the Scrum Team’s progress; and, - Ensuring that all Scrum events take place and are positive, productive, and kept within the timebox."
   }
 ]
 };
+
 export default exam;
