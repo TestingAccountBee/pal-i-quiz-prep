@@ -13,9 +13,7 @@ const exam = {
       "FALSE"
     ],
     correctAnswer: 1,
-    explanation: "Self-managing is not unlimited; e.g., you should follow the Scrum framework. While implementing only parts of Scrum is possible, the result is not Scrum. Scrum exists only in its entirety and functions well as a container for other techniques, methodologies, and practices. 
-
-Tens aqui as 80 perguntas. Na correct answer pode converter em array por exemplo se a opçao A for a correta seria entao [0]. no caso de ser multipla e for por exemplo a A e a C seria [0,2]",  },
+    explanation: "Self-managing is not unlimited; e.g., you should follow the Scrum framework. While implementing only parts of Scrum is possible, the result is not Scrum. Scrum exists only in its entirety and functions well as a container for other techniques, methodologies, and practices."
   {
     id: "q3_2",
     question: "At least one high-priority process improvement item exists in each Sprint Backlog.",
