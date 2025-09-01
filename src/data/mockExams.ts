@@ -5895,7 +5895,7 @@ export const mockExams: Exam[] = [
         "options": [
           "A Hybrid Model",
           "Lean thinking",
-          "Empiricisum",
+          "Empiricism",
           "A Defined Process",
           "A Complex Process"
         ],
