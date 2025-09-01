@@ -22,7 +22,7 @@ const exam = {
       "FALSE"
     ],
     correctAnswer: 1,
-    explanation: "False. This is an old rule from Scrum Guide 2017 and removed in Scrum Guide 2020. \"The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint.\", Scrum Guide 2020.",  },
+    explanation: "False. This is an old rule from Scrum Guide 2017 and removed in Scrum Guide 2020. The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint."
   {
     id: "q3_3",
     question: "When is the Sprint over?",
