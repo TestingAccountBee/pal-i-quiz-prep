@@ -1,6 +1,9 @@
 const exam = {
   id: "psm-i-mock-2",
   title: "PSM I Mock Exam #2",
+  description: "Professional Scrum Master Level I practice exam #2 based on provided content.",
+  timeLimit: 60,
+  passingScore: 85,
   questions: [
   {
     id: "q2_81",
