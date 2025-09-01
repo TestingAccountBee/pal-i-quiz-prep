@@ -15,7 +15,10 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "Self-managing is not unlimited; e.g., you should follow the Scrum framework. While implementing only parts of Scrum is possible, the result is not Scrum. Scrum exists only in its entirety and functions well as a container for other techniques, methodologies, and practices. \n\nTens aqui as 80 perguntas. Na correct answer pode converter em array por exemplo se a opçao A for a correta seria entao [0]. no caso de ser multipla e for por exemplo a A e a C seria [0,2]"
+    "explanation": "Self-managing is not unlimited; e.g., you should follow the Scrum framework. While implementing only parts of Scrum is possible, the result is not Scrum. Scrum exists only in its entirety and functions well as a container for other techniques, methodologies, and practices. 
+
+Tens aqui as 80 perguntas. Na correct answer pode converter em array por exemplo se a opçao A for a correta seria entao [0]. no caso de ser multipla e for por exemplo a A e a C seria [0,2]",
+    "multiple": false
   },
   {
     "id": "q3_2",
@@ -27,7 +30,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "False. This is an old rule from Scrum Guide 2017 and removed in Scrum Guide 2020. \"The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint.\", Scrum Guide 2020."
+    "explanation": "False. This is an old rule from Scrum Guide 2017 and removed in Scrum Guide 2020. \"The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint.\", Scrum Guide 2020.",
+    "multiple": false
   },
   {
     "id": "q3_3",
@@ -41,7 +45,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "It's a simple question: you need to know what timeboxing means, and that Sprints are timeboxed. Other than the normal ends of Sprints, the Product Owner also has the authority to cancel a Sprint."
+    "explanation": "It's a simple question: you need to know what timeboxing means, and that Sprints are timeboxed. Other than the normal ends of Sprints, the Product Owner also has the authority to cancel a Sprint.",
+    "multiple": false
   },
   {
     "id": "q3_4",
@@ -53,7 +58,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "Scrum is \"considered\" a framework, not a methodology, process, techniques, etc. It can be used to develop new products or maintain/sustain existing ones."
+    "explanation": "Scrum is \"considered\" a framework, not a methodology, process, techniques, etc. It can be used to develop new products or maintain/sustain existing ones.",
+    "multiple": false
   },
   {
     "id": "q3_5",
@@ -66,7 +72,8 @@ const exam = {
     "correctAnswer": [
       2
     ],
-    "explanation": "When you first add items to the Product Backlog, they may be very large. As items move to the top of the backlog, they are refined and broken down into smaller, clearer items that can fit into one Sprint. Since items on the Sprint Backlog come from the top of the Product Backlog, they are, on average, smaller than items on the Product Backlog as a whole."
+    "explanation": "When you first add items to the Product Backlog, they may be very large. As items move to the top of the backlog, they are refined and broken down into smaller, clearer items that can fit into one Sprint. Since items on the Sprint Backlog come from the top of the Product Backlog, they are, on average, smaller than items on the Product Backlog as a whole.",
+    "multiple": false
   },
   {
     "id": "q3_6",
@@ -78,7 +85,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "Sprint Planning initiates the Sprint by laying out the work to be performed for the Sprint."
+    "explanation": "Sprint Planning initiates the Sprint by laying out the work to be performed for the Sprint.",
+    "multiple": false
   },
   {
     "id": "q3_7",
@@ -92,7 +100,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "The Product Owner spends as much time as needed on Product Backlog Refinement."
+    "explanation": "The Product Owner spends as much time as needed on Product Backlog Refinement.",
+    "multiple": false
   },
   {
     "id": "q3_8",
@@ -107,7 +116,8 @@ const exam = {
       2,
       3
     ],
-    "explanation": "The composition of the team should not change during the Sprint. However, it can change as needed between Sprints, with the understanding that it may cause a short-term reduction in productivity."
+    "explanation": "The composition of the team should not change during the Sprint. However, it can change as needed between Sprints, with the understanding that it may cause a short-term reduction in productivity.",
+    "multiple": true
   },
   {
     "id": "q3_9",
@@ -125,7 +135,8 @@ const exam = {
       2,
       5
     ],
-    "explanation": "The pillars are transparency, inspection, and adaptation. Do not confuse these with the Scrum values (commitment, courage, focus, openness, and respect)."
+    "explanation": "The pillars are transparency, inspection, and adaptation. Do not confuse these with the Scrum values (commitment, courage, focus, openness, and respect).",
+    "multiple": true
   },
   {
     "id": "q3_10",
@@ -139,7 +150,8 @@ const exam = {
     "correctAnswer": [
       3
     ],
-    "explanation": "According to the Scrum Guide, only the Product Owner has the authority to cancel a Sprint if the Sprint Goal becomes obsolete."
+    "explanation": "According to the Scrum Guide, only the Product Owner has the authority to cancel a Sprint if the Sprint Goal becomes obsolete.",
+    "multiple": false
   },
   {
     "id": "q3_11",
@@ -153,7 +165,8 @@ const exam = {
     "correctAnswer": [
       3
     ],
-    "explanation": "A burn-down chart shows the amount of work remaining in a backlog over time. Time is on the horizontal axis and work remaining is on the vertical axis. It can be used for both Sprint Backlogs and Product Backlogs."
+    "explanation": "A burn-down chart shows the amount of work remaining in a backlog over time. Time is on the horizontal axis and work remaining is on the vertical axis. It can be used for both Sprint Backlogs and Product Backlogs.",
+    "multiple": false
   },
   {
     "id": "q3_12",
@@ -166,7 +179,8 @@ const exam = {
     "correctAnswer": [
       2
     ],
-    "explanation": "Items that are \"Done\" meet the Definition of Done and are part of a potentially shippable Increment. There is no reason to move them back to the Product Backlog."
+    "explanation": "Items that are \"Done\" meet the Definition of Done and are part of a potentially shippable Increment. There is no reason to move them back to the Product Backlog.",
+    "multiple": false
   },
   {
     "id": "q3_13",
@@ -181,7 +195,8 @@ const exam = {
       1,
       3
     ],
-    "explanation": "Scrum is a simple framework. It is recommended not to change the terminology as it can cause confusion and hinder the adoption process."
+    "explanation": "Scrum is a simple framework. It is recommended not to change the terminology as it can cause confusion and hinder the adoption process.",
+    "multiple": true
   },
   {
     "id": "q3_14",
@@ -197,7 +212,8 @@ const exam = {
       1,
       4
     ],
-    "explanation": "The Definition of Done and Sprint Retrospectives are required elements of Scrum. While common, the three standard questions in Daily Scrums, full-time developers, and User Stories are not explicitly required by the framework."
+    "explanation": "The Definition of Done and Sprint Retrospectives are required elements of Scrum. While common, the three standard questions in Daily Scrums, full-time developers, and User Stories are not explicitly required by the framework.",
+    "multiple": true
   },
   {
     "id": "q3_15",
@@ -215,7 +231,8 @@ const exam = {
       3,
       5
     ],
-    "explanation": "Scrum has 5 timeboxed events: Sprint, Sprint Planning, Daily Scrum, Sprint Review and Sprint Retrospective."
+    "explanation": "Scrum has 5 timeboxed events: Sprint, Sprint Planning, Daily Scrum, Sprint Review and Sprint Retrospective.",
+    "multiple": true
   },
   {
     "id": "q3_16",
@@ -230,7 +247,8 @@ const exam = {
       1,
       3
     ],
-    "explanation": "A Product Backlog item is Done when it satisfies the Definition of Done. Being \"usable\" is equivalent to being \"potentially shippable\" or \"Done\"."
+    "explanation": "A Product Backlog item is Done when it satisfies the Definition of Done. Being \"usable\" is equivalent to being \"potentially shippable\" or \"Done\".",
+    "multiple": true
   },
   {
     "id": "q3_17",
@@ -245,7 +263,8 @@ const exam = {
       2,
       3
     ],
-    "explanation": "The Daily Scrum is a 15-minute event for the Developers. It is held at the same time and place each day to reduce complexity."
+    "explanation": "The Daily Scrum is a 15-minute event for the Developers. It is held at the same time and place each day to reduce complexity.",
+    "multiple": true
   },
   {
     "id": "q3_18",
@@ -257,7 +276,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The Product Backlog is never complete. It's always evolving in adaptive development."
+    "explanation": "The Product Backlog is never complete. It's always evolving in adaptive development.",
+    "multiple": false
   },
   {
     "id": "q3_19",
@@ -271,7 +291,8 @@ const exam = {
     "correctAnswer": [
       2
     ],
-    "explanation": "The Sprint Retrospective is about discussing how work was done and finding ways to improve, which is fundamentally about lessons learned."
+    "explanation": "The Sprint Retrospective is about discussing how work was done and finding ways to improve, which is fundamentally about lessons learned.",
+    "multiple": false
   },
   {
     "id": "q3_20",
@@ -285,7 +306,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The Sprint Retrospective is a mandatory Scrum event. Burn-down charts, user stories, and story points are common practices but not explicitly required."
+    "explanation": "The Sprint Retrospective is a mandatory Scrum event. Burn-down charts, user stories, and story points are common practices but not explicitly required.",
+    "multiple": false
   },
   {
     "id": "q3_21",
@@ -297,7 +319,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "The Scrum Team can adopt various practices to forecast progress, including burn-downs, burn-ups, or cumulative flows. These do not replace the importance of empiricism."
+    "explanation": "The Scrum Team can adopt various practices to forecast progress, including burn-downs, burn-ups, or cumulative flows. These do not replace the importance of empiricism.",
+    "multiple": false
   },
   {
     "id": "q3_22",
@@ -311,7 +334,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "The Scrum Team should be small enough to remain nimble but large enough to complete significant work, typically 10 or fewer people. Smaller teams generally communicate better and are more productive."
+    "explanation": "The Scrum Team should be small enough to remain nimble but large enough to complete significant work, typically 10 or fewer people. Smaller teams generally communicate better and are more productive.",
+    "multiple": false
   },
   {
     "id": "q3_23",
@@ -325,7 +349,8 @@ const exam = {
     "correctAnswer": [
       3
     ],
-    "explanation": "The entire Scrum Team is accountable for creating a valuable, useful Increment every Sprint."
+    "explanation": "The entire Scrum Team is accountable for creating a valuable, useful Increment every Sprint.",
+    "multiple": false
   },
   {
     "id": "q3_24",
@@ -340,7 +365,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The timeboxed duration of Sprints is set by the whole Scrum Team, including the Product Owner, Scrum Master, and Developers, based on factors like work complexity and predictability."
+    "explanation": "The timeboxed duration of Sprints is set by the whole Scrum Team, including the Product Owner, Scrum Master, and Developers, based on factors like work complexity and predictability.",
+    "multiple": false
   },
   {
     "id": "q3_25",
@@ -352,7 +378,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "Scrum doesn't prohibit a person from having multiple accountabilities. What's important is that the Product Owner effectively performs their responsibilities."
+    "explanation": "Scrum doesn't prohibit a person from having multiple accountabilities. What's important is that the Product Owner effectively performs their responsibilities.",
+    "multiple": false
   },
   {
     "id": "q3_26",
@@ -364,7 +391,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "Adding more developers often leads to a short-term decrease in productivity due to onboarding. Even in the long-term, the increase is usually not linear due to increased communication overhead. This is related to Brooks's Law."
+    "explanation": "Adding more developers often leads to a short-term decrease in productivity due to onboarding. Even in the long-term, the increase is usually not linear due to increased communication overhead. This is related to Brooks's Law.",
+    "multiple": false
   },
   {
     "id": "q3_27",
@@ -376,7 +404,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "Scrum is considered a framework, not a methodology. It can be used for developing new products or sustaining existing ones."
+    "explanation": "Scrum is considered a framework, not a methodology. It can be used for developing new products or sustaining existing ones.",
+    "multiple": false
   },
   {
     "id": "q3_28",
@@ -393,7 +422,8 @@ const exam = {
       3,
       4
     ],
-    "explanation": "The Scrum values are commitment, courage, focus, openness, and respect."
+    "explanation": "The Scrum values are commitment, courage, focus, openness, and respect.",
+    "multiple": true
   },
   {
     "id": "q3_29",
@@ -407,7 +437,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "The Sprint Retrospective is the final event in a Sprint. Sprint Planning initiates the Sprint, it is not optional. Holding all events at the same time and place is a recommendation to reduce complexity, not a strict rule."
+    "explanation": "The Sprint Retrospective is the final event in a Sprint. Sprint Planning initiates the Sprint, it is not optional. Holding all events at the same time and place is a recommendation to reduce complexity, not a strict rule.",
+    "multiple": false
   },
   {
     "id": "q3_30",
@@ -422,7 +453,8 @@ const exam = {
       0,
       1
     ],
-    "explanation": "There is no strict rule dictating the number of Product Owners for multiple products. The decision can be based on the organization's specific needs."
+    "explanation": "There is no strict rule dictating the number of Product Owners for multiple products. The decision can be based on the organization's specific needs.",
+    "multiple": true
   },
   {
     "id": "q3_31",
@@ -438,7 +470,8 @@ const exam = {
       0,
       2
     ],
-    "explanation": "The Scrum Master ensures the Daily Scrum happens and stays within its 15-minute timebox, but their attendance is not mandatory as the event is for the Developers."
+    "explanation": "The Scrum Master ensures the Daily Scrum happens and stays within its 15-minute timebox, but their attendance is not mandatory as the event is for the Developers.",
+    "multiple": true
   },
   {
     "id": "q3_32",
@@ -452,7 +485,8 @@ const exam = {
     "correctAnswer": [
       3
     ],
-    "explanation": "The entire Scrum Team is accountable for the work; individual items do not have a single \"owner\"."
+    "explanation": "The entire Scrum Team is accountable for the work; individual items do not have a single \"owner\".",
+    "multiple": false
   },
   {
     "id": "q3_33",
@@ -466,7 +500,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The Developers select items from the Product Backlog to include in the current Sprint."
+    "explanation": "The Developers select items from the Product Backlog to include in the current Sprint.",
+    "multiple": false
   },
   {
     "id": "q3_34",
@@ -480,7 +515,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The Product Owner is a member of the Scrum Team and participates in the Sprint Retrospective to help inspect the last Sprint and identify improvements."
+    "explanation": "The Product Owner is a member of the Scrum Team and participates in the Sprint Retrospective to help inspect the last Sprint and identify improvements.",
+    "multiple": false
   },
   {
     "id": "q3_35",
@@ -492,7 +528,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The Scrum Team may refine items during Sprint Planning to increase understanding and confidence."
+    "explanation": "The Scrum Team may refine items during Sprint Planning to increase understanding and confidence.",
+    "multiple": false
   },
   {
     "id": "q3_36",
@@ -504,7 +541,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The Increment must be a result of the collectible effort of all Scrum Teams working on the product."
+    "explanation": "The Increment must be a result of the collectible effort of all Scrum Teams working on the product.",
+    "multiple": false
   },
   {
     "id": "q3_37",
@@ -519,7 +557,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "The Sprint Goal is an output of Sprint Planning, defined by the whole Scrum Team during the event."
+    "explanation": "The Sprint Goal is an output of Sprint Planning, defined by the whole Scrum Team during the event.",
+    "multiple": false
   },
   {
     "id": "q3_38",
@@ -533,7 +572,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "While Planning Poker is a popular technique, Scrum does not prescribe any specific estimation method. Timeboxing, Definition of Done, and Sprint Planning are all essential elements of the framework."
+    "explanation": "While Planning Poker is a popular technique, Scrum does not prescribe any specific estimation method. Timeboxing, Definition of Done, and Sprint Planning are all essential elements of the framework.",
+    "multiple": false
   },
   {
     "id": "q3_39",
@@ -549,7 +589,8 @@ const exam = {
       1,
       3
     ],
-    "explanation": "The entire Scrum Team collaboratively sets the Sprint duration and defines the Sprint Goal. The Product Owner owns the Product Backlog, and the Developers prioritize tasks within the Sprint Backlog."
+    "explanation": "The entire Scrum Team collaboratively sets the Sprint duration and defines the Sprint Goal. The Product Owner owns the Product Backlog, and the Developers prioritize tasks within the Sprint Backlog.",
+    "multiple": true
   },
   {
     "id": "q3_40",
@@ -565,7 +606,8 @@ const exam = {
       0,
       1
     ],
-    "explanation": "Sprints have a maximum duration of one month. Shorter Sprints are beneficial for riskier projects as they allow for quicker feedback and adaptation."
+    "explanation": "Sprints have a maximum duration of one month. Shorter Sprints are beneficial for riskier projects as they allow for quicker feedback and adaptation.",
+    "multiple": true
   },
   {
     "id": "q3_41",
@@ -577,7 +619,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "Product Backlog refinement is for Product Backlog items, not Sprint Backlog items."
+    "explanation": "Product Backlog refinement is for Product Backlog items, not Sprint Backlog items.",
+    "multiple": false
   },
   {
     "id": "q3_42",
@@ -591,7 +634,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "The Product Owner is responsible for managing the Product Backlog. The Scrum Master is a leader who helps the organization adopt Scrum and facilitates the removal of impediments."
+    "explanation": "The Product Owner is responsible for managing the Product Backlog. The Scrum Master is a leader who helps the organization adopt Scrum and facilitates the removal of impediments.",
+    "multiple": false
   },
   {
     "id": "q3_43",
@@ -607,7 +651,8 @@ const exam = {
       1,
       4
     ],
-    "explanation": "The pillars of Scrum are transparency, inspection, and adaptation, which support clear communication, regular evaluation, and continuous improvement."
+    "explanation": "The pillars of Scrum are transparency, inspection, and adaptation, which support clear communication, regular evaluation, and continuous improvement.",
+    "multiple": true
   },
   {
     "id": "q3_44",
@@ -622,7 +667,8 @@ const exam = {
     "correctAnswer": [
       4
     ],
-    "explanation": "The entire Scrum Team is responsible for product-related activities, including stakeholder collaboration."
+    "explanation": "The entire Scrum Team is responsible for product-related activities, including stakeholder collaboration.",
+    "multiple": false
   },
   {
     "id": "q3_45",
@@ -638,7 +684,8 @@ const exam = {
       0,
       4
     ],
-    "explanation": "A Sprint ends either when its timebox expires or when the Product Owner cancels it. If work is completed early, the team can pull more work from the Product Backlog."
+    "explanation": "A Sprint ends either when its timebox expires or when the Product Owner cancels it. If work is completed early, the team can pull more work from the Product Backlog.",
+    "multiple": true
   },
   {
     "id": "q3_46",
@@ -656,7 +703,8 @@ const exam = {
       4,
       5
     ],
-    "explanation": "These three questions are a common, though not mandatory, way to structure the Daily Scrum. They are no longer in the 2020 Scrum Guide but are good to know."
+    "explanation": "These three questions are a common, though not mandatory, way to structure the Daily Scrum. They are no longer in the 2020 Scrum Guide but are good to know.",
+    "multiple": true
   },
   {
     "id": "q3_47",
@@ -668,7 +716,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "No Scrum accountability is necessarily a full-time job for one team. A person with special expertise may serve multiple teams if it's not needed on a full-time basis for any single team."
+    "explanation": "No Scrum accountability is necessarily a full-time job for one team. A person with special expertise may serve multiple teams if it's not needed on a full-time basis for any single team.",
+    "multiple": false
   },
   {
     "id": "q3_48",
@@ -684,7 +733,8 @@ const exam = {
       2,
       4
     ],
-    "explanation": "In the Sprint Retrospective, the Scrum Team discusses the team's composition, dynamics, processes, tools, and their Definition of Done."
+    "explanation": "In the Sprint Retrospective, the Scrum Team discusses the team's composition, dynamics, processes, tools, and their Definition of Done.",
+    "multiple": true
   },
   {
     "id": "q3_49",
@@ -700,7 +750,8 @@ const exam = {
       2,
       3
     ],
-    "explanation": "If a Product Backlog item is not \"Done\" at the end of the Sprint, it is not included in the Increment and is moved back to the Product Backlog for future consideration. No partial credit is given in velocity calculations."
+    "explanation": "If a Product Backlog item is not \"Done\" at the end of the Sprint, it is not included in the Increment and is moved back to the Product Backlog for future consideration. No partial credit is given in velocity calculations.",
+    "multiple": true
   },
   {
     "id": "q3_50",
@@ -714,7 +765,8 @@ const exam = {
     "correctAnswer": [
       2
     ],
-    "explanation": "If the Sprint Backlog is at risk, the team should consult the Product Owner to see if adjustments or reprioritization is needed. Sprints are not extended, and working overtime is discouraged in favor of a sustainable pace."
+    "explanation": "If the Sprint Backlog is at risk, the team should consult the Product Owner to see if adjustments or reprioritization is needed. Sprints are not extended, and working overtime is discouraged in favor of a sustainable pace.",
+    "multiple": false
   },
   {
     "id": "q3_51",
@@ -730,7 +782,8 @@ const exam = {
       1,
       3
     ],
-    "explanation": "The Developers who will be doing the work are responsible for sizing Product Backlog items, although the Product Owner can provide input."
+    "explanation": "The Developers who will be doing the work are responsible for sizing Product Backlog items, although the Product Owner can provide input.",
+    "multiple": true
   },
   {
     "id": "q3_52",
@@ -747,7 +800,8 @@ const exam = {
       0,
       1
     ],
-    "explanation": "The Product Backlog is refined as needed during the Sprint, and there are no restrictions on how many teams can participate."
+    "explanation": "The Product Backlog is refined as needed during the Sprint, and there are no restrictions on how many teams can participate.",
+    "multiple": true
   },
   {
     "id": "q3_53",
@@ -765,7 +819,8 @@ const exam = {
       1,
       3
     ],
-    "explanation": "For one product, there is only one Product Backlog. However, you can have multiple Scrum Masters and each team has its own Sprint Backlog. While the product must have a single Definition of Done, each team can have a more stringent version for their own work."
+    "explanation": "For one product, there is only one Product Backlog. However, you can have multiple Scrum Masters and each team has its own Sprint Backlog. While the product must have a single Definition of Done, each team can have a more stringent version for their own work.",
+    "multiple": true
   },
   {
     "id": "q3_54",
@@ -777,7 +832,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "A Scrum Master is always needed."
+    "explanation": "A Scrum Master is always needed.",
+    "multiple": false
   },
   {
     "id": "q3_55",
@@ -789,7 +845,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "Scrum.org interprets \"baseline\" as keeping something fixed. In Scrum, there are no baselines as the framework is adaptive."
+    "explanation": "Scrum.org interprets \"baseline\" as keeping something fixed. In Scrum, there are no baselines as the framework is adaptive.",
+    "multiple": false
   },
   {
     "id": "q3_56",
@@ -803,7 +860,8 @@ const exam = {
     "correctAnswer": [
       3
     ],
-    "explanation": "The Product Backlog is refined as needed during the Sprint."
+    "explanation": "The Product Backlog is refined as needed during the Sprint.",
+    "multiple": false
   },
   {
     "id": "q3_57",
@@ -817,7 +875,8 @@ const exam = {
     "correctAnswer": [
       3
     ],
-    "explanation": "There are no specific roles like \"tester\" in Scrum. Developers are responsible for all aspects of creating a Done Increment, including testing. There can be developers who are experts in testing."
+    "explanation": "There are no specific roles like \"tester\" in Scrum. Developers are responsible for all aspects of creating a Done Increment, including testing. There can be developers who are experts in testing.",
+    "multiple": false
   },
   {
     "id": "q3_58",
@@ -829,7 +888,8 @@ const exam = {
     "correctAnswer": [
       0
     ],
-    "explanation": "Shorter Sprints provide more opportunities for adaptation and thus reduce risks."
+    "explanation": "Shorter Sprints provide more opportunities for adaptation and thus reduce risks.",
+    "multiple": false
   },
   {
     "id": "q3_59",
@@ -843,7 +903,8 @@ const exam = {
     "correctAnswer": [
       3
     ],
-    "explanation": "The timeboxed duration of Daily Scrums is always 15 minutes, regardless of the number of Developers or the Sprint length."
+    "explanation": "The timeboxed duration of Daily Scrums is always 15 minutes, regardless of the number of Developers or the Sprint length.",
+    "multiple": false
   },
   {
     "id": "q3_60",
@@ -858,7 +919,8 @@ const exam = {
       0,
       3
     ],
-    "explanation": "Tasks are part of the Sprint Backlog, not the Product Backlog. The Product Backlog is the single source of work and is continuously evolving."
+    "explanation": "Tasks are part of the Sprint Backlog, not the Product Backlog. The Product Backlog is the single source of work and is continuously evolving.",
+    "multiple": true
   },
   {
     "id": "q3_61",
@@ -874,7 +936,8 @@ const exam = {
       1,
       3
     ],
-    "explanation": "Sprint 0 and Integration Sprints are not aligned with the core principles of Scrum, which emphasize delivering a valuable Increment each Sprint."
+    "explanation": "Sprint 0 and Integration Sprints are not aligned with the core principles of Scrum, which emphasize delivering a valuable Increment each Sprint.",
+    "multiple": true
   },
   {
     "id": "q3_62",
@@ -889,7 +952,8 @@ const exam = {
     "correctAnswer": [
       2
     ],
-    "explanation": "Making information radiators like burndown charts visible to everyone is an example of the Scrum value of Openness, as it makes progress and challenges transparent to all."
+    "explanation": "Making information radiators like burndown charts visible to everyone is an example of the Scrum value of Openness, as it makes progress and challenges transparent to all.",
+    "multiple": false
   },
   {
     "id": "q3_63",
@@ -901,7 +965,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The Product Backlog is never complete; it is a living artifact that evolves throughout the project."
+    "explanation": "The Product Backlog is never complete; it is a living artifact that evolves throughout the project.",
+    "multiple": false
   },
   {
     "id": "q3_64",
@@ -915,7 +980,8 @@ const exam = {
     "correctAnswer": [
       2
     ],
-    "explanation": "The Product Goal is a mandatory element in Scrum. Practices like Story Points, Pair-Programming, and User Stories are commonly used but not required by the framework."
+    "explanation": "The Product Goal is a mandatory element in Scrum. Practices like Story Points, Pair-Programming, and User Stories are commonly used but not required by the framework.",
+    "multiple": false
   },
   {
     "id": "q3_65",
@@ -930,7 +996,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The Sprint Retrospective is timeboxed to a maximum of three hours for a one-month Sprint and is usually shorter for shorter Sprints."
+    "explanation": "The Sprint Retrospective is timeboxed to a maximum of three hours for a one-month Sprint and is usually shorter for shorter Sprints.",
+    "multiple": false
   },
   {
     "id": "q3_66",
@@ -946,7 +1013,8 @@ const exam = {
       0,
       2
     ],
-    "explanation": "When starting a new product, the Scrum Master facilitates team introductions and ensures there is a clear understanding of the product, its context, and goals."
+    "explanation": "When starting a new product, the Scrum Master facilitates team introductions and ensures there is a clear understanding of the product, its context, and goals.",
+    "multiple": true
   },
   {
     "id": "q3_67",
@@ -960,7 +1028,8 @@ const exam = {
     "correctAnswer": [
       2
     ],
-    "explanation": "The Product Backlog is a dynamic artifact that evolves to reflect new information, insights, and requirements as they emerge, ensuring it remains relevant and aligned with the product's vision."
+    "explanation": "The Product Backlog is a dynamic artifact that evolves to reflect new information, insights, and requirements as they emerge, ensuring it remains relevant and aligned with the product's vision.",
+    "multiple": false
   },
   {
     "id": "q3_68",
@@ -975,7 +1044,8 @@ const exam = {
       0,
       3
     ],
-    "explanation": "A mature Scrum Team may improve their Definition of Done and see an increase in velocity. However, the Scrum Master and Sprint Retrospectives remain valuable for continuous improvement."
+    "explanation": "A mature Scrum Team may improve their Definition of Done and see an increase in velocity. However, the Scrum Master and Sprint Retrospectives remain valuable for continuous improvement.",
+    "multiple": true
   },
   {
     "id": "q3_69",
@@ -989,7 +1059,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "Continuous integration during the Sprint is encouraged to identify issues early and ensure the Increment remains in a releasable state."
+    "explanation": "Continuous integration during the Sprint is encouraged to identify issues early and ensure the Increment remains in a releasable state.",
+    "multiple": false
   },
   {
     "id": "q3_70",
@@ -1003,7 +1074,8 @@ const exam = {
     "correctAnswer": [
       2
     ],
-    "explanation": "The Product Backlog is a living artifact and does not need to be fully complete to start a Sprint. The team can start the first Sprint and continue to refine the backlog as they progress."
+    "explanation": "The Product Backlog is a living artifact and does not need to be fully complete to start a Sprint. The team can start the first Sprint and continue to refine the backlog as they progress.",
+    "multiple": false
   },
   {
     "id": "q3_71",
@@ -1018,7 +1090,8 @@ const exam = {
       0,
       1
     ],
-    "explanation": "Both the Sprint Backlog and Product Backlog are emergent and can change during the Sprint. The Sprint Goal and the expected level of quality, however, should not change."
+    "explanation": "Both the Sprint Backlog and Product Backlog are emergent and can change during the Sprint. The Sprint Goal and the expected level of quality, however, should not change.",
+    "multiple": true
   },
   {
     "id": "q3_72",
@@ -1033,7 +1106,8 @@ const exam = {
       1,
       2
     ],
-    "explanation": "The Scrum Master should coach the self-managing team to resolve their own disagreements. This is done by facilitating decision-making and using coaching techniques, rather than immediately escalating to external sources."
+    "explanation": "The Scrum Master should coach the self-managing team to resolve their own disagreements. This is done by facilitating decision-making and using coaching techniques, rather than immediately escalating to external sources.",
+    "multiple": true
   },
   {
     "id": "q3_73",
@@ -1052,7 +1126,8 @@ const exam = {
       5,
       6
     ],
-    "explanation": "Sprint Planning, Daily Scrum, and Sprint Retrospective are all time-boxed events in Scrum. \"Hardening Sprints\", \"Sprint 0\", and \"Release Planning\" are not official Scrum events. Product Backlog Refinement is an ongoing activity, not a formal, time-boxed event."
+    "explanation": "Sprint Planning, Daily Scrum, and Sprint Retrospective are all time-boxed events in Scrum. \"Hardening Sprints\", \"Sprint 0\", and \"Release Planning\" are not official Scrum events. Product Backlog Refinement is an ongoing activity, not a formal, time-boxed event.",
+    "multiple": true
   },
   {
     "id": "q3_74",
@@ -1068,7 +1143,8 @@ const exam = {
       0,
       4
     ],
-    "explanation": "Scrum teams are cross-functional, and there are no sub-teams or specific roles like \"tester.\" The Developers as a whole are accountable for quality and perform all necessary activities, including testing, to meet the Definition of Done."
+    "explanation": "Scrum teams are cross-functional, and there are no sub-teams or specific roles like \"tester.\" The Developers as a whole are accountable for quality and perform all necessary activities, including testing, to meet the Definition of Done.",
+    "multiple": true
   },
   {
     "id": "q3_75",
@@ -1085,7 +1161,8 @@ const exam = {
       3,
       4
     ],
-    "explanation": "A Scrum Master is a leader and coach who helps the organization adopt Scrum, teaches the team about timeboxes, and helps the Product Owner with empirical planning. They do not assign tasks or act as a secretary for the team."
+    "explanation": "A Scrum Master is a leader and coach who helps the organization adopt Scrum, teaches the team about timeboxes, and helps the Product Owner with empirical planning. They do not assign tasks or act as a secretary for the team.",
+    "multiple": true
   },
   {
     "id": "q3_76",
@@ -1102,7 +1179,8 @@ const exam = {
       2,
       4
     ],
-    "explanation": "Scrum is a framework founded on empiricism and lean thinking. Changing its core design or leaving out elements limits its benefits. It is not a methodology to be adapted at will."
+    "explanation": "Scrum is a framework founded on empiricism and lean thinking. Changing its core design or leaving out elements limits its benefits. It is not a methodology to be adapted at will.",
+    "multiple": true
   },
   {
     "id": "q3_77",
@@ -1119,7 +1197,8 @@ const exam = {
       2,
       4
     ],
-    "explanation": "The Definition of Done provides a shared understanding of what \"Done\" means, which increases transparency and helps the Developers forecast work for the Sprint. The Increment is a commitment to this definition. It defines when a Product Backlog Item is complete, not when a Sprint is complete."
+    "explanation": "The Definition of Done provides a shared understanding of what \"Done\" means, which increases transparency and helps the Developers forecast work for the Sprint. The Increment is a commitment to this definition. It defines when a Product Backlog Item is complete, not when a Sprint is complete.",
+    "multiple": true
   },
   {
     "id": "q3_78",
@@ -1132,7 +1211,8 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "The Sprint Backlog is emergent and can be modified throughout the Sprint as more is learned. The Sprint Goal and the minimum level of quality should not change during the Sprint."
+    "explanation": "The Sprint Backlog is emergent and can be modified throughout the Sprint as more is learned. The Sprint Goal and the minimum level of quality should not change during the Sprint.",
+    "multiple": false
   },
   {
     "id": "q3_79",
@@ -1149,7 +1229,8 @@ const exam = {
       2,
       3
     ],
-    "explanation": "Developers are responsible for sizing items, selecting them for the Sprint, and doing the work. The Product Owner is accountable for ordering the Product Backlog, and the team does not report progress to management."
+    "explanation": "Developers are responsible for sizing items, selecting them for the Sprint, and doing the work. The Product Owner is accountable for ordering the Product Backlog, and the team does not report progress to management.",
+    "multiple": true
   },
   {
     "id": "q3_80",
@@ -1165,7 +1246,8 @@ const exam = {
       1,
       2
     ],
-    "explanation": "Scrum's lightweight nature, empowering developers to select their work, and removing titles all promote self-management. A Scrum Master should teach the team to handle interruptions themselves rather than acting as a gatekeeper."
+    "explanation": "Scrum's lightweight nature, empowering developers to select their work, and removing titles all promote self-management. A Scrum Master should teach the team to handle interruptions themselves rather than acting as a gatekeeper.",
+    "multiple": true
   }
 ]
 };
