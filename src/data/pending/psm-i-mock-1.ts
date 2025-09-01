@@ -1,4 +1,4 @@
-{
+const exam = {
   "id": "psm-i-mock-1",
   "title": "PSM I Mock Exam #1",
   "description": "Professional Scrum Master Level I practice exam #1 based on provided content.",
@@ -1160,4 +1160,5 @@
       "explanation": "The next Sprint begins immediately after the conclusion of the previous Sprint. Sprints are time-boxed events, which means that they have a fixed duration and do not overlap. Once one Sprint ends, the next one begins without any gaps in between."
     }
   ]
-}
+};
+export default exam;

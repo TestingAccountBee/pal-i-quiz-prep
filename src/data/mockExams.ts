@@ -9135,3 +9135,38 @@ export const mockExams: Exam[] = [
     ]
 }
 ];
+
+// Auto-load individual exams from /src/data/pending and append them
+// Any .ts file that default-exports an exam-like object will be picked up
+// Example template:
+//   import { Exam } from '@/types/exam'
+//   const exam: Exam = { id: 'psm-i-mock-13', ... }
+//   export default exam
+
+type AnyModule = { default?: any; exam?: any };
+const dynamicModules = import.meta.glob('./pending/**/*.ts', { eager: true }) as Record<string, AnyModule>;
+
+const normalizeExam = (raw: any): Exam | null => {
+  if (!raw) return null;
+  const mapQuestion = (q: any) => {
+    const toIndex = (ans: any) => {
+      if (typeof ans === 'number') return ans;
+      if (typeof ans === 'string') return q.options.indexOf(ans);
+      return -1;
+    };
+    const isMulti = Array.isArray(q.correctAnswer);
+    const correct = isMulti ? (q.correctAnswer as any[]).map(toIndex) : toIndex(q.correctAnswer);
+    return { ...q, multipleChoice: isMulti ? true : q.multipleChoice, correctAnswer: correct };
+  };
+  if (Array.isArray(raw.questions)) {
+    return { ...raw, questions: raw.questions.map(mapQuestion) } as Exam;
+  }
+  return null;
+};
+
+const dynamicExams = Object.values(dynamicModules)
+  .map((m) => normalizeExam((m as any).default ?? (m as any).exam))
+  .filter(Boolean) as Exam[];
+
+mockExams.push(...dynamicExams);
+
