@@ -82,10 +82,7 @@ const exam = {
       "As needed, without need to be concerned about changes in productivity",
       "As needed, considering that it will have a short-term reduction in productivity"
     ],
-    correctAnswer: [
-      2,
-      3
-    ],
+    correctAnswer: 3,
     explanation: "The composition of the team should not change during the Sprint. However, it can change as needed between Sprints, with the understanding that it may cause a short-term reduction in productivity.",  },
   {
     id: "q3_9",
