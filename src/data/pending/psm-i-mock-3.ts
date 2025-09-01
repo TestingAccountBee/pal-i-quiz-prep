@@ -15,7 +15,7 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "Self-managing is not unlimited; e.g., you should follow the Scrum framework. While implementing only parts of Scrum is possible, the result is not Scrum. Scrum exists only in its entirety and functions well as a container for other techniques, methodologies, and practices. 
+    "explanation": "Self-managing is not unlimited; e.g., you should follow the Scrum framework. While implementing only parts of Scrum is possible, the result is not Scrum. Scrum exists only in its entirety and functions well as a container for other techniques, methodologies, and practices." 
   },
   {
     "id": "q3_2",
@@ -27,7 +27,7 @@ const exam = {
     "correctAnswer": [
       1
     ],
-    "explanation": "False. This is an old rule from Scrum Guide 2017 and removed in Scrum Guide 2020. \"The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint.\", Scrum Guide 2020.",
+    "explanation": "False. This is an old rule from Scrum Guide 2017 and removed in Scrum Guide 2020. \"The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for the next Sprint.",
     "multiple": false
   },
   {
