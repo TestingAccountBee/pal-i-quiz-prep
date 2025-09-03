@@ -7,7 +7,12 @@ const exam = {
   questions: [
         {
             "id": "q7_81",
-            "question": "You have been hired as a Scrum Master for an organization new to Scrum. You are about to start working on your first project with Scrum and the Product Owner seems confused about how to deal with architecture and infrastructure tasks. She asks you how many Sprints the project should schedule to deal with these issues.\n\nI - She shouldn’t worry about technical issues, because you will keep an eye on the team to make sure they ask for help if needed.\n\nII - Teach her that such issues should be added to the Product Backlog.\n\nIII - Explain to her that the architecture and infrastructure should emerge alongside developing business functionality to better mitigate risks.\n\nIV - Tell her that the risks related to architecture and infrastructure should be dealt with before starting the first Sprint.\n\n(choose the best answer)",
+            question: "You have been hired as a Scrum Master for an organization new to Scrum. You are about to start working on your first project with Scrum and the Product Owner seems confused about how to deal with architecture and infrastructure tasks. She asks you how many Sprints the project should schedule to deal with these issues.\n\n" +
+                      "I - She shouldn’t worry about technical issues, because you will keep an eye on the team to make sure they ask for help if needed.\n\n" +
+                      "II - Teach her that such issues should be added to the Product Backlog.\n\n" +
+                      "III - Explain to her that the architecture and infrastructure should emerge alongside developing business functionality to better mitigate risks.\n\n" +
+                      "IV - Tell her that the risks related to architecture and infrastructure should be dealt with before starting the first Sprint.\n\n" +
+                      "(choose the best answer)",
             "options": [
               "II and III.",
               "I, II and III.",
