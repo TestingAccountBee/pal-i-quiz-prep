@@ -1,5 +1,12 @@
 const exam = {
-      "id": "q7_81",
+  id: 'psm-i-mock-8',
+  title: 'PSM I – Mock Exam #8',
+  description: 'Professional Scrum Master I practice exam #8 based on provided questions 1–80.',
+  timeLimit: 60,
+  passingScore: 85,
+  questions: [
+        {
+            "id": "q7_81",
             "question": "You have been hired as a Scrum Master for an organization new to Scrum. You are about to start working on your first project with Scrum and the Product Owner seems confused about how to deal with architecture and infrastructure tasks. She asks you how many Sprints the project should schedule to deal with these issues. What would you tell her? I - She shouldn’t worry about technical issues, because you will keep an eye on the team to make sure they ask for help if needed.&nbsp; II - Teach her that such issues should be added to the Product Backlog.&nbsp; III - Explain to her that the architecture and infrastructure should emerge alongside developing business functionality to better mitigate risks.&nbsp; IV - Tell her that the risks related to architecture and infrastructure should be dealt with before starting the first Sprint.&nbsp; (choose the best answer)",
             "options": [
               "II and III.",
