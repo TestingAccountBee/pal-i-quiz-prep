@@ -6412,7 +6412,7 @@ export const mockExams: Exam[] = [
       },
       {
         "id": "q5_19",
-        "question": "Your Scrum team has been working on a Product for 6 months. The product passes usability test and delivers an increment at the end of each Sprint, however it has not yet been released to real users. The stakeholders are putting a lot of pressure to release next month. The Product Owner does not think this is viable because the their is still a lot of work required before he has confidence in a release. He has a delivery date of 6 months and has been working towards that. What guidance or assistance can you provide by the Scrum Framework? (choose 3 answers.)",
+        "question": "Your Scrum team has been working on a Product for 6 months. The product passes usability test and delivers an increment at the end of each Sprint, however it has not yet been released to real users. The stakeholders are putting a lot of pressure to release next month. The Product Owner does not think this is viable because there is still a lot of work required before he has confidence in a release. He has a delivery date of 6 months and has been working towards that. What guidance or assistance can you provide by the Scrum Framework? (choose 3 answers.)",
         "options": [
           "Encourage the Product Owner to interact with the Stakeholders to validate how much the current product satisfies their needs and the minimal things to add to release it.",
           "Challenge the Product Owner to validate if all the pending work is needed to release and how the number of features in a product release can be reduced.",
