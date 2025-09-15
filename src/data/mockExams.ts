@@ -7910,7 +7910,7 @@ export const mockExams: Exam[] = [
           "Bring the concern to the testers and ask them to include performance testing.",
           "Explain to the Product Owner that it’s up to the Developers to decide on acceptable performance standards as they own the Definition of Done."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "The primary goal is to satisfy the customer. Performance issues should be addressed collaboratively between the Product Owner and Developers. The Developers can and should expand their Definition of Done to include more stringent criteria, such as performance standards, to ensure higher quality."
       },
       {
@@ -7922,7 +7922,7 @@ export const mockExams: Exam[] = [
           "When the sales department discovers features that add more value than the current work being done.",
           "When the Developers discover that it cannot meet their Sprint commitments."
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "A Sprint can be cancelled if the Sprint Goal becomes obsolete. This might happen due to significant changes in business priorities, market conditions, or other external factors that render the Sprint's objective irrelevant."
       },
       {
@@ -7948,7 +7948,7 @@ export const mockExams: Exam[] = [
           "The Developers.",
           "The Scrum Master."
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "The Developers are responsible for managing the Sprint Backlog. They update it throughout the Sprint as they learn more about the work needed to achieve the Sprint Goal."
       },
       {
@@ -7973,7 +7973,7 @@ export const mockExams: Exam[] = [
           "The Product Owner must be present at all times when the Developers are working. Scrum forbids the Product Owner from being unavailable.",
           "Check whether the Product Owner is actively engaged at the Daily Scrums."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "The Sprint Review is a key feedback loop. If the resulting Increment meets the Product Owner's expectations, it's a strong indicator of sufficient collaboration and communication throughout the Sprint. While continuous engagement is valuable, Scrum does not mandate the PO's constant presence, and the Daily Scrum is primarily for the Developers."
       },
       {
@@ -7985,7 +7985,7 @@ export const mockExams: Exam[] = [
           "Having the Developers use some time during each Sprint to help the Product Owner analyze, estimate, and design items at the top of the Product Backlog that is projected to be worked on in the upcoming Sprint.",
           "During a Sprint, the Scrum team's business analysts create upcoming Product Backlog items and add them to the forecast for the next Sprint."
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "Product Backlog refinement is an ongoing activity where the Product Owner and Developers collaborate. Involving the Developers during the Sprint to analyze and estimate upcoming items ensures a shared understanding and makes Sprint Planning more effective."
       },
       {
@@ -8070,7 +8070,7 @@ export const mockExams: Exam[] = [
           "True",
           "False"
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "Minimizing dependencies between teams is crucial for reducing complexity and increasing agility. It allows teams to work more autonomously and reduces the risk of delays caused by one team waiting on another."
       },
       {
@@ -8082,7 +8082,7 @@ export const mockExams: Exam[] = [
           "It depends on the team’s Definition of Done.",
           "Yes, because UAT is done in a hardening Sprint before the release Sprint."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "Delaying feedback activities like UAT violates the core Scrum principle of transparency. It hides the true state of the Increment and prevents the team from inspecting and adapting based on user feedback, which increases risk."
       },
       {
@@ -8092,7 +8092,7 @@ export const mockExams: Exam[] = [
           "False",
           "True"
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "Technical debt, which is often invisible on the surface, can create a false sense of progress. An Increment may appear to work, but underlying quality issues (the debt) mean it is not truly 'Done' and will require future rework, thus misrepresenting the actual state of the product."
       },
       {
@@ -8116,7 +8116,7 @@ export const mockExams: Exam[] = [
           "As often as possible",
           "Annually"
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "Frequent feedback is essential for continuous improvement and ensuring the product aligns with customer needs. Measuring satisfaction after each delivery or Sprint allows the team to adapt quickly."
       },
       {
@@ -8128,7 +8128,7 @@ export const mockExams: Exam[] = [
           "Disagree – as the problem may not be that the team is too big.",
           "Agree – You agree that dividing the team into two separate teams is a good strategy to allow the teams to learn how to run Daily Scrums quickly and effectively. Once they've learned to limit the Daily Scrum to 15 minutes, you can merge the teams again."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "The Daily Scrum exceeding its timebox is a symptom, not the root cause. The reason could be team size, but it could also be inefficient meeting facilitation, problem-solving during the event, or other issues. The best first step is to observe and gather more information before proposing a solution like splitting the team."
       },
       {
@@ -8213,7 +8213,7 @@ export const mockExams: Exam[] = [
           "True",
           "False"
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "When multiple teams work on one product, they should produce a single, integrated Increment. Demonstrating separate pieces of un-integrated work does not provide a transparent view of the actual state of the product."
       },
       {
@@ -8223,7 +8223,7 @@ export const mockExams: Exam[] = [
           "False",
           "True"
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "Tools can support collaboration, but they cannot solve human interaction and dependency issues on their own. Effective collaboration, communication, and process are more important than any specific tool for resolving such complex problems."
       },
       {
@@ -8268,7 +8268,7 @@ export const mockExams: Exam[] = [
           "The Scrum Master is responsible for updating the Scrum board and ensuring team members avoid conflicts.",
           "The Scrum Master assigns tasks to Developers and ensures they are completed within the committed timebox."
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "The Scrum Master is crucial for facilitating effective communication and ensuring Scrum events are efficient and stay within their timeboxes. They coach the team and stakeholders on helpful interactions and educate Developers on the importance of adhering to timeboxes to maximize value. "
       },
       {
@@ -8281,7 +8281,7 @@ export const mockExams: Exam[] = [
           "Delay the Sprint in order for the Product Owner to have enough time to prioritize the Product Backlog.",
           "Instead of the Product Owner, have the Developers order the work"
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "When a Product Owner struggles with the Product Backlog, the Scrum Master should provide coaching and support. This includes helping the Product Owner understand backlog management techniques, facilitating collaboration with the Developers, and promoting a culture of continuous improvement to enhance backlog effectiveness. "
       },
       {
@@ -8293,7 +8293,7 @@ export const mockExams: Exam[] = [
           "There should be five Product Owners, one for each Scrum team.",
           "The product has one Product Backlog and one Product Owner."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "Having a single Product Owner and one Product Backlog for a single product is essential for maintaining a cohesive development process. This structure ensures a clear and consistent product vision, prevents conflicting priorities, and allows for unified prioritization, which helps align all teams on the most important work."
       },
       {
@@ -8317,7 +8317,7 @@ export const mockExams: Exam[] = [
           "True",
           "False"
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "Technical debt refers to any shortcomings in the code. It is an unavoidable by-product of software development that must be managed. If neglected, it will compound over time and negatively impact the team's ability to deliver value."
       },
       {
@@ -8327,7 +8327,7 @@ export const mockExams: Exam[] = [
           "Have the Scrum team members introduce their background experience to each other, ask the Product Owner to discuss the product and answer potential questions, and ensure the team understands the importance of a Definition of “Done.”",
           "Ensure the Scrum team members have compatible personalities, have the tech leads clarify the expectations and responsibilities of each accountability, and propose a performance rewards system."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "Scrum teams need all the necessary skills and competencies to complete the work. This includes understanding the product's goals and history and ensuring everyone on the team has a shared understanding of what 'done' means."
       },
       {
@@ -8340,7 +8340,7 @@ export const mockExams: Exam[] = [
           "The Developers are responsible for estimates.",
           "Estimates must be made in Story Points."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "While the Product Owner facilitates the estimation process, the Developers are the ones ultimately responsible for providing estimates. This is because they have the technical knowledge and expertise required. The Scrum Master should also emphasize that estimates are forecasts, not fixed commitments."
       },
       {
@@ -8380,7 +8380,7 @@ export const mockExams: Exam[] = [
           "Maintaining a consistent velocity.",
           "The cost implications of hiring an external specialist."
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "When considering an external specialist, the Scrum Master should prioritize the team's ability to produce an integrated Increment, which is a core tenet of Scrum. Additionally, it's important to weigh the long-term benefits of the team developing problem-solving skills themselves against the short-term help of an expert, as over-reliance can hinder team growth and autonomy."
       },
       {
@@ -8392,7 +8392,7 @@ export const mockExams: Exam[] = [
           "Postpone the Sprint in order for the Product Owner to refine the Product Backlog to the level needed.",
           "Request assistance from the technical architect."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "During Sprint Planning, the Scrum Team should forecast the most probable Product Backlog items needed to achieve the Sprint Goal. It is also important for the team to discuss any forecasting difficulties in the subsequent Sprint Retrospective to identify impediments and determine adjustments that can be made to improve future Sprints."
       },
       {
@@ -8405,7 +8405,7 @@ export const mockExams: Exam[] = [
           "Encourage the team member to prioritize personal matters over Sprint commitments.",
           "Collaborate with the team to find solutions and adjust Sprint goals if necessary."
         ],
-        "correctAnswer": [4],
+        "correctAnswer": 4,
         "explanation": "When a team member is facing personal issues, the Scrum Master should work with the team to find solutions, which could include redistributing tasks or adjusting Sprint goals. This approach fosters teamwork, supports the individual's well-being, and ensures that the Sprint goals can still be achieved despite unforeseen challenges."
       },
       {
@@ -8417,7 +8417,7 @@ export const mockExams: Exam[] = [
           "By causing the removal of impediments to the Scrum team’s progress and helping the Scrum team focus on creating high-value Increments that meet the Definition of Done.",
           "By ensuring that each member takes turns speaking at the Daily Scrum and ending the event on time."
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "The Scrum Master acts as a coach, guiding the team toward self-management and cross-functionality. They help the team focus on creating high-value Increments that meet the Definition of Done and address any impediments that hinder the team's progress. They also ensure that all Scrum events are conducted efficiently and within their designated timeboxes."
       },
       {
@@ -8442,7 +8442,7 @@ export const mockExams: Exam[] = [
           "Assign the task of estimating the item's complexity to the Product Owner for a final decision.",
           "Allow the Developers to proceed with their individual estimates without consensus. "
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "The Scrum Master's role is to facilitate collaboration and consensus during Sprint Planning. By promoting open communication, the Scrum Master can guide the team to a shared understanding and agreement on an item's complexity."
       },
       {
@@ -8454,7 +8454,7 @@ export const mockExams: Exam[] = [
           "Ask the Developers to alternate who is responsible for meeting setup.",
           "Set up the meeting and inform the developers of the procedure."
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "As a self-managing team, the Developers should decide for themselves how to best handle their own communication logistics. The Scrum Master should only intervene if requested or if they observe a potential problem. The Scrum Master's role has evolved to coach the team in self-management so they can resolve issues autonomously, rather than solving problems for them."
       },
       {
@@ -8478,7 +8478,7 @@ export const mockExams: Exam[] = [
           "Have the Developers vote on which days the Daily Scrum should occur.",
           "Support the self-managing team’s decision."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "The Scrum Master is responsible for promoting Scrum as defined in the Scrum Guide. If the team wants to change a core event like the Daily Scrum, the Scrum Master should first understand their reasons, then coach them on the event's importance and facilitate improvements to make it more valuable, rather than simply accepting a change that deviates from the framework."
       },
       {
@@ -8504,7 +8504,7 @@ export const mockExams: Exam[] = [
           "Suggest shifting the blame onto the Development Team for the product's poor performance.",
           "Advise the Product Owner to withhold information from the client to avoid further complaints."
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "The Scrum Master's role is to coach the Product Owner on how to effectively communicate client concerns to the Developers. They should also facilitate getting client feedback into the product backlog and collaborate with the Developers to identify and address the root causes of any performance issues."
       },
       {
@@ -8516,7 +8516,7 @@ export const mockExams: Exam[] = [
           "Delegate the work to an external team.",
           "Add Security Sprints to resolve security concerns when needed."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "To ensure security concerns are transparently addressed, a Scrum team should integrate security practices into their process. This can be done by adding security-related tasks to the Product Backlog and incorporating security testing into their Definition of Done."
       },
       {
@@ -8528,7 +8528,7 @@ export const mockExams: Exam[] = [
           "The Scrum team with the highest capacity will pull items from the Product Backlog first.",
           "The Product Owner separates the Product Backlog items for each team."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "In Scrum, teams have the autonomy to pull work from a shared Product Backlog according to their capacity and Sprint Goals. The number of items selected is determined solely by the Developers during Sprint Planning."
       },
       {
@@ -8538,7 +8538,7 @@ export const mockExams: Exam[] = [
           "False",
           "True"
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "Adherence to the Scrum Guide is crucial in scaled Scrum to maintain consistency and alignment across all teams. The guide provides the fundamental principles and practices that facilitate collaboration, coordination, and the integration of work, which are essential for the successful implementation of Scrum at any scale."
       },
       {
@@ -8550,7 +8550,7 @@ export const mockExams: Exam[] = [
           "Notify management of the impediments and their consequences.",
           "Arrange a triage meeting with all project managers to help resolve them."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "Scrum emphasizes self-organization, and involving project managers, who are not part of the Scrum framework, would be the least helpful approach. Instead, the Scrum Master should focus on facilitating the team's internal problem-solving abilities."
       },
       {
@@ -8563,7 +8563,7 @@ export const mockExams: Exam[] = [
           "Teach them that it is their responsibility to form the teams such that each team will have the necessary skills, knowledge, and competencies to create an integrated Increment by the end of every Sprint.",
           "Teach the Product Owner to collaborate with the technical leads to order the Product Backlog in such a way that there is no technical or development overlap during a Sprint."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "In Scrum, teams are self-organizing and responsible for coordinating their own work. The Scrum Master's role is to empower the teams by teaching them it is their responsibility to form teams with the necessary skills to deliver integrated Increments at the end of each Sprint."
       },
       {
@@ -8575,7 +8575,7 @@ export const mockExams: Exam[] = [
           "Comply with the team’s decision.",
           "Extend the Sprint timebox in order to fit the Retrospectives."
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "Since Retrospectives are essential for continuous improvement in Scrum, the Scrum Master should not simply eliminate them. Instead, the Scrum Master should educate the team on the importance of this event and facilitate more effective Retrospectives to demonstrate their value in fostering transparency, open communication, and a culture of learning."
       },
       {
@@ -8600,7 +8600,7 @@ export const mockExams: Exam[] = [
           "Ensure all communication goes through the Scrum Master first.",
           "Observe the communications between them and coach them if needed or if requested."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "A Scrum Master's role is to foster an environment of collaboration and transparency, not to be a go-between. By observing interactions and providing coaching where necessary, the Scrum Master can help the Product Owner and Developers improve their direct communication and understand each other's perspectives."
       },
       {
@@ -8612,7 +8612,7 @@ export const mockExams: Exam[] = [
           "Wait until the Sprint Retrospective to add security to the Definition of Done.",
           "Ask the Developer to share the issue with the team as soon as possible."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "The Scrum Master should coach the team to address issues collaboratively. The most appropriate first step is to encourage the Developer to share the concern with the entire team promptly. This fosters open communication and allows for collective problem-solving."
       },
       {
@@ -8622,7 +8622,7 @@ export const mockExams: Exam[] = [
           "False",
           "True"
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "While it is not mandatory for multiple Scrum teams to have the same Sprint start dates, the focus should be on their ability to integrate their work into a shippable Increment at the end of their respective Sprints."
       },
       {
@@ -8632,7 +8632,7 @@ export const mockExams: Exam[] = [
           "False",
           "True"
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "This statement is false. The Definition of Ready (DoR) is not a mandatory part of the Scrum framework, unlike the Definition of Done. While some teams find it useful, it is optional. The Product Owner is responsible for ensuring Product Backlog items are sufficiently refined for Sprint Planning."
       },
       {
@@ -8645,7 +8645,7 @@ export const mockExams: Exam[] = [
           "Blame individual team members for the delays and impose consequences for non-compliance.",
           "Delegate responsibility for addressing the issue to external stakeholders or management."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "The Scrum Master should facilitate a collaborative problem-solving session with the Developers to identify the root cause of the recurring issue and explore potential solutions. This approach promotes transparency, ownership, and collective responsibility for improving processes."
       },
       {
@@ -8683,7 +8683,7 @@ export const mockExams: Exam[] = [
           "Have the Product Owner work with the tech leads of each team to parse the Product Backlog and minimize overlap in User Stories.",
           "Identify and manage the dependencies among Scrum teams."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "The Scrum Master should promote communication and collaboration between teams to ensure they are aligned on goals and priorities. This can be done by facilitating meetings like the Scrum of Scrums, where team representatives can discuss progress and impediments. The Scrum Master also helps address cross-team dependencies and promotes a culture of transparency and shared responsibility. "
       }
     ]
@@ -8702,7 +8702,7 @@ export const mockExams: Exam[] = [
           "True",
           "False"
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "Toby, as a Product Owner, may perceive velocity as a crucial metric to assess the team's capabilities and familiarity. Velocity provides insights into how much work the team can accomplish within a Sprint, helping Toby gauge the team's productivity and efficiency over time. However, it's important to note that velocity alone may not provide a comprehensive understanding of the team's capabilities, and other factors such as quality, stakeholder satisfaction, and adaptability should also be considered."
       },
       {
@@ -8714,7 +8714,7 @@ export const mockExams: Exam[] = [
           "Replace an item in the current Sprint of equal size.",
           "Inform the Product Owner so they can collaborate with her."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "Allow the Product Owner to decide what to do with the item as the Product Owner is responsible for the flow of value. If adding the item would not disrupt the Sprint Goal and there is capacity to handle it, the developers can discuss it with the Product Owner to determine the best course of action."
       },
       {
@@ -8726,7 +8726,7 @@ export const mockExams: Exam[] = [
           "The Scrum Master would coach the team on improving their estimations and commitment to completing the Sprint Backlog.",
           "Due to the failure of the Sprints to produce shippable Increments, opportunities to inspect and adapt have been lost. To increase the team's capacity, the Scrum Master should encourage the organization to add more team members."
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "This must be communicated to the Product Owner, and more transparency must be provided. Adding more members will not help because they will need time to adjust, and the velocity will be reduced in the short term while they do so. Extending the Sprint doesn't change the completion date."
       },
       {
@@ -8752,7 +8752,7 @@ export const mockExams: Exam[] = [
           "Modify the Definition of Done to ensure all Product Backlog items can be done by the end of the Sprint.",
           "Continue working and update the Product Owner at the Sprint Review."
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "As a new Developer joins the team, the enthusiasm during Sprint Planning may lead to selecting an excessive number of items for the Sprint. In such a scenario, it's crucial for the team to reassess the situation and take corrective action. They should prioritize the selected work items based on their importance and feasibility within the Sprint timeframe. Additionally, the team may need to negotiate with the Product Owner to adjust the Sprint Backlog and remove or defer less critical items. This collaborative approach ensures that the team focuses on delivering the most valuable increments while maintaining a sustainable pace throughout the Sprint."
       },
       {
@@ -8763,7 +8763,7 @@ export const mockExams: Exam[] = [
           "Items on the Product Backlog are either 'done' or 'not done.' This improves empiricism while also increasing transparency and reducing complexity.",
           "The Sprint length remains the same, and the Developers continuously learn what is actually possible to do within the timebox."
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "This must be communicated to the Product Owner in order to ensure transparency. To avoid this from happening again, the team needs to improve their Sprint Planning skills."
       },
       {
@@ -8776,7 +8776,7 @@ export const mockExams: Exam[] = [
           "The Product Owner creates separate Product Backlogs for each team.",
           "The Product Owner will present the work and the Developers will select the items they will work on."
         ],
-        "correctAnswer": [4],
+        "correctAnswer": 4,
         "explanation": "The people who are actually doing the work are the best people to decide what they can do and how they should do it. Given the Product Owner's priorities, developers should be able to self-manage the best way to complete the work."
       },
       {
@@ -8786,7 +8786,7 @@ export const mockExams: Exam[] = [
           "This is false as it is not required from Scrum to divide the Scrum team if there are more than 10 members in the Scrum team.",
           "This is true as the maximum size of a Scrum team must be 10 or fewer."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "The word mandatory is key here. The Scrum Guide 2020 doesn't state anywhere that it is mandatory to divide teams. Smaller teams do communicate better, but this isn't a requirement. According to the Scrum Guide, a Scrum team should be small enough to be nimble while also being large enough to complete significant work within a Sprint, usually consisting of 10 or fewer people."
       },
       {
@@ -8797,7 +8797,7 @@ export const mockExams: Exam[] = [
           "Moving from component teams to feature teams could reduce productivity in the initial stages. Feature teams have less communication complexity. Getting support from the business side makes the transition easier.",
           "You cannot begin Scrum without having feature teams. It is easier to measure and compare performance between feature teams. Feature teams should have an equal number of team members."
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "Because they need time to figure out how to work together, the initial phase of forming a new team may cause short-term disruption. Communication overhead is reduced because all skills and competencies are contained within the team. Having an environment that supports the Scrum Values reduces complexity."
       },
       {
@@ -8809,7 +8809,7 @@ export const mockExams: Exam[] = [
           "Move the item to a future Sprint.",
           "Work with the Product Owner to determine what is possible and acceptable."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "Direct communication between the Developers and the Product Owner fosters clarity and alignment. It allows for immediate clarification and reduces the risk of misunderstandings or misinterpretations that could arise from intermediaries. By directly engaging with the Product Owner, the Developers can quickly address any questions or uncertainties they have about the functional requirement. This promotes efficiency in the development process by minimizing delays and avoiding potential rework caused by incorrect assumptions or interpretations."
       },
       {
@@ -8849,7 +8849,7 @@ export const mockExams: Exam[] = [
           "It depends on the Product Owner.",
           "Immediately after the next Sprint Planning."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "The new Sprint should begin immediately after the previous one has ended, as the Scrum Guide does not state that anything should happen in between. If they need to refine the Product Backlog, they can do so during the Sprint."
       },
       {
@@ -8875,7 +8875,7 @@ export const mockExams: Exam[] = [
           "Ask the development manager to solve it as it is an impediment",
           "Request that the Developers take turns setting up the meeting. They will be held accountable as a result of this."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "Scrum teams are structured and empowered by the organization to organize and manage their own work. This includes deciding how to form teams when multiple teams are needed. They are self-managing.No one (not even the Scrum Master) instructs the developers on how to convert the Product Backlog into Increments of potentially releasable functionality."
       },
       {
@@ -8887,7 +8887,7 @@ export const mockExams: Exam[] = [
           "The Developers and Project Manager.",
           "The Product Owner and the Developers."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "If the Developers determine that they will not be able to complete the entire forecast, it is essential for the Scrum Team, including the Product Owner, to be present to review and adjust the selected Sprint work. The Product Owner provides insights into the importance of different items and can help reprioritize based on business value. The Scrum Master might facilitate the discussion if needed or requested to ensure that the team adheres to Scrum principles and practices."
       },
       {
@@ -8911,7 +8911,7 @@ export const mockExams: Exam[] = [
           "True",
           "False"
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "Adding more resources, such as hiring a new Developer familiar with AWS, does not necessarily proportionally increase the value delivered in Scrum. Simply adding more people does not guarantee improved productivity or value delivery. In Scrum, the focus is on empowering self-managing teams to collaborate effectively and leverage their collective skills to deliver value incrementally. Additionally, introducing a new team member may initially result in productivity losses due to onboarding and integration processes."
       },
       {
@@ -8924,7 +8924,7 @@ export const mockExams: Exam[] = [
           "Scrum Teams prioritize individual achievements over collective goals.",
           "Scrum Teams avoid taking ownership of their work and responsibilities."
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "Scrum Teams value delivering high-quality increments of work consistently is correct because commitment in Scrum involves dedicated efforts by the team to consistently deliver high-quality increments of work. This commitment ensures that the team focuses on achieving Sprint goals and delivering value to stakeholders."
       },
       {
@@ -8936,7 +8936,7 @@ export const mockExams: Exam[] = [
           "Project Managers will allocate individuals to specific teams.",
           "Bring together all of the developers or existing teams and ask them to propose how to organize and self-manage into teams in the new structure."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "The people who will be doing the work are the best people to determine which Scrum team structures are most effective. Bringing everyone together and allowing them to propose how to organize into the new structure and self-manage into teams is the best option, because the teams should be able to self-manage given the potential boundaries and skills required from others (Managers or Product Owner)"
       },
       {
@@ -8948,7 +8948,7 @@ export const mockExams: Exam[] = [
           "You calculate how many additional Developers it would take to increase\r\nvelocity in order to make the original date. You inform the program manager of\r\nthe additional budget for these Developers. This would then allow making the\r\nexpected date.",
           "You inform the program manager that there is a way. You remove all items from the Product Backlog for which development is forecasted to be beyond the expected date. These are likely to be low value anyhow."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "In this context, the best course of action is to facilitate communication and collaboration between the program manager, project managers of other components, and the Product Owner. By engaging in discussions regarding the prioritization of the Product Backlog items and redefining the achievable delivery date, you aim to provide the Product Owner with a clearer understanding of the project's current status and potential adjustments needed to align expectations. This approach promotes transparency, encourages stakeholder involvement, and fosters a collective effort to address challenges and optimize the project's outcomes within the Scrum framework."
       },
       {
@@ -9001,7 +9001,7 @@ export const mockExams: Exam[] = [
           "The Scrum Master because he/she is responsible for helping the Developers to remove Impediments.",
           "The Product Owner because he/she is responsible for managing the team."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "The people who are closest to the problem are the best at understanding and solving it. The question is about who owns the problem at its core. The Developers are responsible for addressing internal conflicts and may request help from the Scrum Master if needed. Because this is a localized issue, they are the ones that must initiate the actions for the results they desire."
       },
       {
@@ -9026,7 +9026,7 @@ export const mockExams: Exam[] = [
           "Assign them to the technical leads of the team.",
           "Ensure they are addressed in every Increment."
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "Non-functional requirements should be worked on alongside functional development. They can be captured as part of acceptance criteria, as a new item, or as part of the Definition of Done. If they don't capture them they will have technical debt in the future."
       },
       {
@@ -9066,7 +9066,7 @@ export const mockExams: Exam[] = [
           "Help the Product Owner understand the importance of including business functionality in every Sprint, and explain to him/her that the best architecture and infrastructure emerges as the functionality is developed.",
           "Support the Product Owner’s decision as he/she is accountable for maximizing the value of the work that the Developers do."
         ],
-        "correctAnswer": [2],
+        "correctAnswer": 2,
         "explanation": "By emphasizing the importance of including business functionality in every Sprint, the Scrum Master ensures that the team focuses on delivering tangible value to the stakeholders with each iteration. This approach enables the product to evolve incrementally, providing early feedback and opportunities for adaptation. The answer suggests that the best architecture and infrastructure emerge as the functionality is developed. This aligns with Agile principles that advocate for emergent design, where the architecture evolves over time based on evolving requirements and feedback from stakeholders."
       },
       {
@@ -9078,7 +9078,7 @@ export const mockExams: Exam[] = [
           "Encourage the technical writers from other teams to form a specialized team to organize and plan the work for multiple teams.",
           "Wait until the technical writer returns before continuing with related items."
         ],
-        "correctAnswer": [0],
+        "correctAnswer": 0,
         "explanation": "All Product Backlog items selected for the Sprint are owned by the Developers as a whole. Although individual members may work on specific tasks, the Developers are still accountable for doing the work to deliver a shippable Increment."
       },
       {
@@ -9090,7 +9090,7 @@ export const mockExams: Exam[] = [
           "As much as they can fit into the Sprint. Any remaining work will be moved to a subsequent Sprint.",
           "An equal amount of time on analysis, design, programming, testing and documentation."
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "In Scrum, the effort required for a Product Backlog item selected for a Sprint is determined by the Definition of Done (DoD) agreed upon by the Scrum Team. The Definition of Done outlines the criteria that must be met for an item to be considered complete and potentially shippable."
       },
       {
@@ -9103,7 +9103,7 @@ export const mockExams: Exam[] = [
           "Follow the Stakeholder's advice and switch to traditional project management.",
           "Clarify that traditional methods often exceed budgets and meet deadlines but result in low-value, difficult-to-maintain software."
         ],
-        "correctAnswer": [1],
+        "correctAnswer": 1,
         "explanation": "Scrum effectively manages risk by delivering valuable increments early and allowing frequent inspection and adaptation. Each Sprint focuses on delivering high-value increments, reducing the risk of stakeholders lacking visibility into the product's progress. This iterative approach empowers teams to continuously learn and adapt, providing transparency and reducing the risk of delivering low-value products."
       },
       {
@@ -9115,7 +9115,7 @@ export const mockExams: Exam[] = [
           "Ensuring work is completed within scope and time.",
           "Interacting with stakeholders and ensuring that the most valuable functionality is always produced first."
         ],
-        "correctAnswer": [3],
+        "correctAnswer": 3,
         "explanation": "One of the most important responsibilities of a Product Owner is interacting with stakeholders and ensuring that the most valuable functionality is always produced first and also providing clarifications to the Developers when requested."
       },
       {
