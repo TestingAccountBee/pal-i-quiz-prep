@@ -9,6 +9,7 @@ import { Label } from '@/components/ui/label';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
 import { Clock, ChevronLeft, ChevronRight, Flag } from 'lucide-react';
 import { Exam, ExamAttempt, Question } from '@/types/exam';
+import { formatTextWithLineBreaks } from '@/lib/utils';
 
 interface ExamInterfaceProps {
   exam: Exam;
@@ -127,7 +128,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
               <CardTitle className="text-lg leading-relaxed flex-1">
-                {currentQ.question}
+                {formatTextWithLineBreaks(currentQ.question)}
               </CardTitle>
               {isCurrentMultiple && (
                 <Badge variant="outline" className="text-xs">
@@ -168,7 +169,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
                       className="flex items-center gap-2 cursor-pointer flex-1"
                     >
                       <span className="font-medium">{String.fromCharCode(65 + index)}.</span>
-                      <span>{option}</span>
+                      <span>{formatTextWithLineBreaks(option)}</span>
                     </Label>
                   </div>
                 </div>
@@ -199,7 +200,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
                         className="flex items-center gap-2 cursor-pointer flex-1"
                       >
                         <span className="font-medium">{String.fromCharCode(65 + index)}.</span>
-                        <span>{option}</span>
+                        <span>{formatTextWithLineBreaks(option)}</span>
                       </Label>
                     </div>
                   </div>

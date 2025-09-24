@@ -10,6 +10,7 @@ import { CheckCircle, XCircle, Clock, RotateCcw, Home, Filter, Flag, Send } from
 import { ExamResult } from '@/types/exam';
 import { useState, useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
+import { formatTextWithLineBreaks } from '@/lib/utils';
 
 interface ExamResultsProps {
   result: ExamResult;
@@ -416,7 +417,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                 )}
                 <div className="flex-1">
                   <h4 className="font-semibold mb-2">
-                    Question {originalIndex + 1}: {qr.question.question}
+                    Question {originalIndex + 1}: {formatTextWithLineBreaks(qr.question.question)}
                   </h4>
                   
                   {isMultipleChoice(qr.question) && (
@@ -454,7 +455,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                           <span className="font-medium mr-2">
                             {String.fromCharCode(65 + optIndex)}.
                           </span>
-                          {option}
+                          {formatTextWithLineBreaks(option)}
                           {isCorrectOption && (
                             <span className="ml-2 text-xs font-medium">(Correct)</span>
                           )}
@@ -472,7 +473,7 @@ export const ExamResults = ({ result, onRetakeExam, onBackToHome, category, subc
                   {qr.question.explanation && (
                     <div className="bg-accent/50 p-3 rounded-lg">
                       <p className="text-sm text-muted-foreground">
-                        <strong>Explanation:</strong> {qr.question.explanation}
+                        <strong>Explanation:</strong> {formatTextWithLineBreaks(qr.question.explanation)}
                       </p>
                     </div>
                   )}
