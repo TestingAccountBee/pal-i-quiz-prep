@@ -124,22 +124,20 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
 
       {/* Question */}
       <Card className="bg-gradient-card border-0 shadow-medium">
-        <CardHeader>
+        <CardHeader className="relative">
           <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <CardTitle className="text-lg leading-relaxed flex-1">
-                {formatTextWithLineBreaks(currentQ.question)}
-              </CardTitle>
-              {isCurrentMultiple && (
-                <Badge variant="outline" className="text-xs">
+            <CardTitle className="text-lg leading-relaxed pr-24">
+              {formatTextWithLineBreaks(currentQ.question)}
+            </CardTitle>
+            {isCurrentMultiple && (
+              <>
+                <Badge variant="outline" className="text-xs absolute top-4 right-4">
                   Multiple Choice
                 </Badge>
-              )}
-            </div>
-            {isCurrentMultiple && (
-              <p className="text-sm text-muted-foreground">
-                Select all correct options
-              </p>
+                <p className="text-sm text-muted-foreground">
+                  Select all correct options
+                </p>
+              </>
             )}
           </div>
         </CardHeader>
