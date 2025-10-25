@@ -136,7 +136,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
                     See all questions
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+                <DialogContent className="max-w-2xl max-h-[70vh] overflow-y-auto bg-background">
                   <DialogHeader>
                     <DialogTitle>All Questions</DialogTitle>
                   </DialogHeader>
@@ -145,6 +145,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
                       const isAnswered = answers[q.id] !== undefined && answers[q.id] !== null;
                       const isBookmarkedQ = bookmarks.has(q.id);
                       const isCurrent = index === currentQuestion;
+                      const isReached = index <= currentQuestion;
                       
                       return (
                         <Button
@@ -152,8 +153,9 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
                           variant={isCurrent ? "default" : "outline"}
                           className={`h-16 relative ${
                             isAnswered && !isCurrent ? 'border-success/50 bg-success/10' : ''
-                          }`}
+                          } ${!isReached ? 'opacity-50' : ''}`}
                           onClick={() => goToQuestion(index)}
+                          disabled={!isReached}
                         >
                           <div className="flex flex-col items-center gap-1">
                             <span className="font-semibold">{index + 1}</span>
