@@ -7,7 +7,8 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
-import { Clock, ChevronLeft, ChevronRight, Flag } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Clock, ChevronLeft, ChevronRight, Flag, Bookmark, List } from 'lucide-react';
 import { Exam, ExamAttempt, Question } from '@/types/exam';
 import { formatTextWithLineBreaks } from '@/lib/utils';
 
@@ -20,8 +21,10 @@ interface ExamInterfaceProps {
 export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number | number[]>>({});
+  const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
   const [timeLeft, setTimeLeft] = useState(exam.timeLimit * 60); // Convert to seconds
   const [startTime] = useState(new Date());
+  const [showAllQuestions, setShowAllQuestions] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -89,11 +92,29 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
     handleSubmit();
   };
 
+  const toggleBookmark = (questionId: string) => {
+    setBookmarks(prev => {
+      const newBookmarks = new Set(prev);
+      if (newBookmarks.has(questionId)) {
+        newBookmarks.delete(questionId);
+      } else {
+        newBookmarks.add(questionId);
+      }
+      return newBookmarks;
+    });
+  };
+
+  const goToQuestion = (index: number) => {
+    setCurrentQuestion(index);
+    setShowAllQuestions(false);
+  };
+
   const progress = ((currentQuestion + 1) / exam.questions.length) * 100;
   const currentQ = exam.questions[currentQuestion];
   const answeredCount = Object.keys(answers).length;
   const isCurrentMultiple = isMultipleChoice(currentQ);
   const currentAnswer = answers[currentQ.id];
+  const isBookmarked = bookmarks.has(currentQ.id);
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
@@ -108,6 +129,45 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
               </p>
             </div>
             <div className="flex items-center gap-4">
+              <Dialog open={showAllQuestions} onOpenChange={setShowAllQuestions}>
+                <DialogTrigger asChild>
+                  <Button variant="outline" size="sm" className="border-border hover:border-primary hover:text-primary">
+                    <List className="h-4 w-4 mr-2" />
+                    See all questions
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle>All Questions</DialogTitle>
+                  </DialogHeader>
+                  <div className="grid grid-cols-5 gap-3 mt-4">
+                    {exam.questions.map((q, index) => {
+                      const isAnswered = answers[q.id] !== undefined && answers[q.id] !== null;
+                      const isBookmarkedQ = bookmarks.has(q.id);
+                      const isCurrent = index === currentQuestion;
+                      
+                      return (
+                        <Button
+                          key={q.id}
+                          variant={isCurrent ? "default" : "outline"}
+                          className={`h-16 relative ${
+                            isAnswered && !isCurrent ? 'border-success/50 bg-success/10' : ''
+                          }`}
+                          onClick={() => goToQuestion(index)}
+                        >
+                          <div className="flex flex-col items-center gap-1">
+                            <span className="font-semibold">{index + 1}</span>
+                            {isBookmarkedQ && (
+                              <Bookmark className="h-3 w-3 fill-primary text-primary absolute top-1 right-1" />
+                            )}
+                          </div>
+                        </Button>
+                      );
+                    })}
+                  </div>
+                </DialogContent>
+              </Dialog>
+              
               <Badge variant="outline" className="border-primary/20 text-primary">
                 <Clock className="h-4 w-4 mr-1" />
                 {formatTime(timeLeft)}
@@ -126,18 +186,32 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
       <Card className="bg-gradient-card border-0 shadow-medium">
         <CardHeader className="relative">
           <div className="space-y-2">
-            <CardTitle className="text-lg leading-relaxed pr-24">
-              {formatTextWithLineBreaks(currentQ.question)}
-            </CardTitle>
+            <div className="flex items-start justify-between gap-4">
+              <CardTitle className="text-lg leading-relaxed flex-1">
+                {formatTextWithLineBreaks(currentQ.question)}
+              </CardTitle>
+              <div className="flex items-center gap-2 flex-shrink-0">
+                {isCurrentMultiple && (
+                  <Badge variant="outline" className="text-xs">
+                    Multiple Choice
+                  </Badge>
+                )}
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => toggleBookmark(currentQ.id)}
+                  className="h-8 w-8"
+                >
+                  <Bookmark 
+                    className={`h-5 w-5 ${isBookmarked ? 'fill-primary text-primary' : 'text-muted-foreground'}`} 
+                  />
+                </Button>
+              </div>
+            </div>
             {isCurrentMultiple && (
-              <>
-                <Badge variant="outline" className="text-xs absolute top-4 right-4">
-                  Multiple Choice
-                </Badge>
-                <p className="text-sm text-muted-foreground">
-                  Select all correct options
-                </p>
-              </>
+              <p className="text-sm text-muted-foreground">
+                Select all correct options
+              </p>
             )}
           </div>
         </CardHeader>
