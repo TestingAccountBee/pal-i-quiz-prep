@@ -136,7 +136,7 @@ export const ExamInterface = ({ exam, onSubmit, onBack }: ExamInterfaceProps) =>
                     See all questions
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="max-w-2xl max-h-[70vh] overflow-y-auto bg-background">
+                <DialogContent className="!max-w-md max-h-[60vh] overflow-y-auto bg-card">
                   <DialogHeader>
                     <DialogTitle>All Questions</DialogTitle>
                   </DialogHeader>
